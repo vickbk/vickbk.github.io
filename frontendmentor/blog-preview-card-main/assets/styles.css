@@ -66,13 +66,13 @@ p {
   font-weight: 900;
 }
 
-.more-content h1 a {
+.more-content a {
   text-decoration: none;
   color: var(--gray-950);
 }
 
-.more-content h1 a:hover,
-.more-content h1 a:focus {
+.more-content a:hover,
+.more-content a:focus {
   color: var(--yellow) !important;
 }
 
