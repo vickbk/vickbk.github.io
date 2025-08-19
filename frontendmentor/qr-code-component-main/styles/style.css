@@ -12,6 +12,7 @@ body {
   font-family: "Outfit", sans-serif;
   background-color: var(--slate-300);
   font-weight: 400;
+  line-height: 1.25em;
 }
 
 img {
@@ -36,12 +37,17 @@ img {
   border-radius: 1em;
 }
 
+.details {
+  padding: 1em;
+}
+
 .details p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--slate-500);
 }
+
 .d-heading {
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
   font-weight: 700;
   color: var(--slate-900) !important;
 }
