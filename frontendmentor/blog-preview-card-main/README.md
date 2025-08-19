@@ -31,7 +31,7 @@ Users are able to:
 ### Links
 
 - Solution URL: (https://github.com/vickbk/vickbk.github.io/tree/main/frontendmentor/blog-preview-card-main)
-- Live Site URL: [Add live site URL here](https://vickbk.github.io/frontendmentor/blog-preview-card-main/)
+- Live Site URL: (https://vickbk.github.io/frontendmentor/blog-preview-card-main/)
 
 ## My process
 
