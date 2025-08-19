@@ -53,3 +53,9 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 600px) {
+  .container {
+    width: 350px;
+  }
+}
