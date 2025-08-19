@@ -12,4 +12,4 @@ Reference: https://roadmap.sh/projects/basic-html-website
 
 # The project includes frontend-mentor projects
 
-these are found in ./frontendmentor
+These are found in ./frontendmentor
