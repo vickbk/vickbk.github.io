@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  font-size: clamp(15px, 4vw, 16px);
+  --space: 1rem;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--yellow);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.blog-card {
+  width: 300px;
+  background-color: var(--white);
+  padding: 1em;
+  border: 1px solid var(--gray-950);
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em var(--gray-950);
+}
+.picture {
+  border-radius: 0.8em;
+  margin-bottom: var(--space);
+}
+.button {
+  background-color: var(--yellow);
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: 900;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--gray-950);
+  color: var(--white);
+}
+.pointer {
+  cursor: pointer;
+}
+p {
+  margin: var(--space) 0;
+  font-weight: 500;
+}
+
+.border {
+  border: 1px solid var(--yellow);
+}
+.more-content h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.more-content h1 a {
+  text-decoration: none;
+  color: var(--gray-950);
+}
+
+.more-content h1 a:hover,
+.more-content h1 a:focus {
+  color: var(--yellow) !important;
+}
+
+.more-details {
+  color: var(--gray-500);
+}
+
+.publisher {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 900;
+}
+
+.publisher img {
+  width: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
