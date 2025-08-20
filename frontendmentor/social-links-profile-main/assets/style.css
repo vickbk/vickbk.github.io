@@ -1,0 +1,103 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(0, 0%, 70%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  font-size: 14px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.profile-card {
+  background-color: var(--grey-800);
+  padding: 1.5em;
+  border-radius: 1em;
+  text-align: center;
+  width: 330px;
+}
+
+.card-header img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.card-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.card-header address {
+  font-style: normal;
+  color: var(--green);
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+.profile-card p {
+  margin: 2em 0;
+  font-weight: 400;
+  color: var(--grey-500);
+  font-size: 14px;
+}
+
+.card-links a {
+  color: var(--white);
+  font-weight: 600;
+  display: block;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: var(--grey-700);
+}
+
+.card-links a:focus,
+.card-links a:hover {
+  color: var(--grey-900);
+  background-color: var(--green);
+}
+
+.card-links > a + a {
+  margin-top: 1em;
+}
+
+.border {
+  border: solid 1px var(--green);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .profile-card {
+    padding: 2em;
+    width: 350px;
+  }
+}
