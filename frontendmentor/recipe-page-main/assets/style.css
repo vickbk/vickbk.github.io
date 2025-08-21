@@ -14,27 +14,151 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--stone-100);
+  color: var(--stone-600);
+}
+main {
+  background-color: var(--white);
 }
 h1,
 h2 {
   font-family: "Youg Serif", serif;
   font-weight: 400;
+  margin: 0;
 }
 
 img {
   max-width: 100%;
 }
+ul,
+ol {
+  padding: 0;
+}
 
+.list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+ul > .list-item::before {
+  content: "•";
+  margin-left: 0.5em;
+  font-size: 1.5rem;
+}
+.list-item::before {
+  color: var(--brown-800);
+}
+ol {
+  counter-reset: custom-order;
+}
+ol > .list-item {
+  align-items: unset;
+}
+
+ol > .list-item::before {
+  counter-increment: custom-order;
+  content: counter(custom-order) ".";
+  margin-left: 0.5em;
+  font-weight: 700;
+}
+.bold {
+  font-weight: 600;
+}
+.bolder {
+  font-weight: bolder;
+}
+.border {
+  border: 1px solid var(--rose-800);
+}
+section:not(.hero) {
+  margin: 0 2em;
+}
+.intro h1 {
+  color: var(--stone-900);
+  font-size: 2.5rem;
+  margin: 0.5em 0;
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  padding: 1.5em;
+  border-radius: 1em;
+}
+
+.prep-time-title {
+  color: var(--rose-800);
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.prep-time-item::before {
+  color: var(--rose-800);
+}
+
+.details {
+  padding: 1.2em 0;
+}
+.details:not(.details:last-child) {
+  border-bottom: 1.5px solid var(--stone-150);
+}
+
+.details-title {
+  font-weight: 600;
+  color: var(--brown-800);
+  font-size: 2rem;
+}
+
+.instructions .list-item {
+  margin-bottom: 1em;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details-table td {
+  padding: 0.75em 2em;
+  width: 50%;
+}
+.details-table tr:not(.details-table tr:last-child) td {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.details-table td:last-child {
+  font-weight: 600;
+  color: var(--brown-800);
+  padding: 0.75em 0;
+}
 .attribution {
+  margin: 2em 0;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 450px) {
+  .recipe {
+    margin: 3em auto;
+    width: 90%;
+    border-radius: 2em;
+    max-width: 600px;
+    padding: 2em;
+  }
+  section {
+    margin: unset !important;
+  }
+  .hero img {
+    border-radius: 1em;
+  }
 }

@@ -21,37 +21,45 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <main>
+    <main class="recipe">
       <section class="hero">
         <img
           src="./assets/images/image-omelette.jpeg"
           alt="Omelette Recipe ready for eating"
         />
-        <h1>Simple Omelette Recipe</h1>
+      </section>
+      <section class="intro">
+        <h1 class="bolder">Simple Omelette Recipe</h1>
         <p>
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
       </section>
-      <nav class="prep-time">
-        <h2 class="prep-time-title">Preparation time</h2>
+      <section class="prep-time">
+        <h2 class="prep-time-title bold">Preparation time</h2>
         <ul>
-          <li class="prep-time-item">
-            <span>Total:</span> Approximately 10 minutes
+          <li class="prep-time-item list-item">
+            <span
+              ><span class="bold">Total:</span> Approximately 10 minutes</span
+            >
           </li>
-          <li class="prep-time-item"><span>Preparation:</span> 5 minutes</li>
-          <li class="prep-time-item"><span>Cooking:</span> 5 minutes</li>
+          <li class="prep-time-item list-item">
+            <span><span class="bold">Preparation:</span> 5 minutes</span>
+          </li>
+          <li class="prep-time-item list-item">
+            <span><span class="bold">Cooking:</span> 5 minutes</span>
+          </li>
         </ul>
-      </nav>
+      </section>
       <section class="details ingredients">
         <h2 class="details-title">Ingredients</h2>
         <ul>
-          <li>2-3 large eggs</li>
-          <li>Salt to taste Pepper</li>
-          <li>Pepper to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>
+          <li class="list-item">2-3 large eggs</li>
+          <li class="list-item">Salt to taste Pepper</li>
+          <li class="list-item">Pepper to taste</li>
+          <li class="list-item">1 tablespoon of butter or oil</li>
+          <li class="list-item">
             Optional fillings: cheese, diced vegetables, cooked meats, herbs
           </li>
         </ul>
@@ -59,33 +67,45 @@
       <section class="details instructions">
         <h2 class="details-title">Instructions</h2>
         <ol>
-          <li>
-            <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
-            salt and pepper until they are well mixed. You can add a tablespoon
-            of water or milk for a fluffier texture.
+          <li class="list-item">
+            <span>
+              <span class="bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch
+              of salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.</span
+            >
           </li>
-          <li>
-            <span>Heat the pan:</span> Place a non-stick frying pan over medium
-            heat and add butter or oil.
+          <li class="list-item">
+            <span>
+              <span class="bold">Heat the pan:</span> Place a non-stick frying pan over
+              medium heat and add butter or oil.</span
+            >
           </li>
-          <li>
-            <span>Cook the omelette:</span> Once the butter is melted and
-            bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
-            coat the surface.
+          <li class="list-item">
+            <span>
+              <span class="bold">Cook the omelette:</span> Once the butter is melted and
+              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+              coat the surface.</span
+            >
+          </li class="list-item">
+          <li class="list-item">
+            <span>
+              <span class="bold">Add fillings (optional):</span> When the eggs begin to set
+              at the edges but are still slightly runny in the middle, sprinkle
+              your chosen fillings over one half of the omelette.</span
+            >
           </li>
-          <li>
-            <span>Add fillings (optional):</span> When the eggs begin to set at
-            the edges but are still slightly runny in the middle, sprinkle your
-            chosen fillings over one half of the omelette.
+          <li class="list-item">
+            <span>
+              <span class="bold">Fold and serve:</span> As the omelette continues to cook,
+              carefully lift one edge and fold it over the fillings. Let it cook
+              for another minute, then slide it onto a plate.</span
+            >
           </li>
-          <li>
-            <span>Fold and serve:</span> As the omelette continues to cook,
-            carefully lift one edge and fold it over the fillings. Let it cook
-            for another minute, then slide it onto a plate.
-          </li>
-          <li>
-            <span>Enjoy:</span> Serve hot, with additional salt and pepper if
-            needed.
+          <li class="list-item">
+            <span>
+              <span class="bold">Enjoy:</span> Serve hot, with additional salt and pepper if
+              needed.</span
+            >
           </li>
         </ol>
       </section>
@@ -95,7 +115,7 @@
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table>
+        <table class="details-table">
           <tbody>
             <tr>
               <td>Calories</td>
