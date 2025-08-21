@@ -149,11 +149,11 @@ section:not(.hero) {
 
 @media (min-width: 450px) {
   .recipe {
-    margin: 3em auto;
+    margin: 10em auto;
     width: 90%;
-    border-radius: 2em;
-    max-width: 600px;
+    max-width: 700px;
     padding: 2em;
+    border-radius: 2em;
   }
   section {
     margin: unset !important;
