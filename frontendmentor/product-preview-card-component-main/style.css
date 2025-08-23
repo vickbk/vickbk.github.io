@@ -68,7 +68,7 @@ h1 {
   margin: 1.5em 0;
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
 .product-price .current-price {
   color: var(--primary);
@@ -107,4 +107,23 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 38em) {
+  main {
+    block-size: 100vh;
+    display: flex;
+    place-items: center;
+  }
+  .product-card {
+    display: flex;
+    max-inline-size: 40em;
+  }
+  .product-card > * {
+    inline-size: 100%;
+  }
+  .product-card-img img {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1em;
+  }
 }
