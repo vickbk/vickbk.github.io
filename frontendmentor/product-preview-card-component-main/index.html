@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article
+        itemscope
+        itemtype="http://schema.org/Product"
+        class="product-card"
+      >
+        <picture class="product-card-img" itemprop="image">
+          <source
+            media="(width <= 600px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume picture, a new one"
+          />
+        </picture>
+        <section class="product-card-details">
+          <p class="product-type" itemprop="type">Perfume</p>
+          <h1 class="product-title" itemprop="name">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p itemprop="moreDetails">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="product-price">
+            <span class="current-price">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="149.99">149.99</span>
+            </span>
+            <s>
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="169.99">169.99</span>
+            </s>
+          </p>
+          <button class="product-to-cart" itemprop="cartAction">
+            <!-- License: PD. Made by CFPB: https://github.com/cfpb/design-system -->
+            <svg
+              class="icon-svg"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.5,15a3,3,0,0,0-1.9-2.78l1.87-7a1,1,0,0,0-.18-.87A1,1,0,0,0,20.5,4H6.8L6.47,2.74A1,1,0,0,0,5.5,2h-2V4H4.73l2.48,9.26a1,1,0,0,0,1,.74H18.5a1,1,0,0,1,0,2H5.5a1,1,0,0,0,0,2H6.68a3,3,0,1,0,5.64,0h2.36a3,3,0,1,0,5.82,1,2.94,2.94,0,0,0-.4-1.47A3,3,0,0,0,21.5,15Zm-3.91-3H9L7.34,6H19.2ZM9.5,20a1,1,0,1,1,1-1A1,1,0,0,1,9.5,20Zm8,0a1,1,0,1,1,1-1A1,1,0,0,1,17.5,20Z"
+              />
+            </svg>
+            Add to Cart
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">VickBK</a>.
+    </footer>
+  </body>
+</html>
