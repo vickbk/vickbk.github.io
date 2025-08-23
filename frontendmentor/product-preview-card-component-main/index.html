@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product preview card component</title>
 
-  Perfume
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article
+        itemscope
+        itemtype="http://schema.org/Product"
+        class="product-card"
+      >
+        <picture class="product-card-img" itemprop="image">
+          <source
+            media="(width <= 600px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume picture, a new one"
+          />
+        </picture>
+        <section class="product-card-details">
+          <p class="product-type" itemprop="type">Perfume</p>
+          <h1 class="product-title" itemprop="name">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p itemprop="moreDetails">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="product-price">
+            <span class="current-price">
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="149.99">149.99</span>
+            </span>
+            <s>
+              <span itemprop="priceCurrency" content="USD">$</span>
+              <span itemprop="price" content="169.99">169.99</span>
+            </s>
+          </p>
+          <button class="product-to-cart" itemprop="cartAction">
+            <!-- License: PD. Made by CFPB: https://github.com/cfpb/design-system -->
+            <svg
+              viewBox="-1.5 0 19 19"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-svg"
+            >
+              <path
+                d="M14.252 4.59a.924.924 0 0 1 .921.92v3.602a1.048 1.048 0 0 1-.916 1.017l-8.511.883a.573.573 0 0 1-.145.019.577.577 0 1 0 0 1.154h8.488a.563.563 0 1 1 0 1.126h-.91a1.03 1.03 0 1 1-1.104 0H6.849a1.03 1.03 0 1 1-1.104 0H5.6a1.703 1.703 0 1 1 0-3.406.585.585 0 0 1 .128.014L3.111 3.911H1.39a.563.563 0 1 1 0-1.125h2.09a.562.562 0 0 1 .515.337l.64 1.466h9.617z"
+              />
+            </svg>
+            Add to Cart
+          </button>
+        </section>
+      </article>
+    </main>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">VickBK</a>.
+    </footer>
+  </body>
 </html>
