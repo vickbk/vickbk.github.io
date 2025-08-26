@@ -20,8 +20,10 @@ $medium-font-weight: 400;
 $bold-font-weight: 700;
 $font-family: "Poppins", sans-serif;
 
+$border-radius: 0.3em;
+
 @mixin border-color($color) {
-  border-top: 0.4em solid $color;
+  border-top: $border-radius solid $color;
 }
 
 @mixin desktop {
