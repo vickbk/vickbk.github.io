@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  background-color: hsl(0, 0%, 100%);
   color: hsl(212, 6%, 44%);
   padding: 2em;
   line-height: 1.25;
@@ -31,11 +32,11 @@ h1 b {
 }
 .header h1 {
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .article {
-  border-radius: 0.4em;
+  border-radius: 0.3em;
   padding: 1.5em;
   display: flex;
   flex-direction: column;
@@ -46,21 +47,22 @@ h1 b {
 }
 .article img {
   align-self: flex-end;
+  margin-block: 1.5em;
 }
 .article p {
   font-size: 0.9rem;
 }
 .article.article-1 {
-  border-top: 0.4em solid hsl(180, 62%, 55%);
+  border-top: 0.3em solid hsl(180, 62%, 55%);
 }
 .article.article-2 {
-  border-top: 0.4em solid hsl(0, 78%, 62%);
+  border-top: 0.3em solid hsl(0, 78%, 62%);
 }
 .article.article-3 {
-  border-top: 0.4em solid hsl(34, 97%, 64%);
+  border-top: 0.3em solid hsl(34, 97%, 64%);
 }
 .article.article-4 {
-  border-top: 0.4em solid hsl(212, 86%, 64%);
+  border-top: 0.3em solid hsl(212, 86%, 64%);
 }
 
 .attribution {
@@ -74,7 +76,7 @@ h1 b {
 @media (min-width: 50rem) {
   .header {
     max-inline-size: 30rem;
-    margin-inline: auto;
+    margin: 4em auto;
   }
   .main {
     display: flex;
