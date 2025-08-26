@@ -1,1 +1,57 @@
 @use "reset";
+@use "variables" as *;
+
+body {
+  font-family: $font-family;
+  font-size: $default-font-size;
+  font-weight: $medium-font-weight;
+  color: $grey-500;
+  padding: 2em;
+  line-height: 1.25;
+}
+
+h2,
+h1 b {
+  font-weight: $bold-font-weight;
+}
+.stack > * + * {
+  margin-block-start: 1.5em;
+}
+.header {
+  text-align: center;
+  margin-block-end: 4em;
+  h1 {
+    font-weight: $default-font-weight;
+    font-size: 1.5rem;
+  }
+}
+
+.article {
+  border-radius: 0.4em;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $grey-400 0 0.5em 0.5em 0;
+
+  > * + * {
+    margin-block-start: 1em;
+  }
+  img {
+    align-self: flex-end;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  &.article-1 {
+    @include border-color($cyan);
+  }
+  &.article-2 {
+    @include border-color($red);
+  }
+  &.article-3 {
+    @include border-color($orange);
+  }
+  &.article-4 {
+    @include border-color($blue);
+  }
+}

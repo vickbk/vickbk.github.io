@@ -23,10 +23,9 @@ npm-debug.log*
 
 # Production
 /build
-/dist
+!/dist
 /.next
 /out
-!/dist/css/style.css
 
 # IDEs and editors
 /.idea

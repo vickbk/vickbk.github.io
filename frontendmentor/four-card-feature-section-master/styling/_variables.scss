@@ -1,0 +1,24 @@
+// primary colors
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// neutral colors
+
+$grey-500: hsl(234, 12%, 34%);
+$grey-400: hsl(212, 6%, 44%);
+$white: hsl(0, 0%, 100%);
+
+// font variables
+
+$default-font-size: 15px;
+$default-font-weight: 200;
+$medium-font-weight: 400;
+$bold-font-weight: 700;
+$font-family: "Poppins", sans-serif;
+
+@mixin border-color($color) {
+  border-top: 0.4em solid $color;
+}
