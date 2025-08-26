@@ -10,13 +10,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: hsl(234, 12%, 34%);
+  color: hsl(212, 6%, 44%);
   padding: 2em;
   line-height: 1.25;
 }
 
 h2,
 h1 b {
+  color: hsl(234, 12%, 34%);
   font-weight: 700;
 }
 
@@ -26,7 +27,7 @@ h1 b {
 
 .header {
   text-align: center;
-  margin-block-end: 4em;
+  margin-block: 3em;
 }
 .header h1 {
   font-weight: 200;
@@ -38,7 +39,7 @@ h1 b {
   padding: 1.5em;
   display: flex;
   flex-direction: column;
-  box-shadow: hsl(212, 6%, 44%) 0 0.5em 0.5em 0;
+  box-shadow: rgba(105.468, 111.7512, 118.932, 0.2) 0 0.5em 0.5em 0;
 }
 .article > * + * {
   margin-block-start: 1em;
@@ -60,4 +61,32 @@ h1 b {
 }
 .article.article-4 {
   border-top: 0.4em solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 50rem) {
+  .header {
+    max-inline-size: 30rem;
+    margin-inline: auto;
+  }
+  .main {
+    display: flex;
+    gap: 1.5em;
+    max-inline-size: 60rem;
+    margin-inline: auto;
+    align-items: center;
+  }
+  .main .article {
+    inline-size: 100%;
+  }
+  .main .middle {
+    inline-size: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

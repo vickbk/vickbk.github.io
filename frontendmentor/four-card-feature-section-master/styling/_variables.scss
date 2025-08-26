@@ -9,6 +9,7 @@ $blue: hsl(212, 86%, 64%);
 
 $grey-500: hsl(234, 12%, 34%);
 $grey-400: hsl(212, 6%, 44%);
+$white-smoke: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
 // font variables
@@ -21,4 +22,10 @@ $font-family: "Poppins", sans-serif;
 
 @mixin border-color($color) {
   border-top: 0.4em solid $color;
+}
+
+@mixin desktop {
+  @media (min-width: 50rem) {
+    @content;
+  }
 }
