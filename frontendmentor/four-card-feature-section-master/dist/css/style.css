@@ -85,10 +85,10 @@ h1 b {
     margin-inline: auto;
     align-items: center;
   }
-  .main .article {
-    inline-size: 100%;
+  .main > * {
+    width: calc(33% - 1em);
   }
   .main .middle {
-    inline-size: 100%;
+    margin-block: 0;
   }
 }/*# sourceMappingURL=style.css.map */
