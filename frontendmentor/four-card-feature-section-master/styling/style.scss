@@ -78,11 +78,11 @@ h1 b {
     max-inline-size: 60rem;
     margin-inline: auto;
     align-items: center;
-    .article {
-      inline-size: 100%;
+    > * {
+      width: calc(33% - 1em);
     }
     .middle {
-      inline-size: 100%;
+      margin-block: 0;
     }
   }
 }
