@@ -1,6 +1,6 @@
 @use "spaces" as *;
 .stack {
   > * + * {
-    margin-top: $space-between;
+    margin-top: 1.25rem;
   }
 }
