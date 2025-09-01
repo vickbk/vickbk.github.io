@@ -138,11 +138,20 @@ body {
 }
 
 .stack > * + * {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .avatar {
   inline-size: 3em;
   block-size: 3em;
   border-radius: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
