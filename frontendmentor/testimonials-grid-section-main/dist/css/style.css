@@ -154,4 +154,11 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 36rem) {
+  .quote {
+    background: url(../../images/bg-pattern-quotation.svg) no-repeat hsl(263, 55%, 52%);
+    background-position: top right 5em;
+  }
 }/*# sourceMappingURL=style.css.map */
