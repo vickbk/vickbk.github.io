@@ -1,0 +1,42 @@
+@use "colors" as *;
+@use "spaces" as *;
+@use "../globals/media-queries" as *;
+@mixin article-design($bg-color, $text-color, $title-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  .avatar {
+    border: 2px solid $text-color;
+  }
+  .article-title {
+    color: $title-color;
+  }
+}
+
+.article {
+  padding: $space-between;
+  border-radius: 1em;
+  box-shadow: 1.5em 1.5em 1em $grey-200;
+  &__header {
+    display: flex;
+    gap: $space-between;
+    align-items: center;
+  }
+  h2.article-title {
+    font-size: 1.75rem;
+  }
+  &__body {
+    font-size: 1.125rem;
+  }
+  &__purple {
+    @include article-design($purple-500, $purple-300, $purple-50);
+  }
+  &__grey {
+    @include article-design($grey-500, $grey-200, $grey-100);
+  }
+  &__white {
+    @include article-design($white, $grey-500, $grey-400);
+  }
+  &__black {
+    @include article-design($black, $grey-400, $grey-200);
+  }
+}

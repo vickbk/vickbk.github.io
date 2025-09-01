@@ -1,5 +1,16 @@
-h* {
-  font-weight: 700;
+$min-bold: 500;
+$bold: 600;
+:root {
+  font-size: 13px;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: $min-bold;
+}
+h1,
+h2,
+h3 {
+  font-weight: $bold;
 }
 a,
 a:visited,
