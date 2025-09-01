@@ -1,0 +1,9 @@
+@use "../main/colors" as *;
+@use "../globals/media-queries" as *;
+
+.quote {
+  @include mobile-queries($mobile) {
+    background: url(../../images/bg-pattern-quotation.svg) no-repeat $purple-500;
+    background-position: top right 5em;
+  }
+}
