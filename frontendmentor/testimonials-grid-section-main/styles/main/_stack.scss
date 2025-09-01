@@ -1,0 +1,6 @@
+@use "spaces" as *;
+.stack {
+  > * + * {
+    margin-top: $space-between;
+  }
+}

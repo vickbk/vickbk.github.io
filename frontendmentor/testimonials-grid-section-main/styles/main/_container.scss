@@ -1,0 +1,52 @@
+@use "colors" as *;
+@use "spaces" as *;
+@use "../globals/media-queries" as *;
+body {
+  background-color: $grey-100;
+  min-block-size: 100vh;
+  display: grid;
+  place-content: center;
+}
+.container {
+  display: grid;
+  gap: $space-between;
+  padding: $space-between;
+  margin: $space-around auto;
+
+  @include mobile-queries($mobile) {
+    grid-template-areas:
+      "purple purple"
+      "grey white-1"
+      "black black"
+      "white-2 white-2";
+    .article__purple {
+      grid-area: purple;
+    }
+    .article__grey {
+      grid-area: grey;
+    }
+    .article__white:first-child {
+      grid-area: white-1;
+    }
+    .article__white:last-child {
+      grid-area: white-2;
+    }
+    .article__black {
+      grid-area: black;
+    }
+  }
+  @include mobile-queries($tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "purple purple grey"
+      "white-1 black black"
+      "white-2 white-2 white-2";
+  }
+  @include mobile-queries($pc) {
+    max-inline-size: 98.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "purple purple grey white-2"
+      "white-1 black black white-2";
+  }
+}
