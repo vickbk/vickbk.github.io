@@ -26,6 +26,7 @@
   }
   &__body {
     font-size: 1.125rem;
+    line-height: 1.25;
   }
   &__purple {
     @include article-design($purple-500, $purple-300, $purple-50);
@@ -34,7 +35,7 @@
     @include article-design($grey-500, $grey-200, $grey-100);
   }
   &__white {
-    @include article-design($white, $grey-500, $grey-400);
+    @include article-design($white, $grey-400, $black);
   }
   &__black {
     @include article-design($black, $grey-400, $grey-200);
