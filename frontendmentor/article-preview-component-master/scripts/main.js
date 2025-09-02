@@ -1,4 +1,4 @@
-import { shareBtns } from "./elements.mjs";
+import { body } from "./elements.mjs";
 import toggleShareBtns from "./toggle-share-btns.mjs";
 
-shareBtns.forEach((btn) => btn.addEventListener("click", toggleShareBtns));
+body.addEventListener("click", toggleShareBtns);
