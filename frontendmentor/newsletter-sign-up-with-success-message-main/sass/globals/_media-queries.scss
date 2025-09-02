@@ -1,0 +1,16 @@
+$mobile: 36rem;
+$tablet: 48rem;
+$pc: 62rem;
+$large-screen: 75rem;
+
+@mixin mobile-queries($min-inline-size) {
+  @media (min-width: $min-inline-size) {
+    @content;
+  }
+}
+
+@mixin desktop-queries($max-inline-size) {
+  @media (max-width: $max-inline-size) {
+    @content;
+  }
+}

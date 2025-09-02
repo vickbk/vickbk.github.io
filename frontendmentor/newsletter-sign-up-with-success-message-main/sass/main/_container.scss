@@ -1,0 +1,9 @@
+@use "colors" as c;
+body {
+  background-color: c.$blue-700;
+}
+.container {
+  min-block-size: 100vh;
+  display: grid;
+  place-items: center;
+}
