@@ -1,0 +1,11 @@
+@use "../main/colors" as c;
+.details__user {
+  &-profile-name {
+    font-size: 1.1rem;
+  }
+  &-share {
+    padding: 0.5em 0.7em;
+    border-radius: 2em;
+    background-color: c.$light-grey-blue;
+  }
+}

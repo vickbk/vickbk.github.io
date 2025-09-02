@@ -1,0 +1,22 @@
+@use "../main/colors" as c;
+.socials {
+  inline-size: 100%;
+  padding: 1.5em;
+  position: absolute;
+  inset: auto 0 0;
+  //   display: none;
+  background-color: c.$dark-grey-blue;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  &__text {
+    text-transform: uppercase;
+  }
+  &__share {
+    margin-inline-start: auto;
+    background-color: c.$grey-blue;
+    color: c.$light-blue;
+  }
+}

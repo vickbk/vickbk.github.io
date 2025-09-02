@@ -1,0 +1,10 @@
+@use "colors" as c;
+.article {
+  inline-size: 90%;
+  background-color: c.$light-blue;
+  border-radius: 1em;
+  &__image {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+}

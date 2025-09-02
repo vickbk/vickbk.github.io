@@ -14,27 +14,24 @@
 
     <title>Frontend Mentor | Article preview component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">
       <article class="article">
         <img
-          class="article-image"
+          class="article__image"
           src="./images/drawers.jpg"
           alt="Drawer Image in a good looking house"
         />
         <section class="details">
-          <h1 class="details__header">
+          <h1 class="details__header text-dark-grey-blue">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h1>
@@ -50,28 +47,33 @@
               alt="Michelle Profile Picture"
             />
             <div class="details__user-profile">
-              <h2 class="details__user-profile-name">Michelle Appleton</h2>
+              <h2 class="details__user-profile-name text-dark-grey-blue">
+                Michelle Appleton
+              </h2>
               <p class="details__user-profile-date">28 Jun 2020</p>
             </div>
             <div class="details__user-share">
               <img src="./images/icon-share.svg" alt="share icon" />
             </div>
-            <section class="details__user-socials">
-              <p>Share</p>
-              <a href="#" class="details__user-socials-links"
-                ><img
-                  src="./images/icon-facebook.svg"
-                  alt="Facebook share icon" /></a
-              ><a href="#!" class="details__user-socials-links"
-                ><img
-                  src="./images/icon-twitter.svg"
-                  alt="Twitter Share icon" /></a
-              ><a href="#!" class="details__user-socials-links"
-                ><img
-                  src="./images/icon-pinterest.svg"
-                  alt="Pinterest share icon"
-              /></a>
-            </section>
+          </section>
+          <section class="socials hide">
+            <p class="socials__text">Share</p>
+            <a href="#" class="socials-links"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt="Facebook share icon" /></a
+            ><a href="#!" class="socials-links"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="Twitter Share icon" /></a
+            ><a href="#!" class="socials-links"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest share icon"
+            /></a>
+            <div class="details__user-share socials__share sm-show">
+              <img src="./images/icon-share.svg" alt="share icon" />
+            </div>
           </section>
         </section>
       </article>

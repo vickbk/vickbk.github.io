@@ -1,0 +1,15 @@
+@use "../globals/media-queries" as *;
+.hide,
+.sm-show {
+  display: none;
+}
+.sm-show {
+  @include mobile-queries($mobile) {
+    display: unset;
+  }
+}
+.sm-hide {
+  @include mobile-queries($mobile) {
+    display: none;
+  }
+}
