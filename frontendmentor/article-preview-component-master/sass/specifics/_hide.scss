@@ -1,14 +1,14 @@
 @use "../globals/media-queries" as *;
 .hide,
-.sm-show {
+.sm-hide {
   display: none;
 }
-.sm-show {
+.sm-hide {
   @include mobile-queries($mobile) {
     display: unset;
   }
 }
-.sm-hide {
+.sm-show {
   @include mobile-queries($mobile) {
     display: none;
   }
