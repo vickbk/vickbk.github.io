@@ -1,0 +1,32 @@
+@use "colors" as c;
+@use "../globals/media-queries" as *;
+.details {
+  padding: 2.5em;
+  position: relative;
+  &__header {
+    font-size: 1.3rem;
+    line-height: 1.1;
+  }
+  &__content {
+    font-size: 1.08rem;
+    @include mobile-queries($mobile) {
+      font-size: 1rem;
+    }
+  }
+  &__user {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    &-avatar {
+      inline-size: 3em;
+      block-size: 3em;
+      border-radius: 3em;
+    }
+    &-profile {
+      margin-inline-end: auto;
+    }
+  }
+  > * + * {
+    margin-top: 2rem;
+  }
+}

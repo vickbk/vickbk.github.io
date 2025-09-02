@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <article class="article">
+        <img
+          class="article__image"
+          src="./images/drawers.jpg"
+          alt="Drawer Image in a good looking house"
+        />
+        <section class="details">
+          <h1 class="details__header text-dark-grey-blue">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="details__content">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <section class="details__user">
+            <img
+              class="details__user-avatar"
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle Profile Picture"
+            />
+            <div class="details__user-profile">
+              <h2 class="details__user-profile-name text-dark-grey-blue">
+                Michelle Appleton
+              </h2>
+              <p class="details__user-profile-date">28 Jun 2020</p>
+            </div>
+            <button class="details__user-share share-btn">
+              <img src="./images/icon-share.svg" alt="share icon" />
+            </button>
+          </section>
+          <section class="socials hide" id="social-btns">
+            <p class="socials__text">Share</p>
+            <a href="#" class="socials-links"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt="Facebook share icon" /></a
+            ><a href="#!" class="socials-links"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="Twitter Share icon" /></a
+            ><a href="#!" class="socials-links"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest share icon"
+            /></a>
+            <button
+              class="details__user-share socials__share share-btn sm-show"
+            >
+              <img src="./images/icon-share.svg" alt="share icon" />
+            </button>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/vickbk" target="_blank">VickBk</a>.
+    </footer>
+  </body>
+</html>

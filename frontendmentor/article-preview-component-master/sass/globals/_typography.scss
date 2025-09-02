@@ -1,0 +1,25 @@
+@use "../main/font-size" as *;
+@use "../main/colors" as c;
+:root {
+  font-size: 13px;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: $min-bold;
+
+  color: c.$grey-blue;
+}
+h1,
+h2,
+h3 {
+  font-weight: $bold;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.text-dark-grey-blue {
+  color: c.$dark-grey-blue;
+}

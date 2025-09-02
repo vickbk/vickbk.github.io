@@ -1,0 +1,20 @@
+@use "colors" as c;
+@use "../globals/media-queries" as *;
+.article {
+  inline-size: 90%;
+  background-color: c.$light-blue;
+  border-radius: 1em;
+  max-inline-size: 46.15rem;
+  &__image {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+  @include mobile-queries($mobile) {
+    display: flex;
+    &__image {
+      min-inline-size: 40%;
+      border-bottom-left-radius: 1em;
+      border-top-right-radius: 0;
+    }
+  }
+}

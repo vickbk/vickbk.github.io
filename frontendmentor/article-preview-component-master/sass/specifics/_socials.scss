@@ -1,0 +1,42 @@
+@use "../main/colors" as c;
+@use "../globals/media-queries" as *;
+.socials {
+  padding: 1.5em;
+  position: absolute;
+  inset: auto 0 0;
+  //   display: none;
+  background-color: c.$dark-grey-blue;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  &__text {
+    text-transform: uppercase;
+  }
+  &__share {
+    margin-inline-start: auto;
+    background-color: c.$grey-blue;
+    color: c.$light-blue;
+  }
+  @include mobile-queries($mobile) {
+    padding: 0.75em 2.5em;
+    border-radius: 0.5em;
+    inset: 45% 5% auto auto;
+    &::after {
+      content: "";
+      inline-size: 0;
+      block-size: 0;
+      border-inline: 1em solid transparent; /* Adjust size as needed */
+      border-block-start: 1em solid c.$dark-grey-blue; /* Color of the arrow */
+      position: absolute;
+      inset: auto calc(87.5% - 1em) -0.98em;
+    }
+  }
+  @include mobile-queries($tablet) {
+    inset: 42% -20% auto auto;
+    &::after {
+      inset: auto calc(50% - 1em) -0.98em;
+    }
+  }
+}
