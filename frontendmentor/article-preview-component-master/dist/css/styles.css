@@ -17,7 +17,8 @@ img {
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  color: hsl(212, 23%, 69%);
+  color: hsl(214, 17%, 51%);
+  line-height: 1.5;
 }
 
 h1,
@@ -70,7 +71,7 @@ body {
   inline-size: 90%;
   background-color: hsl(208, 92%, 100%);
   border-radius: 1em;
-  max-inline-size: 46.15rem;
+  max-inline-size: 57.7rem;
 }
 .article__image {
   border-top-left-radius: 1em;
@@ -92,8 +93,7 @@ body {
   position: relative;
 }
 .details__header {
-  font-size: 1.3rem;
-  line-height: 1.1;
+  font-size: clamp(1.3rem, 1.0122rem + 1.2245vw, 1.6rem);
 }
 .details__content {
   font-size: 1.08rem;
