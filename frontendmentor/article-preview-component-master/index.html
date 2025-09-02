@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./scripts/main.js"></script>
   </head>
   <body>
     <main class="container">
@@ -52,11 +53,11 @@
               </h2>
               <p class="details__user-profile-date">28 Jun 2020</p>
             </div>
-            <button class="details__user-share">
+            <button class="details__user-share share-btn">
               <img src="./images/icon-share.svg" alt="share icon" />
             </button>
           </section>
-          <section class="socials hide">
+          <section class="socials hide" id="social-btns">
             <p class="socials__text">Share</p>
             <a href="#" class="socials-links"
               ><img
@@ -71,26 +72,21 @@
                 src="./images/icon-pinterest.svg"
                 alt="Pinterest share icon"
             /></a>
-            <button class="details__user-share socials__share sm-show">
+            <button
+              class="details__user-share socials__share share-btn sm-show"
+            >
               <img src="./images/icon-share.svg" alt="share icon" />
             </button>
           </section>
         </section>
       </article>
     </main>
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-
-    <!--  -->
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://github.com/vickbk" target="_blank">VickBk</a>.
     </footer>
   </body>
 </html>
