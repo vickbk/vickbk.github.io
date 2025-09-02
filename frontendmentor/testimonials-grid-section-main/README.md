@@ -52,7 +52,7 @@ In this section I reviewed the CSS Grid layout design and used it to complete th
 
 ### Continued development
 
-I am still struggling with SASS but I am also starting to feel comfortable now with sass and with practice it will be fine.
+I am still struggling with SASS but I am also starting to feel comfortable now with it and with practice it will be fine.
 
 ### Useful resources
 
