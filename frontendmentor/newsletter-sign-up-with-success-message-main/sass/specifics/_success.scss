@@ -1,0 +1,14 @@
+.success {
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 0;
+  &__img {
+    align-self: start;
+    margin-block-start: 50%;
+  }
+  &__button {
+    margin-block-start: auto;
+  }
+}

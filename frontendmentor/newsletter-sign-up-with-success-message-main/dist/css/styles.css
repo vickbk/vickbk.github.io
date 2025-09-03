@@ -145,4 +145,19 @@ body {
 }
 .list-item + .list-item {
   margin-top: 1em;
+}
+
+.success {
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 0;
+}
+.success__img {
+  align-self: start;
+  margin-block-start: 50%;
+}
+.success__button {
+  margin-block-start: auto;
 }/*# sourceMappingURL=styles.css.map */
