@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/vickbk/vickbk.github.io/tree/main/frontendmentor/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [Add live site URL here](https://vickbk.github.io/frontendmentor/newsletter-sign-up-with-success-message-main/)
+- Solution URL: [Github Repository](https://github.com/vickbk/vickbk.github.io/tree/main/frontendmentor/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Check on github page](https://vickbk.github.io/frontendmentor/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
