@@ -7,3 +7,7 @@ export const toggle = (...elements) => {
 export const toggleSuccess = () => {
   toggle(successSection, subscribeSection);
 };
+
+export function toggleError() {
+  this.classList.remove("error");
+}
