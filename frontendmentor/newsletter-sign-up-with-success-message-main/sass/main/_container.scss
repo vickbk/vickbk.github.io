@@ -1,6 +1,7 @@
 @use "colors" as c;
 body {
   background-color: c.$blue-700;
+  color: c.$white;
 }
 .container {
   min-block-size: 100vh;

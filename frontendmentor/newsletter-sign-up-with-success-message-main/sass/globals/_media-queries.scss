@@ -1,7 +1,9 @@
-$mobile: 36rem;
-$tablet: 48rem;
-$pc: 62rem;
-$large-screen: 75rem;
+@use "../functions/" as f;
+
+$mobile: f.to-r-em(576px, em);
+$tablet: f.to-r-em(768px, em);
+$pc: f.to-r-em(992px, em);
+$large-screen: f.to-r-em(1200px, em);
 
 @mixin mobile-queries($min-inline-size) {
   @media (min-width: $min-inline-size) {
