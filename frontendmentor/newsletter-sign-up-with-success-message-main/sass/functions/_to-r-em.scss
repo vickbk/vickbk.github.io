@@ -1,13 +1,12 @@
 @use "sass:math";
-@use "sass:list";
 
 @function to-r-em($pixels, $u: rem) {
   @if $u != rem and $u != em {
-    @error "This function only converts to em or rem. Not #{$u}";
+    @error "The function to-r-em only converts to em or rem. Not #{$u}";
   }
   @if math.is-unitless($pixels) == false {
     $unit: math.unit($pixels);
-    $pixels: list.slash($pixels, 1 + $unit);
+    $pixels: math.div($pixels, $pixels * 0 + 1);
   }
   @return math.div($pixels, 16) + rem;
 }

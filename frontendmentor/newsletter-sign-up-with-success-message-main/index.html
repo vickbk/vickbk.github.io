@@ -21,27 +21,25 @@
   <body>
     <main class="container">
       <article class="subscribe">
-        <section class="subscribe__illustration">
-          <picture>
-            <source
-              media="(width >= 768px)"
-              srcset="./assets/images/illustration-sign-up-desktop.svg"
-            />
-            <source
-              media="(width <= 375px)"
-              srcset="./assets/images/illustration-sign-up-mobile.svg"
-            />
-            <source
-              media="(width > 376px)"
-              srcset="./assets/images/illustration-sign-up-tablet.svg"
-            />
-            <img
-              class="subscribe__illustration-img"
-              src="./assets/images/illustration-sign-up-mobile.svg"
-              alt="An illustration for the subscription page"
-            />
-          </picture>
-        </section>
+        <picture class="subscribe__illustration">
+          <source
+            media="(width >= 768px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(width <= 375px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <source
+            media="(width > 376px)"
+            srcset="./assets/images/illustration-sign-up-tablet.svg"
+          />
+          <img
+            class="subscribe__illustration-img"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="An illustration for the subscription page"
+          />
+        </picture>
         <section class="subscribe__section">
           <h1 class="subscribe__section-header">Stay updated!</h1>
           <p class="subscribe__section-intro">

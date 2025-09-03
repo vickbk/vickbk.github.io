@@ -4,14 +4,25 @@
 @use "../globals/" as g;
 
 .subscribe {
-  max-inline-size: f.to-r-em(700);
+  max-inline-size: f.to-r-em(720);
   background-color: c.$white;
   color: c.$blue-800;
   border-radius: 1em;
+  @include g.mobile-queries(g.$mobile) {
+    margin-block: 2em;
+    padding: 1em;
+  }
+  @include g.mobile-queries(g.$tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    > * {
+      inline-size: 100%;
+    }
+  }
   &__section {
     padding: 2rem;
     > * + * {
-      margin-top: 1.5rem;
+      margin-block-start: 1.5rem;
     }
     &-list {
       list-style: none;
@@ -19,7 +30,7 @@
   }
   &__form {
     > * + * {
-      margin-top: 1.5em;
+      margin-block-start: 1.5em;
     }
     &__label {
       font-size: f.to-r-em(14);
