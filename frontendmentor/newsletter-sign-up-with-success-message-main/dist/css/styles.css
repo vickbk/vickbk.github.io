@@ -66,7 +66,7 @@ body {
 }
 
 .subscribe {
-  max-inline-size: 45rem;
+  max-inline-size: 46.875rem;
   background-color: hsl(0, 0%, 100%);
   color: hsl(234, 29%, 20%);
   border-radius: 1em;
@@ -74,7 +74,8 @@ body {
 @media (min-width: 36rem) {
   .subscribe {
     margin-block: 2em;
-    padding: 1em;
+    padding: 1.5em;
+    border-radius: 2em;
   }
 }
 @media (min-width: 48rem) {
@@ -94,6 +95,9 @@ body {
 }
 .subscribe__section-list {
   list-style: none;
+}
+.subscribe__section-header {
+  font-size: 2.5rem;
 }
 .subscribe__form > * + * {
   margin-block-start: 1.5em;

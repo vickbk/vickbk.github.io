@@ -5,6 +5,7 @@ export const [
   successCloser,
   subscribeError,
   subscriber,
+  subscribeInput,
 ] = [
   "subscription-form",
   "subscribe-section",
@@ -12,4 +13,5 @@ export const [
   "success-closer",
   "subscription-error",
   "subscriber-email",
+  "subscribe-input",
 ].map((id) => document.getElementById(id));

@@ -64,12 +64,14 @@ element::after {
 
 ### Continued development
 
-I am still struggling with SASS but I am also starting to feel comfortable now with sass and with practice it will be fine.
+I am still struggling with SASS but I am also starting to feel comfortable now with it and with practice it will be fine.
 
-- (https://roadmap.io) - Helped me get started with this journey and still leading me throughout the process
-- (https://courses.kevinpowell.co/conquering-responsive-layouts) - These ressources got my steps into basics of modern responsive design :)
-- (https://www.frontendmentor.io) - Currently working with frontend mentor is upskilling me and I want to learn more here... Im not yet to leave
-- (https://www.joshwcomeau.com/) - Josh Comeau is now my new favorite for learning CSS tricks with interactive courses
+### Useful resources
+
+- [Roadmap](https://roadmap.io) - Helped me get started with this journey and still leading me throughout the process
+- [Kevin Powell](https://courses.kevinpowell.co/conquering-responsive-layouts) - These ressources got my steps into basics of modern responsive design :)
+- [Frontend Mentor](https://www.frontendmentor.io) - Currently working with frontend mentor is upskilling me and I want to learn more here... Im not yet to leave
+- [Josh Comeau](https://www.joshwcomeau.com/) - Josh Comeau is now my new favorite for learning CSS tricks with interactive courses
 
 ## Author
 
