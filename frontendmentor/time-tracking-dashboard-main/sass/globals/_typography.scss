@@ -1,0 +1,24 @@
+@use "../main/font-size" as fz;
+@use "../main/colors" as c;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-size: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: fz.$min-bold;
+
+  color: c.$blue-800;
+  line-height: 1.25;
+}
+h1,
+h2,
+h3 {
+  font-weight: fz.$bold;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
