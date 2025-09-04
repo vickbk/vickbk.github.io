@@ -1,0 +1,5 @@
+@use "colors" as c;
+body {
+  background-color: c.$navy-950;
+  color: c.$navy-200;
+}
