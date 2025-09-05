@@ -21,13 +21,20 @@
       @error "Some of your values are not numbers. Eg. #{$value}";
     }
   }
+  $min: to-r-em($min);
+  $max: to-r-em($max);
+  $min-screen: to-r-em($min-screen);
+  $max-screen: to-r-em($max-screen);
   $actual-min: math.min($min, $max);
   $actual-max: math.max($min, $max);
   $actual-min-screen: math.min($min-screen, $max-screen);
   $actual-max-screen: math.max($min-screen, $max-screen);
 
-  @return clamp($min, $middle, $max);
+  // for more explanation, implementation from this git rep: https://github.com/walbo/font-size-clamp/blob/main/utils/clamp-builder.ts
+  $slope: math.div(
+    $actual-max - $actual-min,
+    $actual-max-screen - $actual-min-screen
+  );
+  $y-axis-inter: math.div((-$actual-min-screen * $slope), $actual-min);
+  @return clamp($min, to-r-em($y-axis-inter) + ($slope * 100vw), $max);
 }
-
-@debug to-number("10.23");
-// @debug clamp-builder(2em, 3em);
