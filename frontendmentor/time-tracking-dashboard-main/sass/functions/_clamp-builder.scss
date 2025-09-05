@@ -31,6 +31,6 @@
     $actual-max - $actual-min,
     $actual-max-screen - $actual-min-screen
   );
-  $y-axis-inter: math.div((-$actual-min-screen * $slope), $actual-min);
+  $y-axis-inter: (-$actual-min-screen * $slope) + $actual-min;
   @return clamp($min, to-r-em($y-axis-inter) + ($slope * 100vw), $max);
 }

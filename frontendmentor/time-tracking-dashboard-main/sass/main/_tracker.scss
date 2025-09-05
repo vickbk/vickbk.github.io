@@ -19,7 +19,7 @@
     &__identity {
       background-color: c.$purple-600;
       border-radius: 1em;
-      padding: 2em;
+      padding: 1.5em;
       display: flex;
       gap: 1em;
       align-items: center;
@@ -29,7 +29,7 @@
         border-radius: 100%;
       }
       h1 {
-        font-size: 1.55rem;
+        font-size: f.clamp-builder(1.55rem, 3rem);
         font-weight: fw.$normal;
       }
       p {
@@ -40,7 +40,7 @@
       list-style: none;
       display: flex;
       justify-content: space-between;
-      padding: 1em;
+      padding: 1.5em;
       @include g.mobile-queries(g.$pc) {
         flex-direction: column;
         // gap: 1em;
@@ -87,7 +87,7 @@
     }
   }
   @include g.mobile-queries(g.$pc) {
-    max-inline-size: f.to-r-em(1200px, em);
+    max-inline-size: f.to-r-em(1200px, rem);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "user . . ."

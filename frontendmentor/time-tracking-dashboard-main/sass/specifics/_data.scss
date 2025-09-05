@@ -1,5 +1,6 @@
 @use "../main" as c;
 @use "../globals/" as g;
+@use "../functions/" as f;
 .data {
   block-size: 100%;
   background-color: c.$navy-900;
@@ -20,7 +21,7 @@
   }
   &__content {
     font-weight: c.$normal;
-    font-size: 2rem;
+    font-size: f.clamp-builder(2rem, 3.5rem);
   }
   &__previous {
     color: c.$navy-200;
@@ -28,6 +29,7 @@
   }
   @include g.mobile-queries(g.$pc) {
     grid-template-areas: "title";
+    gap: 0.75em;
     &__previous {
       justify-self: start;
     }
