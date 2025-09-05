@@ -1,11 +1,7 @@
 @use "to-r-em" as *;
 @use "sass:math";
-@use "sass:meta";
 @use "is-numeric" as *;
-@use "sass:string";
 @use "to-number" as *;
-@use "reverse-string" as *;
-@use "extract-unit" as *;
 
 // generate the clamp property with min max
 @function clamp-builder(

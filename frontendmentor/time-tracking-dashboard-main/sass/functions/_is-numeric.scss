@@ -36,37 +36,3 @@ $number-list: "0123456789";
   }
   @return false;
 }
-
-// @function is-numeric-string($string) {
-//   $is-number: true;
-//   $has-decimal: false;
-
-//   @for $i from 1 through str-length($string) {
-//     $char: str-slice($string, $i, $i);
-
-//     @if not index("0123456789", $char) {
-//       @if $char == "." and not $has-decimal {
-//         $has-decimal: true;
-//       } @else if ($char == "+" or $char == "-") and $i == 1 {
-//         // Allow leading sign
-//       } @else {
-//         $is-number: false;
-//         @return false; // Exit loop if non-numeric character found
-//       }
-//     }
-//   }
-//   @return $is-number;
-// }
-
-// // Usage example:
-// $my-string-number: "123.45";
-// $my-string-text: "hello";
-
-// @if is-numeric-string($my-string-number) {
-//   // Do something with the number
-//   width: to-number($my-string-number) +
-//     px; // You'd need a custom to-number function too
-// } @else {
-//   // Handle non-numeric string
-//   color: red;
-// }
