@@ -40,7 +40,9 @@ export default function displayData(selector) {
         // extracting the current and previous values
         [selector]: { current, previous },
       },
-    } = dataObject[identifier];
+    } = dataObject[identifier] ?? {
+      timeframes: { [selector]: { current: null, previous: null } },
+    };
 
     // selecting the different sections to update
     const [titleHolder, mainHolder, previousHolder] = [

@@ -7,7 +7,7 @@
   background-position: top -0.5em right 1em;
 }
 .tracker {
-  padding: 1em;
+  padding: 3em 1em;
   display: grid;
   gap: 1em;
   > * {
@@ -29,7 +29,10 @@
       }
       h1 {
         font-size: 1.55rem;
-        font-weight: fw.$min-bold;
+        font-weight: fw.$normal;
+      }
+      p {
+        color: c.$navy-200;
       }
     }
     &-period {
@@ -71,6 +74,12 @@
     }
     &.self {
       @include set-background("self-care.svg", c.$yellow-300);
+    }
+  }
+  @include g.mobile-queries(g.$mobile) {
+    grid-template-areas: "user user";
+    &__user {
+      grid-area: user;
     }
   }
 }
