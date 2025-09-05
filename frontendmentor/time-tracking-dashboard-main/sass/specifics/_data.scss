@@ -1,0 +1,37 @@
+@use "../main" as c;
+@use "../globals/" as g;
+@use "../functions/" as f;
+.data {
+  block-size: 100%;
+  background-color: c.$navy-900;
+  border-radius: 1em;
+  padding: 1.5em;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "time last-used";
+  align-items: center;
+  gap: 0.5em;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: title;
+    font-weight: c.$min-bold;
+  }
+  &__content {
+    font-weight: c.$normal;
+    font-size: f.clamp-builder(2rem, 3.5rem);
+  }
+  &__previous {
+    color: c.$navy-200;
+    justify-self: end;
+  }
+  @include g.mobile-queries(g.$pc) {
+    grid-template-areas: "title";
+    gap: 0.75em;
+    &__previous {
+      justify-self: start;
+    }
+  }
+}

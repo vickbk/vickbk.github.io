@@ -1,0 +1,13 @@
+@use "colors" as c;
+@use "../globals/" as g;
+body {
+  background-color: c.$navy-950;
+  color: c.$white;
+}
+.container {
+  @include g.mobile-queries(g.$pc) {
+    min-block-size: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
