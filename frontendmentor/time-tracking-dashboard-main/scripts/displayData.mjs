@@ -51,7 +51,11 @@ export default function displayData(selector) {
       ".data__previous",
     ].map((query) => element?.querySelector(query));
     if (titleHolder) titleHolder.innerText = title;
-    if (mainHolder) mainHolder.innerText = `${current}Hrs`;
-    if (previousHolder) previousHolder.innerText = `${prefix} - ${previous}Hrs`;
+    if (mainHolder)
+      mainHolder.innerText = `${current}Hr${current > 1 ? "s" : ""}`;
+    if (previousHolder)
+      previousHolder.innerText = `${prefix} - ${previous}Hr${
+        previous > 1 ? "s" : ""
+      }`;
   });
 }
