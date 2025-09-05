@@ -60,7 +60,7 @@
   }
   &__option {
     border-radius: 1em;
-    padding-block-start: 2em;
+    padding-block-start: 2.5em;
     &.work {
       @include set-background("work.svg", c.$orange-300);
     }

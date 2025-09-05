@@ -120,7 +120,7 @@ body {
 }
 .tracker__option {
   border-radius: 1em;
-  padding-block-start: 2em;
+  padding-block-start: 2.5em;
 }
 .tracker__option.work {
   background: url("../../images/icon-work.svg") no-repeat hsl(15, 100%, 70%);
@@ -184,11 +184,11 @@ body {
   block-size: 100%;
   background-color: hsl(235, 46%, 20%);
   border-radius: 1em;
-  padding: 1.5em;
+  padding: 2em;
   display: grid;
   grid-template-areas: "title title" "time last-used";
   align-items: center;
-  gap: 0.5em;
+  gap: 0.75em;
 }
 .data__title {
   display: flex;
