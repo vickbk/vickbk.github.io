@@ -60,7 +60,7 @@
   }
   &__option {
     border-radius: 1em;
-    padding-block-start: 2em;
+    padding-block-start: 2.5em;
     &.work {
       @include set-background("work.svg", c.$orange-300);
     }
@@ -87,7 +87,7 @@
     }
   }
   @include g.mobile-queries(g.$pc) {
-    max-inline-size: f.to-r-em(1200px, rem);
+    max-inline-size: f.to-r-em(1100px, rem);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "user . . ."
