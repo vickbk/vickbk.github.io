@@ -1,0 +1,62 @@
+@use "sass:string";
+@use "sass:list";
+
+$units: "em" "px" "rem" "vh" "%" "vw" "cm" "pt" "pc" "vmin" "vmax" "ex" "ch"
+  "deg" "rad" "grad" "turn"; // if some units are missing they need to be added
+
+@function is-numeric($string, $has-decimal: false) {
+  $str-length: string.length($string);
+  @if $str-length == 0 {
+    @return false;
+  }
+  $num-list: "0123456789";
+  @if list.index($units, $string) or
+    ($str-length == 1 and string.index($num-list, $string))
+  {
+    @return true;
+  }
+  $first-char: string.slice($string, 1, 1);
+  @if $first-char == "." and $has-decimal == false {
+    @return is-numeric(string.slice($string, 2), true);
+  } @else if $first-char == "." {
+    @return false;
+  }
+  @if string.index($num-list, $first-char) {
+    @return is-numeric(string.slice($string, 2), $has-decimal);
+  }
+  @return false;
+}
+
+// @function is-numeric-string($string) {
+//   $is-number: true;
+//   $has-decimal: false;
+
+//   @for $i from 1 through str-length($string) {
+//     $char: str-slice($string, $i, $i);
+
+//     @if not index("0123456789", $char) {
+//       @if $char == "." and not $has-decimal {
+//         $has-decimal: true;
+//       } @else if ($char == "+" or $char == "-") and $i == 1 {
+//         // Allow leading sign
+//       } @else {
+//         $is-number: false;
+//         @return false; // Exit loop if non-numeric character found
+//       }
+//     }
+//   }
+//   @return $is-number;
+// }
+
+// // Usage example:
+// $my-string-number: "123.45";
+// $my-string-text: "hello";
+
+// @if is-numeric-string($my-string-number) {
+//   // Do something with the number
+//   width: to-number($my-string-number) +
+//     px; // You'd need a custom to-number function too
+// } @else {
+//   // Handle non-numeric string
+//   color: red;
+// }

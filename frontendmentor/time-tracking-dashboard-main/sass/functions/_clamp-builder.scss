@@ -1,0 +1,35 @@
+@use "to-r-em" as *;
+@use "sass:math";
+@use "sass:meta";
+@use "is-numeric" as *;
+@use "sass:string";
+@use "to-number" as *;
+@use "reverse-string" as *;
+@use "extract-unit" as *;
+
+// generate the clamp property with min max
+@function clamp-builder(
+  $min,
+  $max,
+  $min-screen: to-r-em(375),
+  $max-screen: to-r-em(1440)
+) {
+  $middle: em;
+  //   check if some parameters are not numbers
+  @each $value in $min, $max, $min-screen, $max-screen {
+    @if meta.type-of($value) != "number" {
+      @error "Some of your values are not numbers. Eg. #{$value}";
+    }
+  }
+  $actual-min: math.min($min, $max);
+  $actual-max: math.max($min, $max);
+  $actual-min-screen: math.min($min-screen, $max-screen);
+  $actual-max-screen: math.max($min-screen, $max-screen);
+
+  @return clamp($min, $middle, $max);
+}
+
+@debug meta.type-of(to-number("25"));
+@debug meta.type-of($value: 10 * 1em);
+@debug reverse-string("reverse");
+@debug extract-unit("10em");

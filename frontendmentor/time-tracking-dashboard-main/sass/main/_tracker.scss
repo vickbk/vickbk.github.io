@@ -1,6 +1,7 @@
 @use "colors" as c;
 @use "font-size" as fw;
 @use "../globals" as g;
+@use "../functions/" as f;
 
 @mixin set-background($icon, $color) {
   background: url("../../images/icon-" + $icon) no-repeat $color;
@@ -36,20 +37,22 @@
       }
     }
     &-period {
-      .period {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
-        &__item {
-          .item-link {
-            color: c.$purple-500;
-            @include g.active-state {
-              color: c.$white;
-            }
-            &.active {
-              color: c.$white;
-            }
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      @include g.mobile-queries(g.$pc) {
+        flex-direction: column;
+        // gap: 1em;
+      }
+      .period-item {
+        .item-link {
+          color: c.$purple-500;
+          @include g.active-state {
+            color: c.$white;
+          }
+          &.active {
+            color: c.$white;
           }
         }
       }
@@ -57,6 +60,7 @@
   }
   &__option {
     border-radius: 1em;
+    padding-block-start: 2em;
     &.work {
       @include set-background("work.svg", c.$orange-300);
     }
@@ -80,6 +84,21 @@
     grid-template-areas: "user user";
     &__user {
       grid-area: user;
+    }
+  }
+  @include g.mobile-queries(g.$pc) {
+    max-inline-size: f.to-r-em(1200px, em);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "user . . ."
+      "user . . .";
+    &__user {
+      display: grid;
+      &__identity {
+        flex-direction: column;
+        align-items: start;
+        gap: 3em;
+      }
     }
   }
 }

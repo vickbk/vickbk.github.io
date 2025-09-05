@@ -1,0 +1,40 @@
+@use "sass:string";
+@use "sass:math";
+@use "sass:map";
+@use "is-numeric";
+$numMap: (
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "7": 7,
+  "8": 8,
+  "9": 9,
+);
+
+// returns unitless numbers
+@function to-number($string) {
+  @if not is-numeric($string) {
+    @error "Your value is not numeric. #{$string}";
+  }
+  @return convert-to-number($string);
+}
+
+// converts only strings without units
+@function convert-to-number($string, $lev: null) {
+  $str-length: string.length($string);
+  @if $lev == null {
+    $lev: $str-length - 1;
+  }
+  @if $str-length == 1 {
+    @return map.get($numMap, $key: $string);
+  }
+  $top: map.get(
+      $map: $numMap,
+      $key: string.slice($string, 1, 1),
+    ) * math.pow(10, $lev);
+  @return $top + convert-to-number(string.slice($string, 2), $lev - 1);
+}

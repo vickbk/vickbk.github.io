@@ -8,5 +8,5 @@
     $unit: math.unit($pixels);
     $pixels: math.div($pixels, $pixels * 0 + 1);
   }
-  @return math.div($pixels, 16) + rem;
+  @return (math.div($pixels, 16) + $u) + 0rem;
 }

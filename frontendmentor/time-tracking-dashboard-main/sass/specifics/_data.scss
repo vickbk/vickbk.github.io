@@ -1,9 +1,10 @@
 @use "../main" as c;
+@use "../globals/" as g;
 .data {
+  block-size: 100%;
   background-color: c.$navy-900;
   border-radius: 1em;
   padding: 1.5em;
-  margin-block-start: 2em;
   display: grid;
   grid-template-areas:
     "title title"
@@ -24,5 +25,11 @@
   &__previous {
     color: c.$navy-200;
     justify-self: end;
+  }
+  @include g.mobile-queries(g.$pc) {
+    grid-template-areas: "title";
+    &__previous {
+      justify-self: start;
+    }
   }
 }
