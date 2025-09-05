@@ -14,8 +14,7 @@
 
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script type="module" src="./scripts/main.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -32,24 +31,28 @@
             </div>
           </section>
           <section class="tracker__user-period">
-            <ul class="period">
+            <ul class="period" id="period-selector">
               <li class="period__item">
-                <a href="#!" class="item-link active">Daily</a>
+                <a href="#!" class="item-link active" data-selector="daily"
+                  >Daily</a
+                >
               </li>
               <li class="period__item">
-                <a href="#!" class="item-link">Weekly</a>
+                <a href="#!" class="item-link" data-selector="weekly">Weekly</a>
               </li>
               <li class="period__item">
-                <a href="#!" class="item-link">Monthly</a>
+                <a href="#!" class="item-link" data-selector="monthly"
+                  >Monthly</a
+                >
               </li>
             </ul>
           </section>
         </section>
 
-        <section class="tracker__option work">
+        <section class="tracker__option work" id="work">
           <section class="data">
             <h3 class="data__title">
-              title placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -57,13 +60,13 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
-        <section class="tracker__option play">
+        <section class="tracker__option play" id="play">
           <section class="data">
             <h3 class="data__title">
-              title_placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -71,13 +74,13 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
-        <section class="tracker__option study">
+        <section class="tracker__option study" id="study">
           <section class="data">
             <h3 class="data__title">
-              title_placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -85,13 +88,13 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
-        <section class="tracker__option exercise">
+        <section class="tracker__option exercise" id="exercise">
           <section class="data">
             <h3 class="data__title">
-              title_placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -99,13 +102,13 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
-        <section class="tracker__option social">
+        <section class="tracker__option social" id="social">
           <section class="data">
             <h3 class="data__title">
-              title_placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -113,13 +116,13 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
-        <section class="tracker__option self">
+        <section class="tracker__option self" id="self">
           <section class="data">
             <h3 class="data__title">
-              title_placeholder
+              <span class="data__title-text"></span>
               <div class="data__title-dots three__dots">
                 <span class="three__dots-dot"></span>
                 <span class="three__dots-dot"></span>
@@ -127,7 +130,7 @@
               </div>
             </h3>
             <h2 class="data__content">content__plaeholder</h2>
-            <p class="data__details">details_placeholder</p>
+            <p class="data__previous">details_placeholder</p>
           </section>
         </section>
       </article>
