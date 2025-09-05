@@ -1,0 +1,76 @@
+@use "colors" as c;
+@use "font-size" as fw;
+@use "../globals" as g;
+
+@mixin set-background($icon, $color) {
+  background: url("../../images/icon-" + $icon) no-repeat $color;
+  background-position: top -0.5em right 1em;
+}
+.tracker {
+  padding: 1em;
+  display: grid;
+  gap: 1em;
+  > * {
+    border-radius: 1em;
+  }
+  &__user {
+    background-color: c.$navy-900;
+    &__identity {
+      background-color: c.$purple-600;
+      border-radius: 1em;
+      padding: 2em;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      img {
+        block-size: 3.5em;
+        border: 0.2em solid c.$white;
+        border-radius: 100%;
+      }
+      h1 {
+        font-size: 1.55rem;
+        font-weight: fw.$min-bold;
+      }
+    }
+    &-period {
+      .period {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        &__item {
+          .item-link {
+            color: c.$purple-500;
+            @include g.active-state {
+              color: c.$white;
+            }
+            &.active {
+              color: c.$white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__option {
+    border-radius: 1em;
+    &.work {
+      @include set-background("work.svg", c.$orange-300);
+    }
+    &.play {
+      @include set-background("play.svg", c.$blue-300);
+    }
+    &.study {
+      @include set-background("study.svg", c.$pink-400);
+    }
+    &.exercise {
+      @include set-background("exercise.svg", c.$green-400);
+    }
+    &.social {
+      @include set-background("social.svg", c.$purple-700);
+    }
+    &.self {
+      @include set-background("self-care.svg", c.$yellow-300);
+    }
+  }
+}

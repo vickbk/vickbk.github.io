@@ -1,0 +1,28 @@
+@use "../main" as c;
+.data {
+  background-color: c.$navy-900;
+  border-radius: 1em;
+  padding: 1.5em;
+  margin-block-start: 2em;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "time last-used";
+  align-items: center;
+  gap: 0.5em;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: title;
+    font-weight: c.$min-bold;
+  }
+  &__content {
+    font-weight: c.$normal;
+    font-size: 2rem;
+  }
+  &__details {
+    color: c.$navy-200;
+    justify-self: end;
+  }
+}
