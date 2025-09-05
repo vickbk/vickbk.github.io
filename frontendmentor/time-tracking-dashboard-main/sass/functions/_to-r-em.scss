@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "to-number" as *;
 
 @function to-r-em($pixels, $u: rem) {
   @if $u != rem and $u != em {
@@ -8,5 +9,5 @@
     $unit: math.unit($pixels);
     $pixels: math.div($pixels, $pixels * 0 + 1);
   }
-  @return (math.div($pixels, 16) + $u) + 0rem;
+  @return (math.div($pixels, 16) + $u);
 }

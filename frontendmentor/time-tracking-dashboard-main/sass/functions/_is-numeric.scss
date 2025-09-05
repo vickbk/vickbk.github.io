@@ -1,10 +1,14 @@
 @use "sass:string";
 @use "sass:list";
+@use "sass:meta";
 
 $units: "em" "px" "rem" "vh" "%" "vw" "cm" "pt" "pc" "vmin" "vmax" "ex" "ch"
   "deg" "rad" "grad" "turn"; // if some units are missing they need to be added
 
 @function is-numeric($string, $has-decimal: false) {
+  @if meta.type-of($string) == number {
+    @return true;
+  }
   $str-length: string.length($string);
   @if $str-length == 0 {
     @return false;

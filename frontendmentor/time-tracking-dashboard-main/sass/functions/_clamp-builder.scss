@@ -17,7 +17,7 @@
   $middle: em;
   //   check if some parameters are not numbers
   @each $value in $min, $max, $min-screen, $max-screen {
-    @if meta.type-of($value) != "number" {
+    @if not is-numeric($value) {
       @error "Some of your values are not numbers. Eg. #{$value}";
     }
   }
@@ -29,7 +29,5 @@
   @return clamp($min, $middle, $max);
 }
 
-@debug meta.type-of(to-number("25"));
-@debug meta.type-of($value: 10 * 1em);
-@debug reverse-string("reverse");
-@debug extract-unit("10em");
+@debug to-number("10.23");
+// @debug clamp-builder(2em, 3em);
