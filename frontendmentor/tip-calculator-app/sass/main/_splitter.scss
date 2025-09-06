@@ -1,0 +1,22 @@
+@use "colors" as c;
+@use "font";
+
+.splitter {
+  padding: 1em;
+  background-color: c.$white;
+  border-radius: 1em;
+  display: grid;
+  gap: 1em;
+  input,
+  & button {
+    font-size: font.$preferred-size;
+  }
+  &__calculator {
+    display: grid;
+    gap: 0.5em;
+  }
+  &__result {
+    background-color: c.$text-color;
+    color: c.$green-400;
+  }
+}
