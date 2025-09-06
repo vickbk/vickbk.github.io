@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="header">spli<br />tter</h1>
+      <article class="splitter">
+        <section class="splitter__calculator">
+          <label class="calculator__label"
+            >Bill<input type="number" class="calculator__input icon" id="bill"
+          /></label>
+          <section class="calculator__tips">
+            <label class="calculator__tips-label"></label>
+            <section class="calculator__tips-buttons">
+              <button type="button" class="btn" data-percentage="5">5%</button
+              ><button type="button" class="btn" data-percentage="10">
+                10%</button
+              ><button type="button" class="btn" data-percentage="15">
+                15%</button
+              ><button type="button" class="btn" data-percentage="25">
+                25%</button
+              ><button type="button" class="btn" data-percentage="50">
+                50%</button
+              ><input
+                type="number"
+                name="custom"
+                placeholder="Custom"
+                id="custom"
+              />
+            </section>
+          </section>
+          <label class="calculator__label"
+            >Number of People
+            <span class="calculator__error" id="error">Can't be zero</span
+            ><input
+              type="number"
+              name="people-count"
+              class="calculator__input icon"
+              id="people-count"
+          /></label>
+        </section>
+        <section class="splitter__result">
+          <div class="result__types">
+            <div class="result__types-description">
+              <span class="description-title">Tip Amount</span
+              ><span class="description-details">/ person</span>
+            </div>
+            <h2 class="result__types-amount">
+              <span class="currency">$</span
+              ><span class="amount" id="tip-amount">4.27</span>
+            </h2>
+          </div>
+          <div class="result__types">
+            <div class="result__types-description">
+              <span class="description-title">Total</span
+              ><span class="description-details">/ person</span>
+            </div>
+            <h2 class="result__types-amount">
+              <span class="currency">$</span
+              ><span class="amount" id="total-amount">32.79</span>
+            </h2>
+          </div>
+          <button type="reset" class="result__reset">Reset</button>
+        </section>
+      </article>
+    </main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/vickbk">VickBk</a>.
+    </footer>
+  </body>
 </html>
