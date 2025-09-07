@@ -5,3 +5,9 @@
     @content;
   }
 }
+
+@mixin inactive-state {
+  &:disabled {
+    @content;
+  }
+}

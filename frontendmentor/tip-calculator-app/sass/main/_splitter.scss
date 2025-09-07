@@ -2,11 +2,11 @@
 @use "font";
 
 .splitter {
-  padding: 1em;
+  padding: 2em;
   background-color: c.$white;
   border-radius: 1em;
   display: grid;
-  gap: 1em;
+  gap: 2em;
   input,
   & button {
     font-size: font.$preferred-size;
