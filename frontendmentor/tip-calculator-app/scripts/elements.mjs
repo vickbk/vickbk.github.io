@@ -6,6 +6,7 @@ export const [
   tipAmount,
   totalAmount,
   peopleError,
+  resetBtn,
 ] = [
   "bill",
   "tip-setter",
@@ -14,4 +15,5 @@ export const [
   "tip-amount",
   "total-amount",
   "people-error",
+  "reset",
 ].map((id) => document.getElementById(id));

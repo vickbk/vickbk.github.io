@@ -10,7 +10,7 @@ export default function checkPeople(data, checked = false) {
   }
   return !status;
 }
-function setPeopleError(state) {
+export function setPeopleError(state) {
   peopleError?.classList[!state ? "add" : "remove"]("hide");
   numPeople?.classList[state ? "add" : "remove"]("error");
 }

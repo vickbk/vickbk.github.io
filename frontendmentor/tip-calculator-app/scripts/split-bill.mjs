@@ -1,19 +1,13 @@
+import calculateShares from "./calculate-shares.mjs";
 import checkPeople from "./check-people.mjs";
-import showCurrentRate from "./show-current-rate.mjs";
+import data, { saveData } from "./data.mjs";
+import { bill, tipAmount } from "./elements.mjs";
+import showCurrentRate, { getCurrentRate } from "./show-current-rate.mjs";
 
-export const data = {
-  bill: 0,
-  tip: 0,
-  "people-count": 0,
-};
 export default function splitBill({ target }) {
   if (!target.matches("input") && !target.matches("button")) return;
-  if (target.matches("input")) setData(target.name, target.value, data);
-  if (target.matches("button")) setData("tip", target.dataset.percentage, data);
-  if (checkPeople(data)) console.log(data);
+  saveData(target);
   showCurrentRate(target);
-}
-
-function setData(key, value, data) {
-  data[key] = +value;
+  if (!checkPeople(data)) return;
+  calculateShares(data);
 }

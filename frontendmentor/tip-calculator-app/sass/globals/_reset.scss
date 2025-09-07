@@ -8,3 +8,7 @@
 img {
   max-inline-size: 100%;
 }
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
