@@ -41,6 +41,7 @@
       @include input-shadow(c.$red);
       color: c.$red;
     }
+
     &.active {
       @include input-shadow(c.$green-400);
     }
@@ -76,13 +77,15 @@
         padding: 0.1em;
         background-color: c.$text-color;
         color: c.$primary-color;
+        cursor: pointer;
+        &.active {
+          background-color: c.$green-400;
+          color: c.$text-color;
+        }
         @include g.active-state {
           background-color: c.$grey-200;
           color: c.$text-color;
           outline: none;
-          &.active {
-            background-color: c.$green-400;
-          }
         }
       }
     }
