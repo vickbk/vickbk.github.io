@@ -1,12 +1,13 @@
 @use "colors" as c;
 @use "font";
+@use "../globals/" as g;
+@use "../functions/" as f;
 
 .splitter {
-  padding: 2em;
   background-color: c.$white;
-  border-radius: 1em;
   display: grid;
   gap: 2em;
+  max-inline-size: f.to-r-em(900);
   input,
   & button {
     font-size: font.$preferred-size;
@@ -19,5 +20,19 @@
   &__result {
     background-color: c.$text-color;
     color: c.$green-400;
+  }
+  @include g.mobile-queries(g.$tablet) {
+    grid-template-columns: 1fr 1fr;
+    &__result {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      .result__types {
+        margin-top: 1em;
+      }
+      .result__reset {
+        margin-top: auto;
+      }
+    }
   }
 }

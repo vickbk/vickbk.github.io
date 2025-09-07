@@ -59,12 +59,13 @@
     }
   }
   &__tips {
-    display: grid;
-    gap: 0.5em;
     &-buttons {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1em;
+      @include g.mobile-queries(g.$mobile) {
+        grid-template-columns: repeat(3, 1fr);
+      }
       .btn {
         border-radius: 0.2em;
         border: none;
