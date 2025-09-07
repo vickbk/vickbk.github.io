@@ -1,3 +1,4 @@
+import displayShares from "./calculate-shares.mjs";
 import { numPeople, peopleError } from "./elements.mjs";
 
 export default function checkPeople(data, checked = false) {
@@ -8,6 +9,7 @@ export default function checkPeople(data, checked = false) {
     data["people-count"] = +numPeople?.value;
     return checkPeople(data, true);
   }
+  if (status) displayShares(data);
   return !status;
 }
 export function setPeopleError(state) {

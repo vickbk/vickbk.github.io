@@ -1,4 +1,4 @@
-import calculateShares from "./calculate-shares.mjs";
+import displayShares from "./calculate-shares.mjs";
 import checkPeople, { setPeopleError } from "./check-people.mjs";
 import { bill, custom, numPeople, tipSetter } from "./elements.mjs";
 import { setReset } from "./reset-data.mjs";
@@ -14,7 +14,7 @@ export default data;
 export const initData = () => {
   if (data.bill === 0) setData("bill", bill.value, data);
   if (data.tip === 0) setData("tip", getCurrentRate(), data);
-  if (checkPeople(data)) calculateShares(data);
+  if (checkPeople(data)) displayShares(data);
   setPeopleError(false);
 };
 
@@ -33,7 +33,7 @@ export function resetData() {
   );
   tipSetter?.querySelector(".active")?.classList.remove("active");
   ["tip", "bill", "people-count"].forEach((key) => setData(key, "", data));
-  calculateShares(data);
+  displayShares(data);
   setReset(true);
   setPeopleError(false);
 }
