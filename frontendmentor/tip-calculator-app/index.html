@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/69e7215fe6.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./scripts/main.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -26,16 +27,17 @@
       <article class="splitter p-2 br-1 mb-5">
         <section class="splitter__calculator">
           <label class="calculator__label"
-            >Bill <i class="fa-dollar fa-regular input-icon"></i
+            >Bill <i class="fa-dollar fa-solid input-icon"></i
             ><input
               type="number"
               placeholder="0"
               class="calculator__input icon"
               id="bill"
+              name="bill"
           /></label>
           <section class="calculator__tips">
             <label class="calculator__label">Select Tip %</label>
-            <section class="calculator__tips-buttons mt-1">
+            <section class="calculator__tips-buttons mt-1" id="tip-setter">
               <button type="button" class="btn active" data-percentage="5">
                 5%</button
               ><button type="button" class="btn" data-percentage="10">
@@ -48,7 +50,7 @@
                 50%</button
               ><input
                 type="number"
-                name="custom"
+                name="tip"
                 placeholder="Custom"
                 id="custom"
                 class="calculator__input"
@@ -60,7 +62,7 @@
             <span class="calculator__error hide" id="people-error"
               >Can't be zero</span
             >
-            <i class="fa-user fa-regular input-icon"></i>
+            <i class="fa-user fa-solid input-icon"></i>
             <input
               type="number"
               name="people-count"
@@ -77,7 +79,7 @@
             </div>
             <h2 class="result__types-amount">
               <span class="currency">$</span
-              ><span class="amount" id="tip-amount">4.27</span>
+              ><span class="amount" id="tip-amount">0.0</span>
             </h2>
           </div>
           <div class="result__types mt-1">
@@ -87,7 +89,7 @@
             </div>
             <h2 class="result__types-amount">
               <span class="currency">$</span
-              ><span class="amount" id="total-amount">32.79</span>
+              ><span class="amount" id="total-amount">0.0</span>
             </h2>
           </div>
           <button

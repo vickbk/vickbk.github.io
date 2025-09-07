@@ -41,12 +41,16 @@
       @include input-shadow(c.$red);
       color: c.$red;
     }
-
+    &.active {
+      @include input-shadow(c.$green-400);
+    }
     @include g.active-state {
       @include input-shadow(c.$grey-200);
       outline: none;
-      &.active {
-        @include input-shadow(c.$green-400);
+
+      &.error {
+        @include input-shadow(c.$red);
+        color: c.$red;
       }
     }
     &::-webkit-outer-spin-button,
