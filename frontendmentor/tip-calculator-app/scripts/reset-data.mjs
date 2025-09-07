@@ -1,5 +1,5 @@
 import data from "./data.mjs";
-import { bill, custom, numPeople, resetBtn, tipSetter } from "./elements.mjs";
+import { resetBtn } from "./elements.mjs";
 
 export function setReset(status = true) {
   data.reset = status;

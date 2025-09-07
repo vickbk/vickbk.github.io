@@ -24,85 +24,86 @@
   </head>
   <body>
     <main class="container">
-      <h1 class="header">spli<br />tter</h1>
-      <article class="splitter p-2 br-1 mb-5">
-        <section class="splitter__calculator">
-          <label class="calculator__label"
-            >Bill <i class="fa-dollar fa-solid input-icon"></i
-            ><input
-              type="number"
-              placeholder="0"
-              class="calculator__input icon"
-              id="bill"
-              name="bill"
-          /></label>
-          <section class="calculator__tips">
-            <label class="calculator__label">Select Tip %</label>
-            <section class="calculator__tips-buttons mt-1" id="tip-setter">
-              <button type="button" class="btn active" data-percentage="5">
-                5%</button
-              ><button type="button" class="btn" data-percentage="10">
-                10%</button
-              ><button type="button" class="btn" data-percentage="15">
-                15%</button
-              ><button type="button" class="btn" data-percentage="25">
-                25%</button
-              ><button type="button" class="btn" data-percentage="50">
-                50%</button
+      <div>
+        <h1 class="header">spli<br />tter</h1>
+        <article class="splitter p-2 br-1 mt-3">
+          <section class="splitter__calculator">
+            <label class="calculator__label"
+              >Bill <i class="fa-dollar fa-solid input-icon"></i
               ><input
                 type="number"
-                name="tip"
-                placeholder="Custom"
-                id="custom"
-                class="calculator__input"
-              />
+                placeholder="0"
+                class="calculator__input icon"
+                id="bill"
+                name="bill"
+            /></label>
+            <section class="calculator__tips">
+              <label class="calculator__label">Select Tip %</label>
+              <section class="calculator__tips-buttons mt-1" id="tip-setter">
+                <button type="button" class="btn" data-percentage="5">5%</button
+                ><button type="button" class="btn" data-percentage="10">
+                  10%</button
+                ><button type="button" class="btn" data-percentage="15">
+                  15%</button
+                ><button type="button" class="btn" data-percentage="25">
+                  25%</button
+                ><button type="button" class="btn" data-percentage="50">
+                  50%</button
+                ><input
+                  type="number"
+                  name="tip"
+                  placeholder="Custom"
+                  id="custom"
+                  class="calculator__input"
+                />
+              </section>
             </section>
+            <label class="calculator__label people"
+              >Number of People
+              <span class="calculator__error hide" id="people-error"
+                >Can't be zero</span
+              >
+              <i class="fa-user fa-solid input-icon"></i>
+              <input
+                type="number"
+                name="people-count"
+                class="calculator__input icon"
+                id="people-count"
+                placeholder="0"
+            /></label>
           </section>
-          <label class="calculator__label people"
-            >Number of People
-            <span class="calculator__error hide" id="people-error"
-              >Can't be zero</span
+          <section class="splitter__result p-2 br-1">
+            <div class="result__types">
+              <div class="result__types-description">
+                <span class="description-title">Tip Amount</span
+                ><span class="description-details">/ person</span>
+              </div>
+              <h2 class="result__types-amount">
+                <span class="currency">$</span
+                ><span class="amount" id="tip-amount">0.0</span>
+              </h2>
+            </div>
+            <div class="result__types mt-1">
+              <div class="result__types-description">
+                <span class="description-title">Total</span
+                ><span class="description-details">/ person</span>
+              </div>
+              <h2 class="result__types-amount">
+                <span class="currency">$</span
+                ><span class="amount" id="total-amount">0.0</span>
+              </h2>
+            </div>
+            <button
+              type="reset"
+              id="reset"
+              class="result__reset sp-1 sbr-3 mt-1 no-border upper-case"
             >
-            <i class="fa-user fa-solid input-icon"></i>
-            <input
-              type="number"
-              name="people-count"
-              class="calculator__input icon"
-              id="people-count"
-              placeholder="0"
-          /></label>
-        </section>
-        <section class="splitter__result p-2 br-1">
-          <div class="result__types">
-            <div class="result__types-description">
-              <span class="description-title">Tip Amount</span
-              ><span class="description-details">/ person</span>
-            </div>
-            <h2 class="result__types-amount">
-              <span class="currency">$</span
-              ><span class="amount" id="tip-amount">0.0</span>
-            </h2>
-          </div>
-          <div class="result__types mt-1">
-            <div class="result__types-description">
-              <span class="description-title">Total</span
-              ><span class="description-details">/ person</span>
-            </div>
-            <h2 class="result__types-amount">
-              <span class="currency">$</span
-              ><span class="amount" id="total-amount">0.0</span>
-            </h2>
-          </div>
-          <button
-            type="reset"
-            id="reset"
-            class="result__reset sp-1 sbr-3 mt-1 no-border upper-case"
-          >
-            <i class="fa-solid fa-rotate-left"></i>
-            Reset
-          </button>
-        </section>
-      </article>
+              <i class="fa-solid fa-rotate-left"></i>
+              Reset
+            </button>
+          </section>
+        </article>
+      </div>
     </main>
 
     <footer class="attribution">

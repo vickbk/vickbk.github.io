@@ -9,7 +9,7 @@
 
 .calculator {
   &__label {
-    font-weight: font.$bold;
+    font-weight: font.$min-bold;
     line-height: 2;
     position: relative;
     &.people {

@@ -16,6 +16,7 @@ export const initData = () => {
   if (data.tip === 0) setData("tip", getCurrentRate(), data);
   if (checkPeople(data)) displayShares(data);
   setPeopleError(false);
+  setReset([data.bill, data.tip, data["people-count"]].every((v) => v === 0));
 };
 
 export function saveData(target) {
