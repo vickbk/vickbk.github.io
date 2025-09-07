@@ -27,3 +27,10 @@ a:visited,
 a:active {
   text-decoration: none;
 }
+input,
+select,
+textarea,
+button {
+  font-family: inherit; /* This makes the elements inherit the font-family from their parent */
+  font-size: inherit; /* Optional: Also inherit font-size for consistency */
+}

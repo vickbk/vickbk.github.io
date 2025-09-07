@@ -10,10 +10,11 @@
   input,
   & button {
     font-size: font.$preferred-size;
+    font-weight: font.$bold;
   }
   &__calculator {
     display: grid;
-    gap: 0.5em;
+    gap: 1.5em;
   }
   &__result {
     background-color: c.$text-color;
