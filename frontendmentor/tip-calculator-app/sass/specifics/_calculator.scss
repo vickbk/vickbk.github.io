@@ -11,10 +11,16 @@
   &__label {
     font-weight: font.$bold;
     line-height: 2;
+    position: relative;
     &.people {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    .input-icon {
+      position: absolute;
+      bottom: 1em;
+      inset-inline-start: 1em;
     }
   }
   &__error {
