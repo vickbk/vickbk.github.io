@@ -1,6 +1,8 @@
 @use "../main/colors" as c;
 @use "../main/font";
 @use "../globals/" as g;
+@use "../functions/" as f;
+
 .result {
   &__types {
     display: flex;
@@ -17,8 +19,8 @@
         color: c.$grey-400;
       }
     }
-    .amount {
-      font-size: font.$preferred-size;
+    &-amount {
+      font-size: f.clamp-builder(f.to-r-em(28), f.to-r-em(32));
     }
   }
   &__reset {
