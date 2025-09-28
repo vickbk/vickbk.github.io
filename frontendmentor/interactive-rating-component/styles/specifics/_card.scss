@@ -14,6 +14,6 @@
     }
   }
   &-header {
-    font-size: 1.5rem;
+    font-size: f.clamp-builder(1.5rem, 2rem);
   }
 }
