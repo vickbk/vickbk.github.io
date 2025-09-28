@@ -19,7 +19,9 @@ export const rateManager = (() => {
       current.classList.add("active");
     },
     onSubmit() {
-      if (!!score) score.innerText = rateManager.getRate();
+      const rate = rateManager.getRate();
+      if (!rate) return;
+      if (!!score) score.innerText = rate;
       rating?.classList.add("hide");
       results?.classList.remove("hide");
     },
