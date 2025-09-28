@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script type="module" src="./scripts/main.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="container grid center">
+      <article class="card p-2 br-1 grey-900">
+        <section class="card__rating grid g-2" id="rating">
+          <img class="p-1 grey-600 br-5" src="./images/icon-star.svg" alt="" />
+          <h1 class="card-header">How did we do?</h1>
+          <p class="c-grey-500">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <section class="flex space-between" id="raters">
+            <button
+              type="button"
+              data-value="1"
+              class="card__rating-button br-5 grey-600 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              1</button
+            ><button
+              type="button"
+              data-value="2"
+              class="card__rating-button br-5 grey-600 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              2</button
+            ><button
+              type="button"
+              data-value="3"
+              class="card__rating-button br-5 grey-600 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              3</button
+            ><button
+              type="button"
+              data-value="4"
+              class="card__rating-button br-5 grey-600 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              4</button
+            ><button
+              type="button"
+              data-value="5"
+              class="card__rating-button br-5 grey-600 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              5
+            </button>
+          </section>
+          <button
+            id="submit"
+            type="button"
+            class="orange-500 bold no-border p-1 c-grey-900 upper-case br-2 hv-white a-white"
+          >
+            Submit
+          </button>
+        </section>
+        <section
+          class="card__thanks text-center grid g-1 center hide"
+          id="results"
+        >
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="illustration thank you image"
+          />
+          <label
+            class="card__thanks-label grey-600 c-orange-500 spbl-5 pi-2 br-2"
+            >You selected <span id="score">value</span> out of 5</label
+          >
+          <h1 class="card-header">Thank you!</h1>
+          <p class="c-grey-500">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/vickbk" target="_blank">VickBk</a>.
+    </footer>
+  </body>
+</html>
