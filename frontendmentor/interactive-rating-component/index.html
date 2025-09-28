@@ -19,35 +19,60 @@
   </head>
   <body>
     <main class="container grid center">
-      <article class="card p-1 br-1">
-        <section class="card__rating">
-          <img src="./images/icon-star.svg" alt="" />
+      <article class="card p-2 br-1 grey-900">
+        <section class="card__rating grid g-2 hide">
+          <img class="p-1 grey-500 br-5" src="./images/icon-star.svg" alt="" />
           <h1 class="card-header">How did we do?</h1>
-          <p>
+          <p class="c-grey-500">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
           <section class="flex space-between">
-            <button type="button" class="br-5">1</button
-            ><button type="button" class="br-5">2</button
-            ><button type="button" class="br-5">3</button
-            ><button type="button" class="br-5">4</button
-            ><button type="button" class="br-5">5</button>
+            <button
+              type="button"
+              class="card__rating-button br-5 grey-500 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              1</button
+            ><button
+              type="button"
+              class="card__rating-button br-5 grey-500 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              2</button
+            ><button
+              type="button"
+              class="card__rating-button br-5 grey-500 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              3</button
+            ><button
+              type="button"
+              class="card__rating-button br-5 grey-500 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              4</button
+            ><button
+              type="button"
+              class="card__rating-button br-5 grey-500 no-border p-1 hv-orange-500 a-orange-500"
+            >
+              5
+            </button>
           </section>
-          <button type="button" class="orange-500 uppercase br-2">
+          <button
+            type="button"
+            class="orange-500 bold no-border p-1 c-grey-900 upper-case br-2 hv-white a-white"
+          >
             Submit
           </button>
         </section>
-        <section class="card__thanks text-center">
+        <section class="card__thanks text-center grid g-1 center">
           <img
             src="./images/illustration-thank-you.svg"
             alt="illustration thank you image"
           />
-          <label class="card__thanks-label"
+          <label
+            class="card__thanks-label grey-900 c-orange-500 spbl-5 pi-2 br-1"
             >You selected <span id="score">value</span> out of 5</label
           >
           <h1 class="card-header">Thank you!</h1>
-          <p>
+          <p class="c-grey-500">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </p>

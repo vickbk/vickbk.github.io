@@ -1,14 +1,14 @@
 @use "../functions/" as f;
-$link: "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap";
+$link: "https://fonts.google.com/specimen/Overpass";
 
-$primary-font: "DM Sans", sans-serif;
-$secondary-font: "Bricolage Grotesque", sans-serif;
+$primary-font: "Overpass", sans-serif;
+$secondary-font: "Overpass", sans-serif;
 
 $primary-size: 100%;
-$preferred-size: f.to-r-em(18);
+$preferred-size: f.to-r-em(15);
 
-$weight-normal: 300;
-$weight-natural: 500;
+$weight-normal: 400;
+$weight-natural: 400;
 $min-bold: 600;
 $min-bold-italic: 600i;
 $bold: 700;

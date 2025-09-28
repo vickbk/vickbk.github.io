@@ -1,0 +1,18 @@
+@use "../functions/" as f;
+@use "../main/colors" as c;
+.card {
+  inline-size: 90%;
+  max-inline-size: f.to-r-em(420);
+  line-height: 1.5;
+  &__rating {
+    &-button {
+      flex-basis: f.to-r-em(50);
+      &.active {
+        background-color: c.$orange-500;
+      }
+    }
+  }
+  &-header {
+    font-size: 1.5rem;
+  }
+}
