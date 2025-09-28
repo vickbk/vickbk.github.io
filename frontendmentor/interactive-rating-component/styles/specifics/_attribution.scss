@@ -1,19 +1,11 @@
 @use "../main/colors" as c;
 @use "../globals/states";
+@use "../functions/" as f;
 .attribution {
-  font-size: 0.85em;
+  font-size: f.to-r-em(11);
   text-align: center;
-  &-direction {
-    font-size: 1rem;
-  }
   a {
     color: c.$link-color;
     text-decoration: underline;
-    @include states.active-state {
-      color: c.$blue-500;
-      &.attribution-direction-link {
-        color: c.$neutral-0;
-      }
-    }
   }
 }
