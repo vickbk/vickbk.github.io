@@ -8,7 +8,8 @@
     &-button {
       flex-basis: f.to-r-em(50);
       &.active {
-        background-color: c.$orange-500;
+        background-color: c.$white;
+        color: c.$grey-900;
       }
     }
   }
