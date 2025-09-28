@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Repo](https://vickbk.github.io/frontendmentor/interactive-rating-component/)
 - Live Site URL: [Github hosted site](https://vickbk.github.io/frontendmentor/interactive-rating-component/)
 
 ## My process
