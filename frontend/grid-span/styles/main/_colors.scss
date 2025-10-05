@@ -1,0 +1,62 @@
+// ### Primary
+
+$orange-500: hsl(25, 97%, 53%);
+
+// ### Neutral
+
+$white: hsl(0, 100%, 100%);
+$grey-500: hsl(217, 12%, 63%);
+$grey-600: hsl(210, 25%, 28%);
+$grey-900: hsl(213, 19%, 18%);
+$grey-950: hsl(216, 12%, 8%);
+
+//
+
+$primary-color: $grey-950;
+$link-color: $grey-500;
+$text-color: $white;
+
+:root {
+  --background: $primary-color;
+  --foreground: $text-color;
+  @media (prefers-color-scheme: dark) {
+    --background: $text-color;
+    --foreground: $primary-color;
+  }
+}
+
+$colorsMap: (
+  orange-500: $orange-500,
+  white: $white,
+  grey-500: $grey-500,
+  grey-600: $grey-600,
+  grey-900: $grey-900,
+  grey-950: $grey-950,
+);
+
+@each $name, $color in $colorsMap {
+  .#{$name},
+  .hv-#{$name}:hover,
+  .a-#{$name}:active,
+  .a-#{$name}:focus {
+    background-color: $color;
+  }
+  .c-#{$name}.c-#{$name},
+  .hv-c-#{$name}:hover,
+  .a-c-#{$name}:active,
+  .a-c-#{$name}:focus {
+    color: $color;
+  }
+  .b-#{$name},
+  .hv-b-#{$name}:hover,
+  .a-b-#{$name}:active,
+  .a-b-#{$name}:focus {
+    border: $color 2px solid;
+  }
+  .out-#{$name},
+  .hv-out-#{$name}:hover,
+  .a-out-#{$name}:active,
+  .a-out-#{$name}:focus {
+    outline: $color 1px solid;
+  }
+}
