@@ -1,0 +1,32 @@
+.details {
+  padding-block: 1em;
+  &:not(&:last-of-type) {
+    border-block-end: 1px solid var(--purple-600);
+  }
+  &__summary {
+    font-size: 1.2rem;
+    font-weight: var(--min-bold);
+    cursor: pointer;
+    &::marker {
+      content: "";
+    }
+    &-icon {
+      background: transparent;
+      background-position: center;
+      background-image: url(../../assets/images/icon-plus.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:open &__summary-icon {
+    background-image: url(../../assets/images/icon-minus.svg);
+  }
+
+  &__more {
+    color: var(--purple-600);
+    margin-block-start: 1em;
+    font-size: 0.9rem;
+    font-weight: var(--weight-normal);
+    line-height: 1.5;
+  }
+}
