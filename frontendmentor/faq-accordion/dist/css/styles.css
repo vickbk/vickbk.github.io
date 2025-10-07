@@ -18609,16 +18609,17 @@ button {
 body {
   background-image: url("../../assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: left top;
 }
-@media (min-width: 36em) {
+@media (min-width: 48em) {
   body {
     background-image: url("../../assets/images/background-pattern-desktop.svg");
   }
 }
 
 .faq {
-  inline-size: 90%;
-  max-inline-size: 50rem;
+  max-inline-size: 37.5rem;
 }
 .faq__header {
   font-size: 1.2rem;
@@ -18637,6 +18638,7 @@ body {
 .details__summary {
   font-size: 1.2rem;
   font-weight: var(--min-bold);
+  cursor: pointer;
 }
 .details__summary::marker {
   content: "";

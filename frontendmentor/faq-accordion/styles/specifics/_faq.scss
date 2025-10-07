@@ -3,13 +3,14 @@
 body {
   background-image: url("../../assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
-  @include g.mobile-queries(g.$mobile) {
+  background-size: 100% auto;
+  background-position: left top;
+  @include g.mobile-queries(g.$tablet) {
     background-image: url("../../assets/images/background-pattern-desktop.svg");
   }
 }
 .faq {
-  inline-size: 90%;
-  max-inline-size: f.to-r-em(800);
+  max-inline-size: f.to-r-em(600);
   &__header {
     font-size: 1.2rem;
     font-weight: var(--bold);

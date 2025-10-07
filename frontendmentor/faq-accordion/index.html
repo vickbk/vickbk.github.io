@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./dist/css/styles.css" />
   </head>
   <body>
-    <main class="container">
-      <article class="faq p-1 white sbr-5">
+    <main class="container p-1">
+      <article class="faq p-1 sm-up-p-2 white sbr-5">
         <header class="faq__header flex a-center g-1">
           <img
             class="faq__header-icon"
@@ -29,23 +29,21 @@
         </header>
 
         <details class="details" open>
-          <summary class="details__summary flex space-between a-center">
+          <summary class="details__summary flex space-between a-center g-1">
             What is Frontend Mentor, and how will it help me?
-            <span
-              class="details__summary-icon sp-7 br-1 cursor-p no-border"
-            ></span>
+            <span class="details__summary-icon sp-7 br-1 no-border"></span>
           </summary>
-          <p class="details__more">
+          <div class="details__more">
             Frontend Mentor offers realistic coding challenges to help
             developers improve their frontend coding skills with projects in
             HTML, CSS, and JavaScript. It's suitable for all levels and ideal
             for portfolio building.
-          </p>
+          </div>
         </details>
         <details class="details">
-          <summary class="details__summary flex space-between a-center">
+          <summary class="details__summary flex space-between a-center g-1">
             Is Frontend Mentor free?<span
-              class="details__summary-icon sp-7 br-1 cursor-p no-border"
+              class="details__summary-icon sp-7 br-1 no-border"
             ></span>
           </summary>
           <p class="details__more">
@@ -55,9 +53,9 @@
           </p>
         </details>
         <details class="details">
-          <summary class="details__summary flex space-between a-center">
+          <summary class="details__summary flex space-between a-center g-1">
             Can I use Frontend Mentor projects in my portfolio?<span
-              class="details__summary-icon sp-7 br-1 cursor-p no-border"
+              class="details__summary-icon sp-7 br-1 no-border"
             ></span>
           </summary>
           <p class="details__more">
@@ -67,10 +65,11 @@
           </p>
         </details>
         <details class="details">
-          <summary class="details__summary flex space-between a-center">
+          <summary class="details__summary flex space-between a-center g-1">
             How can I get help if I'm stuck on a Frontend Mentor challenge?
             <span
-              class="details__summary-icon sp-7 br-1 cursor-p no-border"
+              class="details__summary-icon sp-7 br-1 no-border"
+              aria-roledescription="Open or Close details"
             ></span>
           </summary>
           <p class="details__more">

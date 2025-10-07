@@ -6,6 +6,7 @@
   &__summary {
     font-size: 1.2rem;
     font-weight: var(--min-bold);
+    cursor: pointer;
     &::marker {
       content: "";
     }
