@@ -29,7 +29,7 @@ $colorsMap: (
   }
   & {
     @each $name, $color in $colorsMap {
-      --#{""+$name}: $color;
+      --#{""+$name}: #{$color};
     }
   }
 }
