@@ -1,0 +1,8 @@
+@use "../globals/" as g;
+body {
+  background-image: url("../../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  @include g.mobile-queries(g.$mobile) {
+    background-image: url("../../assets/images/background-pattern-desktop.svg");
+  }
+}

@@ -18598,4 +18598,14 @@ button {
 .attribution a {
   color: hsl(292, 16%, 49%);
   text-decoration: underline;
+}
+
+body {
+  background-image: url("../../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+}
+@media (min-width: 36em) {
+  body {
+    background-image: url("../../assets/images/background-pattern-desktop.svg");
+  }
 }/*# sourceMappingURL=styles.css.map */
