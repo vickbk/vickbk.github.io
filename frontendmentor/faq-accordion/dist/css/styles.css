@@ -51,6 +51,12 @@ ul {
     --foreground: $primary-color;
   }
 }
+:root {
+  --white: $color;
+  --purple-100: $color;
+  --purple-600: $color;
+  --purlpe-950: $color;
+}
 
 .white,
 .hv-white:hover,

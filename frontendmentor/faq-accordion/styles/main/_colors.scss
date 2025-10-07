@@ -13,6 +13,13 @@ $primary-color: $purple-100;
 $link-color: $purple-600;
 $text-color: $purple-950;
 
+$colorsMap: (
+  white: $white,
+  purple-100: $purple-100,
+  purple-600: $purple-600,
+  purlpe-950: $purple-950,
+);
+
 :root {
   --background: $primary-color;
   --foreground: $text-color;
@@ -20,17 +27,12 @@ $text-color: $purple-950;
     --background: $text-color;
     --foreground: $primary-color;
   }
-  @each $name, $color in $colorsMap {
-    --#{""+$name}: $color;
+  & {
+    @each $name, $color in $colorsMap {
+      --#{""+$name}: $color;
+    }
   }
 }
-
-$colorsMap: (
-  white: $white,
-  purple-100: $purple-100,
-  purple-600: $purple-600,
-  purlpe-950: $purple-950,
-);
 
 @each $name, $color in $colorsMap {
   .#{"" + $name},
