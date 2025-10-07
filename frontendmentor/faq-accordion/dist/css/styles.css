@@ -55,6 +55,7 @@ ul {
   --white: hsl(0, 100%, 100%);
   --purple-100: hsl(275, 100%, 97%);
   --purple-600: hsl(292, 16%, 49%);
+  --purple-350: hsl(281, 83%, 54%);
   --purlpe-950: hsl(292, 42%, 14%);
 }
 
@@ -140,6 +141,34 @@ ul {
 .a-out-purple-600:active,
 .a-out-purple-600:focus {
   outline: hsl(292, 16%, 49%) 1px solid;
+}
+
+.purple-350,
+.hv-purple-350:hover,
+.a-purple-350:active,
+.a-purple-350:focus {
+  background-color: hsl(281, 83%, 54%);
+}
+
+.c-purple-350.c-purple-350,
+.hv-c-purple-350:hover,
+.a-c-purple-350:active,
+.a-c-purple-350:focus {
+  color: hsl(281, 83%, 54%);
+}
+
+.b-purple-350,
+.hv-b-purple-350:hover,
+.a-b-purple-350:active,
+.a-b-purple-350:focus {
+  border: hsl(281, 83%, 54%) 2px solid;
+}
+
+.out-purple-350,
+.hv-out-purple-350:hover,
+.a-out-purple-350:active,
+.a-out-purple-350:focus {
+  outline: hsl(281, 83%, 54%) 1px solid;
 }
 
 .purlpe-950,
@@ -18630,15 +18659,18 @@ body {
 }
 
 .details {
-  padding-block: 1em;
+  padding-block: 1.5em;
 }
 .details:not(.details:last-of-type) {
-  border-block-end: 1px solid var(--purple-600);
+  border-block-end: 1px solid var(--purple-100);
 }
 .details__summary {
-  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 1.0647887324rem + 0.1502347418vw, 1.2rem);
   font-weight: var(--min-bold);
   cursor: pointer;
+}
+.details__summary:hover, .details__summary:active, .details__summary:focus {
+  color: var(--purple-350);
 }
 .details__summary::marker {
   content: "";
