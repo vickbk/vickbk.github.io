@@ -1,8 +1,8 @@
 @use "../functions/" as f;
-$link: "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
+$link: "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap";
 
-$primary-font: "Work Sans", sans-serif;
-$secondary-font: "Work Sans", sans-serif;
+$primary-font: "Karla", sans-serif;
+$secondary-font: "Karla", sans-serif;
 
 $primary-size: 100%;
 $preferred-size: f.to-r-em(15);

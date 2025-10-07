@@ -2,24 +2,28 @@
 
 // ### Neutral
 
-$white: hsl(0, 100%, 100%);
-$purple-100: hsl(275, 100%, 97%);
-$purple-600: hsl(292, 16%, 49%);
-$purple-350: hsl(281, 83%, 54%);
-$purple-950: hsl(292, 42%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$green-200: hsl(148, 38%, 91%);
+$green-600: hsl(169, 82%, 27%);
+$red: hsl(0, 66%, 54%);
+
+$grey-500: hsl(186, 15%, 59%);
+$grey-900: hsl(187, 24%, 22%);
 
 //
 
-$primary-color: $purple-100;
-$link-color: $purple-600;
-$text-color: $purple-950;
+$primary-color: $green-200;
+$link-color: $green-600;
+$text-color: $grey-900;
 
 $colorsMap: (
   white: $white,
-  purple-100: $purple-100,
-  purple-600: $purple-600,
-  purple-350: $purple-350,
-  purlpe-950: $purple-950,
+  green-200: $green-200,
+  green-600: $green-600,
+  red: $red,
+  grey-500: $grey-500,
+  grey-900: grey-900,
 );
 
 :root {

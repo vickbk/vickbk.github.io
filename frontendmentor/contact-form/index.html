@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form action="go" id="contact-form" class="form grid g-1">
+        <h1 class="form__header">Contact Us</h1>
+        <section class="form__identity flex flex-wrap g-1">
+          <label class="form__identity-label"
+            >First Name *
+            <input
+              type="text"
+              required="required"
+              aria-describedby="first-name-error"
+              aria-error="true"
+              class="form__identity-input"
+            />
+            <p id="first-name-error" class="form__error">
+              This field is required
+            </p>
+          </label>
+          <label class="form__identity-label"
+            >Last Name *
+            <input
+              type="text"
+              required="required"
+              aria-describedby="last-name-error"
+              aria-error="true"
+              class="form__identity-input"
+            />
+            <p id="last-name-error" class="form__error">
+              This field is required
+            </p>
+          </label>
+          <label class="form__identity-label"
+            >Email Address *
+            <input
+              type="email"
+              required="required"
+              aria-describedby="email-error"
+              aria-error="true"
+              class="form__identity-input"
+            />
+            <p id="email-error" class="form__error">
+              Please enter a valid email address
+            </p>
+          </label>
+        </section>
+        <fieldset class="form__query">
+          <legend>Query Type *</legend>
+          <label class="form__query"
+            ><input
+              type="radio"
+              name="type"
+              class="form__query-radio"
+              value=""
+              required="required"
+            />
+            General Enquiry </label
+          ><label class="form__query"
+            ><input
+              type="radio"
+              name="type"
+              class="form__query-radio"
+              value=""
+              required="required"
+            />Support Request</label
+          >
+          <p class="form__error" id="type-error">Please select a query type</p>
+        </fieldset>
+        <label class="form__identity-label"
+          >Message *
+          <textarea
+            name="message"
+            class="form__text"
+            aria-described="text-error"
+          ></textarea>
+          <p id="text-error" class="form__error">This field is required</p>
+        </label>
+        <label class="form__query-label">
+          <input
+            type="checkbox"
+            name="consent"
+            required="required"
+            aria-labelledby="consent-error"
+            class="form__input-check"
+          />
+          I consent to being contacted by the team
+          <p class="form-error" id="consent-error">
+            To submit this form, please consent to being contacted
+          </p>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <article class="success">
+        <h2 class="success__header">Message Sent!</h2>
+        <p class="success__content">
+          Thanks for completing the form. We'll be in touch soon!
+        </p>
+      </article>
+    </main>
+    <!--  -->
 
-  Contact Us
+    <!--  -->
+    <!--  -->
 
-  First Name
-  This field is required
+    <!--  -->
+    <!--  -->
 
-  Last Name
-  This field is required
+    <!--  -->
+    <!--  -->
+    <!-- This field is required -->
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <!--  -->
+    <!--  -->
 
-  Message
-  This field is required
+    <!--  -->
+    <!--  -->
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+    <!--  -->
 
-  Submit
+    <!--  -->
+    <!--  -->
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/vickbk">VickBk</a>.
+    </footer>
+  </body>
 </html>
