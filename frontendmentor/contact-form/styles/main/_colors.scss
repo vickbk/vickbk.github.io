@@ -1,0 +1,64 @@
+// ### Primary
+
+// ### Neutral
+
+$white: hsl(0, 100%, 100%);
+$purple-100: hsl(275, 100%, 97%);
+$purple-600: hsl(292, 16%, 49%);
+$purple-350: hsl(281, 83%, 54%);
+$purple-950: hsl(292, 42%, 14%);
+
+//
+
+$primary-color: $purple-100;
+$link-color: $purple-600;
+$text-color: $purple-950;
+
+$colorsMap: (
+  white: $white,
+  purple-100: $purple-100,
+  purple-600: $purple-600,
+  purple-350: $purple-350,
+  purlpe-950: $purple-950,
+);
+
+:root {
+  --background: $primary-color;
+  --foreground: $text-color;
+  @media (prefers-color-scheme: dark) {
+    --background: $text-color;
+    --foreground: $primary-color;
+  }
+  & {
+    @each $name, $color in $colorsMap {
+      --#{""+$name}: #{$color};
+    }
+  }
+}
+
+@each $name, $color in $colorsMap {
+  .#{"" + $name},
+  .hv-#{"" + $name}:hover,
+  .a-#{"" + $name}:active,
+  .a-#{"" + $name}:focus {
+    background-color: $color;
+  }
+  .c-#{"" + $name}.c-#{"" + $name},
+  .hv-c-#{"" + $name}:hover,
+  .a-c-#{"" + $name}:active,
+  .a-c-#{"" + $name}:focus {
+    color: $color;
+  }
+  .b-#{"" + $name},
+  .hv-b-#{"" + $name}:hover,
+  .a-b-#{"" + $name}:active,
+  .a-b-#{"" + $name}:focus {
+    border: $color 2px solid;
+  }
+  .out-#{"" + $name},
+  .hv-out-#{"" + $name}:hover,
+  .a-out-#{"" + $name}:active,
+  .a-out-#{"" + $name}:focus {
+    outline: $color 1px solid;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../globals/" as g;
+@use "../functions/" as f;
+
+.details {
+  padding-block: 1.5em;
+  &:not(&:last-of-type) {
+    border-block-end: 1px solid var(--purple-100);
+  }
+  &__summary {
+    font-size: f.clamp-builder(1.1rem, 1.2rem);
+    font-weight: var(--min-bold);
+    @include g.active-state {
+      color: var(--purple-350);
+    }
+    cursor: pointer;
+    &::marker {
+      content: "";
+    }
+    &-icon {
+      background: transparent;
+      background-position: center;
+      background-image: url(../../assets/images/icon-plus.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:open &__summary-icon {
+    background-image: url(../../assets/images/icon-minus.svg);
+  }
+
+  &__more {
+    color: var(--purple-600);
+    margin-block-start: 1em;
+    font-size: 0.9rem;
+    font-weight: var(--weight-normal);
+    line-height: 1.5;
+  }
+}
