@@ -1,0 +1,19 @@
+@use "../globals/" as g;
+@use "../functions/" as f;
+body {
+  background-image: url("../../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  @include g.mobile-queries(g.$mobile) {
+    background-image: url("../../assets/images/background-pattern-desktop.svg");
+  }
+}
+.faq {
+  inline-size: 90%;
+  max-inline-size: f.to-r-em(800);
+  &__header {
+    font-size: 1.2rem;
+    &-icon {
+      block-size: f.to-r-em(20);
+    }
+  }
+}

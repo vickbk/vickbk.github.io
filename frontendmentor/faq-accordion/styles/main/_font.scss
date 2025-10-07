@@ -14,17 +14,17 @@ $min-bold-italic: 600i;
 $bold: 700;
 
 :root {
-  --font-link: $link;
+  --font-link: "#{$link}";
 
-  --primary-font: $primary-font;
-  --secondary-font: $secondary-font;
+  --primary-font: #{$primary-font};
+  --secondary-font: #{$secondary-font};
 
-  --primary-size: $primary-size;
-  --preferred-size: $preferred-size;
+  --primary-size: #{$primary-size};
+  --preferred-size: #{$preferred-size};
 
-  --weight-normal: $weight-normal;
-  --weight-natural: $weight-natural;
-  --min-bold: $min-bold;
-  --min-bold-italic: $min-bold-italic;
-  --bold: $bold;
+  --weight-normal: #{$weight-normal};
+  --weight-natural: #{$weight-natural};
+  --min-bold: #{$min-bold};
+  --min-bold-italic: #{$min-bold-italic};
+  --bold: #{$bold};
 }

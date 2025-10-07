@@ -29,16 +29,16 @@ ul {
 }
 
 :root {
-  --font-link: $link;
-  --primary-font: $primary-font;
-  --secondary-font: $secondary-font;
-  --primary-size: $primary-size;
-  --preferred-size: $preferred-size;
-  --weight-normal: $weight-normal;
-  --weight-natural: $weight-natural;
-  --min-bold: $min-bold;
-  --min-bold-italic: $min-bold-italic;
-  --bold: $bold;
+  --font-link: "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
+  --primary-font: Work Sans, sans-serif;
+  --secondary-font: Work Sans, sans-serif;
+  --primary-size: 100%;
+  --preferred-size: 0.9375rem;
+  --weight-normal: 400;
+  --weight-natural: 400;
+  --min-bold: 600;
+  --min-bold-italic: 600i;
+  --bold: 700;
 }
 
 :root {
@@ -169,10 +169,10 @@ ul {
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-family: var(--primary-font);
+  font-weight: var(--weight-normal);
   line-height: 1.1;
-  font-size: 100%;
+  font-size: var(--primary-size);
   background-color: hsl(275, 100%, 97%);
   color: hsl(292, 42%, 14%);
 }
@@ -181,7 +181,7 @@ h1,
 h2,
 h3,
 .bold {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 a,
@@ -18608,4 +18608,22 @@ body {
   body {
     background-image: url("../../assets/images/background-pattern-desktop.svg");
   }
+}
+
+.faq {
+  inline-size: 90%;
+  max-inline-size: 50rem;
+}
+.faq__header {
+  font-size: 1.2rem;
+}
+.faq__header-icon {
+  block-size: 1.25rem;
+}
+
+.details {
+  padding-block: 1em;
+}
+.details:not(.details:last-of-type) {
+  border-block-end: 1px solid;
 }/*# sourceMappingURL=styles.css.map */
