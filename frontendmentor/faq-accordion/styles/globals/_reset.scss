@@ -1,0 +1,25 @@
+@use "./states";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-inline-size: 100%;
+}
+input,
+button {
+  @include states.active-state {
+    outline: none;
+  }
+}
+button,
+input[type="submit"],
+a {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
