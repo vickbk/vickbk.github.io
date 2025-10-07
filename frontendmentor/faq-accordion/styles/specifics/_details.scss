@@ -1,6 +1,21 @@
 .details {
   padding-block: 1em;
   &:not(&:last-of-type) {
-    border-block-end: 1px solid;
+    border-block-end: 1px solid var(--purple-100);
+  }
+  &__summary {
+    font-size: 1.2rem;
+    font-weight: var(--min-bold);
+    &::marker {
+      content: "";
+    }
+    &-icon {
+      background-image: url(../../assets/images/icon-plus.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:open &__summary-icon {
+    background-image: url(../../assets/images/icon-minus.svg);
   }
 }

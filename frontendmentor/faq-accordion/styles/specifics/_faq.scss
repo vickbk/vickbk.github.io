@@ -12,6 +12,7 @@ body {
   max-inline-size: f.to-r-em(800);
   &__header {
     font-size: 1.2rem;
+    font-weight: var(--bold);
     &-icon {
       block-size: f.to-r-em(20);
     }

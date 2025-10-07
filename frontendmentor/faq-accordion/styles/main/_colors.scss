@@ -20,6 +20,9 @@ $text-color: $purple-950;
     --background: $text-color;
     --foreground: $primary-color;
   }
+  @each $name, $color in $colorsMap {
+    --#{""+$name}: $color;
+  }
 }
 
 $colorsMap: (

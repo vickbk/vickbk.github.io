@@ -18616,6 +18616,7 @@ body {
 }
 .faq__header {
   font-size: 1.2rem;
+  font-weight: var(--bold);
 }
 .faq__header-icon {
   block-size: 1.25rem;
@@ -18625,5 +18626,19 @@ body {
   padding-block: 1em;
 }
 .details:not(.details:last-of-type) {
-  border-block-end: 1px solid;
+  border-block-end: 1px solid var(--purple-100);
+}
+.details__summary {
+  font-size: 1.2rem;
+  font-weight: var(--min-bold);
+}
+.details__summary::marker {
+  content: "";
+}
+.details__summary-icon {
+  background-image: url(../../assets/images/icon-plus.svg);
+  background-repeat: no-repeat;
+}
+.details:open .details__summary-icon {
+  background-image: url(../../assets/images/icon-minus.svg);
 }/*# sourceMappingURL=styles.css.map */

@@ -212,10 +212,10 @@ ul {
 }
 
 body {
-  font-family: "Overpass", sans-serif;
-  font-weight: 400;
+  font-family: var(--primary-font);
+  font-weight: var(--weight-normal);
   line-height: 1.1;
-  font-size: 100%;
+  font-size: var(--primary-size);
   background-color: hsl(216, 12%, 8%);
   color: hsl(0, 100%, 100%);
 }
@@ -224,7 +224,7 @@ h1,
 h2,
 h3,
 .bold {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 a,
