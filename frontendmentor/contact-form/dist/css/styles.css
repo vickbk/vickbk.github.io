@@ -18803,4 +18803,7 @@ button {
 }
 .form__error {
   color: var(--red);
+}
+.form *[aria-error=true] {
+  border-color: var(--red);
 }/*# sourceMappingURL=styles.css.map */

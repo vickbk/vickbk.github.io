@@ -31,7 +31,6 @@
               type="text"
               required="required"
               aria-describedby="first-name-error"
-              aria-error="true"
               class="form__identity-input active-out-green-600"
             />
             <p id="first-name-error" class="form__error hide">
@@ -44,7 +43,6 @@
               type="text"
               required="required"
               aria-describedby="last-name-error"
-              aria-error="true"
               class="form__identity-input active-out-green-600"
             />
             <p id="last-name-error" class="form__error hide">
@@ -57,7 +55,6 @@
               type="email"
               required="required"
               aria-describedby="email-error"
-              aria-error="true"
               class="form__identity-input active-out-green-600"
             />
             <p id="email-error" class="form__error hide">
@@ -67,7 +64,9 @@
         </section>
 
         <!-- Query section -->
-        <fieldset class="form__query grid sm-up-flex no-border g-1 spbl-5">
+        <fieldset
+          class="form__query grid sm-up-flex flex-wrap no-border g-1 spbl-5"
+        >
           <legend>Query Type <span class="c-green-600">*</span></legend>
           <label
             class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p active-green-200"
@@ -77,6 +76,7 @@
               class="form__query-radio"
               value=""
               required="required"
+              aria-describedby="type-error"
             />
             General Enquiry </label
           ><label
@@ -87,6 +87,7 @@
               class="form__query-radio"
               value=""
               required="required"
+              aria-describedby="type-error"
             />Support Request</label
           >
           <p class="form__error hide" id="type-error">
@@ -102,16 +103,17 @@
             class="form__text b-grey-500 sbr-5 p-1 active-out-green-600"
             aria-describedby="text-error"
             rows="10"
+            required
           ></textarea>
           <p id="text-error" class="form__error hide">This field is required</p>
         </label>
 
-        <label class="flex g-1 a-center pbl-1 cursor-p">
+        <label class="flex flex-wrap g-1 a-center pbl-1 cursor-p">
           <input
             type="checkbox"
             name="consent"
             required="required"
-            aria-labelledby="consent-error"
+            aria-describedby="consent-error"
             class="form__check p-1"
           />
           <span
@@ -124,48 +126,22 @@
         </label>
 
         <button
+          formnovalidate
           type="submit"
           class="no-border sbr-5 p-1 c-white green-600 bold active-green-200 active-c-green-600"
         >
           Submit
         </button>
       </form>
-      <article class="success absolute hide">
+      <article class="success absolute hide" id="success-toast">
         <h2 class="success__header">Message Sent!</h2>
         <p class="success__content">
           Thanks for completing the form. We'll be in touch soon!
         </p>
       </article>
     </main>
-    <!--  -->
 
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-    <!-- This field is required -->
-
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-
-    <footer class="attribution">
+    <footer class="attribution mbl-2">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="https://github.com/vickbk">VickBk</a>.

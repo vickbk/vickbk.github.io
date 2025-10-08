@@ -1,4 +1,5 @@
 import { emailError } from "./elements.mjs";
+import { handleSuccessToast } from "./handle-submit.mjs";
 
 export function onInputChange() {
   validateInput(this);
@@ -6,13 +7,27 @@ export function onInputChange() {
 
 export function validateInput(element) {
   if (element.type === "email") setEmailError(true);
-  setInputValid(element, inputHasValue(element) && checkEmail(element));
+  const isValid = inputHasValue(element) && checkEmail(element);
+  setInputValid(element, isValid);
+  handleSuccessToast();
+  return isValid;
 }
 
-export const inputHasValue = (input) => input.value !== "";
+export const inputHasValue = (input) => {
+  const { type, value } = input;
+  if (!["radio", "checkbox"].includes(type)) return value !== "";
+  return inputHasChecked(input);
+};
+
+export const inputHasChecked = (input) => {
+  const { name, type } = input;
+  if (!["radio", "checkbox"].includes(type)) return false;
+  const allRelatedInputs = document.querySelectorAll(`[name=${name}]`);
+  return [...allRelatedInputs].some((someInput) => someInput.checked);
+};
 
 export const setInputValid = (input, valid) => {
-  input.setAttribute("aria-error", valid);
+  input.setAttribute("aria-error", !valid);
   const id = input.getAttribute("aria-describedby");
   id &&
     document.getElementById(id)?.classList[valid ? "add" : "remove"]("hide");
