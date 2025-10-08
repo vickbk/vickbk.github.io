@@ -18777,7 +18777,7 @@ button {
 
 .form {
   font-size: clamp(0.9rem, 0.8647887324rem + 0.1502347418vw, 1rem);
-  max-inline-size: 37.5rem;
+  max-inline-size: 50rem;
 }
 .form__identity-label {
   display: grid;
