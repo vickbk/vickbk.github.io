@@ -9,7 +9,6 @@ export function validateInput(element) {
   if (element.type === "email") setEmailError(true);
   const isValid = inputHasValue(element) && checkEmail(element);
   setInputValid(element, isValid);
-  handleSuccessToast();
   return isValid;
 }
 
@@ -27,10 +26,10 @@ export const inputHasChecked = (input) => {
 };
 
 export const setInputValid = (input, valid) => {
-  input.setAttribute("aria-error", !valid);
   const id = input.getAttribute("aria-describedby");
-  id &&
-    document.getElementById(id)?.classList[valid ? "add" : "remove"]("hide");
+  const errorElement = id && document.getElementById(id);
+  errorElement?.classList[valid ? "add" : "remove"]("hide");
+  errorElement?.setAttribute("aria-hidden", valid);
 };
 
 export const checkEmail = (element) => {

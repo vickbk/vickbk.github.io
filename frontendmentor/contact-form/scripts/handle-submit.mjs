@@ -14,4 +14,8 @@ export function handleSubmit(e) {
 
 export const handleSuccessToast = (show = false) => {
   successToast?.classList[show ? "remove" : "add"]("hide");
+  successToast?.setAttribute("aria-hidden", !show);
+  if (show) {
+    setTimeout(handleSuccessToast, 5000);
+  }
 };

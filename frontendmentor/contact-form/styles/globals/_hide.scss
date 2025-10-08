@@ -2,9 +2,9 @@
 @use "transitions" as trans;
 .hide.hide,
 .sm-hide.sm-hide {
-  @include trans.ease-in-out(display, 2s);
   display: none;
   opacity: 0;
+  @include trans.ease-in-out(opacity, 2s);
 }
 .sm-hide.sm-hide {
   @include mobile-queries($mobile) {
@@ -15,5 +15,14 @@
 .sm-show.sm-show {
   @include mobile-queries($mobile) {
     display: none;
+  }
+}
+
+*:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
+  opacity: 1;
+  @starting-style {
+    & {
+      opacity: 0;
+    }
   }
 }
