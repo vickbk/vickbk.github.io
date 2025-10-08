@@ -30,6 +30,7 @@ export const setInputValid = (input, valid) => {
   const errorElement = id && document.getElementById(id);
   errorElement?.classList[valid ? "add" : "remove"]("hide");
   errorElement?.setAttribute("aria-hidden", valid);
+  input.setAttribute("aria-invalid", !valid);
 };
 
 export const checkEmail = (element) => {

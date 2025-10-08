@@ -42,7 +42,7 @@
   &__error {
     color: var(--red);
   }
-  & *[aria-hidden="true"] {
+  & *[aria-invalid="true"] {
     border-color: var(--red);
   }
 }
