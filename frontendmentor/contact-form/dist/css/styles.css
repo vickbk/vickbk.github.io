@@ -67,6 +67,10 @@ ul {
   background-color: var(--white);
 }
 
+.active-white:hover, .active-white:active, .active-white:focus {
+  background-color: var(--white);
+}
+
 .c-white.c-white,
 .hv-c-white:hover,
 .a-c-white:active,
@@ -74,24 +78,40 @@ ul {
   color: var(--white);
 }
 
+.active-c-white:hover, .active-c-white:active, .active-c-white:focus {
+  color: var(--white);
+}
+
 .b-white,
 .hv-b-white:hover,
 .a-b-white:active,
 .a-b-white:focus {
-  border: var(--white) 2px solid;
+  border: var(--white) 0.0625rem solid;
+}
+
+.active-b-white:hover, .active-b-white:active, .active-b-white:focus {
+  border: var(--white) 0.0625rem solid;
 }
 
 .out-white,
 .hv-out-white:hover,
 .a-out-white:active,
 .a-out-white:focus {
-  outline: var(--white) 1px solid;
+  outline: var(--white) 0.0625rem solid;
+}
+
+.active-out-white:hover, .active-out-white:active, .active-out-white:focus {
+  outline: var(--white) 0.0625rem solid;
 }
 
 .green-200,
 .hv-green-200:hover,
 .a-green-200:active,
 .a-green-200:focus {
+  background-color: var(--green-200);
+}
+
+.active-green-200:hover, .active-green-200:active, .active-green-200:focus {
   background-color: var(--green-200);
 }
 
@@ -102,24 +122,40 @@ ul {
   color: var(--green-200);
 }
 
+.active-c-green-200:hover, .active-c-green-200:active, .active-c-green-200:focus {
+  color: var(--green-200);
+}
+
 .b-green-200,
 .hv-b-green-200:hover,
 .a-b-green-200:active,
 .a-b-green-200:focus {
-  border: var(--green-200) 2px solid;
+  border: var(--green-200) 0.0625rem solid;
+}
+
+.active-b-green-200:hover, .active-b-green-200:active, .active-b-green-200:focus {
+  border: var(--green-200) 0.0625rem solid;
 }
 
 .out-green-200,
 .hv-out-green-200:hover,
 .a-out-green-200:active,
 .a-out-green-200:focus {
-  outline: var(--green-200) 1px solid;
+  outline: var(--green-200) 0.0625rem solid;
+}
+
+.active-out-green-200:hover, .active-out-green-200:active, .active-out-green-200:focus {
+  outline: var(--green-200) 0.0625rem solid;
 }
 
 .green-600,
 .hv-green-600:hover,
 .a-green-600:active,
 .a-green-600:focus {
+  background-color: var(--green-600);
+}
+
+.active-green-600:hover, .active-green-600:active, .active-green-600:focus {
   background-color: var(--green-600);
 }
 
@@ -130,24 +166,40 @@ ul {
   color: var(--green-600);
 }
 
+.active-c-green-600:hover, .active-c-green-600:active, .active-c-green-600:focus {
+  color: var(--green-600);
+}
+
 .b-green-600,
 .hv-b-green-600:hover,
 .a-b-green-600:active,
 .a-b-green-600:focus {
-  border: var(--green-600) 2px solid;
+  border: var(--green-600) 0.0625rem solid;
+}
+
+.active-b-green-600:hover, .active-b-green-600:active, .active-b-green-600:focus {
+  border: var(--green-600) 0.0625rem solid;
 }
 
 .out-green-600,
 .hv-out-green-600:hover,
 .a-out-green-600:active,
 .a-out-green-600:focus {
-  outline: var(--green-600) 1px solid;
+  outline: var(--green-600) 0.0625rem solid;
+}
+
+.active-out-green-600:hover, .active-out-green-600:active, .active-out-green-600:focus {
+  outline: var(--green-600) 0.0625rem solid;
 }
 
 .red,
 .hv-red:hover,
 .a-red:active,
 .a-red:focus {
+  background-color: var(--red);
+}
+
+.active-red:hover, .active-red:active, .active-red:focus {
   background-color: var(--red);
 }
 
@@ -158,24 +210,40 @@ ul {
   color: var(--red);
 }
 
+.active-c-red:hover, .active-c-red:active, .active-c-red:focus {
+  color: var(--red);
+}
+
 .b-red,
 .hv-b-red:hover,
 .a-b-red:active,
 .a-b-red:focus {
-  border: var(--red) 2px solid;
+  border: var(--red) 0.0625rem solid;
+}
+
+.active-b-red:hover, .active-b-red:active, .active-b-red:focus {
+  border: var(--red) 0.0625rem solid;
 }
 
 .out-red,
 .hv-out-red:hover,
 .a-out-red:active,
 .a-out-red:focus {
-  outline: var(--red) 1px solid;
+  outline: var(--red) 0.0625rem solid;
+}
+
+.active-out-red:hover, .active-out-red:active, .active-out-red:focus {
+  outline: var(--red) 0.0625rem solid;
 }
 
 .grey-500,
 .hv-grey-500:hover,
 .a-grey-500:active,
 .a-grey-500:focus {
+  background-color: var(--grey-500);
+}
+
+.active-grey-500:hover, .active-grey-500:active, .active-grey-500:focus {
   background-color: var(--grey-500);
 }
 
@@ -186,24 +254,40 @@ ul {
   color: var(--grey-500);
 }
 
+.active-c-grey-500:hover, .active-c-grey-500:active, .active-c-grey-500:focus {
+  color: var(--grey-500);
+}
+
 .b-grey-500,
 .hv-b-grey-500:hover,
 .a-b-grey-500:active,
 .a-b-grey-500:focus {
-  border: var(--grey-500) 2px solid;
+  border: var(--grey-500) 0.0625rem solid;
+}
+
+.active-b-grey-500:hover, .active-b-grey-500:active, .active-b-grey-500:focus {
+  border: var(--grey-500) 0.0625rem solid;
 }
 
 .out-grey-500,
 .hv-out-grey-500:hover,
 .a-out-grey-500:active,
 .a-out-grey-500:focus {
-  outline: var(--grey-500) 1px solid;
+  outline: var(--grey-500) 0.0625rem solid;
+}
+
+.active-out-grey-500:hover, .active-out-grey-500:active, .active-out-grey-500:focus {
+  outline: var(--grey-500) 0.0625rem solid;
 }
 
 .grey-900,
 .hv-grey-900:hover,
 .a-grey-900:active,
 .a-grey-900:focus {
+  background-color: var(--grey-900);
+}
+
+.active-grey-900:hover, .active-grey-900:active, .active-grey-900:focus {
   background-color: var(--grey-900);
 }
 
@@ -214,18 +298,30 @@ ul {
   color: var(--grey-900);
 }
 
+.active-c-grey-900:hover, .active-c-grey-900:active, .active-c-grey-900:focus {
+  color: var(--grey-900);
+}
+
 .b-grey-900,
 .hv-b-grey-900:hover,
 .a-b-grey-900:active,
 .a-b-grey-900:focus {
-  border: var(--grey-900) 2px solid;
+  border: var(--grey-900) 0.0625rem solid;
+}
+
+.active-b-grey-900:hover, .active-b-grey-900:active, .active-b-grey-900:focus {
+  border: var(--grey-900) 0.0625rem solid;
 }
 
 .out-grey-900,
 .hv-out-grey-900:hover,
 .a-out-grey-900:active,
 .a-out-grey-900:focus {
-  outline: var(--grey-900) 1px solid;
+  outline: var(--grey-900) 0.0625rem solid;
+}
+
+.active-out-grey-900:hover, .active-out-grey-900:active, .active-out-grey-900:focus {
+  outline: var(--grey-900) 0.0625rem solid;
 }
 
 :root {
@@ -18664,17 +18760,25 @@ button {
   text-decoration: underline;
 }
 
+.form {
+  font-size: clamp(0.9rem, 0.8647887324rem + 0.1502347418vw, 1rem);
+  max-inline-size: 37.5rem;
+}
 .form__identity-label {
   display: grid;
   gap: 0.5em;
   font-weight: var(--weight-normal);
-  font-size: clamp(0.9rem, 0.8647887324rem + 0.1502347418vw, 1rem);
+  flex-grow: 1;
 }
 .form__identity-input {
-  border: 0.0625rem solid var(--green-600);
+  min-inline-size: 0;
+  border: 0.0625rem solid var(--grey-500);
   padding: 0.5em;
   border-radius: 0.5em;
   font-size: clamp(1rem, 0.9647887324rem + 0.1502347418vw, 1.1rem);
+}
+.form__text {
+  resize: none;
 }
 .form__error {
   color: var(--red);

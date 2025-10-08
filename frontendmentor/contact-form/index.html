@@ -17,9 +17,13 @@
   </head>
   <body class="c-grey-900">
     <main class="container pi-1 pbl-2 relative">
-      <form action="go" id="contact-form" class="form white grid g-1 p-1 br-1">
+      <form
+        action="go"
+        id="contact-form"
+        class="form white grid g-1 p-1 sm-up-p-2 br-1"
+      >
         <h1 class="form__header">Contact Us</h1>
-        <section class="form__identity grid g-1">
+        <section class="form__identity grid g-1 sm-up-flex flex-wrap">
           <label class="form__identity-label"
             ><span>First Name <span class="c-green-600">*</span></span>
             <input
@@ -60,9 +64,12 @@
             </p>
           </label>
         </section>
-        <fieldset class="form__query">
+
+        <!-- Query section -->
+        <fieldset class="form__query grid sm-up-flex no-border g-1 spbl-5">
           <legend>Query Type <span class="c-green-600">*</span></legend>
-          <label class="form__query"
+          <label
+            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p"
             ><input
               type="radio"
               name="type"
@@ -71,7 +78,8 @@
               required="required"
             />
             General Enquiry </label
-          ><label class="form__query"
+          ><label
+            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p"
             ><input
               type="radio"
               name="type"
@@ -84,16 +92,19 @@
             Please select a query type
           </p>
         </fieldset>
+
+        <!-- message section -->
         <label class="form__identity-label"
           ><span>Message <span class="c-green-600">*</span></span>
           <textarea
             name="message"
-            class="form__text"
+            class="form__text b-grey-500 sbr-5 p-1 active-out-green-600"
             aria-described="text-error"
+            rows="10"
           ></textarea>
           <p id="text-error" class="form__error hide">This field is required</p>
         </label>
-        <label class="form__query-label">
+        <label class="flex g-1 a-center pbl-1 cursor-p">
           <input
             type="checkbox"
             name="consent"
@@ -105,11 +116,16 @@
             >I consent to being contacted by the team
             <span class="c-green-600">*</span></span
           >
-          <p class="form-error" id="consent-error">
+          <p class="form__error hide" id="consent-error">
             To submit this form, please consent to being contacted
           </p>
         </label>
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          class="no-border sbr-5 p-1 c-white green-600 bold active-red"
+        >
+          Submit
+        </button>
       </form>
       <article class="success absolute hide">
         <h2 class="success__header">Message Sent!</h2>

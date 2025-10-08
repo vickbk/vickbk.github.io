@@ -1,18 +1,26 @@
 @use "../functions/" as f;
 .form {
+  font-size: f.clamp-builder(0.9rem, 1rem);
+  max-inline-size: f.to-r-em(600);
   &__identity {
     &-label {
       display: grid;
       gap: 0.5em;
       font-weight: var(--weight-normal);
-      font-size: f.clamp-builder(0.9rem, 1rem);
+      flex-grow: 1;
     }
     &-input {
-      border: f.to-r-em(1) solid var(--green-600);
+      min-inline-size: 0;
+      border: f.to-r-em(1) solid var(--grey-500);
       padding: 0.5em;
       border-radius: 0.5em;
       font-size: f.clamp-builder(1rem, 1.1rem);
     }
+  }
+  &__query {
+  }
+  &__text {
+    resize: none;
   }
   &__error {
     color: var(--red);

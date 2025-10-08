@@ -1,3 +1,6 @@
+@use "../functions/" as f;
+@use "../globals/states" as s;
+
 // ### Primary
 
 // ### Neutral
@@ -13,10 +16,6 @@ $grey-900: hsl(187, 24%, 22%);
 
 //
 
-$primary-color: $green-200;
-$link-color: $green-600;
-$text-color: $grey-900;
-
 $colorsMap: (
   white: $white,
   green-200: $green-200,
@@ -25,6 +24,10 @@ $colorsMap: (
   grey-500: $grey-500,
   grey-900: $grey-900,
 );
+
+$primary-color: $green-200;
+$link-color: $green-600;
+$text-color: $grey-900;
 
 :root {
   --background: $primary-color;
@@ -40,6 +43,14 @@ $colorsMap: (
   }
 }
 
+@mixin active-colors($suffix) {
+  .active-#{$suffix} {
+    @include s.active-state {
+      @content;
+    }
+  }
+}
+
 @each $name, $color in $colorsMap {
   .#{"" + $name},
   .hv-#{"" + $name}:hover,
@@ -47,22 +58,37 @@ $colorsMap: (
   .a-#{"" + $name}:focus {
     background-color: var(--#{"" + $name});
   }
+  @include active-colors(#{"" + $name}) {
+    background-color: var(--#{"" + $name});
+  }
+
   .c-#{"" + $name}.c-#{"" + $name},
   .hv-c-#{"" + $name}:hover,
   .a-c-#{"" + $name}:active,
   .a-c-#{"" + $name}:focus {
     color: var(--#{"" + $name});
   }
+  @include active-colors(#{"c-" + $name}) {
+    color: var(--#{"" + $name});
+  }
+
   .b-#{"" + $name},
   .hv-b-#{"" + $name}:hover,
   .a-b-#{"" + $name}:active,
   .a-b-#{"" + $name}:focus {
-    border: var(--#{"" + $name}) 2px solid;
+    border: var(--#{"" + $name}) f.to-r-em(1) solid;
   }
+  @include active-colors(#{"b-" + $name}) {
+    border: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+
   .out-#{"" + $name},
   .hv-out-#{"" + $name}:hover,
   .a-out-#{"" + $name}:active,
   .a-out-#{"" + $name}:focus {
-    outline: var(--#{"" + $name}) 1px solid;
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+  @include active-colors(#{"out-" + $name}) {
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
   }
 }
