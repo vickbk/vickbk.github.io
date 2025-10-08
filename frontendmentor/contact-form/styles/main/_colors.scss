@@ -23,7 +23,7 @@ $colorsMap: (
   green-600: $green-600,
   red: $red,
   grey-500: $grey-500,
-  grey-900: grey-900,
+  grey-900: $grey-900,
 );
 
 :root {
@@ -45,24 +45,24 @@ $colorsMap: (
   .hv-#{"" + $name}:hover,
   .a-#{"" + $name}:active,
   .a-#{"" + $name}:focus {
-    background-color: $color;
+    background-color: var(--#{"" + $name});
   }
   .c-#{"" + $name}.c-#{"" + $name},
   .hv-c-#{"" + $name}:hover,
   .a-c-#{"" + $name}:active,
   .a-c-#{"" + $name}:focus {
-    color: $color;
+    color: var(--#{"" + $name});
   }
   .b-#{"" + $name},
   .hv-b-#{"" + $name}:hover,
   .a-b-#{"" + $name}:active,
   .a-b-#{"" + $name}:focus {
-    border: $color 2px solid;
+    border: var(--#{"" + $name}) 2px solid;
   }
   .out-#{"" + $name},
   .hv-out-#{"" + $name}:hover,
   .a-out-#{"" + $name}:active,
   .a-out-#{"" + $name}:focus {
-    outline: $color 1px solid;
+    outline: var(--#{"" + $name}) 1px solid;
   }
 }

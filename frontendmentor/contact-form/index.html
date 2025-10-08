@@ -15,13 +15,13 @@
     <title>Frontend Mentor | Contact form</title>
     <link rel="stylesheet" href="./dist/css/styles.css" />
   </head>
-  <body>
-    <main class="container">
-      <form action="go" id="contact-form" class="form grid g-1">
+  <body class="c-grey-900">
+    <main class="container pi-1 pbl-2 relative">
+      <form action="go" id="contact-form" class="form white grid g-1 p-1 br-1">
         <h1 class="form__header">Contact Us</h1>
-        <section class="form__identity flex flex-wrap g-1">
+        <section class="form__identity grid g-1">
           <label class="form__identity-label"
-            >First Name *
+            ><span>First Name <span class="c-green-600">*</span></span>
             <input
               type="text"
               required="required"
@@ -29,12 +29,12 @@
               aria-error="true"
               class="form__identity-input"
             />
-            <p id="first-name-error" class="form__error">
+            <p id="first-name-error" class="form__error hide">
               This field is required
             </p>
           </label>
           <label class="form__identity-label"
-            >Last Name *
+            ><span>Last Name <span class="c-green-600">*</span></span>
             <input
               type="text"
               required="required"
@@ -42,12 +42,12 @@
               aria-error="true"
               class="form__identity-input"
             />
-            <p id="last-name-error" class="form__error">
+            <p id="last-name-error" class="form__error hide">
               This field is required
             </p>
           </label>
           <label class="form__identity-label"
-            >Email Address *
+            ><span>Email Address <span class="c-green-600">*</span></span>
             <input
               type="email"
               required="required"
@@ -55,13 +55,13 @@
               aria-error="true"
               class="form__identity-input"
             />
-            <p id="email-error" class="form__error">
+            <p id="email-error" class="form__error hide">
               Please enter a valid email address
             </p>
           </label>
         </section>
         <fieldset class="form__query">
-          <legend>Query Type *</legend>
+          <legend>Query Type <span class="c-green-600">*</span></legend>
           <label class="form__query"
             ><input
               type="radio"
@@ -80,16 +80,18 @@
               required="required"
             />Support Request</label
           >
-          <p class="form__error" id="type-error">Please select a query type</p>
+          <p class="form__error hide" id="type-error">
+            Please select a query type
+          </p>
         </fieldset>
         <label class="form__identity-label"
-          >Message *
+          ><span>Message <span class="c-green-600">*</span></span>
           <textarea
             name="message"
             class="form__text"
             aria-described="text-error"
           ></textarea>
-          <p id="text-error" class="form__error">This field is required</p>
+          <p id="text-error" class="form__error hide">This field is required</p>
         </label>
         <label class="form__query-label">
           <input
@@ -99,14 +101,17 @@
             aria-labelledby="consent-error"
             class="form__input-check"
           />
-          I consent to being contacted by the team
+          <span
+            >I consent to being contacted by the team
+            <span class="c-green-600">*</span></span
+          >
           <p class="form-error" id="consent-error">
             To submit this form, please consent to being contacted
           </p>
         </label>
         <button type="submit">Submit</button>
       </form>
-      <article class="success">
+      <article class="success absolute hide">
         <h2 class="success__header">Message Sent!</h2>
         <p class="success__content">
           Thanks for completing the form. We'll be in touch soon!
