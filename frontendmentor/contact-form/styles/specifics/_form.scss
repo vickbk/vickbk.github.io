@@ -13,11 +13,23 @@
       min-inline-size: 0;
       border: f.to-r-em(1) solid var(--grey-500);
       padding: 0.5em;
+      padding-inline: 1em;
       border-radius: 0.5em;
       font-size: f.clamp-builder(1rem, 1.1rem);
     }
   }
   &__query {
+    &-label:has(&-radio:checked) {
+      border-color: var(--green-600);
+      outline: solid f.to-r-em(1) var(--green-600);
+      background-color: var(--green-200);
+    }
+  }
+  &__check,
+  &__query-radio {
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
   }
   &__text {
     resize: none;

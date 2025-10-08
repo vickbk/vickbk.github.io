@@ -31,7 +31,7 @@
               required="required"
               aria-describedby="first-name-error"
               aria-error="true"
-              class="form__identity-input"
+              class="form__identity-input active-out-green-600"
             />
             <p id="first-name-error" class="form__error hide">
               This field is required
@@ -44,7 +44,7 @@
               required="required"
               aria-describedby="last-name-error"
               aria-error="true"
-              class="form__identity-input"
+              class="form__identity-input active-out-green-600"
             />
             <p id="last-name-error" class="form__error hide">
               This field is required
@@ -57,7 +57,7 @@
               required="required"
               aria-describedby="email-error"
               aria-error="true"
-              class="form__identity-input"
+              class="form__identity-input active-out-green-600"
             />
             <p id="email-error" class="form__error hide">
               Please enter a valid email address
@@ -79,7 +79,7 @@
             />
             General Enquiry </label
           ><label
-            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p"
+            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p active-green-200"
             ><input
               type="radio"
               name="type"
@@ -104,13 +104,14 @@
           ></textarea>
           <p id="text-error" class="form__error hide">This field is required</p>
         </label>
+
         <label class="flex g-1 a-center pbl-1 cursor-p">
           <input
             type="checkbox"
             name="consent"
             required="required"
             aria-labelledby="consent-error"
-            class="form__input-check"
+            class="form__check p-1"
           />
           <span
             >I consent to being contacted by the team
@@ -120,6 +121,7 @@
             To submit this form, please consent to being contacted
           </p>
         </label>
+
         <button
           type="submit"
           class="no-border sbr-5 p-1 c-white green-600 bold active-red"

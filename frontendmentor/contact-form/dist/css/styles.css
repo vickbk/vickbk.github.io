@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+input[type=radio], input[type=checkbox] {
+  accent-color: var(--accent-color);
+}
+
 :root {
   --font-link: "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap";
   --primary-font: Karla, sans-serif;
@@ -42,13 +46,14 @@ ul {
 }
 
 :root {
-  --background: $primary-color;
-  --foreground: $text-color;
+  --background: hsl(148, 38%, 91%);
+  --foreground: hsl(187, 24%, 22%);
+  --accent-color: hsl(169, 82%, 27%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: $text-color;
-    --foreground: $primary-color;
+    --background: hsl(187, 24%, 22%);
+    --foreground: hsl(148, 38%, 91%);
   }
 }
 :root {
@@ -18774,8 +18779,19 @@ button {
   min-inline-size: 0;
   border: 0.0625rem solid var(--grey-500);
   padding: 0.5em;
+  padding-inline: 1em;
   border-radius: 0.5em;
   font-size: clamp(1rem, 0.9647887324rem + 0.1502347418vw, 1.1rem);
+}
+.form__query-label:has(.form__query-radio:checked) {
+  border-color: var(--green-600);
+  outline: solid 0.0625rem var(--green-600);
+  background-color: var(--green-200);
+}
+.form__check, .form__query-radio {
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
 }
 .form__text {
   resize: none;

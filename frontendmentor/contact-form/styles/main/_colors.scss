@@ -28,13 +28,15 @@ $colorsMap: (
 $primary-color: $green-200;
 $link-color: $green-600;
 $text-color: $grey-900;
+$accent-color: $green-600;
 
 :root {
-  --background: $primary-color;
-  --foreground: $text-color;
+  --background: #{$primary-color};
+  --foreground: #{$text-color};
+  --accent-color: #{$accent-color};
   @media (prefers-color-scheme: dark) {
-    --background: $text-color;
-    --foreground: $primary-color;
+    --background: #{$text-color};
+    --foreground: #{$primary-color};
   }
   & {
     @each $name, $color in $colorsMap {
