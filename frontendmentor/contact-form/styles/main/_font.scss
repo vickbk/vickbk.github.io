@@ -1,0 +1,30 @@
+@use "../functions/" as f;
+$link: "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap";
+
+$primary-font: "Karla", sans-serif;
+$secondary-font: "Karla", sans-serif;
+
+$primary-size: 100%;
+$preferred-size: f.to-r-em(15);
+
+$weight-normal: 400;
+$weight-natural: 400;
+$min-bold: 600;
+$min-bold-italic: 600i;
+$bold: 700;
+
+:root {
+  --font-link: "#{$link}";
+
+  --primary-font: #{$primary-font};
+  --secondary-font: #{$secondary-font};
+
+  --primary-size: #{$primary-size};
+  --preferred-size: #{$preferred-size};
+
+  --weight-normal: #{$weight-normal};
+  --weight-natural: #{$weight-natural};
+  --min-bold: #{$min-bold};
+  --min-bold-italic: #{$min-bold-italic};
+  --bold: #{$bold};
+}
