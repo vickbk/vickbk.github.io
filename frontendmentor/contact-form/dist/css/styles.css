@@ -18814,7 +18814,7 @@ button {
 .form__error {
   color: var(--red);
 }
-.form *[aria-hidden=true] {
+.form *[aria-invalid=true] {
   border-color: var(--red);
 }
 
