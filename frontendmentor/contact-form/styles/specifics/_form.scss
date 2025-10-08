@@ -1,7 +1,7 @@
 @use "../functions/" as f;
 .form {
   font-size: f.clamp-builder(0.9rem, 1rem);
-  max-inline-size: f.to-r-em(600);
+  max-inline-size: f.to-r-em(800);
   &__identity {
     &-label {
       display: grid;

@@ -21,10 +21,10 @@
       <form
         action="go"
         id="contact-form"
-        class="form white grid g-1 p-1 sm-up-p-2 br-1"
+        class="form white grid g-2 p-1 sm-up-p-2 br-1"
       >
         <h1 class="form__header">Contact Us</h1>
-        <section class="form__identity grid g-1 sm-up-flex flex-wrap">
+        <section class="form__identity grid g-2 sm-up-flex flex-wrap">
           <label class="form__identity-label"
             ><span>First Name <span class="c-green-600">*</span></span>
             <input
@@ -33,9 +33,9 @@
               aria-describedby="first-name-error"
               class="form__identity-input active-out-green-600"
             />
-            <p id="first-name-error" class="form__error hide">
+            <span id="first-name-error" class="form__error hide">
               This field is required
-            </p>
+            </span>
           </label>
           <label class="form__identity-label"
             ><span>Last Name <span class="c-green-600">*</span></span>
@@ -45,9 +45,9 @@
               aria-describedby="last-name-error"
               class="form__identity-input active-out-green-600"
             />
-            <p id="last-name-error" class="form__error hide">
+            <span id="last-name-error" class="form__error hide">
               This field is required
-            </p>
+            </span>
           </label>
           <label class="form__identity-label"
             ><span>Email Address <span class="c-green-600">*</span></span>
@@ -57,15 +57,15 @@
               aria-describedby="email-error"
               class="form__identity-input active-out-green-600"
             />
-            <p id="email-error" class="form__error hide">
+            <span id="email-error" class="form__error hide">
               Please enter a valid email address
-            </p>
+            </span>
           </label>
         </section>
 
         <!-- Query section -->
         <fieldset
-          class="form__query grid sm-up-flex flex-wrap no-border g-1 spbl-5"
+          class="form__query grid sm-up-flex flex-wrap no-border g-2 spbl-5 a-center"
         >
           <legend>Query Type <span class="c-green-600">*</span></legend>
           <label
@@ -102,10 +102,12 @@
             name="message"
             class="form__text b-grey-500 sbr-5 p-1 active-out-green-600"
             aria-describedby="text-error"
-            rows="5"
+            rows="3"
             required
           ></textarea>
-          <p id="text-error" class="form__error hide">This field is required</p>
+          <span id="text-error" class="form__error hide"
+            >This field is required</span
+          >
         </label>
 
         <label class="flex flex-wrap g-1 a-center pbl-1 cursor-p">
@@ -120,9 +122,9 @@
             >I consent to being contacted by the team
             <span class="c-green-600">*</span></span
           >
-          <p class="form__error hide" id="consent-error">
+          <span class="form__error hide" id="consent-error">
             To submit this form, please consent to being contacted
-          </p>
+          </span>
         </label>
 
         <button
