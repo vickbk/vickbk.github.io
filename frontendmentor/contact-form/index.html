@@ -14,6 +14,7 @@
 
     <title>Frontend Mentor | Contact form</title>
     <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script type="module" src="./scripts/main.js" defer></script>
   </head>
   <body class="c-grey-900">
     <main class="container pi-1 pbl-2 relative">
@@ -69,7 +70,7 @@
         <fieldset class="form__query grid sm-up-flex no-border g-1 spbl-5">
           <legend>Query Type <span class="c-green-600">*</span></legend>
           <label
-            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p"
+            class="form__query-label flex-grow sp-8 pi-1 flex g-1 a-center b-green-600 sbr-5 cursor-p active-green-200"
             ><input
               type="radio"
               name="type"
@@ -99,7 +100,7 @@
           <textarea
             name="message"
             class="form__text b-grey-500 sbr-5 p-1 active-out-green-600"
-            aria-described="text-error"
+            aria-describedby="text-error"
             rows="10"
           ></textarea>
           <p id="text-error" class="form__error hide">This field is required</p>
@@ -124,7 +125,7 @@
 
         <button
           type="submit"
-          class="no-border sbr-5 p-1 c-white green-600 bold active-red"
+          class="no-border sbr-5 p-1 c-white green-600 bold active-green-200 active-c-green-600"
         >
           Submit
         </button>
