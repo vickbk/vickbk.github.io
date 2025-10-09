@@ -1,0 +1,14 @@
+@use "../functions/" as f;
+.more {
+  &__article {
+    &-img {
+      inline-size: f.clamp-builder(80, 200);
+    }
+    &-header {
+      font-size: f.clamp-builder(1.2rem, 2rem);
+    }
+    &-title {
+      font-size: f.clamp-builder(1rem, 1.5rem);
+    }
+  }
+}
