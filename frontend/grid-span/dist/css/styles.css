@@ -18186,88 +18186,77 @@ button {
 .gc-1 {
   grid-template-columns: repeat(1, 1fr);
 }
-.gc-1.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
   grid-column: mod(sibling-index(), 1)/-1;
 }
 
 .gc-2 {
   grid-template-columns: repeat(2, 1fr);
 }
-.gc-2.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
   grid-column: mod(sibling-index(), 2)/-1;
 }
 
 .gc-3 {
   grid-template-columns: repeat(3, 1fr);
 }
-.gc-3.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
   grid-column: mod(sibling-index(), 3)/-1;
 }
 
 .gc-4 {
   grid-template-columns: repeat(4, 1fr);
 }
-.gc-4.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
   grid-column: mod(sibling-index(), 4)/-1;
 }
 
 .gc-5 {
   grid-template-columns: repeat(5, 1fr);
 }
-.gc-5.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
   grid-column: mod(sibling-index(), 5)/-1;
 }
 
 .gc-6 {
   grid-template-columns: repeat(6, 1fr);
 }
-.gc-6.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
   grid-column: mod(sibling-index(), 6)/-1;
 }
 
 .gc-7 {
   grid-template-columns: repeat(7, 1fr);
 }
-.gc-7.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
   grid-column: mod(sibling-index(), 7)/-1;
 }
 
 .gc-8 {
   grid-template-columns: repeat(8, 1fr);
 }
-.gc-8.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
   grid-column: mod(sibling-index(), 8)/-1;
 }
 
 .gc-9 {
   grid-template-columns: repeat(9, 1fr);
 }
-.gc-9.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
   grid-column: mod(sibling-index(), 9)/-1;
 }
 
 .gc-10 {
   grid-template-columns: repeat(10, 1fr);
 }
-.gc-10.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
   grid-column: mod(sibling-index(), 10)/-1;
 }
 
 .gc-11 {
   grid-template-columns: repeat(11, 1fr);
 }
-.gc-11.span-last-element > *:last-child {
-  border: 2px solid red;
+.gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
   grid-column: mod(sibling-index(), 11)/-1;
 }
 
@@ -18278,78 +18267,67 @@ button {
   .xs-up-gc-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .xs-up-gc-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .xs-up-gc-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .xs-up-gc-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .xs-up-gc-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .xs-up-gc-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .xs-up-gc-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .xs-up-gc-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .xs-up-gc-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .xs-up-gc-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .xs-up-gc-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .xs-up-gc-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .xs-up-gc-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .xs-up-gc-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .xs-up-gc-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .xs-up-gc-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .xs-up-gc-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .xs-up-gc-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .xs-up-gc-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .xs-up-gc-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .xs-up-gc-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .xs-up-gc-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xs-up-gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18360,78 +18338,67 @@ button {
   .gc-xs-down-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .gc-xs-down-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .gc-xs-down-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gc-xs-down-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .gc-xs-down-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gc-xs-down-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .gc-xs-down-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gc-xs-down-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .gc-xs-down-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .gc-xs-down-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .gc-xs-down-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .gc-xs-down-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .gc-xs-down-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .gc-xs-down-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .gc-xs-down-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .gc-xs-down-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .gc-xs-down-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .gc-xs-down-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .gc-xs-down-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .gc-xs-down-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .gc-xs-down-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .gc-xs-down-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xs-down-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18442,78 +18409,67 @@ button {
   .sm-up-gc-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .sm-up-gc-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .sm-up-gc-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .sm-up-gc-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .sm-up-gc-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .sm-up-gc-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .sm-up-gc-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .sm-up-gc-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .sm-up-gc-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .sm-up-gc-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .sm-up-gc-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .sm-up-gc-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .sm-up-gc-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .sm-up-gc-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .sm-up-gc-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .sm-up-gc-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .sm-up-gc-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .sm-up-gc-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .sm-up-gc-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .sm-up-gc-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .sm-up-gc-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .sm-up-gc-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .sm-up-gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18524,78 +18480,67 @@ button {
   .gc-sm-down-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .gc-sm-down-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .gc-sm-down-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gc-sm-down-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .gc-sm-down-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gc-sm-down-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .gc-sm-down-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gc-sm-down-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .gc-sm-down-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .gc-sm-down-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .gc-sm-down-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .gc-sm-down-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .gc-sm-down-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .gc-sm-down-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .gc-sm-down-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .gc-sm-down-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .gc-sm-down-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .gc-sm-down-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .gc-sm-down-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .gc-sm-down-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .gc-sm-down-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .gc-sm-down-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-sm-down-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18606,78 +18551,67 @@ button {
   .md-up-gc-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .md-up-gc-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .md-up-gc-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .md-up-gc-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .md-up-gc-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .md-up-gc-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .md-up-gc-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .md-up-gc-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .md-up-gc-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .md-up-gc-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .md-up-gc-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .md-up-gc-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .md-up-gc-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .md-up-gc-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .md-up-gc-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .md-up-gc-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .md-up-gc-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .md-up-gc-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .md-up-gc-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .md-up-gc-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .md-up-gc-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .md-up-gc-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .md-up-gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18688,78 +18622,67 @@ button {
   .gc-md-down-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .gc-md-down-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .gc-md-down-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gc-md-down-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .gc-md-down-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gc-md-down-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .gc-md-down-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gc-md-down-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .gc-md-down-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .gc-md-down-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .gc-md-down-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .gc-md-down-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .gc-md-down-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .gc-md-down-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .gc-md-down-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .gc-md-down-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .gc-md-down-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .gc-md-down-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .gc-md-down-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .gc-md-down-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .gc-md-down-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .gc-md-down-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-md-down-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18770,78 +18693,67 @@ button {
   .lg-up-gc-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .lg-up-gc-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .lg-up-gc-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .lg-up-gc-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .lg-up-gc-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .lg-up-gc-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .lg-up-gc-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .lg-up-gc-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .lg-up-gc-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .lg-up-gc-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .lg-up-gc-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .lg-up-gc-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .lg-up-gc-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .lg-up-gc-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .lg-up-gc-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .lg-up-gc-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .lg-up-gc-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .lg-up-gc-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .lg-up-gc-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .lg-up-gc-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .lg-up-gc-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .lg-up-gc-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .lg-up-gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18852,78 +18764,67 @@ button {
   .gc-lg-down-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .gc-lg-down-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .gc-lg-down-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gc-lg-down-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .gc-lg-down-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gc-lg-down-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .gc-lg-down-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gc-lg-down-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .gc-lg-down-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .gc-lg-down-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .gc-lg-down-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .gc-lg-down-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .gc-lg-down-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .gc-lg-down-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .gc-lg-down-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .gc-lg-down-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .gc-lg-down-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .gc-lg-down-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .gc-lg-down-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .gc-lg-down-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .gc-lg-down-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .gc-lg-down-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-lg-down-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -18934,78 +18835,67 @@ button {
   .xl-up-gc-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .xl-up-gc-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .xl-up-gc-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .xl-up-gc-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .xl-up-gc-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .xl-up-gc-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .xl-up-gc-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .xl-up-gc-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .xl-up-gc-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .xl-up-gc-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .xl-up-gc-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .xl-up-gc-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .xl-up-gc-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .xl-up-gc-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .xl-up-gc-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .xl-up-gc-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .xl-up-gc-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .xl-up-gc-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .xl-up-gc-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .xl-up-gc-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .xl-up-gc-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .xl-up-gc-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .xl-up-gc-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
@@ -19016,78 +18906,67 @@ button {
   .gc-xl-down-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .gc-xl-down-1.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-1.span-last-element > *:last-child:not(:nth-child(1n)) {
     grid-column: mod(sibling-index(), 1)/-1;
   }
   .gc-xl-down-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gc-xl-down-2.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-2.span-last-element > *:last-child:not(:nth-child(2n)) {
     grid-column: mod(sibling-index(), 2)/-1;
   }
   .gc-xl-down-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gc-xl-down-3.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-3.span-last-element > *:last-child:not(:nth-child(3n)) {
     grid-column: mod(sibling-index(), 3)/-1;
   }
   .gc-xl-down-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gc-xl-down-4.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-4.span-last-element > *:last-child:not(:nth-child(4n)) {
     grid-column: mod(sibling-index(), 4)/-1;
   }
   .gc-xl-down-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .gc-xl-down-5.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-5.span-last-element > *:last-child:not(:nth-child(5n)) {
     grid-column: mod(sibling-index(), 5)/-1;
   }
   .gc-xl-down-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .gc-xl-down-6.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-6.span-last-element > *:last-child:not(:nth-child(6n)) {
     grid-column: mod(sibling-index(), 6)/-1;
   }
   .gc-xl-down-7 {
     grid-template-columns: repeat(7, 1fr);
   }
-  .gc-xl-down-7.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-7.span-last-element > *:last-child:not(:nth-child(7n)) {
     grid-column: mod(sibling-index(), 7)/-1;
   }
   .gc-xl-down-8 {
     grid-template-columns: repeat(8, 1fr);
   }
-  .gc-xl-down-8.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-8.span-last-element > *:last-child:not(:nth-child(8n)) {
     grid-column: mod(sibling-index(), 8)/-1;
   }
   .gc-xl-down-9 {
     grid-template-columns: repeat(9, 1fr);
   }
-  .gc-xl-down-9.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-9.span-last-element > *:last-child:not(:nth-child(9n)) {
     grid-column: mod(sibling-index(), 9)/-1;
   }
   .gc-xl-down-10 {
     grid-template-columns: repeat(10, 1fr);
   }
-  .gc-xl-down-10.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-10.span-last-element > *:last-child:not(:nth-child(10n)) {
     grid-column: mod(sibling-index(), 10)/-1;
   }
   .gc-xl-down-11 {
     grid-template-columns: repeat(11, 1fr);
   }
-  .gc-xl-down-11.span-last-element > *:last-child {
-    border: 2px solid red;
+  .gc-xl-down-11.span-last-element > *:last-child:not(:nth-child(11n)) {
     grid-column: mod(sibling-index(), 11)/-1;
   }
 }
