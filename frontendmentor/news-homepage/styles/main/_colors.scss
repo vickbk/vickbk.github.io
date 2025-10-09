@@ -1,34 +1,22 @@
 @use "../functions/" as f;
 @use "../globals/states" as s;
-
-// ### Primary
-
-// ### Neutral
-
-$white: hsl(0, 0%, 100%);
-
-$green-200: hsl(148, 38%, 91%);
-$green-600: hsl(169, 82%, 27%);
-$red: hsl(0, 66%, 54%);
-
-$grey-500: hsl(186, 15%, 59%);
-$grey-900: hsl(187, 24%, 22%);
-
-//
+@use "sass:map";
 
 $colorsMap: (
-  white: $white,
-  green-200: $green-200,
-  green-600: $green-600,
-  red: $red,
-  grey-500: $grey-500,
-  grey-900: $grey-900,
+  // Primary
+  soft-orange: hsl(35, 77%, 62%),
+  soft-red: hsl(5, 85%, 63%),
+  // Neutral
+  off-white: hsl(36, 100%, 99%),
+  grey-blue: hsl(233, 8%, 79%),
+  dark-grayish-blue: hsl(236, 13%, 42%),
+  very-dark-blue: hsl(240, 100%, 5%)
 );
 
-$primary-color: $green-200;
-$link-color: $green-600;
-$text-color: $grey-900;
-$accent-color: $green-600;
+$primary-color: map.get($colorsMap, off-white);
+$link-color: map.get($colorsMap, soft-orange);
+$text-color: map.get($colorsMap, very-dark-blue);
+$accent-color: map.get($colorsMap, soft-red);
 
 :root {
   --background: #{$primary-color};
