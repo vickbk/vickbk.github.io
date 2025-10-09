@@ -5,9 +5,19 @@
   display: grid;
 }
 
+@mixin last-element-spanner($grid-size) {
+  &.span-last-element > * {
+    &:last-child {
+      border: 2px solid red;
+      grid-column: mod(sibling-index(), $grid-size) / -1;
+    }
+  }
+}
+
 @for $i from 1 to 12 {
   .gc-#{$i} {
     grid-template-columns: repeat($i, 1fr);
+    @include last-element-spanner($i);
   }
 }
 
@@ -21,6 +31,7 @@
     @for $i from 1 to 12 {
       .#{$class}-up-gc-#{$i} {
         grid-template-columns: repeat($i, 1fr);
+        @include last-element-spanner($i);
       }
     }
   }
@@ -31,6 +42,7 @@
     @for $i from 1 to 12 {
       .gc-#{$class}-down-#{$i} {
         grid-template-columns: repeat($i, 1fr);
+        @include last-element-spanner($i);
       }
     }
   }
