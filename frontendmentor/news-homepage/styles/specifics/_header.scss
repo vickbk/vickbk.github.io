@@ -1,0 +1,18 @@
+@use "../globals" as g;
+
+.header {
+  &__navbar {
+    @include g.from-desktop(g.$mobile) {
+      block-size: 100vh;
+      inline-size: 60vw;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.cover.cover {
+  inset: 0;
+  background-color: var(--very-dark-blue);
+  opacity: 0.3;
+}

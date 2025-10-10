@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./dist/css/styles.css" />
   </head>
   <body>
-    <div class="container p-1">
+    <div class="container p-1 sm-down-relative">
       <div class="grid g-2">
         <!-- Header component -->
         <header class="flex g-1 space-between a-center">
@@ -24,19 +24,22 @@
           <button type="button" class="mis-auto no-border off-white sm-show">
             <img src="./assets/images/icon-menu.svg" alt="Menue Icon" />
           </button>
-          <nav class="mis-auto sm-hide">
-            <button>
+          <div class="cover sm-down-fixed hide"></div>
+          <nav
+            class="header__navbar mis-auto sm-hide sm-down-flex-column sm-down-fixed off-white p-1 sm-down-g-5"
+          >
+            <button type="button" class="mis-auto no-border off-white sm-show">
               <img
                 src="./assets/images/icon-menu-close.svg"
                 alt="Close Menue Icon"
               />
             </button>
-            <ul class="flex g-1">
-              <li><a href="./">Home</a></li>
-              <li><a href="/">New</a></li>
-              <li><a href="/">Popular</a></li>
-              <li><a href="/">Trending</a></li>
-              <li><a href="/">Categories</a></li>
+            <ul class="flex g-1 sm-down-grid">
+              <li><a class="c-very-dark-blue" href="./">Home</a></li>
+              <li><a class="c-very-dark-blue" href="/">New</a></li>
+              <li><a class="c-very-dark-blue" href="/">Popular</a></li>
+              <li><a class="c-very-dark-blue" href="/">Trending</a></li>
+              <li><a class="c-very-dark-blue" href="/">Categories</a></li>
             </ul>
           </nav>
         </header>
