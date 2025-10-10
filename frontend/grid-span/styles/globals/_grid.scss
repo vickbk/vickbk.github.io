@@ -5,6 +5,10 @@
   display: grid;
 }
 
+.gj-center {
+  justify-items: center;
+}
+
 @mixin last-element-spanner($grid-size) {
   &.span-last-element > * {
     &:last-child:not(:nth-child(#{$grid-size * 1n})) {
