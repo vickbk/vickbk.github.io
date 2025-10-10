@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container p-1 sm-down-relative">
-      <div class="grid g-2">
+      <div class="container__holder grid g-2">
         <!-- Header component -->
         <header class="flex g-1 space-between a-center">
           <img src="./assets/images/logo.svg" alt="News Homepage Logo" />
@@ -44,8 +44,8 @@
           </nav>
         </header>
 
-        <main class="grid g-3">
-          <article class="hero">
+        <main class="content grid g-2">
+          <article class="hero content__hero">
             <picture class="hero__image">
               <source
                 media="(width >= 37.5em)"
@@ -73,7 +73,7 @@
               </button>
             </section>
           </article>
-          <section class="news very-dark-blue c-off-white p-1">
+          <section class="content__news news very-dark-blue c-off-white p-1">
             <h2 class="c-soft-orange">New</h2>
             <article class="news__article">
               <h3 class="news__article-header">Hydrogen VS Electric Cars</h3>
@@ -98,7 +98,7 @@
           </section>
 
           <!-- more articles -->
-          <section class="more grid g-1">
+          <section class="content__more more grid g-1 lg-up-flex">
             <article class="more__article flex g-1">
               <img
                 class="more__article-img"

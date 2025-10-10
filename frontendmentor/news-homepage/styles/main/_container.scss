@@ -12,7 +12,7 @@
   }
   @include g.mobile-queries(g.$tablet) {
     &__holder {
-      max-inline-size: f.to-r-em(1200);
+      max-inline-size: f.to-r-em(1100);
     }
   }
 }
