@@ -18983,6 +18983,8 @@ button {
 }
 .more__article-img {
   inline-size: clamp(5rem, 4.5598591549rem + 1.8779342723vw, 6.25rem);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .more__article-header {
   font-size: clamp(1.2rem, 0.9183098592rem + 1.2018779343vw, 2rem);
