@@ -18931,7 +18931,7 @@ button {
 }
 @media (min-width: 48em) {
   .container__holder {
-    max-inline-size: 75rem;
+    max-inline-size: 68.75rem;
   }
 }
 
