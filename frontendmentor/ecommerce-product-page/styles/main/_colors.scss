@@ -24,6 +24,7 @@ $accent-color: map.get($colorsMap, orange);
   --background: #{$primary-color};
   --foreground: #{$text-color};
   --accent-color: #{$accent-color};
+  --link-color: #{$link-color};
   @media (prefers-color-scheme: dark) {
     --background: #{$text-color};
     --foreground: #{$primary-color};

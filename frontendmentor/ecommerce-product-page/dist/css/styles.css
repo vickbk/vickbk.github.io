@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 *,
 *::after,
 *::before {
@@ -40,22 +40,23 @@ input[type=radio], input[type=checkbox] {
 }
 
 :root {
-  --font-link: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";
-  --primary-font: Inter, sans-serif;
-  --secondary-font: Inter, sans-serif;
+  --font-link: "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap";
+  --primary-font: Kumbh Sans, sans-serif;
+  --secondary-font: Kumbh Sans, sans-serif;
   --primary-size: 100%;
-  --preferred-size: 0.9375rem;
+  --preferred-size: 1rem;
   --weight-normal: 400;
   --weight-natural: 400;
-  --min-bold: 700;
-  --min-bold-italic: 700i;
-  --bold: 800;
+  --min-bold: 600;
+  --min-bold-italic: 600i;
+  --bold: 700;
 }
 
 :root {
   --background: hsl(25, 100%, 94%);
   --foreground: hsl(220, 13%, 13%);
   --accent-color: hsl(26, 100%, 55%);
+  --link-color: hsl(26, 100%, 55%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19025,7 +19026,7 @@ button {
 }
 .container .header {
   text-align: center;
-  font-size: clamp(1.5rem, 0.7394366197rem + 0.8450704225vw, 0.9375rem);
+  font-size: clamp(1.5rem, 0.823943662rem + 0.7511737089vw, 1rem);
 }
 @media (min-width: 48em) {
   .container__holder {
@@ -19038,6 +19039,6 @@ button {
   text-align: center;
 }
 .attribution a {
-  color: hsl(26, 100%, 55%);
+  color: var(--link-color);
   text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
