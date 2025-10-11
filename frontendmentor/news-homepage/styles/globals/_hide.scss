@@ -1,0 +1,27 @@
+@use "media-queries" as *;
+@use "transitions" as trans;
+.hide.hide,
+.sm-hide.sm-hide {
+  opacity: 0;
+  animation-name: hideShow;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  transition-behavior: allow-discrete;
+  display: none;
+}
+.sm-hide.sm-hide {
+  @include mobile-queries($mobile) {
+    display: unset;
+    opacity: 1;
+  }
+}
+.sm-show.sm-show {
+  @include mobile-queries($mobile) {
+    display: none;
+  }
+}
+
+*:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
+  animation-name: hideShow;
+  animation-duration: 1s;
+}

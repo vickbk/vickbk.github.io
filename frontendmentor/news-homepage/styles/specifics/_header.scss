@@ -1,0 +1,33 @@
+@use "../globals" as g;
+
+.header {
+  &__navbar {
+    &-li {
+      padding-inline-start: 1em;
+      padding-block: 0.5em;
+      &-link {
+        color: var(--dark-grayish-blue);
+
+        @include g.active-state {
+          color: var(--soft-red);
+        }
+        @include g.from-desktop(g.$mobile) {
+          color: var(--very-dark-blue);
+          display: block;
+        }
+      }
+    }
+    @include g.from-desktop(g.$mobile) {
+      block-size: 100vh;
+      inline-size: 60vw;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.cover.cover {
+  inset: 0;
+  background-color: var(--very-dark-blue);
+  opacity: 0.3;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="container p-1 sm-down-relative">
+      <div class="container__holder grid g-2">
+        <!-- Header component -->
+        <header class="flex g-1 space-between a-center">
+          <a href="/"
+            ><img src="./assets/images/logo.svg" alt="News Homepage Logo"
+          /></a>
+          <button
+            type="button"
+            class="pbl-1 pis-1 mis-auto no-border off-white sm-show"
+            id="nav-opener"
+          >
+            <img src="./assets/images/icon-menu.svg" alt="Menue Icon" />
+          </button>
+          <div class="cover sm-down-fixed hide" id="cover"></div>
+          <nav
+            class="header__navbar mis-auto sm-hide sm-down-flex-column sm-down-fixed off-white sm-down-p-1 sm-down-g-5"
+            id="navbar"
+          >
+            <button
+              type="button"
+              class="mis-auto no-border off-white sm-show"
+              id="nav-closer"
+            >
+              <img
+                src="./assets/images/icon-menu-close.svg"
+                alt="Close Menue Icon"
+              />
+            </button>
+            <ul class="flex g-1 sm-down-grid">
+              <li class="header__navbar-li">
+                <a class="header__navbar-li-link" href="./">Home</a>
+              </li>
+              <li class="header__navbar-li">
+                <a class="header__navbar-li-link" href="/">New</a>
+              </li>
+              <li class="header__navbar-li">
+                <a class="header__navbar-li-link" href="/">Popular</a>
+              </li>
+              <li class="header__navbar-li">
+                <a class="header__navbar-li-link" href="/">Trending</a>
+              </li>
+              <li class="header__navbar-li">
+                <a class="header__navbar-li-link" href="/">Categories</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="content grid g-2">
+          <article class="hero content__hero">
+            <picture class="hero__image">
+              <source
+                media="(width >= 37.5em)"
+                srcset="./assets/images/image-web-3-desktop.jpg"
+              />
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="Web descriptive image"
+              />
+            </picture>
+            <h1 class="hero__header bold">The Bright Future of Web 3.0?</h1>
+            <section
+              class="hero__details flex-column g-1 space-between a-start"
+            >
+              <p class="c-dark-grayish-blue">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                type="button"
+                class="hero__details-button upper-case pi-2 pbl-1 soft-red active-very-dark-blue active-c-off-white no-border bold"
+              >
+                Read more
+              </button>
+            </section>
+          </article>
+          <aside
+            class="content__news news grid a-center very-dark-blue c-off-white p-1"
+          >
+            <h2 class="news__header c-soft-orange">New</h2>
+            <article class="news__article">
+              <h3 class="news__article-header">
+                <a class="news__article-header-link" href="/"
+                  >Hydrogen VS Electric Cars</a
+                >
+              </h3>
+              <p class="news__article-details">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+            <article class="news__article">
+              <h3 class="news__article-header">
+                <a class="news__article-header-link" href="/"
+                  >The Downsides of AI Artistry</a
+                >
+              </h3>
+              <p class="news__article-details">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+            <article class="news__article">
+              <h3 class="news__article-header">
+                <a class="news__article-header-link" href="/"
+                  >Is VC Funding Drying Up?</a
+                >
+              </h3>
+              <p class="news__article-details">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </aside>
+
+          <!-- more articles -->
+          <section class="content__more more grid g-1 mbl-3 lg-up-flex">
+            <article class="more__article flex g-1">
+              <img
+                class="more__article-img"
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="Old PCs illustration"
+              />
+              <section class="grid sg-5">
+                <h2 class="more__article-header c-soft-red">01</h2>
+                <h3 class="more__article-title">
+                  <a class="more__article-title-link" href="/"
+                    >Reviving Retro PCs</a
+                  >
+                </h3>
+                <p class="c-dark-grayish-blue">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </section>
+            </article>
+            <article class="more__article flex g-1">
+              <img
+                class="more__article-img"
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Top laptops illustration"
+              />
+              <section class="grid sg-5">
+                <h2 class="more__article-header c-soft-red">02</h2>
+                <h3 class="more__article-title">
+                  <a class="more__article-title-link" href="/"
+                    >Top 10 Laptops of 2022</a
+                  >
+                </h3>
+                <p class="c-dark-grayish-blue">
+                  Our best picks for various needs and budgets.
+                </p>
+              </section>
+            </article>
+            <article class="more__article flex g-1">
+              <img
+                class="more__article-img"
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="Gaming Growth illustration"
+              />
+              <section class="grid sg-5">
+                <h2 class="more__article-header c-soft-red">03</h2>
+                <h3 class="more__article-title">
+                  <a class="more__article-title-link" href="/"
+                    >The Growth of Gaming</a
+                  >
+                </h3>
+                <p class="c-dark-grayish-blue">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </section>
+            </article>
+          </section>
+        </main>
+        <footer class="attribution">
+          Challenge by
+          <a
+            class="active-c-soft-red"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="active-c-soft-red"
+            href="https://github.com/vickbk"
+            target="_blank"
+            >VickBk</a
+          >.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

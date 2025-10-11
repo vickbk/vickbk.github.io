@@ -12,10 +12,18 @@
     .#{$class}-up-flex.#{$class}-up-flex {
       display: flex;
     }
+    .#{$class}-up-flex-column.#{$class}-up-flex-column {
+      display: flex;
+      flex-direction: column;
+    }
   }
   @include queries.from-desktop($size) {
     .#{$class}-down-flex {
       display: flex;
+    }
+    .#{$class}-down-flex-column {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

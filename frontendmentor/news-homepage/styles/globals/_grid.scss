@@ -5,22 +5,9 @@
   display: grid;
 }
 
-.gj-center {
-  justify-items: center;
-}
-
-@mixin last-element-spanner($grid-size) {
-  &.span-last-element > * {
-    &:last-child:not(:nth-child(#{$grid-size * 1n})) {
-      grid-column: mod(sibling-index(), $grid-size) / -1;
-    }
-  }
-}
-
 @for $i from 1 to 12 {
   .gc-#{$i} {
     grid-template-columns: repeat($i, 1fr);
-    @include last-element-spanner($i);
   }
 }
 
@@ -34,7 +21,6 @@
     @for $i from 1 to 12 {
       .#{$class}-up-gc-#{$i} {
         grid-template-columns: repeat($i, 1fr);
-        @include last-element-spanner($i);
       }
     }
   }
@@ -45,7 +31,6 @@
     @for $i from 1 to 12 {
       .gc-#{$class}-down-#{$i} {
         grid-template-columns: repeat($i, 1fr);
-        @include last-element-spanner($i);
       }
     }
   }
