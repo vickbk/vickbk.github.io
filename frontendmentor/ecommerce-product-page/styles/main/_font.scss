@@ -1,0 +1,30 @@
+@use "../functions/" as f;
+$link: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";
+
+$primary-font: "Inter", sans-serif;
+$secondary-font: "Inter", sans-serif;
+
+$primary-size: 100%;
+$preferred-size: f.to-r-em(15);
+
+$weight-normal: 400;
+$weight-natural: 400;
+$min-bold: 700;
+$min-bold-italic: 700i;
+$bold: 800;
+
+:root {
+  --font-link: "#{$link}";
+
+  --primary-font: #{$primary-font};
+  --secondary-font: #{$secondary-font};
+
+  --primary-size: #{$primary-size};
+  --preferred-size: #{$preferred-size};
+
+  --weight-normal: #{$weight-normal};
+  --weight-natural: #{$weight-natural};
+  --min-bold: #{$min-bold};
+  --min-bold-italic: #{$min-bold-italic};
+  --bold: #{$bold};
+}

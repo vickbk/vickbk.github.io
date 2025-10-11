@@ -1,0 +1,84 @@
+@use "../functions/" as f;
+@use "../globals/states" as s;
+@use "sass:map";
+
+$colorsMap: (
+  // Primary
+  soft-orange: hsl(35, 77%, 62%),
+  soft-red: hsl(5, 85%, 63%),
+  // Neutral
+  off-white: hsl(36, 100%, 99%),
+  grey-blue: hsl(233, 8%, 79%),
+  dark-grayish-blue: hsl(236, 13%, 42%),
+  very-dark-blue: hsl(240, 100%, 5%)
+);
+
+$primary-color: map.get($colorsMap, off-white);
+$link-color: map.get($colorsMap, dark-grayish-blue);
+$text-color: map.get($colorsMap, very-dark-blue);
+$accent-color: map.get($colorsMap, soft-red);
+
+:root {
+  --background: #{$primary-color};
+  --foreground: #{$text-color};
+  --accent-color: #{$accent-color};
+  @media (prefers-color-scheme: dark) {
+    --background: #{$text-color};
+    --foreground: #{$primary-color};
+  }
+  & {
+    @each $name, $color in $colorsMap {
+      --#{""+$name}: #{$color};
+    }
+  }
+}
+
+@mixin active-colors($suffix) {
+  .active-#{$suffix}.active-#{$suffix} {
+    @include s.active-state {
+      @content;
+    }
+  }
+}
+
+@each $name, $color in $colorsMap {
+  .#{"" + $name},
+  .hv-#{"" + $name}:hover,
+  .a-#{"" + $name}:active,
+  .a-#{"" + $name}:focus {
+    background-color: var(--#{"" + $name});
+  }
+  @include active-colors(#{"" + $name}) {
+    background-color: var(--#{"" + $name});
+  }
+
+  .c-#{"" + $name}.c-#{"" + $name},
+  .hv-c-#{"" + $name}:hover,
+  .a-c-#{"" + $name}:active,
+  .a-c-#{"" + $name}:focus {
+    color: var(--#{"" + $name});
+  }
+  @include active-colors(#{"c-" + $name}) {
+    color: var(--#{"" + $name});
+  }
+
+  .b-#{"" + $name},
+  .hv-b-#{"" + $name}:hover,
+  .a-b-#{"" + $name}:active,
+  .a-b-#{"" + $name}:focus {
+    border: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+  @include active-colors(#{"b-" + $name}) {
+    border: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+
+  .out-#{"" + $name},
+  .hv-out-#{"" + $name}:hover,
+  .a-out-#{"" + $name}:active,
+  .a-out-#{"" + $name}:focus {
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+  @include active-colors(#{"out-" + $name}) {
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+  }
+}

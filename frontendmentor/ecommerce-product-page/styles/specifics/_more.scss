@@ -1,0 +1,22 @@
+@use "../functions/" as f;
+@use "../globals/" as g;
+
+.more {
+  &__article {
+    &-img {
+      inline-size: f.clamp-builder(80, 100);
+    }
+    &-header {
+      font-size: f.clamp-builder(1.2rem, 2rem);
+    }
+    &-title {
+      font-size: f.clamp-builder(1rem, 1.5rem);
+      &-link {
+        color: var(--very-dark-blue);
+        @include g.active-state {
+          color: var(--soft-red);
+        }
+      }
+    }
+  }
+}
