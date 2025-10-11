@@ -1,44 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="holder">
+      <header>
+        <a href="./"
+          ><img src="./images/logo.svg" alt="Sneekers Company logo"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button><img src="./images/icon-cart.svg" alt="Cart icon" /></button>
+        <img src="./images/image-avatar.png" alt="Your Profile picture icon" />
+      </header>
 
-  Sneaker Company
+      <main class="container">
+        <!-- Preview section -->
+        <section>
+          <h1>Sneekers preview section</h1>
+          <img
+            id="main-image-preview"
+            src="./images/image-product-1.jpg"
+            alt="main sneekers image"
+          />
+          <div>
+            <button type="button">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="First favorite preview image"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="Second favorite preview image"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="Third favorite preview image"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="Fourth favorite preview image"
+              />
+            </button>
+          </div>
+        </section>
 
-  Fall Limited Edition Sneakers
+        <!-- Details section -->
+        <section>
+          <span>Sneaker Company</span>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+          <div>
+            <span>$125.00</span> <span>50%</span>
+            <s>$250.00</s>
+          </div>
+          <div>
+            <div>
+              <button type="button">
+                <img
+                  src="./images/icon-minus.svg"
+                  alt="Decrease number of items"
+                />
+              </button>
+              <input type="number" id="count" />
+              <button type="button">
+                <img
+                  src="./images/icon-plus.svg"
+                  alt="Increase number of items"
+                />
+              </button>
+            </div>
+            <button>
+              <img src="./images/icon-cart.svg" alt="" /> Add to cart
+            </button>
+          </div>
+        </section>
 
-  $125.00
-  50%
-  $250.00
+        <dialog id="item-display">
+          <button type="button">
+            <img src="./images/icon-close.svg" alt="Close Button" />
+          </button>
+          <section>
+            <img src="./images/image-product-1.jpg" alt="main Sneaker image" />
+            <div>
+              <button type="button">
+                <img src="./images/icon-previous.svg" alt="Previous Button" />
+              </button>
+              <button type="button">
+                <img src="./images/icon-next.svg" alt="Next Button" />
+              </button>
+            </div>
+            <section>
+              <button type="button">
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="First favorite preview image"
+                /></button
+              ><button type="button">
+                <img
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt="Second favorite preview image"
+                /></button
+              ><button type="button">
+                <img
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt="Third favorite preview image"
+                /></button
+              ><button type="button">
+                <img
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt="Fourth favorite preview image"
+                />
+              </button>
+            </section>
+          </section>
+        </dialog>
+      </main>
+    </div>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
