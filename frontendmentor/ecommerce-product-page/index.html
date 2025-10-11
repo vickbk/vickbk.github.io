@@ -13,16 +13,22 @@
     />
 
     <title>Frontend Mentor | E-commerce product page</title>
-
+    <link rel="stylesheet" href="./dist/css/styles.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="holder">
       <header>
+        <button id="menue-openenr">
+          <img src="./images/icon-menu.svg" alt="Menue opener" />
+        </button>
         <a href="./"
           ><img src="./images/logo.svg" alt="Sneekers Company logo"
         /></a>
         <nav>
+          <button>
+            <img src="./images/icon-close.svg" alt="Close Menue" />
+          </button>
           <ul>
             <li><a href="#">Collections</a></li>
             <li><a href="#">Men</a></li>
@@ -39,11 +45,22 @@
         <!-- Preview section -->
         <section>
           <h1>Sneekers preview section</h1>
-          <img
-            id="main-image-preview"
-            src="./images/image-product-1.jpg"
-            alt="main sneekers image"
-          />
+
+          <div>
+            <img
+              id="main-image-preview"
+              src="./images/image-product-1.jpg"
+              alt="main sneekers image"
+            />
+            <div>
+              <button type="button">
+                <img src="./images/icon-previous.svg" alt="Previous Button" />
+              </button>
+              <button type="button">
+                <img src="./images/icon-next.svg" alt="Next Button" />
+              </button>
+            </div>
+          </div>
           <div>
             <button type="button">
               <img
