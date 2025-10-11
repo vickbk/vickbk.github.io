@@ -387,10 +387,12 @@ button {
 
 .hide.hide,
 .sm-hide.sm-hide {
-  display: none;
   opacity: 0;
-  transition: opacity 2s ease-in-out, display 2s ease-in-out;
+  animation-name: hideShow;
+  animation-duration: 1s;
+  animation-direction: reverse;
   transition-behavior: allow-discrete;
+  display: none;
 }
 
 @media (min-width: 36em) {
@@ -407,12 +409,8 @@ button {
 }
 
 *:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
-  opacity: 1;
-}
-@starting-style {
-  *:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
-    opacity: 0;
-  }
+  animation-name: hideShow;
+  animation-duration: 1s;
 }
 
 .m-auto {
@@ -18910,6 +18908,16 @@ button {
   }
   .xl-down-fixed {
     position: fixed;
+  }
+}
+@keyframes hideShow {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: auto;
+    display: inherit;
   }
 }
 .container {

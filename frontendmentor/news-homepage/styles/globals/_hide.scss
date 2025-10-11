@@ -2,9 +2,12 @@
 @use "transitions" as trans;
 .hide.hide,
 .sm-hide.sm-hide {
-  display: none;
   opacity: 0;
-  @include trans.ease-in-out(opacity, 2s);
+  animation-name: hideShow;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  transition-behavior: allow-discrete;
+  display: none;
 }
 .sm-hide.sm-hide {
   @include mobile-queries($mobile) {
@@ -19,10 +22,6 @@
 }
 
 *:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
-  opacity: 1;
-  @starting-style {
-    & {
-      opacity: 0;
-    }
-  }
+  animation-name: hideShow;
+  animation-duration: 1s;
 }
