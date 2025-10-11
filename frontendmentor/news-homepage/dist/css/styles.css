@@ -77,10 +77,12 @@ input[type=radio], input[type=checkbox] {
 .a-soft-orange:active,
 .a-soft-orange:focus {
   background-color: var(--soft-orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-soft-orange.active-soft-orange:hover, .active-soft-orange.active-soft-orange:active, .active-soft-orange.active-soft-orange:focus {
   background-color: var(--soft-orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-soft-orange.c-soft-orange,
@@ -88,10 +90,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-soft-orange:active,
 .a-c-soft-orange:focus {
   color: var(--soft-orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-soft-orange.active-c-soft-orange:hover, .active-c-soft-orange.active-c-soft-orange:active, .active-c-soft-orange.active-c-soft-orange:focus {
   color: var(--soft-orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-soft-orange,
@@ -99,10 +103,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-soft-orange:active,
 .a-b-soft-orange:focus {
   border: var(--soft-orange) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-soft-orange.active-b-soft-orange:hover, .active-b-soft-orange.active-b-soft-orange:active, .active-b-soft-orange.active-b-soft-orange:focus {
   border: var(--soft-orange) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-soft-orange,
@@ -110,10 +116,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-soft-orange:active,
 .a-out-soft-orange:focus {
   outline: var(--soft-orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-soft-orange.active-out-soft-orange:hover, .active-out-soft-orange.active-out-soft-orange:active, .active-out-soft-orange.active-out-soft-orange:focus {
   outline: var(--soft-orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .soft-red,
@@ -121,10 +129,12 @@ input[type=radio], input[type=checkbox] {
 .a-soft-red:active,
 .a-soft-red:focus {
   background-color: var(--soft-red);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-soft-red.active-soft-red:hover, .active-soft-red.active-soft-red:active, .active-soft-red.active-soft-red:focus {
   background-color: var(--soft-red);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-soft-red.c-soft-red,
@@ -132,10 +142,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-soft-red:active,
 .a-c-soft-red:focus {
   color: var(--soft-red);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-soft-red.active-c-soft-red:hover, .active-c-soft-red.active-c-soft-red:active, .active-c-soft-red.active-c-soft-red:focus {
   color: var(--soft-red);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-soft-red,
@@ -143,10 +155,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-soft-red:active,
 .a-b-soft-red:focus {
   border: var(--soft-red) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-soft-red.active-b-soft-red:hover, .active-b-soft-red.active-b-soft-red:active, .active-b-soft-red.active-b-soft-red:focus {
   border: var(--soft-red) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-soft-red,
@@ -154,10 +168,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-soft-red:active,
 .a-out-soft-red:focus {
   outline: var(--soft-red) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-soft-red.active-out-soft-red:hover, .active-out-soft-red.active-out-soft-red:active, .active-out-soft-red.active-out-soft-red:focus {
   outline: var(--soft-red) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .off-white,
@@ -165,10 +181,12 @@ input[type=radio], input[type=checkbox] {
 .a-off-white:active,
 .a-off-white:focus {
   background-color: var(--off-white);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-off-white.active-off-white:hover, .active-off-white.active-off-white:active, .active-off-white.active-off-white:focus {
   background-color: var(--off-white);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-off-white.c-off-white,
@@ -176,10 +194,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-off-white:active,
 .a-c-off-white:focus {
   color: var(--off-white);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-off-white.active-c-off-white:hover, .active-c-off-white.active-c-off-white:active, .active-c-off-white.active-c-off-white:focus {
   color: var(--off-white);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-off-white,
@@ -187,10 +207,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-off-white:active,
 .a-b-off-white:focus {
   border: var(--off-white) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-off-white.active-b-off-white:hover, .active-b-off-white.active-b-off-white:active, .active-b-off-white.active-b-off-white:focus {
   border: var(--off-white) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-off-white,
@@ -198,10 +220,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-off-white:active,
 .a-out-off-white:focus {
   outline: var(--off-white) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-off-white.active-out-off-white:hover, .active-out-off-white.active-out-off-white:active, .active-out-off-white.active-out-off-white:focus {
   outline: var(--off-white) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .grey-blue,
@@ -209,10 +233,12 @@ input[type=radio], input[type=checkbox] {
 .a-grey-blue:active,
 .a-grey-blue:focus {
   background-color: var(--grey-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-grey-blue.active-grey-blue:hover, .active-grey-blue.active-grey-blue:active, .active-grey-blue.active-grey-blue:focus {
   background-color: var(--grey-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-grey-blue.c-grey-blue,
@@ -220,10 +246,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-grey-blue:active,
 .a-c-grey-blue:focus {
   color: var(--grey-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-grey-blue.active-c-grey-blue:hover, .active-c-grey-blue.active-c-grey-blue:active, .active-c-grey-blue.active-c-grey-blue:focus {
   color: var(--grey-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-grey-blue,
@@ -231,10 +259,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-grey-blue:active,
 .a-b-grey-blue:focus {
   border: var(--grey-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-grey-blue.active-b-grey-blue:hover, .active-b-grey-blue.active-b-grey-blue:active, .active-b-grey-blue.active-b-grey-blue:focus {
   border: var(--grey-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-grey-blue,
@@ -242,10 +272,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-grey-blue:active,
 .a-out-grey-blue:focus {
   outline: var(--grey-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-grey-blue.active-out-grey-blue:hover, .active-out-grey-blue.active-out-grey-blue:active, .active-out-grey-blue.active-out-grey-blue:focus {
   outline: var(--grey-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .dark-grayish-blue,
@@ -253,10 +285,12 @@ input[type=radio], input[type=checkbox] {
 .a-dark-grayish-blue:active,
 .a-dark-grayish-blue:focus {
   background-color: var(--dark-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-dark-grayish-blue.active-dark-grayish-blue:hover, .active-dark-grayish-blue.active-dark-grayish-blue:active, .active-dark-grayish-blue.active-dark-grayish-blue:focus {
   background-color: var(--dark-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-dark-grayish-blue.c-dark-grayish-blue,
@@ -264,10 +298,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-dark-grayish-blue:active,
 .a-c-dark-grayish-blue:focus {
   color: var(--dark-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-dark-grayish-blue.active-c-dark-grayish-blue:hover, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:active, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:focus {
   color: var(--dark-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-dark-grayish-blue,
@@ -275,10 +311,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-dark-grayish-blue:active,
 .a-b-dark-grayish-blue:focus {
   border: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-dark-grayish-blue.active-b-dark-grayish-blue:hover, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:active, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:focus {
   border: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-dark-grayish-blue,
@@ -286,10 +324,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-dark-grayish-blue:active,
 .a-out-dark-grayish-blue:focus {
   outline: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-dark-grayish-blue.active-out-dark-grayish-blue:hover, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:active, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:focus {
   outline: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .very-dark-blue,
@@ -297,10 +337,12 @@ input[type=radio], input[type=checkbox] {
 .a-very-dark-blue:active,
 .a-very-dark-blue:focus {
   background-color: var(--very-dark-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-very-dark-blue.active-very-dark-blue:hover, .active-very-dark-blue.active-very-dark-blue:active, .active-very-dark-blue.active-very-dark-blue:focus {
   background-color: var(--very-dark-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-very-dark-blue.c-very-dark-blue,
@@ -308,10 +350,12 @@ input[type=radio], input[type=checkbox] {
 .a-c-very-dark-blue:active,
 .a-c-very-dark-blue:focus {
   color: var(--very-dark-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-very-dark-blue.active-c-very-dark-blue:hover, .active-c-very-dark-blue.active-c-very-dark-blue:active, .active-c-very-dark-blue.active-c-very-dark-blue:focus {
   color: var(--very-dark-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-very-dark-blue,
@@ -319,10 +363,12 @@ input[type=radio], input[type=checkbox] {
 .a-b-very-dark-blue:active,
 .a-b-very-dark-blue:focus {
   border: var(--very-dark-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-very-dark-blue.active-b-very-dark-blue:hover, .active-b-very-dark-blue.active-b-very-dark-blue:active, .active-b-very-dark-blue.active-b-very-dark-blue:focus {
   border: var(--very-dark-blue) 0.0625rem solid;
+  transition: border ease-in-out 0.3s;
 }
 
 .out-very-dark-blue,
@@ -330,10 +376,12 @@ input[type=radio], input[type=checkbox] {
 .a-out-very-dark-blue:active,
 .a-out-very-dark-blue:focus {
   outline: var(--very-dark-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-very-dark-blue.active-out-very-dark-blue:hover, .active-out-very-dark-blue.active-out-very-dark-blue:active, .active-out-very-dark-blue.active-out-very-dark-blue:focus {
   outline: var(--very-dark-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 :root {
