@@ -15,7 +15,7 @@ $colorsMap: (
   black: hsl(0, 0%, 0%)
 );
 
-$primary-color: map.get($colorsMap, pale-orange);
+$primary-color: map.get($colorsMap, light-grayish-blue);
 $link-color: map.get($colorsMap, orange);
 $text-color: map.get($colorsMap, very-dark-blue);
 $accent-color: map.get($colorsMap, orange);

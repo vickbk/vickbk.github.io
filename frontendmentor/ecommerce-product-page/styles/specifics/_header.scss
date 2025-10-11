@@ -1,0 +1,11 @@
+@use "../functions/" as f;
+
+.header {
+  &__button {
+    padding: 0;
+    background-color: var(--light-grayish-blue);
+  }
+  &__profile {
+    inline-size: f.to-r-em(30);
+  }
+}

@@ -17,16 +17,16 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="holder">
-      <header>
-        <button id="menue-openenr">
+    <div class="flex-column holder">
+      <header class="header flex space-between g-1 p-1 a-center">
+        <button class="header__button no-border" id="menue-openenr">
           <img src="./images/icon-menu.svg" alt="Menue opener" />
         </button>
         <a href="./"
           ><img src="./images/logo.svg" alt="Sneekers Company logo"
         /></a>
-        <nav>
-          <button>
+        <nav class="sm-hide">
+          <button class="header__button no-border">
             <img src="./images/icon-close.svg" alt="Close Menue" />
           </button>
           <ul>
@@ -37,14 +37,21 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button><img src="./images/icon-cart.svg" alt="Cart icon" /></button>
-        <img src="./images/image-avatar.png" alt="Your Profile picture icon" />
+        <button class="header__button no-border mis-auto">
+          <img src="./images/icon-cart.svg" alt="Cart icon" />
+        </button>
+        <a href="#!"
+          ><img
+            class="header__profile"
+            src="./images/image-avatar.png"
+            alt="Your Profile picture icon"
+        /></a>
       </header>
 
       <main class="container">
         <!-- Preview section -->
         <section>
-          <h1>Sneekers preview section</h1>
+          <h1 class="sr-only">Sneekers preview section</h1>
 
           <div>
             <img
@@ -186,13 +193,12 @@
           </div>
         </dialog>
       </main>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer>
     </div>
-
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
   </body>
 </html>
