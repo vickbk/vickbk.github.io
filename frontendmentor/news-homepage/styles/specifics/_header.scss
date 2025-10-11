@@ -2,6 +2,13 @@
 
 .header {
   &__navbar {
+    &-link {
+      padding-inline-start: 1em;
+      color: var(--dark-grayish-blue);
+      @include g.active-state {
+        color: var(--soft-red);
+      }
+    }
     @include g.from-desktop(g.$mobile) {
       block-size: 100vh;
       inline-size: 60vw;

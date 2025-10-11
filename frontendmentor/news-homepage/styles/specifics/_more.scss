@@ -1,4 +1,6 @@
 @use "../functions/" as f;
+@use "../globals/" as g;
+
 .more {
   &__article {
     &-img {
@@ -9,6 +11,12 @@
     }
     &-title {
       font-size: f.clamp-builder(1rem, 1.5rem);
+      &-link {
+        color: var(--very-dark-blue);
+        @include g.active-state {
+          color: var(--soft-red);
+        }
+      }
     }
   }
 }

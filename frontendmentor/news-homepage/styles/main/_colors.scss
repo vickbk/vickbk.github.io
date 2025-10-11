@@ -34,7 +34,7 @@ $accent-color: map.get($colorsMap, soft-red);
 }
 
 @mixin active-colors($suffix) {
-  .active-#{$suffix} {
+  .active-#{$suffix}.active-#{$suffix} {
     @include s.active-state {
       @content;
     }

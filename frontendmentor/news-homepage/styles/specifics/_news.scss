@@ -1,15 +1,30 @@
 @use "../functions/" as f;
+@use "../globals/" as g;
+
 .news {
+  &__header {
+    font-size: f.clamp-builder(2rem, 3rem);
+    line-height: 1;
+  }
   &__article {
     & + & {
       border-block-start: f.to-r-em(1) solid var(--dark-grayish-blue);
     }
     display: grid;
-    gap: 1em;
-    padding-block: 2em;
+    gap: 0.5em;
+    padding-block: 1.5em;
     &-details {
       color: var(--dark-grayish-blue);
       font-size: f.clamp-builder(1rem, 1rem);
+      line-height: 1.5;
+    }
+    &-header {
+      &-link {
+        color: var(--off-white);
+        @include g.active-state {
+          color: var(--soft-orange);
+        }
+      }
     }
   }
 }

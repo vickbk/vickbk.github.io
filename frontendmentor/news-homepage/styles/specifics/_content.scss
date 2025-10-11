@@ -6,9 +6,7 @@
       grid-area: hero;
       display: grid;
       gap: 2em;
-      .hero__image {
-        grid-area: hero-image;
-      }
+
       grid-template-areas: "hero-image hero-image";
     }
     &__news {

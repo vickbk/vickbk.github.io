@@ -19,6 +19,10 @@ button,
 input[type="submit"],
 a {
   cursor: pointer;
+  &:focus {
+    outline: none;
+    text-decoration: underline dotted var(--accent-color);
+  }
 }
 ul {
   list-style: none;
