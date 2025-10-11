@@ -17,9 +17,11 @@
     &__more {
       grid-area: more;
     }
-    grid-template-areas:
-      "hero hero"
-      "news more";
+    & {
+      grid-template-areas:
+        "hero hero"
+        "news more";
+    }
   }
   @include g.from-mobile(g.$pc) {
     grid-template-areas:

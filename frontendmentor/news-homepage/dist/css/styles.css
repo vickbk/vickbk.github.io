@@ -387,12 +387,10 @@ button {
 
 .hide.hide,
 .sm-hide.sm-hide {
-  opacity: 0;
-  animation-name: hideShow;
-  animation-duration: 1s;
-  animation-direction: reverse;
-  transition-behavior: allow-discrete;
   display: none;
+  opacity: 0;
+  animation-name: disappear;
+  animation-duration: 3s;
 }
 
 @media (min-width: 36em) {
@@ -18920,6 +18918,16 @@ button {
     display: inherit;
   }
 }
+@keyframes disappear {
+  from {
+    display: unset;
+    opacity: auto;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
 .container {
   min-block-size: 100vh;
   display: grid;
@@ -19021,9 +19029,6 @@ button {
   grid-template-areas: "hero-image";
 }
 @media (min-width: 36em) {
-  .content {
-    grid-template-areas: "hero hero" "news more";
-  }
   .content__hero {
     grid-area: hero;
     grid-template-areas: "hero-image hero-image";
@@ -19033,6 +19038,9 @@ button {
   }
   .content__more {
     grid-area: more;
+  }
+  .content {
+    grid-template-areas: "hero hero" "news more";
   }
 }
 @media (min-width: 62em) {
