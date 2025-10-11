@@ -18976,6 +18976,11 @@ button {
   color: var(--soft-orange);
 }
 
+@media (min-width: 62em) {
+  .more__article {
+    inline-size: calc(33.3333333333% - 2em);
+  }
+}
 .more__article-img {
   inline-size: clamp(5rem, 4.5598591549rem + 1.8779342723vw, 6.25rem);
 }

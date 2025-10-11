@@ -3,6 +3,9 @@
 
 .more {
   &__article {
+    @include g.from-mobile(g.$pc) {
+      inline-size: calc((100% / 3) - 2em);
+    }
     &-img {
       inline-size: f.clamp-builder(80, 100);
     }
