@@ -14,6 +14,7 @@
 
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
   </head>
   <body>
     <div class="container p-1 sm-down-relative">
@@ -21,14 +22,23 @@
         <!-- Header component -->
         <header class="flex g-1 space-between a-center">
           <img src="./assets/images/logo.svg" alt="News Homepage Logo" />
-          <button type="button" class="mis-auto no-border off-white sm-show">
+          <button
+            type="button"
+            class="pbl-1 pis-1 mis-auto no-border off-white sm-show"
+            id="nav-opener"
+          >
             <img src="./assets/images/icon-menu.svg" alt="Menue Icon" />
           </button>
-          <div class="cover sm-down-fixed hide"></div>
+          <div class="cover sm-down-fixed hide" id="cover"></div>
           <nav
             class="header__navbar mis-auto sm-hide sm-down-flex-column sm-down-fixed off-white sm-down-p-1 sm-down-g-5"
+            id="navbar"
           >
-            <button type="button" class="mis-auto no-border off-white sm-show">
+            <button
+              type="button"
+              class="mis-auto no-border off-white sm-show"
+              id="nav-closer"
+            >
               <img
                 src="./assets/images/icon-menu-close.svg"
                 alt="Close Menue Icon"
@@ -122,7 +132,7 @@
           </aside>
 
           <!-- more articles -->
-          <section class="content__more more grid g-1 mbls-3 lg-up-flex">
+          <section class="content__more more grid g-1 mbl-3 lg-up-flex">
             <article class="more__article flex g-1">
               <img
                 class="more__article-img"
