@@ -2,7 +2,7 @@
 @use "../globals/states";
 @use "../functions/" as f;
 .attribution {
-  font-size: f.to-r-em(11);
+  font-size: f.to-r-em(15);
   text-align: center;
   a {
     color: c.$link-color;
