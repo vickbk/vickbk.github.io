@@ -2,11 +2,19 @@
 
 .header {
   &__navbar {
-    &-link {
+    &-li {
       padding-inline-start: 1em;
-      color: var(--dark-grayish-blue);
-      @include g.active-state {
-        color: var(--soft-red);
+      padding-block: 0.5em;
+      &-link {
+        color: var(--dark-grayish-blue);
+
+        @include g.active-state {
+          color: var(--soft-red);
+        }
+        @include g.from-desktop(g.$mobile) {
+          color: var(--very-dark-blue);
+          display: block;
+        }
       }
     }
     @include g.from-desktop(g.$mobile) {

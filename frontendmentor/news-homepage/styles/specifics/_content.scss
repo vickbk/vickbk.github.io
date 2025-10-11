@@ -1,12 +1,14 @@
 @use "../globals/" as g;
 
 .content {
+  &__hero {
+    display: grid;
+    gap: 2em;
+    grid-template-areas: "hero-image";
+  }
   @include g.from-mobile(g.$mobile) {
     &__hero {
       grid-area: hero;
-      display: grid;
-      gap: 2em;
-
       grid-template-areas: "hero-image hero-image";
     }
     &__news {
