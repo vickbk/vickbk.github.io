@@ -14,22 +14,27 @@
 
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script type="module" src="./scripts/main.js"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="flex-column holder">
       <header class="header flex space-between g-1 p-1 a-center">
-        <button class="header__button no-border" id="menue-openenr">
+        <button class="header__button no-border" id="menue-opener">
           <img src="./images/icon-menu.svg" alt="Menue opener" />
         </button>
         <a href="./"
           ><img src="./images/logo.svg" alt="Sneekers Company logo"
         /></a>
         <div
+          id="body-cover"
           class="header__navbar-cover hide sm-down-fixed very-dark-blue"
         ></div>
-        <nav class="header__navbar p-2 sm-hide sm-down-fixed">
-          <button class="header__button sm-down-mble-5 no-border">
+        <nav class="header__navbar p-2 sm-hide sm-down-fixed" id="nav-bar">
+          <button
+            class="header__button sm-down-mble-5 no-border"
+            id="menue-closer"
+          >
             <img src="./images/icon-close.svg" alt="Close Menue" />
           </button>
           <ul class="sm-down-grid g-2">
