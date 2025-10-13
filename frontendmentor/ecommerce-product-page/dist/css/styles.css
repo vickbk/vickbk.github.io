@@ -19088,6 +19088,14 @@ button {
   padding: 0;
   background-color: var(--light-grayish-blue);
 }
+.header__button-count {
+  top: -25%;
+  right: -25%;
+  font-size: 0.75rem;
+}
+.header__button-count[data-count="0"] {
+  display: none;
+}
 .header__profile {
   inline-size: 1.875rem;
 }

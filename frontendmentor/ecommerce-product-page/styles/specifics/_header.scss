@@ -5,6 +5,14 @@
   &__button {
     padding: 0;
     background-color: var(--light-grayish-blue);
+    &-count {
+      top: -25%;
+      right: -25%;
+      font-size: 0.75rem;
+      &[data-count="0"] {
+        display: none;
+      }
+    }
   }
   &__profile {
     inline-size: f.to-r-em(30);

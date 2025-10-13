@@ -1,9 +1,11 @@
+import { addToCart } from "./cart-handler.mjs";
 import {
   bodyCover,
   decrementor,
   incrementor,
   menueCloser,
   menueOpener,
+  toCart,
 } from "./elements.mjs";
 import { menueHandler } from "./menue-handler.mjs";
 import { quantityHandler } from "./quantity-handler.mjs";
@@ -15,7 +17,8 @@ import { quantityHandler } from "./quantity-handler.mjs";
 [
   [incrementor, 1],
   [decrementor, -1],
-].forEach(([trigger, value]) => {
-  console.log(trigger);
-  trigger?.addEventListener("click", quantityHandler.bind(null, value));
-});
+].forEach(([trigger, value]) =>
+  trigger?.addEventListener("click", quantityHandler.bind(null, value))
+);
+
+toCart?.addEventListener("submit", addToCart);

@@ -45,8 +45,14 @@
             <li><a class="header__navbar-link" href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="header__button no-border mis-auto">
+        <button class="header__button no-border mis-auto relative">
           <img src="./images/icon-cart.svg" alt="Cart icon" />
+          <span
+            class="header__button-count absolute sp-3 spi-5 orange br-1"
+            id="items-count"
+            data-count="0"
+            >0</span
+          >
         </button>
         <a href="#!"
           ><img
@@ -139,7 +145,7 @@
             >
             <s aria-label="Item original price">$250.00</s>
           </div>
-          <div class="grid g-2">
+          <form class="grid g-2" id="to-cart">
             <div class="flex light-grayish-blue sbr-5 a-center">
               <button type="button" class="p-1" id="decrementor">
                 <img
@@ -152,6 +158,7 @@
                 type="number"
                 id="count"
                 value="0"
+                name="count"
               />
               <button id="incrementor" type="button" class="p-1">
                 <img
@@ -161,11 +168,12 @@
               </button>
             </div>
             <button
+              type="submit"
               class="flex g-1 j-center orange c-very-dark-blue bold p-1 sbr-5"
             >
               <img src="./images/icon-cart.svg" alt="" /> Add to cart
             </button>
-          </div>
+          </form>
         </section>
 
         <dialog id="item-display">

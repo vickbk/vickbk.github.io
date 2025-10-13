@@ -6,6 +6,8 @@ export const [
   count,
   incrementor,
   decrementor,
+  toCart,
+  itemsCount,
 ] = [
   "menue-opener",
   "body-cover",
@@ -14,4 +16,6 @@ export const [
   "count",
   "incrementor",
   "decrementor",
+  "to-cart",
+  "items-count",
 ].map(document.getElementById.bind(document));
