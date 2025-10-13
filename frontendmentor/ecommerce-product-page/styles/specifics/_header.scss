@@ -1,4 +1,5 @@
 @use "../functions/" as f;
+@use "../globals/" as g;
 
 .header {
   &__button {
@@ -7,5 +8,27 @@
   }
   &__profile {
     inline-size: f.to-r-em(30);
+  }
+  &__navbar {
+    &-link {
+      color: var(--very-dark-blue);
+      font-weight: bold;
+    }
+    @include g.from-desktop-down(g.$tablet) {
+      &,
+      &-cover {
+        block-size: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &-cover {
+        inline-size: 100vw;
+        opacity: 0.3;
+      }
+
+      inline-size: 70%;
+      background-color: var(--white);
+    }
   }
 }

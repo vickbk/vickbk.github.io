@@ -19091,6 +19091,26 @@ button {
 .header__profile {
   inline-size: 1.875rem;
 }
+.header__navbar-link {
+  color: var(--very-dark-blue);
+  font-weight: bold;
+}
+@media (max-width: 47.9em) {
+  .header__navbar {
+    inline-size: 70%;
+    background-color: var(--white);
+  }
+  .header__navbar, .header__navbar-cover {
+    block-size: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .header__navbar-cover {
+    inline-size: 100vw;
+    opacity: 0.3;
+  }
+}
 
 .preview__display-navigator {
   inset: 0;

@@ -25,16 +25,19 @@
         <a href="./"
           ><img src="./images/logo.svg" alt="Sneekers Company logo"
         /></a>
-        <nav class="sm-hide">
-          <button class="header__button no-border">
+        <div
+          class="header__navbar-cover hide sm-down-fixed very-dark-blue"
+        ></div>
+        <nav class="header__navbar p-2 sm-hide sm-down-fixed">
+          <button class="header__button sm-down-mble-5 no-border">
             <img src="./images/icon-close.svg" alt="Close Menue" />
           </button>
-          <ul>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="sm-down-grid g-2">
+            <li><a class="header__navbar-link" href="#">Collections</a></li>
+            <li><a class="header__navbar-link" href="#">Men</a></li>
+            <li><a class="header__navbar-link" href="#">Women</a></li>
+            <li><a class="header__navbar-link" href="#">About</a></li>
+            <li><a class="header__navbar-link" href="#">Contact</a></li>
           </ul>
         </nav>
         <button class="header__button no-border mis-auto">
