@@ -1,0 +1,16 @@
+@use "../functions/" as f;
+.details {
+  padding: 1.5em;
+  gap: 1.5em;
+  &__header,
+  &__price {
+    font-size: f.clamp-builder(2rem, 3rem);
+  }
+  &__text {
+    line-height: 1.5;
+  }
+  &__input {
+    min-inline-size: 0;
+    inline-size: 0;
+  }
+}

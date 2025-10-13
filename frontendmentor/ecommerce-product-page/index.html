@@ -107,38 +107,45 @@
         </section>
 
         <!-- Details section -->
-        <section class="p-1 grid g-1 c-dark-grayish-blue">
+        <section class="details grid c-dark-grayish-blue">
           <span class="upper-case bold">Sneaker Company</span>
-          <h2 class="c-very-dark-blue">Fall Limited Edition Sneakers</h2>
-          <p>
+          <h2 class="details__header bold c-very-dark-blue">
+            Fall Limited Edition Sneakers
+          </h2>
+          <p class="details__text">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
 
           <div class="flex space-between a-center g-1 bold">
-            <span class="c-very-dark-blue">$125.00</span>
             <span
+              class="details__price c-very-dark-blue"
+              aria-label="Item actual price"
+              >$125.00</span
+            >
+            <span
+              aria-label="Item discount"
               class="sp-3 spi-7 sbr-5 very-dark-blue c-light-grayish-blue mie-auto"
               >50%</span
             >
-            <s>$250.00</s>
+            <s aria-label="Item original price">$250.00</s>
           </div>
-          <div class="grid g-1">
-            <div class="flex light-grayish-blue p-1 sbr-5 a-center">
-              <button type="button">
+          <div class="grid g-2">
+            <div class="flex light-grayish-blue sbr-5 a-center">
+              <button type="button" class="p-1">
                 <img
                   src="./images/icon-minus.svg"
                   alt="Decrease number of items"
                 />
               </button>
               <input
-                class="flex-grow no-border text-center bold light-grayish-blue c-very-dark-blue"
+                class="details__input flex-grow no-border text-center bold light-grayish-blue c-very-dark-blue p-1"
                 type="number"
                 id="count"
                 value="0"
               />
-              <button type="button">
+              <button type="button" class="p-1">
                 <img
                   src="./images/icon-plus.svg"
                   alt="Increase number of items"

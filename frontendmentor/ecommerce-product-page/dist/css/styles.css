@@ -19094,4 +19094,19 @@ button {
 
 .preview__display-navigator {
   inset: 0;
+}
+
+.details {
+  padding: 1.5em;
+  gap: 1.5em;
+}
+.details__header, .details__price {
+  font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
+}
+.details__text {
+  line-height: 1.5;
+}
+.details__input {
+  min-inline-size: 0;
+  inline-size: 0;
 }/*# sourceMappingURL=styles.css.map */
