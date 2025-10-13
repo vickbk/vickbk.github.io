@@ -9,6 +9,7 @@
 
 img {
   max-inline-size: 100%;
+  vertical-align: middle;
 }
 
 input:hover, input:active, input:focus,
@@ -53,6 +54,20 @@ input[type=radio], input[type=checkbox] {
   accent-color: var(--accent-color);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -79,7 +94,7 @@ input[type=radio], input[type=checkbox] {
 }
 
 :root {
-  --background: hsl(223, 64%, 98%);
+  --background: hsl(0, 0%, 100%);
   --foreground: hsl(220, 13%, 13%);
   --accent-color: hsl(26, 100%, 55%);
   --link-color: hsl(26, 100%, 55%);
@@ -87,7 +102,7 @@ input[type=radio], input[type=checkbox] {
 @media (prefers-color-scheme: dark) {
   :root {
     --background: hsl(220, 13%, 13%);
-    --foreground: hsl(223, 64%, 98%);
+    --foreground: hsl(0, 0%, 100%);
   }
 }
 :root {
@@ -462,7 +477,7 @@ body {
   font-weight: var(--weight-normal);
   line-height: 1.1;
   font-size: var(--primary-size);
-  background-color: hsl(223, 64%, 98%);
+  background-color: hsl(0, 0%, 100%);
   color: hsl(220, 13%, 13%);
 }
 
