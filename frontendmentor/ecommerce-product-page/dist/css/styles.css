@@ -31,6 +31,20 @@ a:focus {
           text-decoration: underline dotted var(--accent-color);
 }
 
+button {
+  background-color: transparent; /* Removes default background */
+  border: none; /* Removes default border */
+  padding: 0; /* Removes default padding */
+  font: inherit; /* Inherits font styles from parent */
+  color: inherit; /* Inherits text color from parent */
+  cursor: pointer; /* Ensures the cursor remains a pointer */
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none; /* Resets WebKit-specific button appearance */
+  border-radius: 0; /* Removes default border-radius */
+  box-shadow: none;
+}
+
 ul {
   list-style: none;
 }
@@ -19061,4 +19075,8 @@ button {
 }
 .header__profile {
   inline-size: 1.875rem;
+}
+
+.preview__display-navigator {
+  inset: 0;
 }/*# sourceMappingURL=styles.css.map */

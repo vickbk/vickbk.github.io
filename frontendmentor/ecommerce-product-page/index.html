@@ -48,27 +48,37 @@
         /></a>
       </header>
 
-      <main class="container">
+      <main class="grid">
         <!-- Preview section -->
-        <section>
+        <section class="preview">
           <h1 class="sr-only">Sneekers preview section</h1>
 
-          <div>
+          <div class="relative preview__display">
             <img
               id="main-image-preview"
               src="./images/image-product-1.jpg"
               alt="main sneekers image"
             />
-            <div>
+            <div
+              class="preview__display-navigator flex space-between a-center p-1 sm-show absolute"
+            >
               <button type="button">
-                <img src="./images/icon-previous.svg" alt="Previous Button" />
+                <img
+                  class="white pi-1 spbl-8 br-3"
+                  src="./images/icon-previous.svg"
+                  alt="Previous Button"
+                />
               </button>
               <button type="button">
-                <img src="./images/icon-next.svg" alt="Next Button" />
+                <img
+                  class="white pi-1 spbl-8 br-3"
+                  src="./images/icon-next.svg"
+                  alt="Next Button"
+                />
               </button>
             </div>
           </div>
-          <div>
+          <div class="sm-hide">
             <button type="button">
               <img
                 src="./images/image-product-1-thumbnail.jpg"

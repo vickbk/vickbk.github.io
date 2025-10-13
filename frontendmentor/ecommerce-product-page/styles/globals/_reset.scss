@@ -24,6 +24,20 @@ a {
     text-decoration: underline dotted var(--accent-color);
   }
 }
+
+button {
+  background-color: transparent; /* Removes default background */
+  border: none; /* Removes default border */
+  padding: 0; /* Removes default padding */
+  font: inherit; /* Inherits font styles from parent */
+  color: inherit; /* Inherits text color from parent */
+  cursor: pointer; /* Ensures the cursor remains a pointer */
+  appearance: none;
+  -webkit-appearance: none; /* Resets WebKit-specific button appearance */
+  border-radius: 0; /* Removes default border-radius */
+  box-shadow: none;
+}
+
 ul {
   list-style: none;
 }
