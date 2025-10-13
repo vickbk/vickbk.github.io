@@ -20,7 +20,7 @@
   <body>
     <div class="flex-column holder">
       <header class="header flex space-between g-1 p-1 a-center">
-        <button class="header__button no-border" id="menue-opener">
+        <button class="header__button no-border sm-show" id="menue-opener">
           <img src="./images/icon-menu.svg" alt="Menue opener" />
         </button>
         <a href="./"
@@ -32,7 +32,7 @@
         ></div>
         <nav class="header__navbar p-2 sm-hide sm-down-fixed" id="nav-bar">
           <button
-            class="header__button sm-down-mble-5 no-border"
+            class="header__button sm-down-mble-5 sm-show no-border"
             id="menue-closer"
           >
             <img src="./images/icon-close.svg" alt="Close Menue" />
@@ -159,6 +159,7 @@
                 id="count"
                 value="0"
                 name="count"
+                aria-label="Number of items to add"
               />
               <button id="incrementor" type="button" class="p-1">
                 <img
