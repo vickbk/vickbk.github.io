@@ -45,7 +45,11 @@
             <li><a class="header__navbar-link" href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="header__button no-border mis-auto relative">
+        <button
+          class="header__button no-border mis-auto relative"
+          id="cart-opener"
+          aria-label="Open cart button"
+        >
           <img src="./images/icon-cart.svg" alt="Cart icon" />
           <span
             class="header__button-count absolute sp-3 spi-5 orange br-1"
@@ -221,7 +225,6 @@
         <dialog
           class="cart sbr-5 smbls-5 smie-5 smis-auto"
           id="cart"
-          open
           data-count="3"
         >
           <div class="cart__header bold p-1 bble-orange">Cart</div>

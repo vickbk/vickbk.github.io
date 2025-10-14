@@ -1,5 +1,6 @@
 import {
   cart,
+  cartOpener,
   cartTotalDisplay,
   count,
   itemsCount,
@@ -27,4 +28,20 @@ export const updateCart = () => {
   [itemsCount, cart].forEach((e) => (e.dataset.count = cartTotal));
   itemsCount.dataset.count = cartTotal;
   cartTotalDisplay.innerText = `$${125 * cartTotal}`;
+};
+
+export const showHideCart = () => {
+  if (cart.open) return hideCart();
+  cart.show();
+};
+
+export const hideCart = () => {
+  if (cart.open) cart.close();
+};
+
+export const closeCartOnOutsideClick = ({ target }) => {
+  const clickOnCart = [cart, cartOpener].some((element) =>
+    element.contains(target)
+  );
+  if (!clickOnCart) hideCart();
 };

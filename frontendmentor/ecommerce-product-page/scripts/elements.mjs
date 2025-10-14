@@ -12,6 +12,7 @@ export const [
   cartTotalDisplay,
   totalNumber,
   itemRemover,
+  cartOpener,
 ] = [
   "menue-opener",
   "body-cover",
@@ -26,4 +27,5 @@ export const [
   "total-cart",
   "total-number",
   "remove-item",
+  "cart-opener",
 ].map(document.getElementById.bind(document));
