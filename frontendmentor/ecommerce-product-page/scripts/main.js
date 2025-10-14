@@ -1,8 +1,9 @@
-import { addToCart } from "./cart-handler.mjs";
+import { addToCart, removeFromCart, updateCart } from "./cart-handler.mjs";
 import {
   bodyCover,
   decrementor,
   incrementor,
+  itemRemover,
   menueCloser,
   menueOpener,
   toCart,
@@ -22,3 +23,7 @@ import { quantityHandler } from "./quantity-handler.mjs";
 );
 
 toCart?.addEventListener("submit", addToCart);
+
+itemRemover?.addEventListener("click", removeFromCart);
+
+updateCart();

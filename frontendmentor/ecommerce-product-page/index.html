@@ -218,7 +218,12 @@
         </dialog>
 
         <!-- Cart dialog -->
-        <dialog class="cart sbr-5 smbls-5 smie-5 smis-auto" open data-count="3">
+        <dialog
+          class="cart sbr-5 smbls-5 smie-5 smis-auto"
+          id="cart"
+          open
+          data-count="3"
+        >
           <div class="cart__header bold p-1 bble-orange">Cart</div>
           <div>
             <div class="cart__empty p-1">
@@ -235,11 +240,11 @@
               <div class="flex-grow flex-column space-between">
                 <span>Fall limited Edition Sneakers</span>
                 <p>
-                  $125.00 x <span id="item-count">2</span>
+                  $125.00 x <span id="total-number">2</span>
                   <b class="c-very-dark-blue smis-5" id="total-cart">$375.00</b>
                 </p>
               </div>
-              <button type="button">
+              <button type="button" id="remove-item">
                 <img
                   class="cart__content-delete"
                   src="./images/icon-delete.svg"
