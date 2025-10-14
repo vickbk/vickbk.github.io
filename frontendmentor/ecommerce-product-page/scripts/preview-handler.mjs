@@ -1,19 +1,15 @@
-import {
-  mainImagePreview,
-  previewContainer,
-  previewImagesHolder,
-} from "./elements.mjs";
+import { mainImagePreview, previewImagesHolder } from "./elements.mjs";
 
 let current = 0;
 const images = previewImagesHolder.querySelectorAll("img");
 const imagesCount = images.length - 1;
 
+let diapromaHolder;
+
 export const navigatePictures = ({ target }) => {
   if (!["button", "img"].some((tagName) => target.matches(tagName))) return;
   const step = +target.dataset.step;
-  current += step;
-  current = current > imagesCount ? 0 : current < 0 ? imagesCount : current;
-  showCurrentImage();
+  showNextImage(step);
 };
 
 export const showCurrentImage = () => {
@@ -24,6 +20,8 @@ export const showCurrentImage = () => {
   mainImagePreview.src = link;
   mainImagePreview.alt = altTxt;
   setActiveThumbnail();
+  if (diapromaHolder) clearTimeout(diapromaHolder);
+  diapromaHolder = setTimeout(showNextImage, 10000);
 };
 
 export const setCurrentImage = ({ target }) => {
@@ -40,4 +38,10 @@ const setActiveThumbnail = () => {
   );
   previousActive?.classList.remove("active");
   images[current]?.classList.add("active");
+};
+
+const showNextImage = (step = 1) => {
+  current += step;
+  current = current > imagesCount ? 0 : current < 0 ? imagesCount : current;
+  showCurrentImage();
 };
