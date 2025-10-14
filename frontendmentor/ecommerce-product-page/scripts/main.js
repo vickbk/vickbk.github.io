@@ -11,12 +11,14 @@ import {
   decrementor,
   incrementor,
   itemRemover,
+  lightBoxOpener,
   menueCloser,
   menueOpener,
   previewImagesHolder,
   previewNavigator,
   toCart,
 } from "./elements.mjs";
+import { openLightBox } from "./handle-light-box.mjs";
 import { menueHandler } from "./menue-handler.mjs";
 import {
   navigatePictures,
@@ -48,4 +50,6 @@ previewNavigator?.addEventListener("click", navigatePictures);
 
 previewImagesHolder?.addEventListener("click", setCurrentImage);
 
-[updateCart, showCurrentImage].forEach((init) => init());
+lightBoxOpener?.addEventListener("click", openLightBox);
+
+[(updateCart, showCurrentImage)].forEach((init) => init());

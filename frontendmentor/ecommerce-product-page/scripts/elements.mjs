@@ -17,6 +17,8 @@ export const [
   previewImagesHolder,
   mainImagePreview,
   previewContainer,
+  lightBoxOpener,
+  itemDisplay,
 ] = [
   "menue-opener",
   "body-cover",
@@ -36,4 +38,6 @@ export const [
   "preview-images-holder",
   "main-image-preview",
   "preview-container",
+  "light-box-opener",
+  "item-display",
 ].map(document.getElementById.bind(document));

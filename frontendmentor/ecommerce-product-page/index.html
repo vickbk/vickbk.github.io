@@ -83,12 +83,15 @@
             <h1 class="sr-only">Sneekers preview section</h1>
 
             <div class="relative preview__display">
-              <img
-                class="sm-up-brd-1"
-                id="main-image-preview"
-                src="./images/image-product-1.jpg"
-                alt="main sneekers image"
-              />
+              <button type="button" id="light-box-opener">
+                <img
+                  class="sm-up-brd-1"
+                  id="main-image-preview"
+                  src="./images/image-product-1.jpg"
+                  alt="main sneekers image"
+                />
+              </button>
+
               <div
                 id="preview-navigator"
                 class="preview__display-navigator flex space-between a-center p-1 sm-show absolute"
@@ -207,47 +210,67 @@
             </div>
           </section>
 
-          <dialog id="item-display">
-            <button type="button">
-              <img src="./images/icon-close.svg" alt="Close Button" />
-            </button>
-            <section>
-              <img
-                src="./images/image-product-1.jpg"
-                alt="main Sneaker image"
-              />
-              <div>
-                <button type="button">
-                  <img src="./images/icon-previous.svg" alt="Previous Button" />
-                </button>
-                <button type="button">
-                  <img src="./images/icon-next.svg" alt="Next Button" />
-                </button>
-              </div>
-              <section>
-                <button type="button">
+          <dialog id="item-display" class="m-auto view">
+            <div class="grid g-1 p-2">
+              <button type="button" class="mis-auto">
+                <img src="./images/icon-close.svg" alt="Close Button" />
+              </button>
+
+              <section class="view__container grid g-2 center">
+                <div class="relative">
                   <img
-                    src="./images/image-product-1-thumbnail.jpg"
-                    alt="First favorite preview image"
-                  /></button
-                ><button type="button">
-                  <img
-                    src="./images/image-product-2-thumbnail.jpg"
-                    alt="Second favorite preview image"
-                  /></button
-                ><button type="button">
-                  <img
-                    src="./images/image-product-3-thumbnail.jpg"
-                    alt="Third favorite preview image"
-                  /></button
-                ><button type="button">
-                  <img
-                    src="./images/image-product-4-thumbnail.jpg"
-                    alt="Fourth favorite preview image"
+                    class="sbrd-5"
+                    src="./images/image-product-1.jpg"
+                    alt="main Sneaker image"
                   />
-                </button>
+                  <div
+                    class="view__container-navigator absolute flex space-between mbl-auto"
+                  >
+                    <button type="button">
+                      <img
+                        class="white pi-1 spbl-8 brd-3"
+                        src="./images/icon-previous.svg"
+                        alt="Previous Button"
+                      />
+                    </button>
+                    <button type="button">
+                      <img
+                        class="white pi-1 spbl-8 brd-3"
+                        src="./images/icon-next.svg"
+                        alt="Next Button"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <section class="flex g-2 pi-2 preview__images">
+                  <button type="button">
+                    <img
+                      class="sbrd-2 preview__images-option"
+                      src="./images/image-product-1-thumbnail.jpg"
+                      alt="First favorite preview image"
+                    /></button
+                  ><button type="button">
+                    <img
+                      class="sbrd-2 preview__images-option"
+                      src="./images/image-product-2-thumbnail.jpg"
+                      alt="Second favorite preview image"
+                    /></button
+                  ><button type="button">
+                    <img
+                      class="sbrd-2 preview__images-option"
+                      src="./images/image-product-3-thumbnail.jpg"
+                      alt="Third favorite preview image"
+                    /></button
+                  ><button type="button">
+                    <img
+                      class="sbrd-2 preview__images-option"
+                      src="./images/image-product-4-thumbnail.jpg"
+                      alt="Fourth favorite preview image"
+                    />
+                  </button>
+                </section>
               </section>
-            </section>
+            </div>
           </dialog>
 
           <!-- Cart dialog -->
