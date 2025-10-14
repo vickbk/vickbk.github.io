@@ -1,20 +1,46 @@
 @use "../functions/" as f;
-@use "../globals/media-queries" as queries;
+@use "media-queries" as queries;
+@use "margin" as m;
 @use "sass:math";
 @use "sass:list";
 
 @for $i from 1 to 11 {
-  .br-#{$i} {
+  // setting different border radius sizes
+  .brd-#{$i} {
     border-radius: #{$i}em;
   }
-  .sbr-#{$i} {
+  // small border radius sizes
+  .sbrd-#{$i} {
     border-radius: #{math.div($i, 10)}em;
+  }
+
+  // setting different border sizes
+  .b-#{$i} {
+    border-width: #{$i}em;
+    border-style: solid;
+  }
+  // small border-sizes
+  .sb-#{$i} {
+    border-width: #{math.div($i, 10)}em;
+    border-style: solid;
+  }
+  @each $name, $value in m.$directions {
+    .b#{$name}-#{$i} {
+      border-#{$value}-width: #{$i}em;
+      border-style: solid;
+    }
+    .sb#{$name}-#{$i} {
+      border-#{$value}-width: #{math.div($i, 10)}em;
+      border-style: solid;
+    }
   }
 }
 
 .no-border {
   border: none;
 }
+
+//  setting borders for different screen sizes
 
 @each $name, $values in queries.$devices {
   $size: list.nth($values, 1);
@@ -24,11 +50,30 @@
       border: none;
     }
     @for $i from 1 to 12 {
-      .#{$class}-up-br-#{$i} {
+      .#{$class}-up-brd-#{$i} {
         border-radius: #{$i}em;
       }
-      .#{$class}-up-sbr-#{$i} {
+      .#{$class}-up-sbrd-#{$i} {
         border-radius: #{math.div($i, 10)}em;
+      }
+
+      .#{$class}-up-b-#{$i} {
+        border-width: #{$i}em;
+        border-style: solid;
+      }
+      .#{$class}-up-sb-#{$i} {
+        border-width: #{math.div($i, 10)}em;
+        border-style: solid;
+      }
+      @each $name, $value in m.$directions {
+        .#{$class}-up-b#{$name}-#{$i} {
+          border-#{$value}-width: #{$i}em;
+          border-style: solid;
+        }
+        .#{$class}-up-sb#{$name}-#{$i} {
+          border-#{$value}-width: #{math.div($i, 10)}em;
+          border-style: solid;
+        }
       }
     }
   }
@@ -37,11 +82,30 @@
       border: none;
     }
     @for $i from 1 to 12 {
-      .#{$class}-down-br-#{$i} {
+      .#{$class}-down-brd-#{$i} {
         border-radius: #{$i}em;
       }
-      .#{$class}-down-sbr-#{$i} {
+      .#{$class}-down-sbrd-#{$i} {
         border-radius: #{math.div($i, 10)}em;
+      }
+
+      .#{$class}-down-b-#{$i} {
+        border-width: #{$i}em;
+        border-style: solid;
+      }
+      .#{$class}-down-sb-#{$i} {
+        border-width: #{math.div($i, 10)}em;
+        border-style: solid;
+      }
+      @each $name, $value in m.$directions {
+        .#{$class}-down-b#{$name}-#{$i} {
+          border-#{$value}-width: #{$i}em;
+          border-style: solid;
+        }
+        .#{$class}-down-sb#{$name}-#{$i} {
+          border-#{$value}-width: #{math.div($i, 10)}em;
+          border-style: solid;
+        }
       }
     }
   }

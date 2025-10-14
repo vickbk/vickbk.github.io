@@ -65,14 +65,14 @@ $accent-color: map.get($colorsMap, orange);
     color: var(--#{"" + $name});
   }
 
-  .b-#{"" + $name},
-  .hv-b-#{"" + $name}:hover,
-  .a-b-#{"" + $name}:active,
-  .a-b-#{"" + $name}:focus {
-    border: var(--#{"" + $name}) f.to-r-em(1) solid;
+  .b-#{"" + $name}.b-#{"" + $name},
+  .hv-b-#{"" + $name}.hv-b-#{"" + $name}:hover,
+  .a-b-#{"" + $name}.a-b-#{"" + $name}:active,
+  .a-b-#{"" + $name}.a-b-#{"" + $name}:focus {
+    border-color: var(--#{"" + $name});
   }
   @include active-colors(#{"b-" + $name}) {
-    border: var(--#{"" + $name}) f.to-r-em(1) solid;
+    border-color: var(--#{"" + $name});
   }
 
   .out-#{"" + $name},

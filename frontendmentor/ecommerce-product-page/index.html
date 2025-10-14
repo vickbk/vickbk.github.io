@@ -18,273 +18,284 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="flex-column holder">
-      <header class="header flex space-between g-1 p-1 a-center">
-        <button class="header__button no-border sm-show" id="menue-opener">
-          <img src="./images/icon-menu.svg" alt="Menue opener" />
-        </button>
-        <a href="./"
-          ><img src="./images/logo.svg" alt="Sneekers Company logo"
-        /></a>
-        <div
-          id="body-cover"
-          class="header__navbar-cover hide sm-down-fixed very-dark-blue"
-        ></div>
-        <nav
-          class="header__navbar sm-down-p-2 sm-hide sm-down-fixed"
-          id="nav-bar"
-        >
-          <button
-            class="header__button sm-down-mble-5 sm-show no-border"
-            id="menue-closer"
-          >
-            <img src="./images/icon-close.svg" alt="Close Menue" />
+    <div class="container">
+      <div class="flex-column j-center container__holder">
+        <header class="header flex space-between g-1 p-1 a-center">
+          <button class="header__button no-border sm-show" id="menue-opener">
+            <img src="./images/icon-menu.svg" alt="Menue opener" />
           </button>
-          <ul class="sm-down-grid flex g-2 sm-up-sg-5 md-up-sg-10">
-            <li><a class="header__navbar-link" href="#">Collections</a></li>
-            <li><a class="header__navbar-link" href="#">Men</a></li>
-            <li><a class="header__navbar-link" href="#">Women</a></li>
-            <li><a class="header__navbar-link" href="#">About</a></li>
-            <li><a class="header__navbar-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <button
-          class="header__button no-border mis-auto relative"
-          id="cart-opener"
-          aria-label="Open cart button"
-        >
-          <img src="./images/icon-cart.svg" alt="Cart icon" />
-          <span
-            class="header__button-count absolute sp-3 spi-5 orange br-1"
-            id="items-count"
-            data-count="0"
-            >0</span
-          >
-        </button>
-        <a href="#!"
-          ><img
-            class="header__profile"
-            src="./images/image-avatar.png"
-            alt="Your Profile picture icon"
-        /></a>
-      </header>
-
-      <main class="grid">
-        <!-- Preview section -->
-        <section class="preview grid g-1 sm-up-p-1" id="preview-container">
-          <h1 class="sr-only">Sneekers preview section</h1>
-
-          <div class="relative preview__display">
-            <img
-              class="sm-up-br-1"
-              id="main-image-preview"
-              src="./images/image-product-1.jpg"
-              alt="main sneekers image"
-            />
-            <div
-              id="preview-navigator"
-              class="preview__display-navigator flex space-between a-center p-1 sm-show absolute"
-            >
-              <button type="button" data-step="-1">
-                <img
-                  class="white pi-1 spbl-8 br-3"
-                  src="./images/icon-previous.svg"
-                  alt="Previous Button"
-                  data-step="-1"
-                />
-              </button>
-              <button type="button" data-step="1">
-                <img
-                  class="white pi-1 spbl-8 br-3"
-                  src="./images/icon-next.svg"
-                  alt="Next Button"
-                  data-step="1"
-                />
-              </button>
-            </div>
-          </div>
+          <a href="./"
+            ><img src="./images/logo.svg" alt="Sneekers Company logo"
+          /></a>
           <div
-            class="preview__images sm-hide grid gc-4 g-1"
-            id="preview-images-holder"
+            id="body-cover"
+            class="header__navbar-cover hide sm-down-fixed very-dark-blue"
+          ></div>
+          <nav
+            class="header__navbar sm-down-p-2 sm-hide sm-down-fixed"
+            id="nav-bar"
           >
-            <button type="button">
-              <img
-                class="sbr-5 preview__images-option"
-                src="./images/image-product-1-thumbnail.jpg"
-                alt="First favorite preview image"
-              />
-            </button>
-            <button type="button">
-              <img
-                class="sbr-5 preview__images-option"
-                src="./images/image-product-2-thumbnail.jpg"
-                alt="Second favorite preview image"
-              />
-            </button>
-            <button type="button">
-              <img
-                class="sbr-5 preview__images-option"
-                src="./images/image-product-3-thumbnail.jpg"
-                alt="Third favorite preview image"
-              />
-            </button>
-            <button type="button">
-              <img
-                class="sbr-5 preview__images-option"
-                src="./images/image-product-4-thumbnail.jpg"
-                alt="Fourth favorite preview image"
-              />
-            </button>
-          </div>
-        </section>
-
-        <!-- Details section -->
-        <section class="details grid c-dark-grayish-blue">
-          <span class="upper-case bold">Sneaker Company</span>
-          <h2 class="details__header bold c-very-dark-blue">
-            Fall Limited Edition Sneakers
-          </h2>
-          <p class="details__text">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
-          </p>
-
-          <div
-            class="details__prices flex flex-wrap space-between sm-up-grid a-center g-1 bold"
-          >
-            <span
-              class="details__prices-price c-very-dark-blue"
-              aria-label="Item actual price"
-              >$125.00</span
-            >
-            <span
-              aria-label="Item discount"
-              class="sp-3 spi-7 sbr-5 very-dark-blue c-light-grayish-blue mie-auto"
-              >50%</span
-            >
-            <s aria-label="Item original price">$250.00</s>
-          </div>
-          <form class="grid g-2 sm-up-flex sm-up-g-1" id="to-cart">
-            <div class="flex light-grayish-blue sbr-5 a-center">
-              <button type="button" class="p-1" id="decrementor">
-                <img
-                  src="./images/icon-minus.svg"
-                  alt="Decrease number of items"
-                />
-              </button>
-              <input
-                class="details__input flex-grow no-border text-center bold light-grayish-blue c-very-dark-blue p-1"
-                type="number"
-                id="count"
-                value="0"
-                name="count"
-                aria-label="Number of items to add"
-              />
-              <button id="incrementor" type="button" class="p-1">
-                <img
-                  src="./images/icon-plus.svg"
-                  alt="Increase number of items"
-                />
-              </button>
-            </div>
             <button
-              type="submit"
-              class="flex flex-grow g-1 j-center orange c-very-dark-blue bold p-1 sbr-5"
+              class="header__button sm-down-mble-5 sm-show no-border"
+              id="menue-closer"
             >
-              <img src="./images/icon-cart.svg" alt="" /> Add to cart
+              <img src="./images/icon-close.svg" alt="Close Menue" />
             </button>
-          </form>
-        </section>
-
-        <dialog id="item-display">
-          <button type="button">
-            <img src="./images/icon-close.svg" alt="Close Button" />
+            <ul class="sm-down-grid flex g-2 sm-up-sg-5 md-up-sg-10">
+              <li><a class="header__navbar-link" href="#">Collections</a></li>
+              <li><a class="header__navbar-link" href="#">Men</a></li>
+              <li><a class="header__navbar-link" href="#">Women</a></li>
+              <li><a class="header__navbar-link" href="#">About</a></li>
+              <li><a class="header__navbar-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            class="header__button no-border mis-auto relative"
+            id="cart-opener"
+            aria-label="Open cart button"
+          >
+            <img src="./images/icon-cart.svg" alt="Cart icon" />
+            <span
+              class="header__button-count absolute sp-3 spi-5 orange brd-1"
+              id="items-count"
+              data-count="0"
+              >0</span
+            >
           </button>
-          <section>
-            <img src="./images/image-product-1.jpg" alt="main Sneaker image" />
-            <div>
-              <button type="button">
-                <img src="./images/icon-previous.svg" alt="Previous Button" />
-              </button>
-              <button type="button">
-                <img src="./images/icon-next.svg" alt="Next Button" />
-              </button>
+          <a href="#!"
+            ><img
+              class="header__profile"
+              src="./images/image-avatar.png"
+              alt="Your Profile picture icon"
+          /></a>
+        </header>
+
+        <main
+          class="main grid md-up-gc-2 md-up-g-1 md-up-p-1 lg-up-g-5 lg-up-p-5"
+        >
+          <!-- Preview section -->
+          <section class="preview grid g-1 sm-up-p-1" id="preview-container">
+            <h1 class="sr-only">Sneekers preview section</h1>
+
+            <div class="relative preview__display">
+              <img
+                class="sm-up-brd-1"
+                id="main-image-preview"
+                src="./images/image-product-1.jpg"
+                alt="main sneekers image"
+              />
+              <div
+                id="preview-navigator"
+                class="preview__display-navigator flex space-between a-center p-1 sm-show absolute"
+              >
+                <button type="button" data-step="-1">
+                  <img
+                    class="white pi-1 spbl-8 brd-3"
+                    src="./images/icon-previous.svg"
+                    alt="Previous Button"
+                    data-step="-1"
+                  />
+                </button>
+                <button type="button" data-step="1">
+                  <img
+                    class="white pi-1 spbl-8 brd-3"
+                    src="./images/icon-next.svg"
+                    alt="Next Button"
+                    data-step="1"
+                  />
+                </button>
+              </div>
             </div>
-            <section>
+            <div
+              class="preview__images sm-hide grid gc-4 g-1"
+              id="preview-images-holder"
+            >
               <button type="button">
                 <img
+                  class="sbrd-5 preview__images-option"
                   src="./images/image-product-1-thumbnail.jpg"
                   alt="First favorite preview image"
-                /></button
-              ><button type="button">
+                />
+              </button>
+              <button type="button">
                 <img
+                  class="sbrd-5 preview__images-option"
                   src="./images/image-product-2-thumbnail.jpg"
                   alt="Second favorite preview image"
-                /></button
-              ><button type="button">
+                />
+              </button>
+              <button type="button">
                 <img
+                  class="sbrd-5 preview__images-option"
                   src="./images/image-product-3-thumbnail.jpg"
                   alt="Third favorite preview image"
-                /></button
-              ><button type="button">
+                />
+              </button>
+              <button type="button">
                 <img
+                  class="sbrd-5 preview__images-option"
                   src="./images/image-product-4-thumbnail.jpg"
                   alt="Fourth favorite preview image"
                 />
               </button>
-            </section>
+            </div>
           </section>
-        </dialog>
 
-        <!-- Cart dialog -->
-        <dialog
-          class="cart sbr-5 smbls-5 smie-5 smis-auto"
-          id="cart"
-          data-count="3"
-        >
-          <div class="cart__header bold p-1 bble-orange">Cart</div>
-          <div>
-            <div class="cart__empty p-1">
-              <div class="">Your cart is empty</div>
-            </div>
-            <div
-              class="cart__content p-1 flex flex-wrap g-1 c-dark-grayish-blue"
-            >
-              <img
-                class="cart__content-image sbr-2"
-                src="./images/image-product-1-thumbnail.jpg"
-                alt="Sneaker added to cart"
-              />
-              <div class="flex-grow flex-column space-between">
-                <span>Fall limited Edition Sneakers</span>
-                <p>
-                  $125.00 x <span id="total-number">2</span>
-                  <b class="c-very-dark-blue smis-5" id="total-cart">$375.00</b>
-                </p>
-              </div>
-              <button type="button" id="remove-item">
-                <img
-                  class="cart__content-delete"
-                  src="./images/icon-delete.svg"
-                  alt="Delete item"
-                />
-              </button>
-              <a
-                href="#"
-                class="p-1 flex-grow orange c-very-dark-blue sbr-5 bold text-center"
-                >Checkout</a
+          <!-- Details section -->
+          <section class="details grid center g-1 c-dark-grayish-blue">
+            <div class="grid g-2">
+              <span class="upper-case bold">Sneaker Company</span>
+              <h2 class="details__header bold c-very-dark-blue">
+                Fall Limited Edition Sneakers
+              </h2>
+              <p class="details__text">
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+
+              <div
+                class="details__prices flex flex-wrap space-between sm-up-grid a-center g-1 bold"
               >
+                <span
+                  class="details__prices-price c-very-dark-blue"
+                  aria-label="Item actual price"
+                  >$125.00</span
+                >
+                <span
+                  aria-label="Item discount"
+                  class="sp-3 spi-7 sbrd-5 very-dark-blue c-light-grayish-blue mie-auto"
+                  >50%</span
+                >
+                <s aria-label="Item original price">$250.00</s>
+              </div>
+              <form class="grid g-2 sm-up-flex sm-up-g-1" id="to-cart">
+                <div class="flex light-grayish-blue sbrd-5 a-center">
+                  <button type="button" class="p-1" id="decrementor">
+                    <img
+                      src="./images/icon-minus.svg"
+                      alt="Decrease number of items"
+                    />
+                  </button>
+                  <input
+                    class="details__input flex-grow no-border text-center bold light-grayish-blue c-very-dark-blue p-1"
+                    type="number"
+                    id="count"
+                    value="0"
+                    name="count"
+                    aria-label="Number of items to add"
+                  />
+                  <button id="incrementor" type="button" class="p-1">
+                    <img
+                      src="./images/icon-plus.svg"
+                      alt="Increase number of items"
+                    />
+                  </button>
+                </div>
+                <button
+                  type="submit"
+                  class="flex flex-grow g-1 j-center orange c-very-dark-blue bold p-1 sbrd-5"
+                >
+                  <img src="./images/icon-cart.svg" alt="" /> Add to cart
+                </button>
+              </form>
             </div>
-          </div>
-        </dialog>
-      </main>
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/vickbk">VickBk</a>.
-      </footer>
+          </section>
+
+          <dialog id="item-display">
+            <button type="button">
+              <img src="./images/icon-close.svg" alt="Close Button" />
+            </button>
+            <section>
+              <img
+                src="./images/image-product-1.jpg"
+                alt="main Sneaker image"
+              />
+              <div>
+                <button type="button">
+                  <img src="./images/icon-previous.svg" alt="Previous Button" />
+                </button>
+                <button type="button">
+                  <img src="./images/icon-next.svg" alt="Next Button" />
+                </button>
+              </div>
+              <section>
+                <button type="button">
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="First favorite preview image"
+                  /></button
+                ><button type="button">
+                  <img
+                    src="./images/image-product-2-thumbnail.jpg"
+                    alt="Second favorite preview image"
+                  /></button
+                ><button type="button">
+                  <img
+                    src="./images/image-product-3-thumbnail.jpg"
+                    alt="Third favorite preview image"
+                  /></button
+                ><button type="button">
+                  <img
+                    src="./images/image-product-4-thumbnail.jpg"
+                    alt="Fourth favorite preview image"
+                  />
+                </button>
+              </section>
+            </section>
+          </dialog>
+
+          <!-- Cart dialog -->
+          <dialog
+            class="cart sbrd-5 smbls-5 smie-5 smis-auto"
+            id="cart"
+            data-count="3"
+          >
+            <div class="cart__header bold p-1 bble-orange">Cart</div>
+            <div>
+              <div class="cart__empty p-1">
+                <div class="">Your cart is empty</div>
+              </div>
+              <div
+                class="cart__content p-1 flex flex-wrap g-1 c-dark-grayish-blue"
+              >
+                <img
+                  class="cart__content-image sbrd-2"
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="Sneaker added to cart"
+                />
+                <div class="flex-grow flex-column space-between">
+                  <span>Fall limited Edition Sneakers</span>
+                  <p>
+                    $125.00 x <span id="total-number">2</span>
+                    <b class="c-very-dark-blue smis-5" id="total-cart"
+                      >$375.00</b
+                    >
+                  </p>
+                </div>
+                <button type="button" id="remove-item">
+                  <img
+                    class="cart__content-delete"
+                    src="./images/icon-delete.svg"
+                    alt="Delete item"
+                  />
+                </button>
+                <a
+                  href="#"
+                  class="p-1 flex-grow orange c-very-dark-blue sbrd-5 bold text-center"
+                  >Checkout</a
+                >
+              </div>
+            </div>
+          </dialog>
+        </main>
+        <footer class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/vickbk">VickBk</a>.
+        </footer>
+      </div>
     </div>
   </body>
 </html>
