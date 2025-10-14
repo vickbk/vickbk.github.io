@@ -19834,6 +19834,9 @@ button {
   }
 }
 
+.preview {
+  --current-index: attr(data-current);
+}
 .preview__display-navigator {
   inset: 0;
 }

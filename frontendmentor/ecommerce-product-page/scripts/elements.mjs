@@ -16,6 +16,7 @@ export const [
   previewNavigator,
   previewImagesHolder,
   mainImagePreview,
+  previewContainer,
 ] = [
   "menue-opener",
   "body-cover",
@@ -34,4 +35,5 @@ export const [
   "preview-navigator",
   "preview-images-holder",
   "main-image-preview",
+  "preview-container",
 ].map(document.getElementById.bind(document));

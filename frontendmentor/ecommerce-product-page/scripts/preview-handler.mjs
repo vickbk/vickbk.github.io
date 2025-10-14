@@ -1,4 +1,8 @@
-import { mainImagePreview, previewImagesHolder } from "./elements.mjs";
+import {
+  mainImagePreview,
+  previewContainer,
+  previewImagesHolder,
+} from "./elements.mjs";
 
 let current = 0;
 const images = previewImagesHolder.querySelectorAll("img");
@@ -19,8 +23,13 @@ export const showCurrentImage = () => {
   const altTxt = image.alt;
   mainImagePreview.src = link;
   mainImagePreview.alt = altTxt;
+  previewContainer?.setAttribute("data-current", current);
 };
 
 export const setCurrentImage = ({ target }) => {
   if (!["button", "img"].some((tagName) => target.matches(tagName))) return;
+  const image = target.matches("img") ? target : target.firstElementChild;
+
+  current = [...images].indexOf(image);
+  showCurrentImage();
 };

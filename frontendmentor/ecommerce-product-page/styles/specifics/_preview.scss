@@ -1,4 +1,5 @@
 .preview {
+  --current-index: attr(data-current);
   &__display {
     &-navigator {
       inset: 0;
