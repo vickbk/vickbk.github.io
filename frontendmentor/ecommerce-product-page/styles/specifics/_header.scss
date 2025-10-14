@@ -19,8 +19,7 @@
   }
   &__navbar {
     &-link {
-      color: var(--very-dark-blue);
-      font-weight: bold;
+      color: var(--dark-grayish-blue);
     }
     @include g.from-desktop-down(g.$mobile) {
       &,
@@ -33,6 +32,9 @@
       &-cover {
         inline-size: 100vw;
         opacity: 0.3;
+      }
+      &-link {
+        font-weight: bold;
       }
 
       inline-size: 70%;

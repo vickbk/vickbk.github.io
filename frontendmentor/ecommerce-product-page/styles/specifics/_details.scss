@@ -3,13 +3,13 @@
   padding: 1.5em;
   gap: 1.5em;
   &__header,
-  &__prices {
-    grid-template-columns: auto 1fr;
-    &-price {
-      font-size: f.clamp-builder(1.5rem, 3rem);
-    }
+  &__prices-price {
+    font-size: f.clamp-builder(1.5rem, 3rem);
   }
 
+  &__prices {
+    grid-template-columns: auto 1fr;
+  }
   &__text {
     line-height: 1.5;
   }

@@ -8,7 +8,6 @@
   place-items: center;
   .header {
     text-align: center;
-    font-size: f.clamp-builder(1.5rem, font.$preferred-size);
   }
   @include g.mobile-queries(g.$tablet) {
     &__holder {
