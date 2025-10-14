@@ -80,6 +80,10 @@ input[type=number] {
   border: 0;
 }
 
+dialog {
+  border: none;
+}
+
 :root {
   --font-link: "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap";
   --primary-font: Kumbh Sans, sans-serif;
@@ -19137,4 +19141,24 @@ button {
 .details__input {
   min-inline-size: 0;
   inline-size: 0;
+}
+
+.cart {
+  inline-size: calc(100% - 1em);
+  max-inline-size: 25rem;
+}
+.cart[data-count="0"] .cart__content {
+  display: none;
+}
+.cart:not(.cart[data-count="0"]) .cart__empty {
+  display: none;
+}
+.cart__header {
+  border-block-end: 0.0625rem solid var(--grayish-blue);
+}
+.cart__content-image {
+  inline-size: 3.125rem;
+}
+.cart__content-delete {
+  inline-size: 1.25rem;
 }/*# sourceMappingURL=styles.css.map */

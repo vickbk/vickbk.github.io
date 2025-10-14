@@ -218,22 +218,39 @@
         </dialog>
 
         <!-- Cart dialog -->
-        <dialog>
-          <div>Cart</div>
+        <dialog class="cart sbr-5 smbls-5 smie-5 smis-auto" open data-count="3">
+          <div class="cart__header bold p-1 bble-orange">Cart</div>
           <div>
-            <span>Your cart is empty</span>
-            <div>
+            <div class="cart__empty p-1">
+              <div class="">Your cart is empty</div>
+            </div>
+            <div
+              class="cart__content p-1 flex flex-wrap g-1 c-dark-grayish-blue"
+            >
               <img
+                class="cart__content-image sbr-2"
                 src="./images/image-product-1-thumbnail.jpg"
                 alt="Sneaker added to cart"
               />
-              <div>
+              <div class="flex-grow flex-column space-between">
                 <span>Fall limited Edition Sneakers</span>
-                <span
-                  >$125.00 x <span id="item-count">2</span>
-                  <b id="total-cart">$375.00</b></span
-                >
+                <p>
+                  $125.00 x <span id="item-count">2</span>
+                  <b class="c-very-dark-blue smis-5" id="total-cart">$375.00</b>
+                </p>
               </div>
+              <button type="button">
+                <img
+                  class="cart__content-delete"
+                  src="./images/icon-delete.svg"
+                  alt="Delete item"
+                />
+              </button>
+              <a
+                href="#"
+                class="p-1 flex-grow orange c-very-dark-blue sbr-5 bold text-center"
+                >Checkout</a
+              >
             </div>
           </div>
         </dialog>
