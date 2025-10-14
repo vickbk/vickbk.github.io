@@ -40,6 +40,7 @@ export const hideCart = () => {
 };
 
 export const closeCartOnOutsideClick = ({ target }) => {
+  if (!cart.open) return;
   const clickOnCart = [cart, cartOpener].some((element) =>
     element.contains(target)
   );

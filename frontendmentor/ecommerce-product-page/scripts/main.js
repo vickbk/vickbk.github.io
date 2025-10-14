@@ -13,9 +13,11 @@ import {
   itemRemover,
   menueCloser,
   menueOpener,
+  previewNavigator,
   toCart,
 } from "./elements.mjs";
 import { menueHandler } from "./menue-handler.mjs";
+import { navigatePictures } from "./preview-handler.mjs";
 import { quantityHandler } from "./quantity-handler.mjs";
 
 [menueOpener, menueCloser, bodyCover].forEach((element) =>
@@ -36,5 +38,7 @@ itemRemover?.addEventListener("click", removeFromCart);
 cartOpener?.addEventListener("click", showHideCart);
 
 window.addEventListener("click", closeCartOnOutsideClick);
+
+previewNavigator.addEventListener("click", navigatePictures);
 
 updateCart();

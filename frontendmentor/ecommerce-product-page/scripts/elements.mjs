@@ -13,6 +13,9 @@ export const [
   totalNumber,
   itemRemover,
   cartOpener,
+  previewNavigator,
+  previewImagesHolder,
+  mainImagePreview,
 ] = [
   "menue-opener",
   "body-cover",
@@ -28,4 +31,7 @@ export const [
   "total-number",
   "remove-item",
   "cart-opener",
+  "preview-navigator",
+  "preview-images-holder",
+  "main-image-preview",
 ].map(document.getElementById.bind(document));
