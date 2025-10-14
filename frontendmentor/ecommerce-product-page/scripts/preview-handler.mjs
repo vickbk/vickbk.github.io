@@ -20,3 +20,7 @@ export const showCurrentImage = () => {
   mainImagePreview.src = link;
   mainImagePreview.alt = altTxt;
 };
+
+export const setCurrentImage = ({ target }) => {
+  if (!["button", "img"].some((tagName) => target.matches(tagName))) return;
+};

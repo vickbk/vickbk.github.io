@@ -11,7 +11,7 @@
 
 @keyframes disappear {
   from {
-    display: unset;
+    display: inherit;
     opacity: auto;
   }
   to {

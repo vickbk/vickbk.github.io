@@ -1,5 +1,7 @@
 @use "../functions/" as f;
+@use "../globals/media-queries" as queries;
 @use "sass:math";
+@use "sass:list";
 
 @for $i from 1 to 11 {
   .br-#{$i} {
@@ -12,4 +14,35 @@
 
 .no-border {
   border: none;
+}
+
+@each $name, $values in queries.$devices {
+  $size: list.nth($values, 1);
+  $class: list.nth($values, 2);
+  @include queries.from-mobile($size) {
+    .#{$class}-up-no-border {
+      border: none;
+    }
+    @for $i from 1 to 12 {
+      .#{$class}-up-br-#{$i} {
+        border-radius: #{$i}em;
+      }
+      .#{$class}-up-sbr-#{$i} {
+        border-radius: #{math.div($i, 10)}em;
+      }
+    }
+  }
+  @include queries.from-desktop($size) {
+    .#{$class}-down-no-border {
+      border: none;
+    }
+    @for $i from 1 to 12 {
+      .#{$class}-down-br-#{$i} {
+        border-radius: #{$i}em;
+      }
+      .#{$class}-down-sbr-#{$i} {
+        border-radius: #{math.div($i, 10)}em;
+      }
+    }
+  }
 }

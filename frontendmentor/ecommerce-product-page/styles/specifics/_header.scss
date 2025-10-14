@@ -22,7 +22,7 @@
       color: var(--very-dark-blue);
       font-weight: bold;
     }
-    @include g.from-desktop-down(g.$tablet) {
+    @include g.from-desktop-down(g.$mobile) {
       &,
       &-cover {
         block-size: 100vh;

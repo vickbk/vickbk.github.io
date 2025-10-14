@@ -9,7 +9,7 @@
 }
 .sm-hide.sm-hide {
   @include mobile-queries($mobile) {
-    display: unset;
+    display: inherit;
     opacity: 1;
   }
 }

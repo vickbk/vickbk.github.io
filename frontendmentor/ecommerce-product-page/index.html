@@ -30,14 +30,17 @@
           id="body-cover"
           class="header__navbar-cover hide sm-down-fixed very-dark-blue"
         ></div>
-        <nav class="header__navbar p-2 sm-hide sm-down-fixed" id="nav-bar">
+        <nav
+          class="header__navbar sm-down-p-2 sm-hide sm-down-fixed"
+          id="nav-bar"
+        >
           <button
             class="header__button sm-down-mble-5 sm-show no-border"
             id="menue-closer"
           >
             <img src="./images/icon-close.svg" alt="Close Menue" />
           </button>
-          <ul class="sm-down-grid g-2">
+          <ul class="sm-down-grid flex g-2 sm-up-sg-5 md-up-sg-10">
             <li><a class="header__navbar-link" href="#">Collections</a></li>
             <li><a class="header__navbar-link" href="#">Men</a></li>
             <li><a class="header__navbar-link" href="#">Women</a></li>
@@ -68,11 +71,12 @@
 
       <main class="grid">
         <!-- Preview section -->
-        <section class="preview">
+        <section class="preview grid g-1 sm-up-p-1">
           <h1 class="sr-only">Sneekers preview section</h1>
 
           <div class="relative preview__display">
             <img
+              class="sm-up-br-1"
               id="main-image-preview"
               src="./images/image-product-1.jpg"
               alt="main sneekers image"
@@ -99,27 +103,31 @@
               </button>
             </div>
           </div>
-          <div class="sm-hide" id="preview-images-holder">
+          <div class="sm-hide grid gc-4 g-1" id="preview-images-holder">
             <button type="button">
               <img
+                class="sbr-5"
                 src="./images/image-product-1-thumbnail.jpg"
                 alt="First favorite preview image"
               />
             </button>
             <button type="button">
               <img
+                class="sbr-5"
                 src="./images/image-product-2-thumbnail.jpg"
                 alt="Second favorite preview image"
               />
             </button>
             <button type="button">
               <img
+                class="sbr-5"
                 src="./images/image-product-3-thumbnail.jpg"
                 alt="Third favorite preview image"
               />
             </button>
             <button type="button">
               <img
+                class="sbr-5"
                 src="./images/image-product-4-thumbnail.jpg"
                 alt="Fourth favorite preview image"
               />
