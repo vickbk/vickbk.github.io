@@ -11,14 +11,17 @@ import {
   decrementor,
   incrementor,
   itemRemover,
+  lightBoxCloser,
   lightBoxOpener,
   menueCloser,
   menueOpener,
   previewImagesHolder,
   previewNavigator,
   toCart,
+  viewImagesHolder,
+  viewNavigator,
 } from "./elements.mjs";
-import { openLightBox } from "./handle-light-box.mjs";
+import { openCloseLightBox } from "./handle-light-box.mjs";
 import { menueHandler } from "./menue-handler.mjs";
 import {
   navigatePictures,
@@ -46,10 +49,17 @@ cartOpener?.addEventListener("click", showHideCart);
 
 window.addEventListener("click", closeCartOnOutsideClick);
 
-previewNavigator?.addEventListener("click", navigatePictures);
+[previewNavigator, viewNavigator].forEach((element) =>
+  element?.addEventListener("click", navigatePictures)
+);
 
-previewImagesHolder?.addEventListener("click", setCurrentImage);
+[previewImagesHolder, viewImagesHolder].forEach((element) =>
+  element?.addEventListener("click", setCurrentImage)
+);
+// previewImagesHolder?.addEventListener("click", setCurrentImage);
 
-lightBoxOpener?.addEventListener("click", openLightBox);
+[lightBoxOpener, lightBoxCloser].forEach((element) =>
+  element?.addEventListener("click", openCloseLightBox)
+);
 
-[(updateCart, showCurrentImage)].forEach((init) => init());
+[updateCart, showCurrentImage].forEach((init) => init());

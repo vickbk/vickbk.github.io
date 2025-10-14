@@ -1,5 +1,5 @@
 import { itemDisplay } from "./elements.mjs";
 
-export const openLightBox = () => {
-  itemDisplay?.showModal();
+export const openCloseLightBox = () => {
+  itemDisplay?.[itemDisplay.open ? "close" : "showModal"]();
 };

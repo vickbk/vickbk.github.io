@@ -212,7 +212,7 @@
 
           <dialog id="item-display" class="m-auto view">
             <div class="grid g-1 p-2">
-              <button type="button" class="mis-auto">
+              <button type="button" class="mis-auto" id="light-box-closer">
                 <img src="./images/icon-close.svg" alt="Close Button" />
               </button>
 
@@ -222,19 +222,23 @@
                     class="sbrd-5"
                     src="./images/image-product-1.jpg"
                     alt="main Sneaker image"
+                    id="main-image-view"
                   />
                   <div
+                    id="view-navigator"
                     class="view__container-navigator absolute flex space-between mbl-auto"
                   >
-                    <button type="button">
+                    <button type="button" data-step="-1">
                       <img
+                        data-step="-1"
                         class="white pi-1 spbl-8 brd-3"
                         src="./images/icon-previous.svg"
                         alt="Previous Button"
                       />
                     </button>
-                    <button type="button">
+                    <button type="button" data-step="1">
                       <img
+                        data-step="1"
                         class="white pi-1 spbl-8 brd-3"
                         src="./images/icon-next.svg"
                         alt="Next Button"
@@ -242,7 +246,10 @@
                     </button>
                   </div>
                 </div>
-                <section class="flex g-2 pi-2 preview__images">
+                <section
+                  class="flex g-2 pi-2 preview__images"
+                  id="view-images-holder"
+                >
                   <button type="button">
                     <img
                       class="sbrd-2 preview__images-option"

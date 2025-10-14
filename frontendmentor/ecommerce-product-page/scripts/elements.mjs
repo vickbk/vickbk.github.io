@@ -19,6 +19,10 @@ export const [
   previewContainer,
   lightBoxOpener,
   itemDisplay,
+  lightBoxCloser,
+  viewImagesHolder,
+  mainImageView,
+  viewNavigator,
 ] = [
   "menue-opener",
   "body-cover",
@@ -40,4 +44,8 @@ export const [
   "preview-container",
   "light-box-opener",
   "item-display",
+  "light-box-closer",
+  "view-images-holder",
+  "main-image-view",
+  "view-navigator",
 ].map(document.getElementById.bind(document));

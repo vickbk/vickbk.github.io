@@ -1,7 +1,15 @@
-import { mainImagePreview, previewImagesHolder } from "./elements.mjs";
+import {
+  mainImagePreview,
+  mainImageView,
+  previewImagesHolder,
+  viewImagesHolder,
+} from "./elements.mjs";
 
 let current = 0;
-const images = previewImagesHolder.querySelectorAll("img");
+const [images, viewImages] = [previewImagesHolder, viewImagesHolder].map(
+  (element) => element?.querySelectorAll("img")
+);
+
 const imagesCount = images.length - 1;
 
 let diapromaHolder;
@@ -17,9 +25,11 @@ export const showCurrentImage = () => {
   const image = images[current];
   const link = image.src.replace("-thumbnail", "");
   const altTxt = image.alt;
-  mainImagePreview.src = link;
-  mainImagePreview.alt = altTxt;
-  setActiveThumbnail();
+  [mainImagePreview, mainImageView].forEach((element) => {
+    element.src = link;
+    element.alt = altTxt;
+  });
+  [images, viewImages].forEach((chosen) => setActiveThumbnail(chosen));
   if (diapromaHolder) clearTimeout(diapromaHolder);
   diapromaHolder = setTimeout(showNextImage, 10000);
 };
@@ -29,10 +39,11 @@ export const setCurrentImage = ({ target }) => {
   const image = target.matches("img") ? target : target.firstElementChild;
 
   current = [...images].indexOf(image);
+  if (current === -1) current = [...viewImages].indexOf(image);
   showCurrentImage();
 };
 
-const setActiveThumbnail = () => {
+const setActiveThumbnail = (images) => {
   const previousActive = [...images].find((img) =>
     img.classList.contains("active")
   );
