@@ -1,8 +1,21 @@
+@use "../functions/" as f;
+
 .preview {
   --current-index: attr(data-current);
   &__display {
     &-navigator {
       inset: 0;
+    }
+  }
+  &__images {
+    &-option {
+      border-color: var(--orange);
+      transition: all 0.5s ease-in;
+      &.active {
+        border: f.to-r-em(2) solid var(--orange);
+        background-color: var(--white);
+        opacity: 0.3;
+      }
     }
   }
 }

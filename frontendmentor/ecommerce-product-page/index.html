@@ -71,11 +71,7 @@
 
       <main class="grid">
         <!-- Preview section -->
-        <section
-          class="preview grid g-1 sm-up-p-1"
-          id="preview-container"
-          data-current="0"
-        >
+        <section class="preview grid g-1 sm-up-p-1" id="preview-container">
           <h1 class="sr-only">Sneekers preview section</h1>
 
           <div class="relative preview__display">
@@ -107,31 +103,34 @@
               </button>
             </div>
           </div>
-          <div class="sm-hide grid gc-4 g-1" id="preview-images-holder">
+          <div
+            class="preview__images sm-hide grid gc-4 g-1"
+            id="preview-images-holder"
+          >
             <button type="button">
               <img
-                class="sbr-5"
+                class="sbr-5 preview__images-option"
                 src="./images/image-product-1-thumbnail.jpg"
                 alt="First favorite preview image"
               />
             </button>
             <button type="button">
               <img
-                class="sbr-5"
+                class="sbr-5 preview__images-option"
                 src="./images/image-product-2-thumbnail.jpg"
                 alt="Second favorite preview image"
               />
             </button>
             <button type="button">
               <img
-                class="sbr-5"
+                class="sbr-5 preview__images-option"
                 src="./images/image-product-3-thumbnail.jpg"
                 alt="Third favorite preview image"
               />
             </button>
             <button type="button">
               <img
-                class="sbr-5"
+                class="sbr-5 preview__images-option"
                 src="./images/image-product-4-thumbnail.jpg"
                 alt="Fourth favorite preview image"
               />
@@ -151,9 +150,11 @@
             the weather can offer.
           </p>
 
-          <div class="flex space-between a-center g-1 bold">
+          <div
+            class="details__prices flex flex-wrap space-between sm-up-grid a-center g-1 bold"
+          >
             <span
-              class="details__price c-very-dark-blue"
+              class="details__prices-price c-very-dark-blue"
               aria-label="Item actual price"
               >$125.00</span
             >
@@ -164,7 +165,7 @@
             >
             <s aria-label="Item original price">$250.00</s>
           </div>
-          <form class="grid g-2" id="to-cart">
+          <form class="grid g-2 sm-up-flex sm-up-g-1" id="to-cart">
             <div class="flex light-grayish-blue sbr-5 a-center">
               <button type="button" class="p-1" id="decrementor">
                 <img
@@ -189,7 +190,7 @@
             </div>
             <button
               type="submit"
-              class="flex g-1 j-center orange c-very-dark-blue bold p-1 sbr-5"
+              class="flex flex-grow g-1 j-center orange c-very-dark-blue bold p-1 sbr-5"
             >
               <img src="./images/icon-cart.svg" alt="" /> Add to cart
             </button>

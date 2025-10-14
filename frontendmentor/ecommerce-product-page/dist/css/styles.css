@@ -19840,20 +19840,32 @@ button {
 .preview__display-navigator {
   inset: 0;
 }
+.preview__images-option {
+  border-color: var(--orange);
+  transition: all 0.5s ease-in;
+}
+.preview__images-option.active {
+  border: 0.125rem solid var(--orange);
+  background-color: var(--white);
+  opacity: 0.3;
+}
 
 .details {
   padding: 1.5em;
   gap: 1.5em;
 }
-.details__header, .details__price {
-  font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
+.details__header, .details__prices {
+  grid-template-columns: auto 1fr;
+}
+.details__header-price, .details__prices-price {
+  font-size: clamp(1.5rem, 0.9718309859rem + 2.2535211268vw, 3rem);
 }
 .details__text {
   line-height: 1.5;
 }
 .details__input {
-  min-inline-size: 0;
-  inline-size: 0;
+  inline-size: 5em;
+  flex-basis: 5em;
 }
 
 .cart {

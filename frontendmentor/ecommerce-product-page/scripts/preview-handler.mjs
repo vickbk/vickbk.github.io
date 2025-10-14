@@ -23,7 +23,7 @@ export const showCurrentImage = () => {
   const altTxt = image.alt;
   mainImagePreview.src = link;
   mainImagePreview.alt = altTxt;
-  previewContainer?.setAttribute("data-current", current);
+  setActiveThumbnail();
 };
 
 export const setCurrentImage = ({ target }) => {
@@ -32,4 +32,12 @@ export const setCurrentImage = ({ target }) => {
 
   current = [...images].indexOf(image);
   showCurrentImage();
+};
+
+const setActiveThumbnail = () => {
+  const previousActive = [...images].find((img) =>
+    img.classList.contains("active")
+  );
+  previousActive?.classList.remove("active");
+  images[current]?.classList.add("active");
 };

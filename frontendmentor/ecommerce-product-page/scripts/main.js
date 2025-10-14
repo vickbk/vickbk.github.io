@@ -18,7 +18,11 @@ import {
   toCart,
 } from "./elements.mjs";
 import { menueHandler } from "./menue-handler.mjs";
-import { navigatePictures, setCurrentImage } from "./preview-handler.mjs";
+import {
+  navigatePictures,
+  setCurrentImage,
+  showCurrentImage,
+} from "./preview-handler.mjs";
 import { quantityHandler } from "./quantity-handler.mjs";
 
 [menueOpener, menueCloser, bodyCover].forEach((element) =>
@@ -44,4 +48,4 @@ previewNavigator?.addEventListener("click", navigatePictures);
 
 previewImagesHolder?.addEventListener("click", setCurrentImage);
 
-updateCart();
+[updateCart, showCurrentImage].forEach((init) => init());

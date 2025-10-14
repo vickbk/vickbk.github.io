@@ -3,14 +3,18 @@
   padding: 1.5em;
   gap: 1.5em;
   &__header,
-  &__price {
-    font-size: f.clamp-builder(2rem, 3rem);
+  &__prices {
+    grid-template-columns: auto 1fr;
+    &-price {
+      font-size: f.clamp-builder(1.5rem, 3rem);
+    }
   }
+
   &__text {
     line-height: 1.5;
   }
   &__input {
-    min-inline-size: 0;
-    inline-size: 0;
+    inline-size: 5em;
+    flex-basis: 5em;
   }
 }
