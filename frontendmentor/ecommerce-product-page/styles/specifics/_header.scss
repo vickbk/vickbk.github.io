@@ -21,6 +21,9 @@
     &-link {
       color: var(--dark-grayish-blue);
       padding-block-end: 1em;
+      @include g.from-mobile-up(g.$tablet) {
+        padding-block-end: 2em;
+      }
       @include g.active-state {
         font-weight: var(--bold);
         color: var(--very-dark-blue);

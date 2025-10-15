@@ -30658,6 +30658,11 @@ button {
   color: var(--dark-grayish-blue);
   padding-block-end: 1em;
 }
+@media (min-width: 48em) {
+  .header__navbar-link {
+    padding-block-end: 2em;
+  }
+}
 .header__navbar-link:hover, .header__navbar-link:active, .header__navbar-link:focus {
   font-weight: var(--bold);
   color: var(--very-dark-blue);
