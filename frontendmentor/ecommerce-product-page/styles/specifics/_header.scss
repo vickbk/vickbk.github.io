@@ -20,6 +20,13 @@
   &__navbar {
     &-link {
       color: var(--dark-grayish-blue);
+      padding-block-end: 1em;
+      @include g.active-state {
+        font-weight: var(--bold);
+        color: var(--very-dark-blue);
+        border-bottom: 0.3em solid var(--orange);
+        transition: all 0.3s ease-in-out;
+      }
     }
     @include g.from-desktop-down(g.$mobile) {
       &,

@@ -30585,6 +30585,13 @@ button {
 }
 .header__navbar-link {
   color: var(--dark-grayish-blue);
+  padding-block-end: 1em;
+}
+.header__navbar-link:hover, .header__navbar-link:active, .header__navbar-link:focus {
+  font-weight: var(--bold);
+  color: var(--very-dark-blue);
+  border-bottom: 0.3em solid var(--orange);
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 35.9em) {
   .header__navbar {
@@ -30612,13 +30619,17 @@ button {
 .preview__display-navigator {
   inset: 0;
 }
-.preview__images-option {
+.preview__images-option:hover .preview__images-option-image, .preview__images-option:active .preview__images-option-image, .preview__images-option:focus .preview__images-option-image {
+  background-color: var(--pale-orange);
+  opacity: 0.3;
+}
+.preview__images-option-image {
   border-color: var(--orange);
   transition: all 0.5s ease-in;
 }
-.preview__images-option.active {
+.preview__images-option-image.active {
   border: 0.125rem solid var(--orange);
-  background-color: var(--white);
+  background-color: var(--pale-orange);
   opacity: 0.3;
 }
 
