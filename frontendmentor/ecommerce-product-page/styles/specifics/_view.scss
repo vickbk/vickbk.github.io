@@ -12,6 +12,7 @@
     max-inline-size: f.to-r-em(400);
     &-navigator {
       inset: 0 -1.5em;
+      max-block-size: 3em;
     }
   }
   &::backdrop {
