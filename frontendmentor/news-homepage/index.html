@@ -20,7 +20,7 @@
     <div class="container p-1 sm-down-relative">
       <div class="container__holder grid g-3">
         <!-- Header component -->
-        <header class="flex g-1 space-between a-center">
+        <header class="header flex g-1 space-between a-center">
           <a href="./"
             ><img src="./assets/images/logo.svg" alt="News Homepage Logo"
           /></a>
@@ -67,7 +67,7 @@
         </header>
 
         <main class="content grid g-2">
-          <article class="hero content__hero">
+          <article class="hero content__hero mble-3">
             <picture class="hero__image">
               <source
                 media="(width >= 37.5em)"
@@ -87,16 +87,16 @@
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button
-                type="button"
-                class="hero__details-button upper-case pi-2 pbl-1 soft-red active-very-dark-blue active-c-off-white no-border bold"
+              <a
+                href="#"
+                class="hero__details-button upper-case pi-2 pbl-1 soft-red c-very-dark-blue active-very-dark-blue active-c-off-white no-border bold"
               >
                 Read more
-              </button>
+              </a>
             </section>
           </article>
           <aside
-            class="content__news news grid a-center very-dark-blue c-off-white p-1"
+            class="content__news news grid a-center very-dark-blue c-off-white p-1 lg-up-mble-3"
           >
             <h2 class="news__header c-soft-orange">New</h2>
             <article class="news__article">
@@ -134,24 +134,24 @@
           </aside>
 
           <!-- more articles -->
-          <section class="content__more more grid g-3 mbls-3 lg-up-flex">
+          <section class="content__more more grid g-3 lg-up-flex">
             <article class="more__article flex g-1">
               <img
                 class="more__article-img"
                 src="./assets/images/image-retro-pcs.jpg"
                 alt="Old PCs illustration"
               />
-              <section class="grid sg-5">
-                <h2 class="more__article-header c-soft-red">01</h2>
-                <h3 class="more__article-title">
+              <div class="grid sg-5">
+                <span class="more__article-header c-soft-red bold">01</span>
+                <h2 class="more__article-title">
                   <a class="more__article-title-link" href="#!"
                     >Reviving Retro PCs</a
                   >
-                </h3>
+                </h2>
                 <p class="c-dark-grayish-blue">
                   What happens when old PCs are given modern upgrades?
                 </p>
-              </section>
+              </div>
             </article>
             <article class="more__article flex g-1">
               <img
@@ -159,17 +159,17 @@
                 src="./assets/images/image-top-laptops.jpg"
                 alt="Top laptops illustration"
               />
-              <section class="grid sg-5">
-                <h2 class="more__article-header c-soft-red">02</h2>
-                <h3 class="more__article-title">
+              <div class="grid sg-5">
+                <span class="more__article-header c-soft-red bold">02</span>
+                <h2 class="more__article-title">
                   <a class="more__article-title-link" href="#!"
                     >Top 10 Laptops of 2022</a
                   >
-                </h3>
+                </h2>
                 <p class="c-dark-grayish-blue">
                   Our best picks for various needs and budgets.
                 </p>
-              </section>
+              </div>
             </article>
             <article class="more__article flex g-1">
               <img
@@ -177,17 +177,17 @@
                 src="./assets/images/image-gaming-growth.jpg"
                 alt="Gaming Growth illustration"
               />
-              <section class="grid sg-5">
-                <h2 class="more__article-header c-soft-red">03</h2>
-                <h3 class="more__article-title">
+              <div class="grid sg-5">
+                <span class="more__article-header c-soft-red bold">03</span>
+                <h2 class="more__article-title">
                   <a class="more__article-title-link" href="#!"
                     >The Growth of Gaming</a
                   >
-                </h3>
+                </h2>
                 <p class="c-dark-grayish-blue">
                   How the pandemic has sparked fresh opportunities.
                 </p>
-              </section>
+              </div>
             </article>
           </section>
         </main>
