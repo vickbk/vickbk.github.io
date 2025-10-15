@@ -30757,6 +30757,7 @@ button {
 }
 .view__container-navigator {
   inset: 0 -1.5em;
+  max-block-size: 3em;
 }
 .view::backdrop {
   background-color: var(--black);

@@ -52,11 +52,18 @@
             </ul>
           </nav>
           <button
-            class="header__button no-border mis-auto relative"
+            class="header__button no-border mis-auto relative c-dark-grayish-blue active-c-very-dark-blue"
             id="cart-opener"
             aria-label="Open cart button"
           >
-            <img src="./images/icon-cart.svg" alt="Cart icon" />
+            <!-- cart svg -->
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="currentColor"
+                fill-rule="nonzero"
+              />
+            </svg>
             <span
               class="header__button-count absolute sp-3 spi-5 orange brd-1"
               id="items-count"
@@ -100,21 +107,46 @@
                 id="preview-navigator"
                 class="preview__display-navigator flex space-between a-center p-1 sm-show absolute"
               >
-                <button type="button" data-step="-1">
-                  <img
-                    class="white pi-1 spbl-8 brd-3"
-                    src="./images/icon-previous.svg"
-                    alt="Previous Button"
-                    data-step="-1"
-                  />
+                <button
+                  type="button"
+                  data-step="-1"
+                  class="white sp-9 spble-8 brd-3 active-c-orange"
+                >
+                  <!-- icon previous -->
+                  <svg
+                    width="18"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Previous Button</title>
+                    <path
+                      d="M11 1 3 9l8 8"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
                 </button>
-                <button type="button" data-step="1">
-                  <img
-                    class="white pi-1 spbl-8 brd-3"
-                    src="./images/icon-next.svg"
-                    alt="Next Button"
-                    data-step="1"
-                  />
+                <button
+                  type="button"
+                  data-step="1"
+                  class="white sp-9 spble-8 pis-1 spie-7 brd-3 active-c-orange"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Next Button</title>
+                    <path
+                      d="m2 1 8 8-8 8"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      fill="none"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -185,7 +217,7 @@
                 <div class="flex light-grayish-blue sbrd-5 a-center">
                   <button
                     type="button"
-                    class="p-1 active-out-orange sbrd-5"
+                    class="p-1 active-pale-orange c-orange sbrd-5"
                     id="decrementor"
                   >
                     <img
@@ -204,7 +236,7 @@
                   <button
                     id="incrementor"
                     type="button"
-                    class="p-1 active-out-orange sbrd-5"
+                    class="p-1 active-pale-orange sbrd-5"
                   >
                     <img
                       src="./images/icon-plus.svg"
@@ -216,7 +248,18 @@
                   type="submit"
                   class="flex flex-grow g-1 j-center orange active-pale-orange c-very-dark-blue bold p-1 sbrd-5"
                 >
-                  <img src="./images/icon-cart.svg" alt="" /> Add to cart
+                  <svg
+                    width="22"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                      fill="currentColor"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  Add to cart
                 </button>
               </form>
             </div>
@@ -240,21 +283,46 @@
                     id="view-navigator"
                     class="view__container-navigator absolute flex space-between mbl-auto"
                   >
-                    <button type="button" data-step="-1">
-                      <img
-                        data-step="-1"
-                        class="white pi-1 spbl-8 brd-3"
-                        src="./images/icon-previous.svg"
-                        alt="Previous Button"
-                      />
+                    <button
+                      type="button"
+                      data-step="-1"
+                      class="white sp-9 spble-8 brd-3 active-c-orange"
+                    >
+                      <!-- icon previous -->
+                      <svg
+                        width="18"
+                        height="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Previous Button</title>
+                        <path
+                          d="M11 1 3 9l8 8"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                     </button>
-                    <button type="button" data-step="1">
-                      <img
-                        data-step="1"
-                        class="white pi-1 spbl-8 brd-3"
-                        src="./images/icon-next.svg"
-                        alt="Next Button"
-                      />
+                    <button
+                      type="button"
+                      data-step="1"
+                      class="white sp-9 spble-8 pis-1 spie-7 brd-3 active-c-orange"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Next Button</title>
+                        <path
+                          d="m2 1 8 8-8 8"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          fill="none"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                     </button>
                   </div>
                 </div>
