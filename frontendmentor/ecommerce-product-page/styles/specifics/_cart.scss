@@ -1,4 +1,5 @@
 @use "../functions/" as f;
+@use "../globals/" as g;
 
 .cart {
   inline-size: calc(100% - 1em);
@@ -19,5 +20,8 @@
     &-delete {
       inline-size: f.to-r-em(20);
     }
+  }
+  @include g.from-mobile-up(g.$pc) {
+    margin-block-start: -4em;
   }
 }
