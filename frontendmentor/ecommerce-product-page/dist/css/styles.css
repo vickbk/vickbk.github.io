@@ -102,7 +102,7 @@ dialog {
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(220, 13%, 13%);
   --accent-color: hsl(26, 100%, 55%);
-  --link-color: hsl(26, 100%, 55%);
+  --link-color: hsl(219, 9%, 45%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30624,9 +30624,6 @@ button {
   display: grid;
   place-items: center;
 }
-.container .header {
-  text-align: center;
-}
 @media (min-width: 48em) {
   .container__holder {
     max-inline-size: 75rem;
@@ -30664,7 +30661,7 @@ button {
 .header__navbar-link:hover, .header__navbar-link:active, .header__navbar-link:focus {
   font-weight: var(--bold);
   color: var(--very-dark-blue);
-  border-bottom: 0.3em solid var(--orange);
+  border-bottom: 0.4em solid var(--orange);
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 35.9em) {

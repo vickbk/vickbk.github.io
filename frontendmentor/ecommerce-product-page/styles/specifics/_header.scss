@@ -24,7 +24,7 @@
       @include g.active-state {
         font-weight: var(--bold);
         color: var(--very-dark-blue);
-        border-bottom: 0.3em solid var(--orange);
+        border-bottom: 0.4em solid var(--orange);
         transition: all 0.3s ease-in-out;
       }
     }
