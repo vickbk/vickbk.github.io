@@ -26,8 +26,12 @@ export const showCurrentImage = () => {
   const link = image.src.replace("-thumbnail", "");
   const altTxt = image.alt;
   [mainImagePreview, mainImageView].forEach((element) => {
-    element.src = link;
-    element.alt = altTxt;
+    element.classList.add("fade-out");
+    setTimeout(() => {
+      element.classList.remove("fade-out");
+      element.src = link;
+      element.alt = altTxt;
+    }, 200);
   });
   [images, viewImages].forEach((chosen) => setActiveThumbnail(chosen));
   if (diapromaHolder) clearTimeout(diapromaHolder);
