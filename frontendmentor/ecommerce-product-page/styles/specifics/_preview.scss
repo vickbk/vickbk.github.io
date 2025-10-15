@@ -8,21 +8,6 @@
       inset: 0;
     }
   }
-  // &__images {
-  //   &-option {
-  //     border-color: var(--orange);
-  //     transition: all 0.5s ease-in;
-  //     @include g.active-state {
-  //       background-color: var(--pale-orange);
-  //       opacity: 0.3;
-  //     }
-  //     &.active {
-  //       border: f.to-r-em(2) solid var(--orange);
-  //       background-color: var(--pale-orange);
-  //       opacity: 0.3;
-  //     }
-  //   }
-  // }
   &__images-option {
     @include g.active-state {
       .preview__images-option-image {
