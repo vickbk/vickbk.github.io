@@ -23,7 +23,11 @@
         <header
           class="header flex space-between g-1 md-up-g-3 pbl-1 md-up-pbl-2 sm-down-pi-1 a-center sbble-1 b-grayish-blue"
         >
-          <button class="header__button no-border sm-show" id="menue-opener">
+          <button
+            type="button"
+            class="header__button no-border sm-show"
+            id="menue-opener"
+          >
             <img src="./images/icon-menu.svg" alt="Menue opener" />
           </button>
           <a href="./"
@@ -38,6 +42,7 @@
             id="nav-bar"
           >
             <button
+              type="button"
               class="header__button sm-down-mble-5 sm-show no-border"
               id="menue-closer"
             >
@@ -52,6 +57,7 @@
             </ul>
           </nav>
           <button
+            type="button"
             class="header__button no-border mis-auto relative c-dark-grayish-blue active-c-very-dark-blue"
             id="cart-opener"
             aria-label="Open cart button"
@@ -202,16 +208,25 @@
                 class="details__prices flex flex-wrap space-between sm-up-grid a-center g-1 bold"
               >
                 <span
+                  aria-describedby="actual-price"
                   class="details__prices-price c-very-dark-blue"
-                  aria-label="Item actual price"
                   >$125.00</span
                 >
+                <p class="sr-only" id="actual-price">
+                  The actual price after discount
+                </p>
                 <span
-                  aria-label="Item discount"
+                  aria-describedby="discount"
                   class="sp-3 spi-7 sbrd-5 very-dark-blue c-light-grayish-blue mie-auto"
                   >50%</span
                 >
-                <s aria-label="Item original price">$250.00</s>
+                <p class="sr-only" id="discount">
+                  Discount on item price (per item)
+                </p>
+                <s aria-describedby="original-price">$250.00</s>
+                <p class="sr-only" id="original-price">
+                  Original price without discount
+                </p>
               </div>
               <form class="grid g-2 sm-up-flex sm-up-g-1" id="to-cart">
                 <div class="flex light-grayish-blue sbrd-5 a-center">
