@@ -126,10 +126,12 @@ dialog {
 .a-orange:active,
 .a-orange:focus {
   background-color: var(--orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-orange.active-orange:hover, .active-orange.active-orange:active, .active-orange.active-orange:focus {
   background-color: var(--orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-orange.c-orange,
@@ -137,10 +139,12 @@ dialog {
 .a-c-orange:active,
 .a-c-orange:focus {
   color: var(--orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-orange.active-c-orange:hover, .active-c-orange.active-c-orange:active, .active-c-orange.active-c-orange:focus {
   color: var(--orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-orange.b-orange,
@@ -148,10 +152,12 @@ dialog {
 .a-b-orange.a-b-orange:active,
 .a-b-orange.a-b-orange:focus {
   border-color: var(--orange);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-orange.active-b-orange:hover, .active-b-orange.active-b-orange:active, .active-b-orange.active-b-orange:focus {
   border-color: var(--orange);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-orange,
@@ -159,10 +165,12 @@ dialog {
 .a-out-orange:active,
 .a-out-orange:focus {
   outline: var(--orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-orange.active-out-orange:hover, .active-out-orange.active-out-orange:active, .active-out-orange.active-out-orange:focus {
   outline: var(--orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .pale-orange,
@@ -170,10 +178,12 @@ dialog {
 .a-pale-orange:active,
 .a-pale-orange:focus {
   background-color: var(--pale-orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-pale-orange.active-pale-orange:hover, .active-pale-orange.active-pale-orange:active, .active-pale-orange.active-pale-orange:focus {
   background-color: var(--pale-orange);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-pale-orange.c-pale-orange,
@@ -181,10 +191,12 @@ dialog {
 .a-c-pale-orange:active,
 .a-c-pale-orange:focus {
   color: var(--pale-orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-pale-orange.active-c-pale-orange:hover, .active-c-pale-orange.active-c-pale-orange:active, .active-c-pale-orange.active-c-pale-orange:focus {
   color: var(--pale-orange);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-pale-orange.b-pale-orange,
@@ -192,10 +204,12 @@ dialog {
 .a-b-pale-orange.a-b-pale-orange:active,
 .a-b-pale-orange.a-b-pale-orange:focus {
   border-color: var(--pale-orange);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-pale-orange.active-b-pale-orange:hover, .active-b-pale-orange.active-b-pale-orange:active, .active-b-pale-orange.active-b-pale-orange:focus {
   border-color: var(--pale-orange);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-pale-orange,
@@ -203,10 +217,12 @@ dialog {
 .a-out-pale-orange:active,
 .a-out-pale-orange:focus {
   outline: var(--pale-orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-pale-orange.active-out-pale-orange:hover, .active-out-pale-orange.active-out-pale-orange:active, .active-out-pale-orange.active-out-pale-orange:focus {
   outline: var(--pale-orange) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .very-dark-blue,
@@ -214,10 +230,12 @@ dialog {
 .a-very-dark-blue:active,
 .a-very-dark-blue:focus {
   background-color: var(--very-dark-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-very-dark-blue.active-very-dark-blue:hover, .active-very-dark-blue.active-very-dark-blue:active, .active-very-dark-blue.active-very-dark-blue:focus {
   background-color: var(--very-dark-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-very-dark-blue.c-very-dark-blue,
@@ -225,10 +243,12 @@ dialog {
 .a-c-very-dark-blue:active,
 .a-c-very-dark-blue:focus {
   color: var(--very-dark-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-very-dark-blue.active-c-very-dark-blue:hover, .active-c-very-dark-blue.active-c-very-dark-blue:active, .active-c-very-dark-blue.active-c-very-dark-blue:focus {
   color: var(--very-dark-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-very-dark-blue.b-very-dark-blue,
@@ -236,10 +256,12 @@ dialog {
 .a-b-very-dark-blue.a-b-very-dark-blue:active,
 .a-b-very-dark-blue.a-b-very-dark-blue:focus {
   border-color: var(--very-dark-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-very-dark-blue.active-b-very-dark-blue:hover, .active-b-very-dark-blue.active-b-very-dark-blue:active, .active-b-very-dark-blue.active-b-very-dark-blue:focus {
   border-color: var(--very-dark-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-very-dark-blue,
@@ -247,10 +269,12 @@ dialog {
 .a-out-very-dark-blue:active,
 .a-out-very-dark-blue:focus {
   outline: var(--very-dark-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-very-dark-blue.active-out-very-dark-blue:hover, .active-out-very-dark-blue.active-out-very-dark-blue:active, .active-out-very-dark-blue.active-out-very-dark-blue:focus {
   outline: var(--very-dark-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .dark-grayish-blue,
@@ -258,10 +282,12 @@ dialog {
 .a-dark-grayish-blue:active,
 .a-dark-grayish-blue:focus {
   background-color: var(--dark-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-dark-grayish-blue.active-dark-grayish-blue:hover, .active-dark-grayish-blue.active-dark-grayish-blue:active, .active-dark-grayish-blue.active-dark-grayish-blue:focus {
   background-color: var(--dark-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-dark-grayish-blue.c-dark-grayish-blue,
@@ -269,10 +295,12 @@ dialog {
 .a-c-dark-grayish-blue:active,
 .a-c-dark-grayish-blue:focus {
   color: var(--dark-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-dark-grayish-blue.active-c-dark-grayish-blue:hover, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:active, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:focus {
   color: var(--dark-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-dark-grayish-blue.b-dark-grayish-blue,
@@ -280,10 +308,12 @@ dialog {
 .a-b-dark-grayish-blue.a-b-dark-grayish-blue:active,
 .a-b-dark-grayish-blue.a-b-dark-grayish-blue:focus {
   border-color: var(--dark-grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-dark-grayish-blue.active-b-dark-grayish-blue:hover, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:active, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:focus {
   border-color: var(--dark-grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-dark-grayish-blue,
@@ -291,10 +321,12 @@ dialog {
 .a-out-dark-grayish-blue:active,
 .a-out-dark-grayish-blue:focus {
   outline: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-dark-grayish-blue.active-out-dark-grayish-blue:hover, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:active, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:focus {
   outline: var(--dark-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .grayish-blue,
@@ -302,10 +334,12 @@ dialog {
 .a-grayish-blue:active,
 .a-grayish-blue:focus {
   background-color: var(--grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-grayish-blue.active-grayish-blue:hover, .active-grayish-blue.active-grayish-blue:active, .active-grayish-blue.active-grayish-blue:focus {
   background-color: var(--grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-grayish-blue.c-grayish-blue,
@@ -313,10 +347,12 @@ dialog {
 .a-c-grayish-blue:active,
 .a-c-grayish-blue:focus {
   color: var(--grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-grayish-blue.active-c-grayish-blue:hover, .active-c-grayish-blue.active-c-grayish-blue:active, .active-c-grayish-blue.active-c-grayish-blue:focus {
   color: var(--grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-grayish-blue.b-grayish-blue,
@@ -324,10 +360,12 @@ dialog {
 .a-b-grayish-blue.a-b-grayish-blue:active,
 .a-b-grayish-blue.a-b-grayish-blue:focus {
   border-color: var(--grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-grayish-blue.active-b-grayish-blue:hover, .active-b-grayish-blue.active-b-grayish-blue:active, .active-b-grayish-blue.active-b-grayish-blue:focus {
   border-color: var(--grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-grayish-blue,
@@ -335,10 +373,12 @@ dialog {
 .a-out-grayish-blue:active,
 .a-out-grayish-blue:focus {
   outline: var(--grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-grayish-blue.active-out-grayish-blue:hover, .active-out-grayish-blue.active-out-grayish-blue:active, .active-out-grayish-blue.active-out-grayish-blue:focus {
   outline: var(--grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .light-grayish-blue,
@@ -346,10 +386,12 @@ dialog {
 .a-light-grayish-blue:active,
 .a-light-grayish-blue:focus {
   background-color: var(--light-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-light-grayish-blue.active-light-grayish-blue:hover, .active-light-grayish-blue.active-light-grayish-blue:active, .active-light-grayish-blue.active-light-grayish-blue:focus {
   background-color: var(--light-grayish-blue);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-light-grayish-blue.c-light-grayish-blue,
@@ -357,10 +399,12 @@ dialog {
 .a-c-light-grayish-blue:active,
 .a-c-light-grayish-blue:focus {
   color: var(--light-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-light-grayish-blue.active-c-light-grayish-blue:hover, .active-c-light-grayish-blue.active-c-light-grayish-blue:active, .active-c-light-grayish-blue.active-c-light-grayish-blue:focus {
   color: var(--light-grayish-blue);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-light-grayish-blue.b-light-grayish-blue,
@@ -368,10 +412,12 @@ dialog {
 .a-b-light-grayish-blue.a-b-light-grayish-blue:active,
 .a-b-light-grayish-blue.a-b-light-grayish-blue:focus {
   border-color: var(--light-grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-light-grayish-blue.active-b-light-grayish-blue:hover, .active-b-light-grayish-blue.active-b-light-grayish-blue:active, .active-b-light-grayish-blue.active-b-light-grayish-blue:focus {
   border-color: var(--light-grayish-blue);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-light-grayish-blue,
@@ -379,10 +425,12 @@ dialog {
 .a-out-light-grayish-blue:active,
 .a-out-light-grayish-blue:focus {
   outline: var(--light-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-light-grayish-blue.active-out-light-grayish-blue:hover, .active-out-light-grayish-blue.active-out-light-grayish-blue:active, .active-out-light-grayish-blue.active-out-light-grayish-blue:focus {
   outline: var(--light-grayish-blue) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .white,
@@ -390,10 +438,12 @@ dialog {
 .a-white:active,
 .a-white:focus {
   background-color: var(--white);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-white.active-white:hover, .active-white.active-white:active, .active-white.active-white:focus {
   background-color: var(--white);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-white.c-white,
@@ -401,10 +451,12 @@ dialog {
 .a-c-white:active,
 .a-c-white:focus {
   color: var(--white);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-white.active-c-white:hover, .active-c-white.active-c-white:active, .active-c-white.active-c-white:focus {
   color: var(--white);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-white.b-white,
@@ -412,10 +464,12 @@ dialog {
 .a-b-white.a-b-white:active,
 .a-b-white.a-b-white:focus {
   border-color: var(--white);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-white.active-b-white:hover, .active-b-white.active-b-white:active, .active-b-white.active-b-white:focus {
   border-color: var(--white);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-white,
@@ -423,10 +477,12 @@ dialog {
 .a-out-white:active,
 .a-out-white:focus {
   outline: var(--white) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-white.active-out-white:hover, .active-out-white.active-out-white:active, .active-out-white.active-out-white:focus {
   outline: var(--white) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .black,
@@ -434,10 +490,12 @@ dialog {
 .a-black:active,
 .a-black:focus {
   background-color: var(--black);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .active-black.active-black:hover, .active-black.active-black:active, .active-black.active-black:focus {
   background-color: var(--black);
+  transition: background-color ease-in-out 0.3s;
 }
 
 .c-black.c-black,
@@ -445,10 +503,12 @@ dialog {
 .a-c-black:active,
 .a-c-black:focus {
   color: var(--black);
+  transition: color ease-in-out 0.3s;
 }
 
 .active-c-black.active-c-black:hover, .active-c-black.active-c-black:active, .active-c-black.active-c-black:focus {
   color: var(--black);
+  transition: color ease-in-out 0.3s;
 }
 
 .b-black.b-black,
@@ -456,10 +516,12 @@ dialog {
 .a-b-black.a-b-black:active,
 .a-b-black.a-b-black:focus {
   border-color: var(--black);
+  transition: border ease-in-out 0.3s;
 }
 
 .active-b-black.active-b-black:hover, .active-b-black.active-b-black:active, .active-b-black.active-b-black:focus {
   border-color: var(--black);
+  transition: border ease-in-out 0.3s;
 }
 
 .out-black,
@@ -467,10 +529,12 @@ dialog {
 .a-out-black:active,
 .a-out-black:focus {
   outline: var(--black) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 .active-out-black.active-out-black:hover, .active-out-black.active-out-black:active, .active-out-black.active-out-black:focus {
   outline: var(--black) 0.0625rem solid;
+  transition: outline ease-in-out 0.3s;
 }
 
 :root {

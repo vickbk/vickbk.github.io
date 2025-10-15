@@ -50,9 +50,11 @@ $accent-color: map.get($colorsMap, orange);
   .a-#{"" + $name}:active,
   .a-#{"" + $name}:focus {
     background-color: var(--#{"" + $name});
+    transition: background-color ease-in-out 0.3s;
   }
   @include active-colors(#{"" + $name}) {
     background-color: var(--#{"" + $name});
+    transition: background-color ease-in-out 0.3s;
   }
 
   .c-#{"" + $name}.c-#{"" + $name},
@@ -60,9 +62,11 @@ $accent-color: map.get($colorsMap, orange);
   .a-c-#{"" + $name}:active,
   .a-c-#{"" + $name}:focus {
     color: var(--#{"" + $name});
+    transition: color ease-in-out 0.3s;
   }
   @include active-colors(#{"c-" + $name}) {
     color: var(--#{"" + $name});
+    transition: color ease-in-out 0.3s;
   }
 
   .b-#{"" + $name}.b-#{"" + $name},
@@ -70,9 +74,11 @@ $accent-color: map.get($colorsMap, orange);
   .a-b-#{"" + $name}.a-b-#{"" + $name}:active,
   .a-b-#{"" + $name}.a-b-#{"" + $name}:focus {
     border-color: var(--#{"" + $name});
+    transition: border ease-in-out 0.3s;
   }
   @include active-colors(#{"b-" + $name}) {
     border-color: var(--#{"" + $name});
+    transition: border ease-in-out 0.3s;
   }
 
   .out-#{"" + $name},
@@ -80,8 +86,10 @@ $accent-color: map.get($colorsMap, orange);
   .a-out-#{"" + $name}:active,
   .a-out-#{"" + $name}:focus {
     outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+    transition: outline ease-in-out 0.3s;
   }
   @include active-colors(#{"out-" + $name}) {
     outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+    transition: outline ease-in-out 0.3s;
   }
 }
