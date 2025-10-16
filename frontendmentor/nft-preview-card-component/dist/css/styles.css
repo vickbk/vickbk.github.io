@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 *,
 *::after,
 *::before {
@@ -86,350 +86,296 @@ dialog {
 }
 
 :root {
-  --font-link: "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap";
-  --primary-font: Kumbh Sans, sans-serif;
-  --secondary-font: Kumbh Sans, sans-serif;
+  --font-link: "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap";
+  --primary-font: Outfit, sans-serif;
+  --secondary-font: Outfit, sans-serif;
   --primary-size: 100%;
-  --preferred-size: 1rem;
-  --weight-normal: 400;
-  --weight-natural: 400;
-  --min-bold: 600;
-  --min-bold-italic: 600i;
-  --bold: 700;
+  --preferred-size: 1.125rem;
+  --weight-normal: 300;
+  --weight-natural: 300;
+  --min-bold: 400;
+  --min-bold-italic: 400i;
+  --bold: 600;
 }
 
 :root {
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(220, 13%, 13%);
-  --accent-color: hsl(26, 100%, 55%);
-  --link-color: hsl(219, 9%, 45%);
+  --background: hsl(217, 54%, 11%);
+  --foreground: hsl(215, 51%, 70%);
+  --accent-color: hsl(178, 100%, 50%);
+  --link-color: hsl(0, 0%, 100%);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: hsl(220, 13%, 13%);
-    --foreground: hsl(0, 0%, 100%);
+    --background: hsl(215, 51%, 70%);
+    --foreground: hsl(217, 54%, 11%);
   }
 }
 :root {
-  --orange: hsl(26, 100%, 55%);
-  --pale-orange: hsl(25, 100%, 94%);
-  --very-dark-blue: hsl(220, 13%, 13%);
-  --dark-grayish-blue: hsl(219, 9%, 45%);
-  --grayish-blue: hsl(220, 14%, 75%);
-  --light-grayish-blue: hsl(223, 64%, 98%);
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --blue-950: hsl(217, 54%, 11%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-800: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
 }
 
-.orange,
-.hv-orange:hover,
-.a-orange:active,
-.a-orange:focus {
-  background-color: var(--orange);
+.blue-500,
+.hv-blue-500:hover,
+.a-blue-500:active,
+.a-blue-500:focus {
+  background-color: var(--blue-500);
   transition: background-color ease-in-out 0.3s;
 }
 
-.active-orange.active-orange:hover, .active-orange.active-orange:active, .active-orange.active-orange:focus {
-  background-color: var(--orange);
+.active-blue-500.active-blue-500:hover, .active-blue-500.active-blue-500:active, .active-blue-500.active-blue-500:focus {
+  background-color: var(--blue-500);
   transition: background-color ease-in-out 0.3s;
 }
 
-.c-orange.c-orange,
-.hv-c-orange:hover,
-.a-c-orange:active,
-.a-c-orange:focus {
-  color: var(--orange);
+.c-blue-500.c-blue-500,
+.hv-c-blue-500:hover,
+.a-c-blue-500:active,
+.a-c-blue-500:focus {
+  color: var(--blue-500);
   transition: color ease-in-out 0.3s;
 }
 
-.active-c-orange.active-c-orange:hover, .active-c-orange.active-c-orange:active, .active-c-orange.active-c-orange:focus {
-  color: var(--orange);
+.active-c-blue-500.active-c-blue-500:hover, .active-c-blue-500.active-c-blue-500:active, .active-c-blue-500.active-c-blue-500:focus {
+  color: var(--blue-500);
   transition: color ease-in-out 0.3s;
 }
 
-.b-orange.b-orange,
-.hv-b-orange.hv-b-orange:hover,
-.a-b-orange.a-b-orange:active,
-.a-b-orange.a-b-orange:focus {
-  border-color: var(--orange);
+.b-blue-500.b-blue-500,
+.hv-b-blue-500.hv-b-blue-500:hover,
+.a-b-blue-500.a-b-blue-500:active,
+.a-b-blue-500.a-b-blue-500:focus {
+  border-color: var(--blue-500);
   transition: border ease-in-out 0.3s;
 }
 
-.active-b-orange.active-b-orange:hover, .active-b-orange.active-b-orange:active, .active-b-orange.active-b-orange:focus {
-  border-color: var(--orange);
+.active-b-blue-500.active-b-blue-500:hover, .active-b-blue-500.active-b-blue-500:active, .active-b-blue-500.active-b-blue-500:focus {
+  border-color: var(--blue-500);
   transition: border ease-in-out 0.3s;
 }
 
-.out-orange,
-.hv-out-orange:hover,
-.a-out-orange:active,
-.a-out-orange:focus {
-  outline: var(--orange) 0.0625rem solid;
+.out-blue-500,
+.hv-out-blue-500:hover,
+.a-out-blue-500:active,
+.a-out-blue-500:focus {
+  outline: var(--blue-500) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.active-out-orange.active-out-orange:hover, .active-out-orange.active-out-orange:active, .active-out-orange.active-out-orange:focus {
-  outline: var(--orange) 0.0625rem solid;
+.active-out-blue-500.active-out-blue-500:hover, .active-out-blue-500.active-out-blue-500:active, .active-out-blue-500.active-out-blue-500:focus {
+  outline: var(--blue-500) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.pale-orange,
-.hv-pale-orange:hover,
-.a-pale-orange:active,
-.a-pale-orange:focus {
-  background-color: var(--pale-orange);
+.cyan-400,
+.hv-cyan-400:hover,
+.a-cyan-400:active,
+.a-cyan-400:focus {
+  background-color: var(--cyan-400);
   transition: background-color ease-in-out 0.3s;
 }
 
-.active-pale-orange.active-pale-orange:hover, .active-pale-orange.active-pale-orange:active, .active-pale-orange.active-pale-orange:focus {
-  background-color: var(--pale-orange);
+.active-cyan-400.active-cyan-400:hover, .active-cyan-400.active-cyan-400:active, .active-cyan-400.active-cyan-400:focus {
+  background-color: var(--cyan-400);
   transition: background-color ease-in-out 0.3s;
 }
 
-.c-pale-orange.c-pale-orange,
-.hv-c-pale-orange:hover,
-.a-c-pale-orange:active,
-.a-c-pale-orange:focus {
-  color: var(--pale-orange);
+.c-cyan-400.c-cyan-400,
+.hv-c-cyan-400:hover,
+.a-c-cyan-400:active,
+.a-c-cyan-400:focus {
+  color: var(--cyan-400);
   transition: color ease-in-out 0.3s;
 }
 
-.active-c-pale-orange.active-c-pale-orange:hover, .active-c-pale-orange.active-c-pale-orange:active, .active-c-pale-orange.active-c-pale-orange:focus {
-  color: var(--pale-orange);
+.active-c-cyan-400.active-c-cyan-400:hover, .active-c-cyan-400.active-c-cyan-400:active, .active-c-cyan-400.active-c-cyan-400:focus {
+  color: var(--cyan-400);
   transition: color ease-in-out 0.3s;
 }
 
-.b-pale-orange.b-pale-orange,
-.hv-b-pale-orange.hv-b-pale-orange:hover,
-.a-b-pale-orange.a-b-pale-orange:active,
-.a-b-pale-orange.a-b-pale-orange:focus {
-  border-color: var(--pale-orange);
+.b-cyan-400.b-cyan-400,
+.hv-b-cyan-400.hv-b-cyan-400:hover,
+.a-b-cyan-400.a-b-cyan-400:active,
+.a-b-cyan-400.a-b-cyan-400:focus {
+  border-color: var(--cyan-400);
   transition: border ease-in-out 0.3s;
 }
 
-.active-b-pale-orange.active-b-pale-orange:hover, .active-b-pale-orange.active-b-pale-orange:active, .active-b-pale-orange.active-b-pale-orange:focus {
-  border-color: var(--pale-orange);
+.active-b-cyan-400.active-b-cyan-400:hover, .active-b-cyan-400.active-b-cyan-400:active, .active-b-cyan-400.active-b-cyan-400:focus {
+  border-color: var(--cyan-400);
   transition: border ease-in-out 0.3s;
 }
 
-.out-pale-orange,
-.hv-out-pale-orange:hover,
-.a-out-pale-orange:active,
-.a-out-pale-orange:focus {
-  outline: var(--pale-orange) 0.0625rem solid;
+.out-cyan-400,
+.hv-out-cyan-400:hover,
+.a-out-cyan-400:active,
+.a-out-cyan-400:focus {
+  outline: var(--cyan-400) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.active-out-pale-orange.active-out-pale-orange:hover, .active-out-pale-orange.active-out-pale-orange:active, .active-out-pale-orange.active-out-pale-orange:focus {
-  outline: var(--pale-orange) 0.0625rem solid;
+.active-out-cyan-400.active-out-cyan-400:hover, .active-out-cyan-400.active-out-cyan-400:active, .active-out-cyan-400.active-out-cyan-400:focus {
+  outline: var(--cyan-400) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.very-dark-blue,
-.hv-very-dark-blue:hover,
-.a-very-dark-blue:active,
-.a-very-dark-blue:focus {
-  background-color: var(--very-dark-blue);
+.blue-950,
+.hv-blue-950:hover,
+.a-blue-950:active,
+.a-blue-950:focus {
+  background-color: var(--blue-950);
   transition: background-color ease-in-out 0.3s;
 }
 
-.active-very-dark-blue.active-very-dark-blue:hover, .active-very-dark-blue.active-very-dark-blue:active, .active-very-dark-blue.active-very-dark-blue:focus {
-  background-color: var(--very-dark-blue);
+.active-blue-950.active-blue-950:hover, .active-blue-950.active-blue-950:active, .active-blue-950.active-blue-950:focus {
+  background-color: var(--blue-950);
   transition: background-color ease-in-out 0.3s;
 }
 
-.c-very-dark-blue.c-very-dark-blue,
-.hv-c-very-dark-blue:hover,
-.a-c-very-dark-blue:active,
-.a-c-very-dark-blue:focus {
-  color: var(--very-dark-blue);
+.c-blue-950.c-blue-950,
+.hv-c-blue-950:hover,
+.a-c-blue-950:active,
+.a-c-blue-950:focus {
+  color: var(--blue-950);
   transition: color ease-in-out 0.3s;
 }
 
-.active-c-very-dark-blue.active-c-very-dark-blue:hover, .active-c-very-dark-blue.active-c-very-dark-blue:active, .active-c-very-dark-blue.active-c-very-dark-blue:focus {
-  color: var(--very-dark-blue);
+.active-c-blue-950.active-c-blue-950:hover, .active-c-blue-950.active-c-blue-950:active, .active-c-blue-950.active-c-blue-950:focus {
+  color: var(--blue-950);
   transition: color ease-in-out 0.3s;
 }
 
-.b-very-dark-blue.b-very-dark-blue,
-.hv-b-very-dark-blue.hv-b-very-dark-blue:hover,
-.a-b-very-dark-blue.a-b-very-dark-blue:active,
-.a-b-very-dark-blue.a-b-very-dark-blue:focus {
-  border-color: var(--very-dark-blue);
+.b-blue-950.b-blue-950,
+.hv-b-blue-950.hv-b-blue-950:hover,
+.a-b-blue-950.a-b-blue-950:active,
+.a-b-blue-950.a-b-blue-950:focus {
+  border-color: var(--blue-950);
   transition: border ease-in-out 0.3s;
 }
 
-.active-b-very-dark-blue.active-b-very-dark-blue:hover, .active-b-very-dark-blue.active-b-very-dark-blue:active, .active-b-very-dark-blue.active-b-very-dark-blue:focus {
-  border-color: var(--very-dark-blue);
+.active-b-blue-950.active-b-blue-950:hover, .active-b-blue-950.active-b-blue-950:active, .active-b-blue-950.active-b-blue-950:focus {
+  border-color: var(--blue-950);
   transition: border ease-in-out 0.3s;
 }
 
-.out-very-dark-blue,
-.hv-out-very-dark-blue:hover,
-.a-out-very-dark-blue:active,
-.a-out-very-dark-blue:focus {
-  outline: var(--very-dark-blue) 0.0625rem solid;
+.out-blue-950,
+.hv-out-blue-950:hover,
+.a-out-blue-950:active,
+.a-out-blue-950:focus {
+  outline: var(--blue-950) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.active-out-very-dark-blue.active-out-very-dark-blue:hover, .active-out-very-dark-blue.active-out-very-dark-blue:active, .active-out-very-dark-blue.active-out-very-dark-blue:focus {
-  outline: var(--very-dark-blue) 0.0625rem solid;
+.active-out-blue-950.active-out-blue-950:hover, .active-out-blue-950.active-out-blue-950:active, .active-out-blue-950.active-out-blue-950:focus {
+  outline: var(--blue-950) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.dark-grayish-blue,
-.hv-dark-grayish-blue:hover,
-.a-dark-grayish-blue:active,
-.a-dark-grayish-blue:focus {
-  background-color: var(--dark-grayish-blue);
+.blue-900,
+.hv-blue-900:hover,
+.a-blue-900:active,
+.a-blue-900:focus {
+  background-color: var(--blue-900);
   transition: background-color ease-in-out 0.3s;
 }
 
-.active-dark-grayish-blue.active-dark-grayish-blue:hover, .active-dark-grayish-blue.active-dark-grayish-blue:active, .active-dark-grayish-blue.active-dark-grayish-blue:focus {
-  background-color: var(--dark-grayish-blue);
+.active-blue-900.active-blue-900:hover, .active-blue-900.active-blue-900:active, .active-blue-900.active-blue-900:focus {
+  background-color: var(--blue-900);
   transition: background-color ease-in-out 0.3s;
 }
 
-.c-dark-grayish-blue.c-dark-grayish-blue,
-.hv-c-dark-grayish-blue:hover,
-.a-c-dark-grayish-blue:active,
-.a-c-dark-grayish-blue:focus {
-  color: var(--dark-grayish-blue);
+.c-blue-900.c-blue-900,
+.hv-c-blue-900:hover,
+.a-c-blue-900:active,
+.a-c-blue-900:focus {
+  color: var(--blue-900);
   transition: color ease-in-out 0.3s;
 }
 
-.active-c-dark-grayish-blue.active-c-dark-grayish-blue:hover, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:active, .active-c-dark-grayish-blue.active-c-dark-grayish-blue:focus {
-  color: var(--dark-grayish-blue);
+.active-c-blue-900.active-c-blue-900:hover, .active-c-blue-900.active-c-blue-900:active, .active-c-blue-900.active-c-blue-900:focus {
+  color: var(--blue-900);
   transition: color ease-in-out 0.3s;
 }
 
-.b-dark-grayish-blue.b-dark-grayish-blue,
-.hv-b-dark-grayish-blue.hv-b-dark-grayish-blue:hover,
-.a-b-dark-grayish-blue.a-b-dark-grayish-blue:active,
-.a-b-dark-grayish-blue.a-b-dark-grayish-blue:focus {
-  border-color: var(--dark-grayish-blue);
+.b-blue-900.b-blue-900,
+.hv-b-blue-900.hv-b-blue-900:hover,
+.a-b-blue-900.a-b-blue-900:active,
+.a-b-blue-900.a-b-blue-900:focus {
+  border-color: var(--blue-900);
   transition: border ease-in-out 0.3s;
 }
 
-.active-b-dark-grayish-blue.active-b-dark-grayish-blue:hover, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:active, .active-b-dark-grayish-blue.active-b-dark-grayish-blue:focus {
-  border-color: var(--dark-grayish-blue);
+.active-b-blue-900.active-b-blue-900:hover, .active-b-blue-900.active-b-blue-900:active, .active-b-blue-900.active-b-blue-900:focus {
+  border-color: var(--blue-900);
   transition: border ease-in-out 0.3s;
 }
 
-.out-dark-grayish-blue,
-.hv-out-dark-grayish-blue:hover,
-.a-out-dark-grayish-blue:active,
-.a-out-dark-grayish-blue:focus {
-  outline: var(--dark-grayish-blue) 0.0625rem solid;
+.out-blue-900,
+.hv-out-blue-900:hover,
+.a-out-blue-900:active,
+.a-out-blue-900:focus {
+  outline: var(--blue-900) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.active-out-dark-grayish-blue.active-out-dark-grayish-blue:hover, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:active, .active-out-dark-grayish-blue.active-out-dark-grayish-blue:focus {
-  outline: var(--dark-grayish-blue) 0.0625rem solid;
+.active-out-blue-900.active-out-blue-900:hover, .active-out-blue-900.active-out-blue-900:active, .active-out-blue-900.active-out-blue-900:focus {
+  outline: var(--blue-900) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.grayish-blue,
-.hv-grayish-blue:hover,
-.a-grayish-blue:active,
-.a-grayish-blue:focus {
-  background-color: var(--grayish-blue);
+.blue-800,
+.hv-blue-800:hover,
+.a-blue-800:active,
+.a-blue-800:focus {
+  background-color: var(--blue-800);
   transition: background-color ease-in-out 0.3s;
 }
 
-.active-grayish-blue.active-grayish-blue:hover, .active-grayish-blue.active-grayish-blue:active, .active-grayish-blue.active-grayish-blue:focus {
-  background-color: var(--grayish-blue);
+.active-blue-800.active-blue-800:hover, .active-blue-800.active-blue-800:active, .active-blue-800.active-blue-800:focus {
+  background-color: var(--blue-800);
   transition: background-color ease-in-out 0.3s;
 }
 
-.c-grayish-blue.c-grayish-blue,
-.hv-c-grayish-blue:hover,
-.a-c-grayish-blue:active,
-.a-c-grayish-blue:focus {
-  color: var(--grayish-blue);
+.c-blue-800.c-blue-800,
+.hv-c-blue-800:hover,
+.a-c-blue-800:active,
+.a-c-blue-800:focus {
+  color: var(--blue-800);
   transition: color ease-in-out 0.3s;
 }
 
-.active-c-grayish-blue.active-c-grayish-blue:hover, .active-c-grayish-blue.active-c-grayish-blue:active, .active-c-grayish-blue.active-c-grayish-blue:focus {
-  color: var(--grayish-blue);
+.active-c-blue-800.active-c-blue-800:hover, .active-c-blue-800.active-c-blue-800:active, .active-c-blue-800.active-c-blue-800:focus {
+  color: var(--blue-800);
   transition: color ease-in-out 0.3s;
 }
 
-.b-grayish-blue.b-grayish-blue,
-.hv-b-grayish-blue.hv-b-grayish-blue:hover,
-.a-b-grayish-blue.a-b-grayish-blue:active,
-.a-b-grayish-blue.a-b-grayish-blue:focus {
-  border-color: var(--grayish-blue);
+.b-blue-800.b-blue-800,
+.hv-b-blue-800.hv-b-blue-800:hover,
+.a-b-blue-800.a-b-blue-800:active,
+.a-b-blue-800.a-b-blue-800:focus {
+  border-color: var(--blue-800);
   transition: border ease-in-out 0.3s;
 }
 
-.active-b-grayish-blue.active-b-grayish-blue:hover, .active-b-grayish-blue.active-b-grayish-blue:active, .active-b-grayish-blue.active-b-grayish-blue:focus {
-  border-color: var(--grayish-blue);
+.active-b-blue-800.active-b-blue-800:hover, .active-b-blue-800.active-b-blue-800:active, .active-b-blue-800.active-b-blue-800:focus {
+  border-color: var(--blue-800);
   transition: border ease-in-out 0.3s;
 }
 
-.out-grayish-blue,
-.hv-out-grayish-blue:hover,
-.a-out-grayish-blue:active,
-.a-out-grayish-blue:focus {
-  outline: var(--grayish-blue) 0.0625rem solid;
+.out-blue-800,
+.hv-out-blue-800:hover,
+.a-out-blue-800:active,
+.a-out-blue-800:focus {
+  outline: var(--blue-800) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
-.active-out-grayish-blue.active-out-grayish-blue:hover, .active-out-grayish-blue.active-out-grayish-blue:active, .active-out-grayish-blue.active-out-grayish-blue:focus {
-  outline: var(--grayish-blue) 0.0625rem solid;
-  transition: outline ease-in-out 0.3s;
-}
-
-.light-grayish-blue,
-.hv-light-grayish-blue:hover,
-.a-light-grayish-blue:active,
-.a-light-grayish-blue:focus {
-  background-color: var(--light-grayish-blue);
-  transition: background-color ease-in-out 0.3s;
-}
-
-.active-light-grayish-blue.active-light-grayish-blue:hover, .active-light-grayish-blue.active-light-grayish-blue:active, .active-light-grayish-blue.active-light-grayish-blue:focus {
-  background-color: var(--light-grayish-blue);
-  transition: background-color ease-in-out 0.3s;
-}
-
-.c-light-grayish-blue.c-light-grayish-blue,
-.hv-c-light-grayish-blue:hover,
-.a-c-light-grayish-blue:active,
-.a-c-light-grayish-blue:focus {
-  color: var(--light-grayish-blue);
-  transition: color ease-in-out 0.3s;
-}
-
-.active-c-light-grayish-blue.active-c-light-grayish-blue:hover, .active-c-light-grayish-blue.active-c-light-grayish-blue:active, .active-c-light-grayish-blue.active-c-light-grayish-blue:focus {
-  color: var(--light-grayish-blue);
-  transition: color ease-in-out 0.3s;
-}
-
-.b-light-grayish-blue.b-light-grayish-blue,
-.hv-b-light-grayish-blue.hv-b-light-grayish-blue:hover,
-.a-b-light-grayish-blue.a-b-light-grayish-blue:active,
-.a-b-light-grayish-blue.a-b-light-grayish-blue:focus {
-  border-color: var(--light-grayish-blue);
-  transition: border ease-in-out 0.3s;
-}
-
-.active-b-light-grayish-blue.active-b-light-grayish-blue:hover, .active-b-light-grayish-blue.active-b-light-grayish-blue:active, .active-b-light-grayish-blue.active-b-light-grayish-blue:focus {
-  border-color: var(--light-grayish-blue);
-  transition: border ease-in-out 0.3s;
-}
-
-.out-light-grayish-blue,
-.hv-out-light-grayish-blue:hover,
-.a-out-light-grayish-blue:active,
-.a-out-light-grayish-blue:focus {
-  outline: var(--light-grayish-blue) 0.0625rem solid;
-  transition: outline ease-in-out 0.3s;
-}
-
-.active-out-light-grayish-blue.active-out-light-grayish-blue:hover, .active-out-light-grayish-blue.active-out-light-grayish-blue:active, .active-out-light-grayish-blue.active-out-light-grayish-blue:focus {
-  outline: var(--light-grayish-blue) 0.0625rem solid;
+.active-out-blue-800.active-out-blue-800:hover, .active-out-blue-800.active-out-blue-800:active, .active-out-blue-800.active-out-blue-800:focus {
+  outline: var(--blue-800) 0.0625rem solid;
   transition: outline ease-in-out 0.3s;
 }
 
@@ -485,58 +431,6 @@ dialog {
   transition: outline ease-in-out 0.3s;
 }
 
-.black,
-.hv-black:hover,
-.a-black:active,
-.a-black:focus {
-  background-color: var(--black);
-  transition: background-color ease-in-out 0.3s;
-}
-
-.active-black.active-black:hover, .active-black.active-black:active, .active-black.active-black:focus {
-  background-color: var(--black);
-  transition: background-color ease-in-out 0.3s;
-}
-
-.c-black.c-black,
-.hv-c-black:hover,
-.a-c-black:active,
-.a-c-black:focus {
-  color: var(--black);
-  transition: color ease-in-out 0.3s;
-}
-
-.active-c-black.active-c-black:hover, .active-c-black.active-c-black:active, .active-c-black.active-c-black:focus {
-  color: var(--black);
-  transition: color ease-in-out 0.3s;
-}
-
-.b-black.b-black,
-.hv-b-black.hv-b-black:hover,
-.a-b-black.a-b-black:active,
-.a-b-black.a-b-black:focus {
-  border-color: var(--black);
-  transition: border ease-in-out 0.3s;
-}
-
-.active-b-black.active-b-black:hover, .active-b-black.active-b-black:active, .active-b-black.active-b-black:focus {
-  border-color: var(--black);
-  transition: border ease-in-out 0.3s;
-}
-
-.out-black,
-.hv-out-black:hover,
-.a-out-black:active,
-.a-out-black:focus {
-  outline: var(--black) 0.0625rem solid;
-  transition: outline ease-in-out 0.3s;
-}
-
-.active-out-black.active-out-black:hover, .active-out-black.active-out-black:active, .active-out-black.active-out-black:focus {
-  outline: var(--black) 0.0625rem solid;
-  transition: outline ease-in-out 0.3s;
-}
-
 :root {
   font-size: 100%;
 }
@@ -546,8 +440,8 @@ body {
   font-weight: var(--weight-normal);
   line-height: 1.1;
   font-size: var(--primary-size);
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(220, 13%, 13%);
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
 }
 
 h1,
