@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
   </head>
   <body>
+    <header class="sr-only">
+      <h1>An NFT preview card component</h1>
+    </header>
     <main class="grid center p-2">
       <article class="card p-2 sbrd-5 blue-900 grid g-2">
         <button class="card__button relative" type="button">
@@ -27,7 +30,7 @@
           /><img class="view absolute" src="./images/icon-view.svg" alt="" />
         </button>
 
-        <div class="sbble-1 b-blue-500 pble-2 grid g-1">
+        <div class="sbble-1 b-blue-500 pble-2 grid g-2">
           <h2>
             <a class="c-white active-c-cyan-400" href="#!">Equilibrium #3429</a>
           </h2>
@@ -59,9 +62,12 @@
 
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="active-c-cyan-400"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#" class="active-c-cyan-400">Your Name Here</a>.
     </footer>
   </body>
 </html>
