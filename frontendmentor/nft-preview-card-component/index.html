@@ -17,23 +17,42 @@
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
   </head>
   <body>
-    <main class="grid center">
-      <article class="p-1 sbrd-5">
-        <button type="button">
+    <main class="grid center p-2">
+      <article class="card p-2 sbrd-5 blue-900 grid g-2">
+        <button class="card__button relative" type="button">
           <img
+            class="card__image sbrd-3"
             src="./images/image-equilibrium.jpg"
             alt="NFT Equilibrium image"
-          /><img src="./images/icon-view.svg" alt="" />
+          /><img class="view absolute" src="./images/icon-view.svg" alt="" />
         </button>
-        <h2><a href="#!">Equilibrium #3429</a></h2>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div>
-          <p><img src="./images/icon-ethereum.svg" alt="" />0.041 ETH</p>
-          <p><img src="./images/icon-clock.svg" alt="" />3 days left</p>
+
+        <div class="sbble-1 b-blue-500 pble-2 grid g-1">
+          <h2>
+            <a class="c-white active-c-cyan-400" href="#!">Equilibrium #3429</a>
+          </h2>
+          <p class="card__details">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="flex g-1 a-center">
+            <img src="./images/icon-ethereum.svg" alt="" />
+            <p class="card__price c-cyan-400">0.041 ETH</p>
+
+            <img class="mis-auto" src="./images/icon-clock.svg" alt="" />
+            <p>3 days left</p>
+          </div>
         </div>
-        <div>
-          <img src="./images/image-avatar.png" alt="Current user Avatar" />
-          <p>Creation of <a href="#!">Jules Wyvern</a></p>
+
+        <div class="flex a-center g-1">
+          <img
+            class="card__avatar sb-1 brd-3 b-white"
+            src="./images/image-avatar.png"
+            alt="Current user Avatar"
+          />
+          <p>
+            Creation of
+            <a class="c-white active-c-cyan-400" href="#!">Jules Wyvern</a>
+          </p>
         </div>
       </article>
     </main>

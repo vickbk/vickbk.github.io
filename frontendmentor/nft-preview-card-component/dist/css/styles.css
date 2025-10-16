@@ -30531,4 +30531,36 @@ button {
 .attribution a {
   color: var(--link-color);
   text-decoration: underline;
+}
+
+.card {
+  max-inline-size: 25rem;
+}
+.card__button .view {
+  display: none;
+  inset: 0;
+  margin: auto;
+}
+.card__button:hover::before, .card__button:active::before, .card__button:focus::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: var(--cyan-400);
+  opacity: 0.4;
+  border-radius: 0.3em;
+  transition: all 0.3s ease-in-out;
+  transition-behavior: allow-discrete;
+}
+.card__button:hover .view, .card__button:active .view, .card__button:focus .view {
+  display: unset;
+}
+.card__details {
+  line-height: 1.5;
+}
+.card__price {
+  font-weight: var(--min-bold);
+}
+.card__avatar {
+  inline-size: 2.5rem;
 }/*# sourceMappingURL=styles.css.map */
