@@ -3,7 +3,14 @@
 
 .card {
   max-inline-size: f.to-r-em(300);
-  //   line-height: 2;
+
+  &,
+  &__content {
+    gap: 1.5em;
+  }
+  &__content {
+    padding-block-end: 1.5em;
+  }
   &__button {
     .view {
       display: none;
