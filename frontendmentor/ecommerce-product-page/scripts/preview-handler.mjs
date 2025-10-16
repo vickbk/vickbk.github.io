@@ -15,8 +15,9 @@ const imagesCount = images.length - 1;
 let diapromaHolder;
 
 export const navigatePictures = ({ target }) => {
-  if (!["button", "img"].some((tagName) => target.matches(tagName))) return;
-  const step = +target.dataset.step;
+  const button = target.closest("button");
+  if (!button) return;
+  const step = +button.dataset.step;
   showNextImage(step);
 };
 
