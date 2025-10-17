@@ -1,0 +1,14 @@
+@use "../functions/" as f;
+
+.leader {
+  &__header {
+    font-size: f.clamp-builder(2rem, 2.5rem);
+  }
+  &__header,
+  &__text {
+    font-weight: var(--weight-normal);
+  }
+  &__text {
+    line-height: 1.6;
+  }
+}

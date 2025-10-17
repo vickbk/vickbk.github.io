@@ -6,7 +6,8 @@ $colorsMap: (
   // Primary
   white: hsl(0, 0%, 100%),
   black: hsl(0, 0%, 0%),
-  grey-200: hsl(0, 0%, 85%)
+  grey-200: hsl(0, 0%, 85%),
+  grey-400: hsl(0, 0%, 45%)
 );
 
 $primary-color: map.get($colorsMap, white);
