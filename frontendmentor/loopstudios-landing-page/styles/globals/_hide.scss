@@ -19,7 +19,7 @@
   }
 }
 
-*:not(.hide.hide, .sm-hide.sm-hide, .sm-show.sm-show) {
+*:not([class$="hide"], [class$="show"]) {
   animation-name: hideShow;
   animation-duration: 0.3s;
 }
