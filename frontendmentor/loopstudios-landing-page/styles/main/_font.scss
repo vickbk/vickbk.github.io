@@ -7,6 +7,9 @@ $secondary-font: "Josefin Sans", sans-serif;
 $primary-size: 100%;
 $preferred-size: f.to-r-em(15);
 
+$primary-default-weight: 400;
+$secondary-default-weight: 300;
+
 $weight-normal: 300;
 $weight-natural: 300;
 $min-bold: 400;
@@ -18,6 +21,9 @@ $bold: 400;
 
   --primary-font: #{$primary-font};
   --secondary-font: #{$secondary-font};
+
+  --primary-font-weight: #{$primary-default-weight};
+  --secondary-font-weight: #{$secondary-default-weight};
 
   --primary-size: #{$primary-size};
   --preferred-size: #{$preferred-size};
@@ -31,8 +37,10 @@ $bold: 400;
 
 .primary-font {
   font-family: var(--primary-font);
+  font-weight: $primary-default-weight;
 }
 
 .secondary-font {
   font-family: var(--secondary-font);
+  font-weight: $secondary-default-weight;
 }

@@ -70,14 +70,18 @@
             </p>
           </section>
         </article>
-        <section>
+        <section class="creations upper-case">
           <section>
-            <h2>Our creations</h2>
-            <label><input type="checkbox" hidden />See all</label>
+            <h2 class="creations__header text-center secondary-font">
+              Our creations
+            </h2>
+            <label class="cursor-p sm-down-hide"
+              ><input type="checkbox" id="creation-all" hidden />See all</label
+            >
           </section>
-          <section>
-            <article>
-              <h3>Deep earth</h3>
+          <section class="grid g-2 pbls-2">
+            <article class="creation">
+              <h3 class="creation__title">Deep earth</h3>
               <picture>
                 <source srcset="./images/mobile/image-deep-earth.jpg" />
                 <source
@@ -90,8 +94,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>Night arcade</h3>
+            <article class="creation">
+              <h3 class="creation__title">Night arcade</h3>
               <picture>
                 <source srcset="./images/mobile/image-night-arcade.jpg" />
                 <source
@@ -104,8 +108,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>Soccer team VR</h3>
+            <article class="creation">
+              <h3 class="creation__title">Soccer team VR</h3>
               <picture>
                 <source srcset="./images/mobile/image-soccer-team.jpg" />
                 <source
@@ -118,8 +122,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>The grid</h3>
+            <article class="creation">
+              <h3 class="creation__title">The grid</h3>
               <picture>
                 <source srcset="./images/mobile/image-grid.jpg" />
                 <source
@@ -132,8 +136,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>From up above VR</h3>
+            <article class="creation">
+              <h3 class="creation__title">From up above VR</h3>
               <picture>
                 <source srcset="./images/mobile/image-from-above.jpg" />
                 <source
@@ -146,8 +150,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>Pocket borealis</h3>
+            <article class="creation">
+              <h3 class="creation__title">Pocket borealis</h3>
               <picture>
                 <source srcset="./images/mobile/image-pocket-borealis.jpg" />
                 <source
@@ -160,8 +164,8 @@
                 />
               </picture>
             </article>
-            <article>
-              <h3>The curiosity</h3>
+            <article class="creation">
+              <h3 class="creation__title">The curiosity</h3>
               <picture>
                 <source srcset="./images/mobile/image-curiosity.jpg" />
                 <source
@@ -171,8 +175,8 @@
                 <img src="./images/mobile/image-curiosity.jpg" alt="" />
               </picture>
             </article>
-            <article>
-              <h3>Make it fisheye</h3>
+            <article class="creation">
+              <h3 class="creation__title">Make it fisheye</h3>
               <picture>
                 <source srcset="./images/mobile/image-fisheye.jpg" />
                 <source
@@ -185,6 +189,11 @@
                 />
               </picture>
             </article>
+            <label
+              class="creations__see-all as-center b-1 cursor-p p-1 pi-3 sm-up-hide"
+              for="creation-all"
+              >See All</label
+            >
           </section>
         </section>
       </section>
