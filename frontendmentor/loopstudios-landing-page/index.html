@@ -17,17 +17,17 @@
   </head>
   <body>
     <main>
-      <section>
-        <header>
+      <section class="hero p-2 flex-column c-white">
+        <header class="flex space-between">
           <a href="./"
             ><img src="./images/logo.svg" alt="Loop Studios logo"
           /></a>
-          <label class="sm-up-hide" for="menue-controller"
+          <label class="sm-up-hide cursor-p" for="menue-controller"
             ><img src="./images/icon-hamburger.svg" alt="Menue Opener"
           /></label>
           <input type="checkbox" id="menue-controller" hidden />
           <nav class="sm-down-hide">
-            <label class="sm-up-hide" for="menue-controller"
+            <label class="sm-up-hide cursor-p" for="menue-controller"
               ><img src="./images/icon-close.svg" alt="Close menue"
             /></label>
             <ul>
@@ -39,7 +39,11 @@
             </ul>
           </nav>
         </header>
-        <h1>Immersive experiences that deliver</h1>
+        <h1
+          class="hero__header secondary-font upper-case mbl-auto sb-5 b-white p-1"
+        >
+          Immersive experiences that deliver
+        </h1>
       </section>
 
       <!-- middle section -->

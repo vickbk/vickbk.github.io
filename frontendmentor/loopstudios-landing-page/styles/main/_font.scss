@@ -28,3 +28,11 @@ $bold: 400;
   --min-bold-italic: #{$min-bold-italic};
   --bold: #{$bold};
 }
+
+.primary-font {
+  font-family: var(--primary-font);
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+}
