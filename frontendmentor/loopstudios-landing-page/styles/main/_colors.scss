@@ -4,19 +4,15 @@
 
 $colorsMap: (
   // Primary
-  blue-500: hsl(215, 51%, 70%),
-  cyan-400: hsl(178, 100%, 50%),
-  // Neutral
-  blue-950: hsl(217, 54%, 11%),
-  blue-900: hsl(216, 50%, 16%),
-  blue-800: hsl(215, 32%, 27%),
-  white: hsl(0, 0%, 100%)
+  white: hsl(0, 0%, 100%),
+  black: hsl(0, 0%, 0%),
+  grey-200: hsl(0, 0%, 85%)
 );
 
-$primary-color: map.get($colorsMap, blue-950);
-$link-color: map.get($colorsMap, white);
-$text-color: map.get($colorsMap, blue-500);
-$accent-color: map.get($colorsMap, cyan-400);
+$primary-color: map.get($colorsMap, white);
+$link-color: map.get($colorsMap, black);
+$text-color: map.get($colorsMap, black);
+$accent-color: map.get($colorsMap, grey-200);
 
 :root {
   --background: #{$primary-color};
