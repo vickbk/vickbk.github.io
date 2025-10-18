@@ -17,7 +17,7 @@
   </head>
   <body>
     <main>
-      <section class="hero p-2 flex-column c-white">
+      <section class="hero p-2 flex-column c-white relative">
         <header class="flex space-between">
           <a href="./"
             ><img src="./images/logo.svg" alt="Loop Studios logo"
@@ -25,17 +25,33 @@
           <label class="sm-up-hide cursor-p" for="menue-controller"
             ><img src="./images/icon-hamburger.svg" alt="Menue Opener"
           /></label>
-          <input type="checkbox" id="menue-controller" hidden />
+          <input
+            type="checkbox"
+            id="menue-controller"
+            class="hero__menue-controller sr-only"
+          />
+          <nav class="hero__mobile-navbar flex-column">
+            <div class="flex space-between">
+              <img src="./images/logo.svg" alt="" />
+              <label class="sm-up-hide cursor-p" for="menue-controller"
+                ><img src="./images/icon-close.svg" alt="Close menue"
+              /></label>
+            </div>
+            <ul class="mbl-auto grid g-1 upper-case secondary-font">
+              <li><a class="link" href="#">About</a></li>
+              <li><a class="link" href="#">Careers</a></li>
+              <li><a class="link" href="#">Events</a></li>
+              <li><a class="link" href="#">Products</a></li>
+              <li><a class="link" href="#">Support</a></li>
+            </ul>
+          </nav>
           <nav class="sm-down-hide">
-            <label class="sm-up-hide cursor-p" for="menue-controller"
-              ><img src="./images/icon-close.svg" alt="Close menue"
-            /></label>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a class="link" href="#">About</a></li>
+              <li><a class="link" href="#">Careers</a></li>
+              <li><a class="link" href="#">Events</a></li>
+              <li><a class="link" href="#">Products</a></li>
+              <li><a class="link" href="#">Support</a></li>
             </ul>
           </nav>
         </header>

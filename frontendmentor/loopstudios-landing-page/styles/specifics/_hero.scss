@@ -15,4 +15,19 @@
     letter-spacing: 0.075em;
     word-wrap: break-word;
   }
+  &__mobile-navbar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: var(--black);
+    padding: 2rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  &__menue-controller:checked ~ &__mobile-navbar {
+    display: inherit;
+    opacity: 1;
+  }
 }
