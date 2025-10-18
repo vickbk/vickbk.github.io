@@ -29,5 +29,8 @@
   &__menue-controller:checked ~ &__mobile-navbar {
     display: inherit;
     opacity: 1;
+    @include g.from-mobile-up(g.$mobile) {
+      display: none;
+    }
   }
 }
