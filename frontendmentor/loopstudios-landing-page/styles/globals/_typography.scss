@@ -1,8 +1,12 @@
 @use "../functions/" as f;
 @use "../main/font";
 @use "../main/colors" as c;
+@use "../globals/media-queries" as queries;
+@use "sass:list";
 
 @import url(font.$link);
+
+$text-directions: start, center, end;
 
 :root {
   font-size: 100%;
@@ -39,11 +43,49 @@ button {
 .upper-case {
   text-transform: uppercase;
 }
-.text-center {
-  text-align: center;
+
+@each $direction in $text-directions {
+  .text-#{$direction} {
+    text-align: #{$direction};
+  }
 }
 .text-shorten {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+@each $name, $values in queries.$devices {
+  $size: list.nth($values, 1);
+  $class: list.nth($values, 2);
+  @include queries.from-mobile-up($size) {
+    .#{$class}-up-upper-case {
+      text-transform: uppercase;
+    }
+    @each $direction in $text-directions {
+      .#{$class}-up-text-#{$direction} {
+        text-align: $direction;
+      }
+    }
+    .#{$class}-up-text-shorten {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  @include queries.from-desktop-down($size) {
+    .#{$class}-down-upper-case {
+      text-transform: uppercase;
+    }
+    @each $direction in $text-directions {
+      .#{$class}-down-text-#{$direction} {
+        text-align: $direction;
+      }
+    }
+    .#{$class}-down-text-shorten {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
 }
