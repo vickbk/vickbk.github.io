@@ -1,0 +1,7 @@
+@mixin enforce-selection {
+  // providing double class selection
+  // eg. .class-name.class-name
+  &#{&} {
+    @content;
+  }
+}
