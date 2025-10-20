@@ -1,0 +1,57 @@
+@use "media-queries" as *;
+@use "transitions" as trans;
+@use "sass:list";
+
+.hide.hide,
+.sm-hide.sm-hide {
+  display: none;
+  opacity: 0;
+}
+.sm-hide.sm-hide {
+  @include mobile-queries($mobile) {
+    display: inherit;
+    opacity: 1;
+  }
+}
+.sm-show.sm-show {
+  @include mobile-queries($mobile) {
+    display: none;
+  }
+}
+
+*:not([class$="hide"], [class$="show"]) {
+  animation-name: hideShow;
+  animation-duration: 0.3s;
+}
+
+.fade-in {
+  opacity: inherit;
+  transition: opacity ease-in-out 0.3s;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s;
+}
+
+[class$="hide"] {
+  animation-name: disappear;
+  animation-duration: 0.3s;
+}
+
+@each $name, $values in $devices {
+  $size: list.nth($values, 1);
+  $class: list.nth($values, 2);
+  @include from-mobile-up($size) {
+    .#{"" + $class}-up-hide.#{"" + $class}-up-hide {
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  @include from-desktop-down($size) {
+    .#{"" + $class}-down-hide.#{"" + $class}-down-hide {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

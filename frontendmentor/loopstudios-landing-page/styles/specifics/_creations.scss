@@ -1,0 +1,56 @@
+@use "../functions/" as f;
+@use "../globals/" as g;
+
+.creations {
+  &__header {
+    font-size: f.clamp-builder(2rem, 2.5rem);
+  }
+  &__see-all {
+    justify-self: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+}
+
+.creation {
+  &__article {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to right, var(--black), transparent);
+      opacity: 0.7;
+    }
+  }
+  &__title {
+    position: absolute;
+    max-inline-size: 50%;
+    inset-inline-start: 1em;
+    inset-block-end: 0.75em;
+    color: var(--grey-200);
+    font-size: f.clamp-builder(1.2rem, 2rem);
+    font-family: var(--secondary-font);
+    font-weight: var(--secondary-font-weight);
+    @include g.from-mobile-up(g.$tablet) {
+      max-inline-size: 70%;
+    }
+  }
+  &__image {
+    inline-size: 100%;
+  }
+  @include g.active-state {
+    .creation {
+      &__article {
+        &::before {
+          background-image: linear-gradient(var(--white));
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &__title {
+        color: var(--black);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

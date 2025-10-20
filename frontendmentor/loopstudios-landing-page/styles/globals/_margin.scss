@@ -1,0 +1,211 @@
+@use "sass:math";
+@use "media-queries" as queries;
+@use "sass:list";
+@use "utils" as *;
+$directions: (
+  t: "top",
+  b: "bottom",
+  l: "left",
+  r: "right",
+  bl: "block",
+  i: "inline",
+  bls: "block-start",
+  ble: "block-end",
+  is: "inline-start",
+  ie: "inline-end",
+);
+
+// Generating margins from 1em to 10em and auto
+.m-auto {
+  margin: auto;
+}
+
+@each $name, $value in $directions {
+  .m#{$name}-auto {
+    margin-#{$value}: auto;
+  }
+  .sm#{$name}-auto {
+    margin-#{$value}: auto;
+  }
+}
+
+@for $i from 0 through 10 {
+  .m-#{$i} {
+    margin: #{$i}em;
+  }
+  .sm-#{$i} {
+    margin: #{math.div($i, 10)}em;
+  }
+  .g-#{$i} {
+    gap: #{$i}em;
+  }
+  .g-r-#{$i} {
+    @include enforce-selection {
+      row-gap: #{$i}em;
+    }
+  }
+  .g-c-#{$i} {
+    @include enforce-selection {
+      column-gap: #{$i}em;
+    }
+  }
+  .sg-#{$i} {
+    gap: #{math.div($i, 10)}em;
+  }
+
+  .sg-r-#{$i} {
+    @include enforce-selection {
+      row-gap: #{math.div($i, 10)}em;
+    }
+  }
+  .sg-c-#{$i} {
+    @include enforce-selection {
+      column-gap: #{math.div($i, 10)}em;
+    }
+  }
+
+  // creating separate margins for each side separatly like mt-1,ml-5
+
+  @each $name, $value in $directions {
+    .m#{$name}-#{$i} {
+      margin-#{$value}: #{$i}em;
+    }
+    .sm#{$name}-#{$i} {
+      margin-#{$value}: #{math.div($i, 10)}em;
+    }
+  }
+
+  @each $n, $values in queries.$devices {
+    $size: list.nth($values, 1);
+    $class: list.nth($values, 2);
+
+    // Mobile first approach
+    @include queries.from-mobile-up($size) {
+      // margin
+      .#{$class}-up-m-#{$i} {
+        @include enforce-selection {
+          margin: #{$i}em;
+        }
+      }
+      // small margin
+      .#{$class}-up-sm-#{$i} {
+        @include enforce-selection {
+          margin: #{math.div($i, 10)}em;
+        }
+      }
+
+      // gap
+      .#{$class}-up-g-#{$i} {
+        @include enforce-selection {
+          gap: #{$i}em;
+        }
+      }
+      // row gap
+      .#{$class}-up-g-r-#{$i} {
+        @include enforce-selection {
+          row-gap: #{$i}em;
+        }
+      }
+      // column gap
+      .#{$class}-up-g-c-#{$i} {
+        @include enforce-selection {
+          column-gap: #{$i}em;
+        }
+      }
+      // small gap
+      .#{$class}-up-sg-#{$i} {
+        @include enforce-selection {
+          gap: #{math.div($i, 10)}em;
+        }
+      }
+
+      // small gap row
+      .#{$class}-up-sg-r-#{$i} {
+        @include enforce-selection {
+          row-gap: #{math.div($i, 10)}em;
+        }
+      }
+      // small gap column
+      .#{$class}-up-sg-c-#{$i} {
+        @include enforce-selection {
+          column-gap: #{math.div($i, 10)}em;
+        }
+      }
+
+      @each $name, $value in $directions {
+        .#{$class}-up-m#{$name}-#{$i} {
+          @include enforce-selection {
+            margin-#{$value}: #{$i}em;
+          }
+        }
+        .#{$class}-up-sm#{$name}-#{$i} {
+          @include enforce-selection {
+            margin-#{$value}: #{$i}em;
+          }
+        }
+      }
+    }
+    @include queries.from-desktop-down($size) {
+      .#{$class}-down-m-#{$i} {
+        @include enforce-selection {
+          margin: #{$i}em;
+        }
+      }
+      .#{$class}-down-sm-#{$i} {
+        @include enforce-selection {
+          margin: #{math.div($i, 10)}em;
+        }
+      }
+
+      .#{$class}-down-g-#{$i} {
+        @include enforce-selection {
+          gap: #{$i}em;
+        }
+      }
+
+      // row gap
+      .#{$class}-down-g-r-#{$i} {
+        @include enforce-selection {
+          row-gap: #{$i}em;
+        }
+      }
+      // column gap
+      .#{$class}-down-g-c-#{$i} {
+        @include enforce-selection {
+          column-gap: #{$i}em;
+        }
+      }
+
+      .#{$class}-down-sg-#{$i} {
+        @include enforce-selection {
+          gap: #{math.div($i, 10)}em;
+        }
+      }
+      // small gap row
+      .#{$class}-down-sg-r-#{$i} {
+        @include enforce-selection {
+          row-gap: #{math.div($i, 10)}em;
+        }
+      }
+      // small gap column
+      .#{$class}-down-sg-c-#{$i} {
+        @include enforce-selection {
+          column-gap: #{math.div($i, 10)}em;
+        }
+      }
+
+      @each $name, $value in $directions {
+        .#{$class}-down-m#{$name}-#{$i} {
+          @include enforce-selection {
+            margin-#{$value}: #{$i}em;
+          }
+        }
+        .#{$class}-down-sm#{$name}-#{$i} {
+          @include enforce-selection {
+            margin-#{$value}: #{$i}em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use "../functions/" as f;
+@use "../globals/" as g;
+
+.leader {
+  &__header {
+    font-size: f.clamp-builder(2rem, 3rem);
+  }
+  &__header,
+  &__text {
+    font-weight: var(--weight-normal);
+  }
+  &__text {
+    line-height: 1.6;
+    font-size: f.clamp-builder(1rem, 1.25rem);
+  }
+  @include g.from-mobile-up(g.$tablet) {
+    &__details {
+      &#{&} {
+        inset: auto 0 0 auto;
+        padding-block-start: f.clamp-builder(3em, 5em, g.$tablet);
+        padding-inline-start: f.clamp-builder(3em, 5em, g.$tablet);
+        padding-block-end: 0;
+        inline-size: 60%;
+        max-inline-size: f.to-r-em(700);
+        background-color: var(--white);
+      }
+    }
+  }
+}

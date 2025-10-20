@@ -1,0 +1,7 @@
+@use "../functions/" as f;
+
+.container-box {
+  inline-size: 100%;
+  max-inline-size: f.to-r-em(1200);
+  margin: 0 auto;
+}

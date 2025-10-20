@@ -1,0 +1,46 @@
+@use "../functions/" as f;
+$link: "https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap";
+
+$primary-font: "Alata", sans-serif;
+$secondary-font: "Josefin Sans", sans-serif;
+
+$primary-size: 100%;
+$preferred-size: f.to-r-em(15);
+
+$primary-default-weight: 400;
+$secondary-default-weight: 300;
+
+$weight-normal: 300;
+$weight-natural: 300;
+$min-bold: 400;
+$min-bold-italic: 400i;
+$bold: 400;
+
+:root {
+  --font-link: "#{$link}";
+
+  --primary-font: #{$primary-font};
+  --secondary-font: #{$secondary-font};
+
+  --primary-font-weight: #{$primary-default-weight};
+  --secondary-font-weight: #{$secondary-default-weight};
+
+  --primary-size: #{$primary-size};
+  --preferred-size: #{$preferred-size};
+
+  --weight-normal: #{$weight-normal};
+  --weight-natural: #{$weight-natural};
+  --min-bold: #{$min-bold};
+  --min-bold-italic: #{$min-bold-italic};
+  --bold: #{$bold};
+}
+
+.primary-font {
+  font-family: var(--primary-font);
+  font-weight: $primary-default-weight;
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+  font-weight: $secondary-default-weight;
+}

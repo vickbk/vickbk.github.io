@@ -1,0 +1,24 @@
+@use "../globals/" as g;
+
+.link {
+  color: var(--white);
+  position: relative;
+  @include g.active-state {
+    &::before {
+      content: "";
+      background-color: var(--white);
+      position: absolute;
+      padding: 0.1em;
+      inset-block-end: -0.5em;
+      inline-size: 50%;
+      inset-inline: 0;
+      margin-inline: auto;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &.social {
+    &::before {
+      inline-size: 100%;
+    }
+  }
+}

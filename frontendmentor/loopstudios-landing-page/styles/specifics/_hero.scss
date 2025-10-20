@@ -1,0 +1,37 @@
+@use "../globals/" as g;
+@use "../functions/" as f;
+
+.hero {
+  min-block-size: 100vh;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  @include g.from-mobile-up(g.$mobile) {
+    background-image: url("../../images/desktop/image-hero.jpg");
+  }
+  &__header {
+    max-inline-size: f.to-r-em(700);
+    font-size: f.clamp-builder(2rem, 4rem);
+    font-weight: var(--weight-normal);
+    letter-spacing: 0.075em;
+    word-wrap: break-word;
+  }
+  &__mobile-navbar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: var(--black);
+    padding: 2rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  &__menue-controller:checked ~ &__mobile-navbar {
+    display: inherit;
+    opacity: 1;
+    @include g.from-mobile-up(g.$mobile) {
+      display: none;
+    }
+  }
+}
