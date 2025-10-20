@@ -28,9 +28,15 @@
     inset-inline-start: 1em;
     inset-block-end: 0.75em;
     color: var(--grey-200);
-    font-size: f.clamp-builder(1.2rem, 1.5rem);
+    font-size: f.clamp-builder(1.2rem, 2rem);
     font-family: var(--secondary-font);
     font-weight: var(--secondary-font-weight);
+    @include g.from-mobile-up(g.$tablet) {
+      max-inline-size: 70%;
+    }
+  }
+  &__image {
+    inline-size: 100%;
   }
   @include g.active-state {
     .creation {
