@@ -34,4 +34,12 @@
       display: none;
     }
   }
+  &__menue-controller {
+    @include g.active-state {
+      & ~ label[for="menue-controller"],
+      & ~ .hero__mobile-navbar > * > label[for="menue-controller"] {
+        border: f.to-r-em(1) dashed var(--white);
+      }
+    }
+  }
 }
