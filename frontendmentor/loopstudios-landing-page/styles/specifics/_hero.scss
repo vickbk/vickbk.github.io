@@ -10,7 +10,8 @@
     background-image: url("../../images/desktop/image-hero.jpg");
   }
   &__header {
-    font-size: f.clamp-builder(2rem, 3rem);
+    max-inline-size: f.to-r-em(700);
+    font-size: f.clamp-builder(2rem, 4rem);
     font-weight: var(--weight-normal);
     letter-spacing: 0.075em;
     word-wrap: break-word;
