@@ -33215,6 +33215,9 @@ button {
     display: none;
   }
 }
+.hero__menue-controller:hover ~ label[for=menue-controller], .hero__menue-controller:hover ~ .hero__mobile-navbar > * > label[for=menue-controller], .hero__menue-controller:active ~ label[for=menue-controller], .hero__menue-controller:active ~ .hero__mobile-navbar > * > label[for=menue-controller], .hero__menue-controller:focus ~ label[for=menue-controller], .hero__menue-controller:focus ~ .hero__mobile-navbar > * > label[for=menue-controller] {
+  border: 0.0625rem dashed var(--white);
+}
 
 .leader__header {
   font-size: clamp(2rem, 1.6478873239rem + 1.5023474178vw, 3rem);
