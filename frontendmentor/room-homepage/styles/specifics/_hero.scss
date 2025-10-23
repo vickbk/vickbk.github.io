@@ -11,6 +11,14 @@
       & ~ .cover {
         display: none;
       }
+      @include g.active-state {
+        & ~ label[for="nav-controller"] {
+          color: var(--grey-500);
+        }
+        & * > label[for="nav-controller"] {
+          color: var(--grey-800);
+        }
+      }
       &:checked {
         & ~ .hero__navbar,
         & ~ .cover {
