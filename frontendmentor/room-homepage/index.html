@@ -56,11 +56,11 @@
           <figure>
             <picture>
               <source
-                media="(max-width: 767.98px)"
+                media="(max-width: 374.98px)"
                 srcset="./images/mobile-image-hero-1.jpg"
               />
               <source
-                media="(min-width: 768px)"
+                media="(min-width: 375px)"
                 srcset="./images/desktop-image-hero-1.jpg"
               />
               <img
@@ -68,8 +68,10 @@
                 alt="First Hero image illustration"
               />
             </picture>
-            <figcaption class="grid g-1 p-2">
-              <h2>Discover innovative ways to decorate</h2>
+            <figcaption class="caption grid g-1 p-2">
+              <h2 class="caption__title">
+                Discover innovative ways to decorate
+              </h2>
               <p class="c-grey-500">
                 We provide unmatched quality, comfort, and style for property
                 owners across the country. Our experts combine form and function
@@ -77,22 +79,26 @@
                 with our collection and make your property a reflection of you
                 and what you love.
               </p>
-              <a href="" class="upper-case"
+              <a href="" class="caption__link c-black upper-case"
                 >Shop now <img src="./images/icon-arrow.svg" alt=""
               /></a>
             </figcaption>
           </figure>
+
+          <div class="hero__slide-controller black absolute">
+            <button class="p-1" type="button">
+              <img
+                src="./images/icon-angle-left.svg"
+                alt="Show previous section"
+              /></button
+            ><button class="p-1" type="button">
+              <img
+                src="./images/icon-angle-right.svg"
+                alt="Show next section"
+              />
+            </button>
+          </div>
         </section>
-        <div class="hero__slide-controller black absolute">
-          <button class="p-1" type="button">
-            <img
-              src="./images/icon-angle-left.svg"
-              alt="Show previous section"
-            /></button
-          ><button class="p-1" type="button">
-            <img src="./images/icon-angle-right.svg" alt="Show next section" />
-          </button>
-        </div>
       </section>
 
       <!-- Lower section -->

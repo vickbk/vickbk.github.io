@@ -1,0 +1,9 @@
+@use "../functions/" as f;
+.caption {
+  &__title {
+    font-size: f.clamp-builder(2.25rem, 3rem);
+  }
+  &__link {
+    letter-spacing: 0.5em;
+  }
+}
