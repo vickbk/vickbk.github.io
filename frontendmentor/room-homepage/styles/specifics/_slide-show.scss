@@ -1,0 +1,20 @@
+.slide-show {
+  overflow: hidden;
+  &__picture > &__image {
+    will-change: transform;
+    transform: translateX(100%);
+    transition: transform 1s;
+    z-index: -1;
+    display: none;
+  }
+  &__picture[data-current="true"] > &__image {
+    display: initial;
+    transform: translateX(0%);
+    transition-timing-function: ease-out;
+  }
+
+  &__picture[data-current="false"] > &__image {
+    transform: translateX(-100%);
+    transition-timing-function: ease-in;
+  }
+}

@@ -3,6 +3,7 @@
 .hero {
   &__header {
     inline-size: 100%;
+    z-index: 1;
   }
   &__nav-controller {
     @include g.from-desktop-down(g.$mobile) {
