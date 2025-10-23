@@ -1,0 +1,8 @@
+@use "../functions/" as f;
+
+.about {
+  &__header {
+    font-size: f.clamp-builder(1rem, 1.25rem);
+    letter-spacing: 0.4em;
+  }
+}
