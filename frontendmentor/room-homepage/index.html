@@ -17,76 +17,91 @@
   </head>
   <body>
     <main>
-      <section>
-        <article>
-          <a href="./"
+      <!-- hero section -->
+      <section class="hero relative">
+        <header class="hero__header absolute pbl-2 p-1 flex a-center g-1">
+          <input
+            type="checkbox"
+            id="nav-controller"
+            class="sr-only hero__nav-controller"
+          />
+          <label for="nav-controller" class="cursor-p"
+            ><img src="./images/icon-hamburger.svg" alt="Mobile menue opener"
+          /></label>
+          <label for="nav-controller" class="absolute cover black p-1 cursor-p"
+            ><span class="sr-only">Hide navbar</span></label
+          >
+          <a href="./" class="mi-auto"
             ><img
               src="./images/logo.svg"
               alt="Room Logo - Home page redirection"
           /></a>
-          <nav aria-label="Home navbar">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+          <nav
+            class="hero__navbar navbar flex g-1 p-1 sm-down-absolute a-center space-between"
+            aria-label="Home navbar"
+          >
+            <label for="nav-controller" class="cursor-p"
+              ><img src="./images/icon-close.svg" alt="Close navigation"
+            /></label>
+            <ul class="flex g-2">
+              <li><a class="navbar__link" href="#">Home</a></li>
+              <li><a class="navbar__link" href="#">Shop</a></li>
+              <li><a class="navbar__link" href="#">About</a></li>
+              <li><a class="navbar__link" href="#">Contact</a></li>
             </ul>
           </nav>
-          <h1>Room fourniture display</h1>
-          <section>
-            <figure>
-              <picture>
-                <source
-                  media="(max-width: 767.98px)"
-                  srcset="./images/mobile-image-hero-1.jpg"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./images/desktop-image-hero-1.jpg"
-                />
-                <img
-                  src="./images/mobile-image-hero-1.jpg"
-                  alt="First Hero image illustration"
-                />
-              </picture>
-              <figcaption>
-                <h2>Discover innovative ways to decorate</h2>
-                <p>
-                  We provide unmatched quality, comfort, and style for property
-                  owners across the country. Our experts combine form and
-                  function in bringing your vision to life. Create a room in
-                  your own style with our collection and make your property a
-                  reflection of you and what you love.
-                </p>
-                <a href=""
-                  >Shop now <img src="./images/icon-arrow.svg" alt=""
-                /></a>
-              </figcaption>
-            </figure>
-          </section>
-          <div>
-            <button type="button">
-              <img
-                src="./images/icon-angle-left.svg"
-                alt="Show previous section"
-              /></button
-            ><button type="button">
-              <img
-                src="./images/icon-angle-right.svg"
-                alt="Show next section"
+        </header>
+        <h1 class="sr-only">Room fourniture display</h1>
+        <section>
+          <figure>
+            <picture>
+              <source
+                media="(max-width: 767.98px)"
+                srcset="./images/mobile-image-hero-1.jpg"
               />
-            </button>
-          </div>
-        </article>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/desktop-image-hero-1.jpg"
+              />
+              <img
+                src="./images/mobile-image-hero-1.jpg"
+                alt="First Hero image illustration"
+              />
+            </picture>
+            <figcaption class="grid g-1 p-2">
+              <h2>Discover innovative ways to decorate</h2>
+              <p class="c-grey-500">
+                We provide unmatched quality, comfort, and style for property
+                owners across the country. Our experts combine form and function
+                in bringing your vision to life. Create a room in your own style
+                with our collection and make your property a reflection of you
+                and what you love.
+              </p>
+              <a href="" class="upper-case"
+                >Shop now <img src="./images/icon-arrow.svg" alt=""
+              /></a>
+            </figcaption>
+          </figure>
+        </section>
+        <div class="hero__slide-controller black absolute">
+          <button class="p-1" type="button">
+            <img
+              src="./images/icon-angle-left.svg"
+              alt="Show previous section"
+            /></button
+          ><button class="p-1" type="button">
+            <img src="./images/icon-angle-right.svg" alt="Show next section" />
+          </button>
+        </div>
       </section>
 
       <!-- Lower section -->
 
-      <section>
+      <section class="about md-up-flex">
         <img src="./images/image-about-dark.jpg" alt="" />
-        <article>
-          <h3>About our furniture</h3>
-          <p>
+        <article class="p-2">
+          <h3 class="about__header upper-case">About our furniture</h3>
+          <p class="about__text mbls-1 c-grey-500">
             Our multifunctional collection blends design and function to suit
             your individual taste. Make each room unique, or pick a cohesive
             theme that best express your interests and what inspires you. Find

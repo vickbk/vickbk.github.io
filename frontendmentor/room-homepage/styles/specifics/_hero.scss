@@ -1,0 +1,36 @@
+@use "../globals" as g;
+
+.hero {
+  &__header {
+    inline-size: 100%;
+  }
+  &__nav-controller {
+    @include g.from-desktop-down(g.$mobile) {
+      & ~ .hero__navbar,
+      & ~ .cover {
+        display: none;
+      }
+      &:checked {
+        & ~ .hero__navbar,
+        & ~ .cover {
+          display: inherit;
+        }
+      }
+    }
+  }
+  &__navbar {
+    background-color: var(--white);
+    inset: 0;
+    z-index: 2;
+  }
+}
+
+.cover {
+  top: 0;
+  left: 0;
+  block-size: 100vh;
+  inline-size: 100%;
+  opacity: 0.3;
+  z-index: 1;
+  display: none;
+}
