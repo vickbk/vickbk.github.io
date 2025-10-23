@@ -1,3 +1,4 @@
+@use "../globals/" as g;
 @use "../functions/" as f;
 .caption {
   &__title {
@@ -5,5 +6,8 @@
   }
   &__link {
     letter-spacing: 0.5em;
+    @include g.active-state {
+      color: var(--grey-500);
+    }
   }
 }
