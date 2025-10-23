@@ -15,13 +15,13 @@
         & ~ .cover {
           display: inherit;
         }
+        & ~ .hero__navbar {
+          inset: 0;
+          z-index: 2;
+          background-color: var(--white);
+        }
       }
     }
-  }
-  &__navbar {
-    background-color: var(--white);
-    inset: 0;
-    z-index: 2;
   }
   &__slide-controller {
     inset-inline-end: 0;

@@ -1,6 +1,10 @@
+@use "../globals/" as g;
 .navbar {
   &__link {
-    color: var(--black);
+    color: var(--white);
     text-transform: lowercase;
+    @include g.from-desktop-down(g.$mobile) {
+      color: var(--black);
+    }
   }
 }
