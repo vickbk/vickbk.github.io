@@ -1,0 +1,90 @@
+@use "../functions/" as f;
+@use "../globals/states" as s;
+@use "sass:map";
+
+$colorsMap: (
+  // Primary
+  white: hsl(0, 100%, 100%),
+  black: hsl(0, 0%, 0%),
+  grey-500: hsl(0, 0%, 63%),
+  grey-800: hsl(0, 0%, 27%)
+);
+
+$primary-color: map.get($colorsMap, white);
+$link-color: map.get($colorsMap, grey-800);
+$text-color: map.get($colorsMap, black);
+$accent-color: map.get($colorsMap, grey-800);
+
+:root {
+  --background: #{$primary-color};
+  --foreground: #{$text-color};
+  --accent-color: #{$accent-color};
+  --link-color: #{$link-color};
+  @media (prefers-color-scheme: dark) {
+    --background: #{$text-color};
+    --foreground: #{$primary-color};
+  }
+  & {
+    @each $name, $color in $colorsMap {
+      --#{""+$name}: #{$color};
+    }
+  }
+}
+
+@mixin active-colors($suffix) {
+  .active-#{$suffix}.active-#{$suffix} {
+    @include s.active-state {
+      @content;
+    }
+  }
+}
+
+@each $name, $color in $colorsMap {
+  .#{"" + $name},
+  .hv-#{"" + $name}:hover,
+  .a-#{"" + $name}:active,
+  .a-#{"" + $name}:focus {
+    background-color: var(--#{"" + $name});
+    transition: background-color ease-in-out 0.3s;
+  }
+  @include active-colors(#{"" + $name}) {
+    background-color: var(--#{"" + $name});
+    transition: background-color ease-in-out 0.3s;
+  }
+
+  .c-#{"" + $name}.c-#{"" + $name},
+  .hv-c-#{"" + $name}:hover,
+  .a-c-#{"" + $name}:active,
+  .a-c-#{"" + $name}:focus {
+    color: var(--#{"" + $name});
+    transition: color ease-in-out 0.3s;
+  }
+  @include active-colors(#{"c-" + $name}) {
+    color: var(--#{"" + $name});
+    transition: color ease-in-out 0.3s;
+  }
+
+  .b-#{"" + $name}.b-#{"" + $name},
+  .hv-b-#{"" + $name}.hv-b-#{"" + $name}:hover,
+  .a-b-#{"" + $name}.a-b-#{"" + $name}:active,
+  .a-b-#{"" + $name}.a-b-#{"" + $name}:focus {
+    border-color: var(--#{"" + $name});
+    transition: border ease-in-out 0.3s;
+  }
+  @include active-colors(#{"b-" + $name}) {
+    border-color: var(--#{"" + $name});
+    transition: border ease-in-out 0.3s;
+  }
+
+  .out-#{"" + $name},
+  .hv-out-#{"" + $name}:hover,
+  .a-out-#{"" + $name}:active,
+  .a-out-#{"" + $name}:focus {
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+    transition: outline ease-in-out 0.3s;
+  }
+  @include active-colors(#{"out-" + $name}) {
+    outline: var(--#{"" + $name}) f.to-r-em(1) solid;
+    transition: outline ease-in-out 0.3s;
+  }
+}

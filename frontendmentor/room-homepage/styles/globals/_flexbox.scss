@@ -1,0 +1,219 @@
+@use "media-queries" as queries;
+@use "sass:list";
+@use "utils" as *;
+
+$content-directions: start, center, end;
+
+.flex {
+  display: flex;
+}
+
+// Flex direction column class
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+// Content positionning
+@each $direction in $content-directions {
+  // content justify
+  .j-#{$direction} {
+    @include enforce-selection {
+      justify-content: $direction;
+    }
+  }
+  .js-#{$direction} {
+    @include enforce-selection {
+      justify-self: $direction;
+    }
+  }
+  // content alignment
+  .a-#{$direction} {
+    @include enforce-selection {
+      align-items: $direction;
+    }
+  }
+  // single element aligment
+  .as-#{$direction} {
+    @include enforce-selection {
+      align-self: $direction;
+    }
+  }
+
+  // content placing
+  .#{$direction} {
+    @include enforce-selection {
+      place-items: $direction;
+    }
+  }
+  // Single element placing
+  .s-#{$direction} {
+    @include enforce-selection {
+      place-self: $direction;
+    }
+  }
+}
+
+@each $name, $values in queries.$devices {
+  $size: list.nth($values, 1);
+  $class: list.nth($values, 2);
+  // Mobile first approach
+  @include queries.from-mobile-up($size) {
+    // flex config
+    .#{$class}-up-flex.#{$class}-up-flex {
+      display: flex;
+    }
+
+    // flex column config
+    .#{$class}-up-flex-column.#{$class}-up-flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // flex wrap
+    .#{$class}-up-flex-wrap {
+      @include enforce-selection {
+        flex-wrap: wrap;
+      }
+    }
+
+    // flex grow
+    .#{$class}-up-flex-grow {
+      @include enforce-selection {
+        flex-grow: 1;
+      }
+    }
+
+    // space-between
+    .#{$class}-up-space-between {
+      @include enforce-selection {
+        justify-content: space-between;
+      }
+    }
+
+    // Content positionning
+    @each $direction in $content-directions {
+      // content justify
+      .#{$class}-up-j-#{$direction} {
+        @include enforce-selection {
+          justify-content: $direction;
+        }
+      }
+      .#{$class}-up-js-#{$direction} {
+        @include enforce-selection {
+          justify-self: $direction;
+        }
+      }
+      // content alignment
+      .#{$class}-up-a-#{$direction} {
+        @include enforce-selection {
+          align-items: $direction;
+        }
+      }
+      // single element aligment
+      .#{$class}-up-as-#{$direction} {
+        @include enforce-selection {
+          align-self: $direction;
+        }
+      }
+
+      // content placing
+      .#{$class}-up-#{$direction} {
+        @include enforce-selection {
+          place-items: $direction;
+        }
+      }
+      // Single element placing
+      .#{$class}-up-s-#{$direction} {
+        @include enforce-selection {
+          place-self: $direction;
+        }
+      }
+    }
+  }
+
+  // Desktop first approach
+  @include queries.from-desktop-down($size) {
+    .#{$class}-down-flex {
+      display: flex;
+    }
+
+    .#{$class}-down-flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // flex wrap
+    .#{$class}-down-flex-wrap {
+      @include enforce-selection {
+        flex-wrap: wrap;
+      }
+    }
+
+    // flex grow
+    .#{$class}-down-flex-grow {
+      @include enforce-selection {
+        flex-grow: 1;
+      }
+    }
+
+    // space-between
+    .#{$class}-down-space-between {
+      @include enforce-selection {
+        justify-content: space-between;
+      }
+    }
+
+    // Content positionning
+    @each $direction in $content-directions {
+      // content justify
+      .#{$class}-down-j-#{$direction} {
+        @include enforce-selection {
+          justify-content: $direction;
+        }
+      }
+      .#{$class}-down-js-#{$direction} {
+        @include enforce-selection {
+          justify-self: $direction;
+        }
+      }
+      // content alignment
+      .#{$class}-down-a-#{$direction} {
+        @include enforce-selection {
+          align-items: $direction;
+        }
+      }
+      // single element aligment
+      .#{$class}-down-as-#{$direction} {
+        @include enforce-selection {
+          align-self: $direction;
+        }
+      }
+
+      // content placing
+      .#{$class}-down-#{$direction} {
+        @include enforce-selection {
+          place-items: $direction;
+        }
+      }
+      // Single element placing
+      .#{$class}-down-s-#{$direction} {
+        @include enforce-selection {
+          place-self: $direction;
+        }
+      }
+    }
+  }
+}

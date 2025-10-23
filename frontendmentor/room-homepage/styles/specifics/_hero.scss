@@ -1,0 +1,65 @@
+@use "../globals" as g;
+
+.hero {
+  &__header {
+    inline-size: 100%;
+    z-index: 1;
+  }
+  @include g.from-desktop-down(g.$mobile) {
+    &__nav-controller {
+      & ~ .hero__navbar,
+      & ~ .cover {
+        display: none;
+      }
+      @include g.active-state {
+        & ~ label[for="nav-controller"] {
+          color: var(--grey-500);
+        }
+        & * > label[for="nav-controller"] {
+          color: var(--grey-800);
+        }
+      }
+      &:checked {
+        & ~ .hero__navbar,
+        & ~ .cover {
+          display: inherit;
+        }
+        & ~ .hero__navbar {
+          inset: 0;
+          z-index: 2;
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+  &__slide-controller {
+    inset-inline-end: 0;
+    inset-block-start: -3.5em;
+    @include g.from-mobile-up(g.$tablet) {
+      inset-block-start: unset;
+      inset-block-end: 0;
+      inset-inline-start: -5.75em;
+      @include g.from-mobile-up(g.$pc) {
+        inset-inline-start: 0;
+      }
+    }
+  }
+  @include g.from-mobile-up(g.$tablet) {
+    &__picture {
+      inline-size: 60%;
+    }
+    &__caption {
+      inline-size: 40%;
+    }
+  }
+}
+
+.cover {
+  top: 0;
+  left: 0;
+  block-size: 100vh;
+  inline-size: 100%;
+  opacity: 0.3;
+  z-index: 1;
+  display: none;
+}
