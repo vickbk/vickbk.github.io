@@ -20,4 +20,11 @@
     display: none;
     transition-timing-function: ease-in;
   }
+
+  &__caption {
+    display: none;
+    &[data-current="true"] {
+      display: grid;
+    }
+  }
 }
