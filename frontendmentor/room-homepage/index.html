@@ -54,53 +54,57 @@
         </header>
         <h1 class="sr-only">Room fourniture display</h1>
         <section>
-          <figure class="slide-show" id="slide-show">
-            <picture class="slide-show__picture" data-current="true">
-              <source
-                media="(max-width: 575.98px)"
-                srcset="./images/mobile-image-hero-1.jpg"
-              />
-              <source
-                media="(min-width: 576px)"
-                srcset="./images/desktop-image-hero-1.jpg"
-              />
-              <img
-                class="image slide-show__image"
-                src="./images/mobile-image-hero-1.jpg"
-                alt="First Hero image illustration"
-              />
-            </picture>
-            <picture class="slide-show__picture" data-current="false">
-              <source
-                media="(max-width: 575.98px)"
-                srcset="./images/mobile-image-hero-2.jpg"
-              />
-              <source
-                media="(min-width: 576px)"
-                srcset="./images/desktop-image-hero-2.jpg"
-              />
-              <img
-                class="image slide-show__image"
-                src="./images/mobile-image-hero-2.jpg"
-                alt="Second Hero image illustration"
-              />
-            </picture>
-            <picture class="slide-show__picture" data-current="false">
-              <source
-                media="(max-width: 575.98px)"
-                srcset="./images/mobile-image-hero-3.jpg"
-              />
-              <source
-                media="(min-width: 576px)"
-                srcset="./images/desktop-image-hero-3.jpg"
-              />
-              <img
-                class="image slide-show__image"
-                src="./images/mobile-image-hero-3.jpg"
-                alt="Third Hero image illustration"
-              />
-            </picture>
-            <figcaption class="caption relative p-2">
+          <figure class="slide-show md-up-flex" id="slide-show">
+            <section class="hero__picture">
+              <picture class="slide-show__picture" data-current="true">
+                <source
+                  media="(max-width: 575.98px)"
+                  srcset="./images/mobile-image-hero-1.jpg"
+                />
+                <source
+                  media="(min-width: 576px)"
+                  srcset="./images/desktop-image-hero-1.jpg"
+                />
+                <img
+                  class="image slide-show__image"
+                  src="./images/mobile-image-hero-1.jpg"
+                  alt="First Hero image illustration"
+                />
+              </picture>
+              <picture class="slide-show__picture" data-current="false">
+                <source
+                  media="(max-width: 575.98px)"
+                  srcset="./images/mobile-image-hero-2.jpg"
+                />
+                <source
+                  media="(min-width: 576px)"
+                  srcset="./images/desktop-image-hero-2.jpg"
+                />
+                <img
+                  class="image slide-show__image"
+                  src="./images/mobile-image-hero-2.jpg"
+                  alt="Second Hero image illustration"
+                />
+              </picture>
+              <picture class="slide-show__picture" data-current="false">
+                <source
+                  media="(max-width: 575.98px)"
+                  srcset="./images/mobile-image-hero-3.jpg"
+                />
+                <source
+                  media="(min-width: 576px)"
+                  srcset="./images/desktop-image-hero-3.jpg"
+                />
+                <img
+                  class="image slide-show__image"
+                  src="./images/mobile-image-hero-3.jpg"
+                  alt="Third Hero image illustration"
+                />
+              </picture>
+            </section>
+            <figcaption
+              class="hero__caption caption relative p-2 lg-up-p-4 md-up-flex-column md-up-j-center"
+            >
               <section class="grid g-1">
                 <h2 class="caption__title">
                   Discover innovative ways to decorate
@@ -148,8 +152,12 @@
       <!-- Lower section -->
 
       <section class="about md-up-flex">
-        <img class="image" src="./images/image-about-dark.jpg" alt="" />
-        <article class="p-2 pbl-4">
+        <img
+          class="about__image image"
+          src="./images/image-about-dark.jpg"
+          alt=""
+        />
+        <article class="about__middle p-2 md-up-p-4 pbl-4">
           <h3 class="about__header upper-case">About our furniture</h3>
           <p class="about__text mbls-1 c-grey-500">
             Our multifunctional collection blends design and function to suit
@@ -160,7 +168,11 @@
             help you create your dream space.
           </p>
         </article>
-        <img class="image" src="./images/image-about-light.jpg" alt="" />
+        <img
+          class="about__image image"
+          src="./images/image-about-light.jpg"
+          alt=""
+        />
       </section>
     </main>
     <!--  -->

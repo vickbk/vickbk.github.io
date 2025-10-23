@@ -1,8 +1,17 @@
 @use "../functions/" as f;
+@use "../globals/" as g;
 
 .about {
   &__header {
     font-size: f.clamp-builder(1rem, 1.25rem);
     letter-spacing: 0.4em;
+  }
+  @include g.from-mobile-up(g.$tablet) {
+    &__middle {
+      flex-basis: 40%;
+    }
+    &__image {
+      flex-basis: 30%;
+    }
   }
 }

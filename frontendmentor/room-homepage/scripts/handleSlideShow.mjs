@@ -30,7 +30,7 @@ export const { setCurrent, getCurrent, showCurrent, keepSlideShow } = (() => {
       allPictures.forEach((picture) =>
         picture.setAttribute("data-current", false)
       );
-      allPictures[current]?.setAttribute("data-current", true);
+      allPictures[current].setAttribute("data-current", true);
       keepSlideShow();
     },
     keepSlideShow() {
