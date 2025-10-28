@@ -17,6 +17,290 @@
     <link rel="stylesheet" href="./styles/output.css" />
   </head>
   <body>
+    <!-- header component -->
+    <header>
+      <nav
+        class="flex gap-8 items-center justify-between p-6 max-w-6xl mx-auto"
+      >
+        <img src="./images/logo-bookmark.svg" alt="Bookmark Logo" />
+
+        <ul
+          class="hidden md:flex gap-8 ml-auto font-medium text-gray-500 hover:text-black"
+        >
+          <li>
+            <a href="#features" class="hover:text-black">Features</a>
+          </li>
+          <li>
+            <a href="#pricing" class="hover:text-black">Pricing</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-black">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <a
+            href="#login"
+            class="hidden md:inline-block bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition"
+            >Login</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="flex flex-col-reverse md:flex-row items-center max-w-6xl mx-auto px-6 md:px-0"
+      >
+        <article class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            A Simple Bookmark Manager
+          </h1>
+          <p class="text-gray-600 mb-6">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="space-x-4">
+            <a
+              href="#"
+              class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+              >Get it on Chrome</a
+            >
+            <a
+              href="#"
+              class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full hover:bg-gray-300 transition"
+              >Get it on Firefox</a
+            >
+          </div>
+        </article>
+        <div class="md:w-1/2 mb-12 md:mb-0">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="Illustration of a person using a bookmark manager"
+          />
+          <div class="bg-blue-600 p-32 rounded-l-full"></div>
+        </div>
+      </section>
+      <section id="features" class="mt-32 px-6 md:px-0">
+        <!-- Features Section Placeholder -->
+        <article>
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </article>
+        <input
+          type="radio"
+          name="features"
+          id="simple-bookmarking"
+          class="sr-only"
+          checked
+        />
+        <input
+          type="radio"
+          name="features"
+          id="speedy-searching"
+          class="sr-only"
+        />
+        <input type="radio" name="features" id="easy-sharing" class="sr-only" />
+        <nav>
+          <ul class="flex justify-center gap-8">
+            <li>
+              <label
+                for="simple-bookmarking"
+                class="cursor-pointer hover:text-blue-600"
+                >Simple Bookmarking</label
+              >
+            </li>
+            <li>
+              <label
+                for="speedy-searching"
+                class="cursor-pointer hover:text-blue-600"
+                >Speedy Searching</label
+              >
+            </li>
+            <li>
+              <label
+                for="easy-sharing"
+                class="cursor-pointer hover:text-blue-600"
+                >Easy Sharing</label
+              >
+            </li>
+          </ul>
+        </nav>
+        <section class="mt-8 max-w-2xl mx-auto">
+          <article class="feature-content" id="simple-bookmarking-content">
+            <h3>Bookmark in one click</h3>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline">More Info</a>
+          </article>
+          <article class="feature-content hidden" id="speedy-searching-content">
+            <h3>Intelligent search</h3>
+            <p>
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline">More Info</a>
+          </article>
+          <article class="feature-content hidden" id="easy-sharing-content">
+            <h3>Share your bookmarks</h3>
+            <p>
+              Easily share your bookmarks and collections with others. Create a
+              shareable link that you can send at the click of a button.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline">More Info</a>
+          </article>
+        </section>
+      </section>
+      <!-- Extension section -->
+      <section class="mt-32 px-6 md:px-0">
+        <h2 class="text-3xl font-bold text-center mb-6">
+          Download the extension
+        </h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-8 justify-center items-center"
+        >
+          <article class="bg-gray-100 p-6 rounded-lg text-center">
+            <img
+              src="./images/logo-chrome.svg"
+              alt="Chrome Logo"
+              class="mx-auto mb-4"
+            />
+            <h3 class="font-semibold mb-2">Add to Chrome</h3>
+            <p class="text-gray-600 mb-4">Minimum version 62</p>
+            <a
+              href="#"
+              class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+              >Add & Install Extension</a
+            >
+          </article>
+          <article class="bg-gray-100 p-6 rounded-lg text-center">
+            <img
+              src="./images/logo-firefox.svg"
+              alt="Firefox Logo"
+              class="mx-auto mb-4"
+            />
+            <h3 class="font-semibold mb-2">Add to Firefox</h3>
+            <p class="text-gray-600 mb-4">Minimum version 55</p>
+            <a
+              href="#"
+              class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+              >Add & Install Extension</a
+            >
+          </article>
+          <article class="bg-gray-100 p-6 rounded-lg text-center">
+            <img
+              src="./images/logo-opera.svg"
+              alt="Opera Logo"
+              class="mx-auto mb-4"
+            />
+            <h3 class="font-semibold mb-2">Add to Opera</h3>
+            <p class="text-gray-600 mb-4">Minimum version 46</p>
+            <a
+              href="#"
+              class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+              >Add & Install Extension</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section id="pricing" class="mt-32 px-6 md:px-0">
+        <h2 class="text-3xl font-bold text-center mb-6">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div class="max-w-2xl mx-auto space-y-6">
+          <article>
+            <h3 class="font-semibold mb-2">What is Bookmark?</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </article>
+          <article>
+            <h3 class="font-semibold mb-2">How can I request a new browser?</h3>
+            <p class="text-gray-600">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </article>
+          <article>
+            <h3 class="font-semibold mb-2">Is there a mobile app?</h3>
+            <p class="text-gray-600">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </article>
+          <article>
+            <h3 class="font-semibold mb-2">
+              What about other Chromium browsers?
+            </h3>
+            <p class="text-gray-600">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
+          </article>
+        </div>
+        <button class="bg-blue-600" type="button">More Info</button>
+      </section>
+    </main>
+
+    <footer>
+      <!-- subcribe section -->
+      <section>
+        <p>35,000+ already joined</p>
+        <form action="">
+          <h4>Stay up-to-date with what we’re doing</h4>
+          <input type="email" placeholder="Enter your email address" />
+          <button type="submit">Contact Us</button>
+        </form>
+      </section>
+      <!-- footer main -->
+      <nav
+        class="flex flex-col md:flex-row gap-8 items-center justify-between p-6 max-w-6xl mx-auto"
+        aria-label="footer navbar"
+      >
+        <img src="./images/logo-bookmark-white.svg" alt="Bookmark Logo" />
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div>
+          <a href="#login">Login</a>
+        </div>
+      </nav>
+      <!-- footer attribution -->
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
     <!-- Features -->
     <!-- Pricing -->
     <!-- Contact -->
@@ -115,23 +399,14 @@
 
     <!-- More Info -->
 
-    <!-- 35,000+ already joined -->
+    <!--  -->
 
-    <!-- Stay up-to-date with what we’re doing -->
+    <!--  -->
 
-    <!-- Contact Us -->
+    <!--  -->
 
     <!-- Features -->
     <!-- Pricing -->
     <!-- Contact -->
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
   </body>
 </html>
