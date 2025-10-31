@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "npx http-server ./ -o -p 5000 & npm run style",
     "style": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
   },
   "dependencies": {
