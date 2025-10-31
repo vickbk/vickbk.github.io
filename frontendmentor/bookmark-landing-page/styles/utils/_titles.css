@@ -1,0 +1,4 @@
+.title {
+  @apply text-3xl;
+  font-weight: 500;
+}

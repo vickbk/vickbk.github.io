@@ -1,0 +1,21 @@
+.features__option {
+  @apply p-4 border-y-gray-400 border-b;
+  &:first-of-type {
+    @apply border-t;
+  }
+}
+
+.features__label {
+  @apply cursor-pointer text-gray-500 relative p-4;
+  &::after {
+    @apply w-7/10 py-0.5 absolute inset-x-0 -bottom-1 transition;
+    background-color: var(--color-red-400);
+    margin-inline: auto;
+  }
+  &:hover {
+    color: var(--blue-950);
+    &::after {
+      content: "";
+    }
+  }
+}
