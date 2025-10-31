@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -202,9 +203,6 @@
   .static {
     position: static;
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/5 {
     top: calc(1/5 * 100%);
   }
@@ -220,32 +218,8 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .-mt-5 {
-    margin-top: calc(var(--spacing) * -5);
-  }
-  .-mt-\[20\%\] {
-    margin-top: calc(20% * -1);
-  }
-  .-mt-\[40\%\] {
-    margin-top: calc(40% * -1);
-  }
   .-mt-\[45\%\] {
     margin-top: calc(45% * -1);
-  }
-  .-mt-\[50\%\] {
-    margin-top: calc(50% * -1);
-  }
-  .-mt-\[80\%\] {
-    margin-top: calc(80% * -1);
-  }
-  .-mt-\[80\&\] {
-    margin-top: calc(80& * -1);
-  }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
   }
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
@@ -280,9 +254,6 @@
   .h-screen {
     height: 100vh;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
@@ -292,14 +263,8 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -354,10 +319,6 @@
   .rounded-r-full {
     border-top-right-radius: calc(infinity * 1px);
     border-bottom-right-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -429,9 +390,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -476,7 +434,6 @@
     }
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --blue-600: hsl(231, 69%, 60%);
   --red-400: hsl(0, 94%, 66%);
