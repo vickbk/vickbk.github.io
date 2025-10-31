@@ -12,7 +12,6 @@
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-800: oklch(27.8% 0.033 256.848);
@@ -202,9 +201,6 @@
   .static {
     position: static;
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/5 {
     top: calc(1/5 * 100%);
   }
@@ -256,9 +252,6 @@
   .h-screen {
     height: 100vh;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
@@ -268,17 +261,11 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -297,12 +284,6 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -332,10 +313,6 @@
   .rounded-l-full {
     border-top-left-radius: calc(infinity * 1px);
     border-bottom-left-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -399,9 +376,6 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
-  .text-gray-400 {
-    color: var(--color-gray-400);
-  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -413,9 +387,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -468,7 +439,6 @@
     }
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --blue-600: hsl(231, 69%, 60%);
   --red-400: hsl(0, 94%, 66%);
@@ -509,6 +479,7 @@ body {
 .c-blue-950 {
   color: var(--blue-950);
 }
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
