@@ -1,4 +1,5 @@
 .title {
   @apply text-3xl;
   font-weight: 500;
+  color: var(--blue-950);
 }

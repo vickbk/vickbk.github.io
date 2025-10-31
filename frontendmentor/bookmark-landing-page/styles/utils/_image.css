@@ -1,0 +1,8 @@
+.image {
+  @apply py-12;
+}
+
+.image__overlay {
+  @apply py-24 rounded-r-full w-3/4 absolute left-0 -mt-[45%] -z-10;
+  background-color: var(--blue-600);
+}

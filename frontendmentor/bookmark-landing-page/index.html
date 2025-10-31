@@ -21,27 +21,29 @@
     <header class="p-8">
       <nav class="flex justify-between items-center">
         <img src="./images/logo-bookmark.svg" alt="Bookmark Logo" />
-        <input type="checkbox" id="nav-controller" class="sr-only" >
+        <input type="checkbox" id="nav-controller" class="sr-only" />
         <label for="nav-controller">
-          <img src="./images/icon-hamburger.svg" alt="Mobile navigation openner">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Mobile navigation openner"
+          />
         </label>
         <div class="hidden">
-          <ul >
-          <li> 
-            <a href="#features">Features</a>
-          </li>
-          <li>
-            <a href="#pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <div>
-          <a href="#login">Login</a>
+          <ul>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div>
+            <a href="#login">Login</a>
+          </div>
         </div>
-        </div>
-        
       </nav>
     </header>
 
@@ -49,12 +51,13 @@
       <!-- Main section -->
       <section class="grid gap-12 box-container relative">
         <div class="py-12">
-          
           <img
             src="./images/illustration-hero.svg"
             alt="Illustration of a person using a bookmark manager"
           />
-          <div class="blue-600 py-24 rounded-l-full w-3/4 absolute top-1/5 right-0 -z-10"></div>
+          <div
+            class="blue-600 py-24 rounded-l-full w-3/4 absolute top-1/5 right-0 -z-10"
+          ></div>
         </div>
         <article class="text-center grid gap-6">
           <h1 class="title">A Simple Bookmark Manager</h1>
@@ -65,7 +68,8 @@
           </p>
           <div class="flex justify-center gap-2">
             <a
-              href="#" class="blue-600 c-grey-50 p-3 rounded-md hover:bg-blue-700 transition"
+              href="#"
+              class="blue-600 c-grey-50 p-3 rounded-md hover:bg-blue-700 transition"
               >Get it on Chrome</a
             >
             <a
@@ -75,11 +79,12 @@
             >
           </div>
         </article>
-        
       </section>
 
-
-      <section id="features" class="features box-container py-32 text-center grid gap-6">
+      <section
+        id="features"
+        class="features box-container py-32 text-center grid gap-6"
+      >
         <!-- Features Section Placeholder -->
         <article class="grid gap-6">
           <h2 class="title">Features</h2>
@@ -90,7 +95,6 @@
           </p>
         </article>
 
-        
         <input
           type="radio"
           name="features"
@@ -105,145 +109,127 @@
           class="sr-only"
         />
         <input type="radio" name="features" id="easy-sharing" class="sr-only" />
-        
-          <ul >
-            <li class="features__option">
-              <label
-                for="simple-bookmarking"
-                class="features__label"
-                >Simple Bookmarking</label
-              >
-            </li>
-            <li class="features__option">
-              <label
-                for="speedy-searching"
-                class="features__label"
-                >Speedy Searching</label
-              >
-            </li>
-            <li class="features__option">
-              <label
-                for="easy-sharing"
-                class="features__label"
-                >Easy Sharing</label
-              >
-            </li>
-          </ul>
-        <section>
 
+        <ul>
+          <li class="features__option">
+            <label for="simple-bookmarking" class="features__label"
+              >Simple Bookmarking</label
+            >
+          </li>
+          <li class="features__option">
+            <label for="speedy-searching" class="features__label"
+              >Speedy Searching</label
+            >
+          </li>
+          <li class="features__option">
+            <label for="easy-sharing" class="features__label"
+              >Easy Sharing</label
+            >
+          </li>
+        </ul>
+        <section>
           <article class="feature-content" id="simple-bookmarking-content">
-            <div class="py-12">
-          
-          <img
-            src="./images/illustration-features-tab-1.svg"
-            alt="Illustration of a person using a bookmark manager"
-          />
-          <div class="blue-600 py-24 rounded-r-full w-3/4 absolute left-0 -mt-[45%] -z-10"></div>
-        </div>
-            <h3>Bookmark in one click</h3>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <a href="#" text-blue-600 hover:underline">More Info</a>
+            <div class="images">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="Illustration of a person using a bookmark manager"
+              />
+              <div class="image__overlay"></div>
+            </div>
+            <section class="py-8">
+              <h3 class="title">Bookmark in one click</h3>
+              <p class="text-gray-500">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <a href="#">More Info</a>
+            </section>
           </article>
-          <article feature-content hidden" id="speedy-searching-content">
-            <h3>Intelligent search</h3>
-            <p>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <a href="#" text-blue-600 hover:underline">More Info</a>
+          <article class="feature-content" id="speedy-searching-content">
+            <div class="images">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="Illustration of searching bookmarks"
+              />
+              <div class="image__overlay"></div>
+            </div>
+            <section class="py-8">
+              <h3 class="title">Intelligent search</h3>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <a href="#">More Info</a>
+            </section>
           </article>
-          <article feature-content hidden" id="easy-sharing-content">
-            <h3>Share your bookmarks</h3>
-            <p>
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <a href="#" text-blue-600 hover:underline">More Info</a>
+          <article class="feature-content" id="easy-sharing-content">
+            <div class="images">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="Illustration of searching bookmarks"
+              />
+              <div class="image__overlay"></div>
+            </div>
+            <section class="py-8">
+              <h3 class="title">Share your bookmarks</h3>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <a href="#">More Info</a>
+            </section>
           </article>
         </section>
       </section>
       <!-- Extension section -->
-      <section mt-32 px-6 md:px-0">
-        <h2 text-3xl font-bold text-center mb-6">
-          Download the extension
-        </h2>
-        <p text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+      <section>
+        <h2 class="title">Download the extension</h2>
+        <p>
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
-        <div
-          flex flex-col md:flex-row gap-8 justify-center items-center"
-        >
-          <article bg-gray-100 p-6 rounded-lg text-center">
-            <img
-              src="./images/logo-chrome.svg"
-              alt="Chrome Logo"
-              mx-auto mb-4"
-            />
-            <h3 font-semibold mb-2">Add to Chrome</h3>
-            <p text-gray-600 mb-4">Minimum version 62</p>
-            <a
-              href="#"
-              bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-              >Add & Install Extension</a
-            >
+        <div>
+          <article>
+            <img src="./images/logo-chrome.svg" alt="Chrome Logo" />
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <a href="#">Add & Install Extension</a>
           </article>
-          <article bg-gray-100 p-6 rounded-lg text-center">
-            <img
-              src="./images/logo-firefox.svg"
-              alt="Firefox Logo"
-              mx-auto mb-4"
-            />
-            <h3 font-semibold mb-2">Add to Firefox</h3>
-            <p text-gray-600 mb-4">Minimum version 55</p>
-            <a
-              href="#"
-              bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-              >Add & Install Extension</a
-            >
+          <article>
+            <img src="./images/logo-firefox.svg" alt="Firefox Logo" />
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <a href="#">Add & Install Extension</a>
           </article>
-          <article bg-gray-100 p-6 rounded-lg text-center">
-            <img
-              src="./images/logo-opera.svg"
-              alt="Opera Logo"
-              mx-auto mb-4"
-            />
-            <h3 font-semibold mb-2">Add to Opera</h3>
-            <p text-gray-600 mb-4">Minimum version 46</p>
-            <a
-              href="#"
-              bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-              >Add & Install Extension</a
-            >
+          <article>
+            <img src="./images/logo-opera.svg" alt="Opera Logo" />
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <a href="#">Add & Install Extension</a>
           </article>
         </div>
       </section>
 
       <!-- FAQ section -->
-      <section id="pricing" mt-32 px-6 md:px-0">
-        <h2 text-3xl font-bold text-center mb-6">
-          Frequently Asked Questions
-        </h2>
-        <p text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+      <section id="pricing">
+        <h2>Frequently Asked Questions</h2>
+        <p>
           Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.
         </p>
-        <div max-w-2xl mx-auto space-y-6">
+        <div>
           <article>
-            <h3 font-semibold mb-2">What is Bookmark?</h3>
-            <p text-gray-600">
+            <h3>What is Bookmark?</h3>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
             </p>
           </article>
           <article>
-            <h3 font-semibold mb-2">How can I request a new browser?</h3>
-            <p text-gray-600">
+            <h3>How can I request a new browser?</h3>
+            <p>
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue
               massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
               eros aliquet convallis ultricies. Mauris augue massa, ultricies
@@ -253,8 +239,8 @@
             </p>
           </article>
           <article>
-            <h3 font-semibold mb-2">Is there a mobile app?</h3>
-            <p text-gray-600">
+            <h3>Is there a mobile app?</h3>
+            <p>
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus
               vestibulum dolor, ut condimentum urna vulputate eget. Cras in
               ligula quis est pharetra mattis sit amet pharetra purus. Sed
@@ -262,17 +248,15 @@
             </p>
           </article>
           <article>
-            <h3 font-semibold mb-2">
-              What about other Chromium browsers?
-            </h3>
-            <p text-gray-600">
+            <h3>What about other Chromium browsers?</h3>
+            <p>
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
               pellentesque non ut velit.
             </p>
           </article>
         </div>
-        <button bg-blue-600" type="button">More Info</button>
+        <button type="button">More Info</button>
       </section>
     </main>
 
@@ -287,10 +271,7 @@
         </form>
       </section>
       <!-- footer main -->
-      <nav
-        flex flex-col md:flex-row gap-8 items-center justify-between p-6 max-w-6xl mx-auto"
-        aria-label="footer navbar"
-      >
+      <nav aria-label="footer navbar">
         <img src="./images/logo-bookmark.svg" alt="Bookmark Logo" />
         <ul>
           <li><a href="#features">Features</a></li>
@@ -308,7 +289,7 @@
         </div>
       </nav>
       <!-- footer attribution -->
-      <p attribution">
+      <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
