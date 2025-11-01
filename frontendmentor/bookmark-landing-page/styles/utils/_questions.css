@@ -1,0 +1,22 @@
+.questions__details {
+  @apply border-b border-b-gray-300;
+}
+
+.questions__icon {
+  @apply transition-transform transition-colors duration-300;
+  color: var(--blue-600);
+}
+
+.questions__details[open] .questions__icon {
+  @apply rotate-180;
+  color: var(--color-red-500);
+}
+
+.questions__summary {
+  @apply flex justify-between items-center py-4 cursor-pointer;
+  color: var(--blue-950);
+}
+
+.questions__answer {
+  @apply pb-4;
+}
