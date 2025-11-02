@@ -347,15 +347,39 @@
 
     <footer class="mt-12">
       <!-- subcribe section -->
-      <div class="box-container blue-600 c-grey-50 text-center">
-        <section class="py-12">
-          <p>35,000+ already joined</p>
-          <form action="">
-            <h4>Stay up-to-date with what we’re doing</h4>
-            <input type="email" placeholder="Enter your email address" />
-            <button type="submit">Contact Us</button>
+      <section>
+        <div class="py-12 box-container blue-600 c-grey-50 text-center">
+          <p class="uppercase tracking-[.2em] mb-2">35,000+ already joined</p>
+          <form action="" class="grid gap-4">
+            <h4 class="small-title c-grey-50">
+              Stay up-to-date with what we’re doing
+            </h4>
+            <div class="relative">
+              <input
+                class="contact__input"
+                type="email"
+                required
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                placeholder="Enter your email address"
+              />
+              <img
+                src="./images/icon-error.svg"
+                class="contact__error-icon"
+                alt=""
+              />
+              <span class="contact__error"
+                >Whoops, make sure it's an email</span
+              >
+            </div>
+
+            <button class="red-400 p-4 rounded-md" type="submit">
+              Contact Us
+            </button>
           </form>
-        </section>
+        </div>
+      </section>
+
+      <div class="box-container">
         <!-- footer main -->
         <nav aria-label="footer navbar">
           <img src="./images/logo-bookmark.svg" alt="Bookmark Logo" />

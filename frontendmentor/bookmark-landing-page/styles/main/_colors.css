@@ -13,7 +13,7 @@
 .grey-50 {
   background-color: var(--grey-50);
 }
-.c-grey-50 {
+.c-grey-50.c-grey-50 {
   color: var(--grey-50);
 }
 .blue-950 {
