@@ -677,6 +677,16 @@ body {
     outline: 2px solid var(--blue-950);
   }
 }
+.footer-nav__link {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  &:hover, &:focus, &:active {
+    color: var(--red-400);
+  }
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
