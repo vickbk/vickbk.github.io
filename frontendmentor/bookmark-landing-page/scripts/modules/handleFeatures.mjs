@@ -3,14 +3,8 @@ import { featuresDisplay } from "./elements.mjs";
 export const handleFeatures = ({ target }) => {
   const controller = target.closest("input");
   if (!controller) return;
-  showCurrentDisplay(
-    getFeaturesDisplay(controller.getAttribute("aria-describedby"))
-  );
-};
-
-const getFeaturesDisplay = (id) => {
-  console.log(id);
-  return document.getElementById(id);
+  const displayId = controller.getAttribute("aria-describedby") || "undefined";
+  showCurrentDisplay(document.getElementById(displayId));
 };
 
 const showCurrentDisplay = (currentDisplay) => {
