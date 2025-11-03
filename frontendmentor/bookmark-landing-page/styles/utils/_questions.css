@@ -17,6 +17,10 @@
   py-4 
   cursor-pointer;
   color: var(--blue-950);
+  &:focus,
+  &:hover {
+    color: var(--red-400);
+  }
 }
 
 .questions__answer {
