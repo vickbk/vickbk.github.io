@@ -194,23 +194,11 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
   }
   .static {
     position: static;
-  }
-  .top-1\/5 {
-    top: calc(1/5 * 100%);
-  }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
-  .-z-10 {
-    z-index: calc(10 * -1);
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
@@ -244,9 +232,6 @@
   }
   .h-screen {
     height: 100vh;
-  }
-  .w-3\/4 {
-    width: calc(3/4 * 100%);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -287,10 +272,6 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .rounded-l-full {
-    border-top-left-radius: calc(infinity * 1px);
-    border-bottom-left-radius: calc(infinity * 1px);
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -318,9 +299,6 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
-  }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
@@ -474,8 +452,17 @@ body {
   width: calc(3/4 * 100%);
   border-top-right-radius: calc(infinity * 1px);
   border-bottom-right-radius: calc(infinity * 1px);
-  padding-block: calc(var(--spacing) * 24);
   background-color: var(--blue-600);
+  padding-block: clamp(6rem, 2.8195rem + 13.5338vw, 15rem);
+}
+.image__overlay--right {
+  right: calc(var(--spacing) * 0);
+  left: auto;
+  margin-top: calc(40% * -1);
+  border-top-left-radius: calc(infinity * 1px);
+  border-bottom-left-radius: calc(infinity * 1px);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .extension-card {
   display: grid;
