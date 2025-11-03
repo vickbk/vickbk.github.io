@@ -4,5 +4,6 @@
   &:focus,
   &:active {
     color: var(--red-400);
+    outline: none;
   }
 }
