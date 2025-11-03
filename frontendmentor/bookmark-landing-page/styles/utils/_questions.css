@@ -1,3 +1,6 @@
+.questions {
+  @apply sm:w-124 sm:justify-self-center;
+}
 .questions__details {
   @apply border-b border-b-gray-300;
 }

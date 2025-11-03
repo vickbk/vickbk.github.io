@@ -567,6 +567,14 @@ body {
     color: var(--blue-600);
   }
 }
+.questions {
+  @media (width >= 40rem) {
+    width: calc(var(--spacing) * 124);
+  }
+  @media (width >= 40rem) {
+    justify-self: center;
+  }
+}
 .questions__details {
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
