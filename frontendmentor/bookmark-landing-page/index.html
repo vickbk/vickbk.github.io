@@ -362,13 +362,15 @@
                 required
                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 placeholder="Enter your email address"
+                aria-label="Enter your email address"
+                aria-describedby="contact-error"
               />
               <img
                 src="./images/icon-error.svg"
                 class="contact__error-icon"
                 alt=""
               />
-              <span class="contact__error"
+              <span class="contact__error" id="contact-error"
                 >Whoops, make sure it's an email</span
               >
             </div>
