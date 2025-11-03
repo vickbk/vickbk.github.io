@@ -1,0 +1,37 @@
+.header {
+  @apply relative;
+}
+.header__nav {
+  @apply hidden absolute;
+}
+.header__mobile-nav {
+  @apply hidden transition-discrete
+  fixed top-0 inset-x-0 
+  h-screen
+  p-8
+  z-10
+  opacity-90 duration-300
+  flex-col gap-8 justify-between;
+  background-color: var(--blue-950);
+  color: var(--grey-50);
+  transition-property: display, opacity;
+}
+
+.header__controller:checked ~ .header__mobile-nav {
+  @apply flex;
+}
+.header__controller {
+  @apply sr-only;
+}
+
+.mobile-nav__menue {
+  @apply grid text-xl tracking-[.2em];
+}
+
+.mobile-nav__option {
+  @apply border-t py-4 border-t-gray-300 font-light;
+  &:hover > a {
+    @apply font-medium outline-2 rounded-sm p-2 w-full inline-block;
+    outline-color: var(--grey-50);
+  }
+}
