@@ -4,6 +4,25 @@
     @apply border-t;
   }
 }
+.features__content {
+  /* @apply translate-x-[150%] transition-transform delay-75 duration-300; */
+  @apply hidden pt-12;
+  &.active {
+    /* @apply translate-x-0; */
+    @apply block;
+  }
+}
+
+.features__controller {
+  @apply sr-only;
+  &:checked + .features__label,
+  &:focus + .features__label {
+    color: var(--blue-950);
+    &::after {
+      content: "";
+    }
+  }
+}
 
 .features__label {
   @apply cursor-pointer text-gray-500 relative p-4;

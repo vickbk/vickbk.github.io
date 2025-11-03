@@ -15,6 +15,7 @@
     <title>Frontend Mentor | Bookmark landing page</title>
 
     <link rel="stylesheet" href="./styles/output.css" />
+    <script type="module" src="./scripts/main.js"></script>
   </head>
   <body>
     <!-- header component -->
@@ -106,7 +107,7 @@
       </nav>
     </header>
 
-    <main class="grid gap-12">
+    <main class="grid gap-32">
       <!-- Main section -->
       <section class="grid gap-12 box-container relative">
         <div class="py-12">
@@ -140,7 +141,7 @@
 
       <section
         id="features"
-        class="features box-container py-32 text-center grid gap-6"
+        class="features box-container text-center grid gap-6"
       >
         <!-- Features Section Placeholder -->
         <article class="grid gap-6">
@@ -152,40 +153,51 @@
           </p>
         </article>
 
-        <input
-          type="radio"
-          name="features"
-          id="simple-bookmarking"
-          class="sr-only"
-          checked
-        />
-        <input
-          type="radio"
-          name="features"
-          id="speedy-searching"
-          class="sr-only"
-        />
-        <input type="radio" name="features" id="easy-sharing" class="sr-only" />
-
-        <ul>
+        <ul id="features-controller">
           <li class="features__option">
+            <input
+              type="radio"
+              name="features"
+              id="simple-bookmarking"
+              class="features__controller"
+              checked
+              aria-describedby="simple-bookmarking-content"
+            />
             <label for="simple-bookmarking" class="features__label"
               >Simple Bookmarking</label
             >
           </li>
           <li class="features__option">
+            <input
+              type="radio"
+              name="features"
+              id="speedy-searching"
+              class="features__controller"
+              aria-describedby="speedy-searching-content"
+            />
             <label for="speedy-searching" class="features__label"
               >Speedy Searching</label
             >
           </li>
           <li class="features__option">
+            <input
+              type="radio"
+              name="features"
+              id="easy-sharing"
+              class="features__controller"
+              aria-describedby="easy-sharing-content"
+            />
+
             <label for="easy-sharing" class="features__label"
               >Easy Sharing</label
             >
           </li>
         </ul>
-        <section>
-          <article class="feature-content" id="simple-bookmarking-content">
+        <section id="features-display">
+          <article
+            class="features__content active"
+            id="simple-bookmarking-content"
+          >
             <div class="images">
               <img
                 src="./images/illustration-features-tab-1.svg"
@@ -193,17 +205,16 @@
               />
               <div class="image__overlay"></div>
             </div>
-            <section class="py-8">
+            <section class="pt-20">
               <h3 class="title">Bookmark in one click</h3>
               <p class="text-gray-500">
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </p>
-              <a href="#">More Info</a>
             </section>
           </article>
-          <article class="feature-content" id="speedy-searching-content">
+          <article class="features__content" id="speedy-searching-content">
             <div class="images">
               <img
                 src="./images/illustration-features-tab-2.svg"
@@ -211,16 +222,15 @@
               />
               <div class="image__overlay"></div>
             </div>
-            <section class="py-8">
+            <section class="pt-20">
               <h3 class="title">Intelligent search</h3>
               <p>
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
               </p>
-              <a href="#">More Info</a>
             </section>
           </article>
-          <article class="feature-content" id="easy-sharing-content">
+          <article class="features__content" id="easy-sharing-content">
             <div class="images">
               <img
                 src="./images/illustration-features-tab-3.svg"
@@ -228,13 +238,12 @@
               />
               <div class="image__overlay"></div>
             </div>
-            <section class="py-8">
+            <section class="pt-20">
               <h3 class="title">Share your bookmarks</h3>
               <p>
                 Easily share your bookmarks and collections with others. Create
                 a shareable link that you can send at the click of a button.
               </p>
-              <a href="#">More Info</a>
             </section>
           </article>
         </section>
@@ -306,7 +315,7 @@
       </section>
 
       <!-- FAQ section -->
-      <section id="pricing" class="box-container grid gap-12">
+      <section id="pricing" class="box-container grid gap-12 pt-12">
         <h2 class="title text-center">Frequently Asked Questions</h2>
         <p class="text-center">
           Here are some of our FAQs. If you have any other questions you’d like

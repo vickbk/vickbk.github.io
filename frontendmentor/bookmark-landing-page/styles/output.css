@@ -183,17 +183,6 @@
   }
 }
 @layer utilities {
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border-width: 0;
-  }
   .relative {
     position: relative;
   }
@@ -233,11 +222,17 @@
   .h-screen {
     height: 100vh;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .place-items-center {
     place-items: center;
@@ -266,11 +261,18 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
   .rounded {
     border-radius: 0.25rem;
   }
   .rounded-md {
     border-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -300,8 +302,23 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
   }
   .text-center {
     text-align: center;
@@ -415,6 +432,30 @@ body {
   &:first-of-type {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+}
+.features__content {
+  display: none;
+  padding-top: calc(var(--spacing) * 12);
+  &.active {
+    display: block;
+  }
+}
+.features__controller {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+  &:checked + .features__label, &:focus + .features__label {
+    color: var(--blue-950);
+    &::after {
+      content: "";
+    }
   }
 }
 .features__label {
