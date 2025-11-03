@@ -1,3 +1,29 @@
+.hero {
+  @apply grid gap-12
+  relative;
+  grid-template-areas: "illustration";
+  @media (width >= 48rem /* 768px */) {
+    @apply grid-cols-2;
+    grid-template-areas: "other illustration";
+  }
+}
+
+.hero__illustration {
+  @apply py-12;
+  grid-area: illustration;
+}
+
+.hero__text {
+  @apply text-center 
+  grid gap-6 
+  md:items-start 
+  md:text-start 
+  md:place-content-center;
+}
+
+.hero__actions {
+  @apply flex justify-center gap-2 md:justify-start;
+}
 .hero__chrome {
   @apply p-3 rounded-md transition;
   background-color: var(--blue-600);
