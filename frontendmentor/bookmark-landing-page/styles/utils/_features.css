@@ -1,7 +1,10 @@
+.features__menue {
+  @apply grid md:grid-cols-3 max-w-3xl;
+}
 .features__option {
-  @apply p-4 border-y-gray-400 border-b;
+  @apply p-4 md:p-0 border-y-gray-400 border-b;
   &:first-of-type {
-    @apply border-t;
+    @apply border-t md:border-t-0;
   }
 }
 .features__content {
@@ -32,9 +35,13 @@
 }
 
 .features__label {
-  @apply cursor-pointer text-gray-500 relative p-4;
+  @apply cursor-pointer text-gray-500 relative p-4 md:px-8 md:block;
   &::after {
-    @apply w-7/10 py-0.5 absolute inset-x-0 -bottom-1 transition;
+    @apply w-7/10 md:w-full
+    py-0.5 
+    absolute 
+    inset-x-0 
+    -bottom-1 md:bottom-0 transition duration-300;
     background-color: var(--red-400);
     margin-inline: auto;
   }
