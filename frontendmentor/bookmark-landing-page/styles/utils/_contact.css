@@ -21,3 +21,15 @@
 .contact__error-icon {
   @apply absolute right-4 top-4 hidden;
 }
+
+.contact__submit {
+  @apply p-4 rounded-md cursor-pointer;
+  background-color: var(--red-400);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--grey-50);
+    outline: 1px solid var(--red-400);
+    color: var(--red-400);
+  }
+}

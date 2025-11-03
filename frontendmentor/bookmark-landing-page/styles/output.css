@@ -258,18 +258,12 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-md {
-    border-radius: var(--radius-md);
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -577,6 +571,17 @@ body {
   top: calc(var(--spacing) * 4);
   right: calc(var(--spacing) * 4);
   display: none;
+}
+.contact__submit {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  padding: calc(var(--spacing) * 4);
+  background-color: var(--red-400);
+  &:hover, &:focus, &:active {
+    background-color: var(--grey-50);
+    outline: 1px solid var(--red-400);
+    color: var(--red-400);
+  }
 }
 .header {
   position: relative;
