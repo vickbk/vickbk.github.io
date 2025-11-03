@@ -9,10 +9,13 @@
 }
 .features__content {
   /* @apply translate-x-[150%] transition-transform delay-75 duration-300; */
-  @apply hidden pt-12;
+  @apply hidden 
+  pt-12 
+  md:grid-cols-2 gap-12 items-center 
+  md:text-start;
   &.active {
     /* @apply translate-x-0; */
-    @apply block;
+    @apply grid;
   }
 }
 
@@ -51,5 +54,14 @@
 }
 
 .features__text {
-  @apply pt-20 grid gap-4;
+  @apply pt-20 grid gap-4 md:p-0;
+}
+
+.features__more {
+  @apply hidden md:block 
+  text-gray-200 
+  p-2 px-6 
+  rounded-md 
+  justify-self-start;
+  background-color: var(--blue-600);
 }
