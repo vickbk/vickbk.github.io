@@ -22,8 +22,9 @@
   @apply absolute right-4 top-4 hidden;
 }
 
-.contact__submit {
-  @apply p-4 rounded-md cursor-pointer;
+.contact__submit,
+.action-button {
+  @apply p-4 rounded-md cursor-pointer transition-colors duration-300;
   background-color: var(--red-400);
   &:hover,
   &:focus,
@@ -32,4 +33,7 @@
     outline: 1px solid var(--red-400);
     color: var(--red-400);
   }
+}
+.action-button {
+  @apply px-4 py-2;
 }

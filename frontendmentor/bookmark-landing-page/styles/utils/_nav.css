@@ -1,4 +1,4 @@
-.footer-nav__link {
+.nav-link {
   @apply transition-colors duration-300;
   &:hover,
   &:focus,

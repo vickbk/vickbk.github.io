@@ -2,7 +2,7 @@
   @apply relative;
 }
 .header__nav {
-  @apply hidden absolute;
+  @apply hidden sm:flex gap-8 uppercase;
 }
 .header__mobile-nav {
   @apply hidden transition-discrete
