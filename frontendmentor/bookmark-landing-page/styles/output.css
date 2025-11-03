@@ -620,6 +620,30 @@ body {
   background-color: var(--blue-600);
   color: var(--grey-50);
 }
+.contact__form {
+  display: grid;
+  max-width: calc(var(--spacing) * 88);
+  gap: calc(var(--spacing) * 4);
+  justify-self: center;
+  color: var(--color-gray-500);
+  grid-template-areas: "contact-title" "contact-input" "contact-button";
+  @media (width >= 48rem ) {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "contact-title contact-title" "contact-input contact-button";
+  }
+}
+.contact__title {
+  grid-area: contact-title;
+}
+.contact__input-holder {
+  grid-area: contact-input;
+}
+.contact__submit {
+  @media (width >= 48rem) {
+    align-self: flex-start;
+  }
+  grid-area: contact-button;
+}
 .contact__input {
   width: 100%;
   border-radius: var(--radius-md);
@@ -659,7 +683,8 @@ body {
 .contact__submit, .action-button {
   cursor: pointer;
   border-radius: var(--radius-md);
-  padding: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 3);
+  color: var(--color-gray-200);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -675,7 +700,6 @@ body {
 .action-button {
   padding-inline: calc(var(--spacing) * 6);
   padding-block: calc(var(--spacing) * 2);
-  color: var(--color-gray-200);
 }
 .header {
   position: relative;

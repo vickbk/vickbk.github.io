@@ -1,3 +1,31 @@
+.contact__form {
+  @apply grid gap-4
+  justify-self-center 
+  text-gray-500 
+  max-w-88;
+  grid-template-areas:
+    "contact-title"
+    "contact-input"
+    "contact-button";
+  @media (width >= 48rem /* 768px */) {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "contact-title contact-title"
+      "contact-input contact-button";
+  }
+}
+.contact__title {
+  grid-area: contact-title;
+}
+.contact__input-holder {
+  grid-area: contact-input;
+}
+
+.contact__submit {
+  @apply md:self-start;
+  grid-area: contact-button;
+}
+
 .contact__input {
   @apply w-full  
     p-4 py-3 rounded-md outline-0;
@@ -24,7 +52,7 @@
 
 .contact__submit,
 .action-button {
-  @apply p-4 rounded-md cursor-pointer transition-colors duration-300;
+  @apply text-gray-200 p-3 rounded-md cursor-pointer transition-colors duration-300;
   background-color: var(--red-400);
   &:hover,
   &:focus,
@@ -35,5 +63,5 @@
   }
 }
 .action-button {
-  @apply px-6 py-2 text-gray-200;
+  @apply px-6 py-2;
 }
