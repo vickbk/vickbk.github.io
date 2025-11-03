@@ -35,5 +35,5 @@
   }
 }
 .action-button {
-  @apply px-4 py-2;
+  @apply px-6 py-2 text-gray-200;
 }
