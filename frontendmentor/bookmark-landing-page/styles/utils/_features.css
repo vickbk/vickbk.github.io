@@ -15,8 +15,15 @@
 
 .features__controller {
   @apply sr-only;
-  &:checked + .features__label,
-  &:focus + .features__label {
+
+  &:focus,
+  &:hover,
+  &:active {
+    & + .features__label {
+      color: var(--red-400);
+    }
+  }
+  &:checked + .features__label {
     color: var(--blue-950);
     &::after {
       content: "";
@@ -28,13 +35,14 @@
   @apply cursor-pointer text-gray-500 relative p-4;
   &::after {
     @apply w-7/10 py-0.5 absolute inset-x-0 -bottom-1 transition;
-    background-color: var(--color-red-400);
+    background-color: var(--red-400);
     margin-inline: auto;
   }
   &:hover {
-    color: var(--blue-950);
-    &::after {
-      content: "";
-    }
+    color: var(--red-400);
   }
+}
+
+.features__text {
+  @apply pt-20 grid gap-4;
 }

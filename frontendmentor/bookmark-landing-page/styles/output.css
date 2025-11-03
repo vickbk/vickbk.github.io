@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -214,17 +213,26 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
   .h-screen {
     height: 100vh;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .place-items-center {
     place-items: center;
@@ -261,6 +269,10 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -396,7 +408,12 @@ body {
   clip-path: inset(50%);
   white-space: nowrap;
   border-width: 0;
-  &:checked + .features__label, &:focus + .features__label {
+  &:focus, &:hover, &:active {
+    & + .features__label {
+      color: var(--red-400);
+    }
+  }
+  &:checked + .features__label {
     color: var(--blue-950);
     &::after {
       content: "";
@@ -417,15 +434,17 @@ body {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    background-color: var(--color-red-400);
+    background-color: var(--red-400);
     margin-inline: auto;
   }
   &:hover {
-    color: var(--blue-950);
-    &::after {
-      content: "";
-    }
+    color: var(--red-400);
   }
+}
+.features__text {
+  display: grid;
+  gap: calc(var(--spacing) * 4);
+  padding-top: calc(var(--spacing) * 20);
 }
 .image {
   padding-block: calc(var(--spacing) * 12);
