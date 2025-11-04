@@ -1,3 +1,6 @@
+.features {
+  @apply text-center grid gap-6 md:justify-items-center;
+}
 .features__menue {
   @apply grid md:grid-cols-3 
   max-w-3xl;

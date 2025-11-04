@@ -1,3 +1,7 @@
+.contact {
+  background-color: var(--blue-600);
+  color: var(--grey-50);
+}
 .contact__form {
   @apply grid gap-4
   justify-self-center 
