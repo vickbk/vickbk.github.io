@@ -9,10 +9,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --container-3xl: 48rem;
     --text-xl: 1.25rem;
@@ -273,6 +276,9 @@
     --tw-tracking: .2em;
     letter-spacing: .2em;
   }
+  .text-gray-50 {
+    color: var(--color-gray-50);
+  }
   .text-gray-300 {
     color: var(--color-gray-300);
   }
@@ -340,7 +346,7 @@
 }
 :root {
   --blue-600: hsl(231, 69%, 60%);
-  --red-400: hsl(0, 94%, 66%);
+  --red-400: var(--color-red-600);
   --grey-50: hsl(0, 0%, 97%);
   --blue-950: hsl(229, 31%, 21%);
   --background: var(--grey-50);
@@ -895,11 +901,11 @@ body {
 }
 .button-blue {
   --b-color: var(--blue-600);
-  --t-color: var(--grey-50);
+  --t-color: var(--color-gray-50);
 }
 .button-red {
   --b-color: var(--red-400);
-  --t-color: var(--grey-50);
+  --t-color: var(--color-white);
 }
 .button-grey {
   --b-color: var(--color-gray-200);

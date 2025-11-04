@@ -8,11 +8,11 @@
 
 .button-blue {
   --b-color: var(--blue-600);
-  --t-color: var(--grey-50);
+  --t-color: var(--color-gray-50);
 }
 .button-red {
   --b-color: var(--red-400);
-  --t-color: var(--grey-50);
+  --t-color: var(--color-white);
 }
 .button-grey {
   --b-color: var(--color-gray-200);
