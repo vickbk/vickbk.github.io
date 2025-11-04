@@ -1,0 +1,16 @@
+.footer-nav {
+  @apply grid gap-8
+  justify-center
+  sm:flex sm:justify-between
+  sm:gap-4 md:gap-8;
+}
+
+.footer-nav__menue {
+  @apply grid gap-8 
+    uppercase 
+    text-gray-300 
+    tracking-[.2em]
+    sm:flex 
+    sm:mr-auto 
+    sm:gap-4 md:gap-8;
+}
