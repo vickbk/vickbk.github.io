@@ -276,6 +276,9 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -323,11 +326,6 @@
   .sm\:pb-2 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 2);
-    }
-  }
-  .sm\:pb-6 {
-    @media (width >= 40rem) {
-      padding-bottom: calc(var(--spacing) * 6);
     }
   }
   .sm\:text-right {
@@ -392,7 +390,9 @@ body {
   color: var(--blue-950);
 }
 .box-container {
-  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: calc(var(--spacing) * 300);
+  padding-inline: calc(var(--spacing) * 8);
 }
 .title, .small-title {
   font-weight: 500;
