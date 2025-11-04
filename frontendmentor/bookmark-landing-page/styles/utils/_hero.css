@@ -27,7 +27,7 @@
 
 .hero__chrome,
 .hero__firefox {
-  @apply p-3 px-6
+  @apply p-3 sm:px-6
   rounded-md;
 }
 
