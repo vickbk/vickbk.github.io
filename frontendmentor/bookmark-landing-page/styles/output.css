@@ -257,9 +257,6 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
-  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -303,11 +300,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .sm\:pt-12 {
-    @media (width >= 40rem) {
-      padding-top: calc(var(--spacing) * 12);
-    }
-  }
   .sm\:pb-2 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 2);
@@ -326,11 +318,6 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .md\:pt-16 {
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 16);
     }
   }
 }
@@ -700,6 +687,10 @@ body {
 }
 .header {
   position: relative;
+  padding-block: calc(var(--spacing) * 8);
+  @media (width >= 40rem) {
+    padding-top: calc(var(--spacing) * 12);
+  }
 }
 .header__nav {
   display: none;
@@ -800,6 +791,7 @@ body {
   @media (width >= 48rem) {
     text-align: start;
   }
+  font-size: clamp(1rem, 0.9117rem + 0.3759vw, 1.25rem);
 }
 .hero__title {
   font-size: clamp(2rem, 1.2932rem + 3.0075vw, 3rem);

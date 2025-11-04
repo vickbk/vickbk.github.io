@@ -19,6 +19,7 @@
   md:items-start 
   md:text-start 
   md:place-content-center;
+  font-size: clamp(1rem, 0.9117rem + 0.3759vw, 1.25rem);
 }
 
 .hero__title {
