@@ -9,7 +9,7 @@
 }
 
 .hero__illustration {
-  @apply py-12 relative;
+  @apply py-16 relative;
   grid-area: illustration;
 }
 

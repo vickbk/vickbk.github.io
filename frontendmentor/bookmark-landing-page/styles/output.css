@@ -241,8 +241,11 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-32 {
-    gap: calc(var(--spacing) * 32);
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
+  }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -775,7 +778,7 @@ body {
 }
 .hero__illustration {
   position: relative;
-  padding-block: calc(var(--spacing) * 12);
+  padding-block: calc(var(--spacing) * 16);
   grid-area: illustration;
 }
 .hero__text {
