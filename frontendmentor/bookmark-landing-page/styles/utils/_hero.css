@@ -22,7 +22,7 @@
 }
 
 .hero__actions {
-  @apply flex justify-center gap-2 md:justify-start;
+  @apply flex justify-center gap-2 md:justify-start text-center;
 }
 
 .hero__chrome,
