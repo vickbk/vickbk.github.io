@@ -187,9 +187,6 @@
   .relative {
     position: relative;
   }
-  .static {
-    position: static;
-  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -247,9 +244,6 @@
   .gap-32 {
     gap: calc(var(--spacing) * 32);
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -290,10 +284,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -349,7 +339,7 @@
   --red-400: var(--color-red-600);
   --grey-50: hsl(0, 0%, 97%);
   --blue-950: hsl(229, 31%, 21%);
-  --background: var(--grey-50);
+  --background: var(--color-white);
   --foreground: var(--color-gray-500);
   --accent-color: var(--blue-600);
   --link-color: var(--blue-600);
@@ -560,7 +550,6 @@ body {
   border-radius: var(--radius-lg);
   --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  background-color: var(--grey-50);
 }
 .extension-card__image {
   margin-inline: auto;
@@ -953,11 +942,6 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1080,6 +1064,11 @@ body {
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1094,7 +1083,6 @@ body {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -1123,6 +1111,7 @@ body {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-font-weight: initial;
     }
   }
