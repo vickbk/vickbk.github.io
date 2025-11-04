@@ -1,0 +1,44 @@
+.hero {
+  @apply grid gap-12
+  relative;
+  grid-template-areas: "illustration";
+  @media (width >= 48rem /* 768px */) {
+    @apply grid-cols-2;
+    grid-template-areas: "other illustration";
+  }
+}
+
+.hero__illustration {
+  @apply py-12 relative;
+  grid-area: illustration;
+}
+
+.hero__text {
+  @apply text-center 
+  grid gap-6 
+  md:items-start 
+  md:text-start 
+  md:place-content-center;
+}
+
+.hero__actions {
+  @apply flex justify-center gap-2 md:justify-start text-center;
+}
+
+.hero__chrome,
+.hero__firefox {
+  @apply p-3 px-6
+  rounded-md;
+}
+
+.hero__firefox {
+  @apply bg-gray-200 transition-colors;
+  color: var(--blue-950);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: var(--blue-950);
+    outline: 2px solid var(--blue-950);
+  }
+}

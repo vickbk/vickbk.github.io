@@ -1,0 +1,13 @@
+.title,
+.small-title {
+  font-weight: 500;
+  color: var(--blue-950);
+}
+
+.title {
+  @apply text-3xl;
+}
+
+.small-title {
+  @apply text-2xl;
+}

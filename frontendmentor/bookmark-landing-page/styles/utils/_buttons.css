@@ -1,0 +1,36 @@
+.button-blue,
+.button-red,
+.button-grey {
+  @apply transition-colors duration-300
+  rounded-md 
+  cursor-pointer;
+}
+
+.button-blue {
+  --b-color: var(--blue-600);
+  --t-color: var(--color-gray-50);
+}
+.button-red {
+  --b-color: var(--red-400);
+  --t-color: var(--color-white);
+}
+.button-grey {
+  --b-color: var(--color-gray-200);
+  --t-color: var(--blue-950);
+}
+
+.button-blue,
+.button-red,
+.button-grey {
+  background-color: var(--b-color);
+  color: var(--t-color);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: var(--b-color);
+    outline-color: var(--b-color);
+    outline-width: 0.1em;
+    outline-style: solid;
+  }
+}

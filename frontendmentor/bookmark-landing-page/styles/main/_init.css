@@ -1,0 +1,29 @@
+:root {
+  /* Primary */
+  --blue-600: hsl(231, 69%, 60%);
+  /* --red-400: hsl(0, 94%, 66%); */
+  --red-400: var(--color-red-600);
+  /* Neutral */
+  --grey-50: hsl(0, 0%, 97%);
+  --blue-950: hsl(229, 31%, 21%);
+
+  /* System */
+  --background: var(--grey-50);
+  --foreground: var(--color-gray-500);
+
+  /* accent colors */
+  --accent-color: var(--blue-600);
+  --link-color: var(--blue-600);
+  /* @media (prefers-color-scheme: dark) {
+    --background: var(--blue-950);
+    --foreground: var(--grey-50);
+  } */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}

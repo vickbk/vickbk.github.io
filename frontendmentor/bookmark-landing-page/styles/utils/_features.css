@@ -1,0 +1,71 @@
+.features {
+  @apply text-center grid gap-6 md:justify-items-center;
+}
+.features__menue {
+  @apply grid md:grid-cols-3 
+  max-w-3xl;
+}
+.features__option {
+  @apply p-4 md:p-0 
+  border-y-gray-400 border-b;
+  &:first-of-type {
+    @apply border-t md:border-t-0;
+  }
+}
+.features__content {
+  /* @apply translate-x-[150%] transition-transform delay-75 duration-300; */
+  @apply hidden 
+  pt-12 
+  md:grid-cols-2 gap-12 items-center 
+  md:text-start;
+  &.active {
+    /* @apply translate-x-0; */
+    @apply grid;
+  }
+}
+
+.features__controller {
+  @apply sr-only;
+
+  &:focus,
+  &:hover,
+  &:active {
+    & + .features__label {
+      color: var(--red-400);
+    }
+  }
+  &:checked + .features__label {
+    color: var(--blue-950);
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.features__label {
+  @apply cursor-pointer text-gray-500 relative p-4 md:px-8 md:block;
+  &::after {
+    @apply w-7/10 md:w-full
+    py-0.5 
+    absolute 
+    inset-x-0 
+    -bottom-1 md:bottom-0 transition duration-300;
+    background-color: var(--red-400);
+    margin-inline: auto;
+  }
+  &:hover {
+    color: var(--red-400);
+  }
+}
+
+.features__text {
+  @apply pt-20 grid gap-4 md:p-0;
+}
+
+.features__more {
+  @apply hidden md:block 
+  text-gray-200 
+  p-2 px-6 
+  rounded-md 
+  justify-self-start;
+}

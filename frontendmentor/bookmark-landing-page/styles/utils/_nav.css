@@ -1,0 +1,9 @@
+.nav-link {
+  @apply transition-colors duration-300;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--red-400);
+    outline: none;
+  }
+}

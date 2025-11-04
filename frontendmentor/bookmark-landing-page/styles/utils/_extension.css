@@ -1,0 +1,27 @@
+.extension {
+  @apply text-center grid gap-4 w-full;
+}
+.extension-card {
+  @apply rounded-lg shadow-md grid gap-8 self-start;
+  background-color: var(--grey-50);
+}
+
+.extension-card__image {
+  @apply pt-12 mx-auto;
+}
+.extension-card__action {
+  @apply overflow-x-hidden relative;
+
+  &::before {
+    @apply absolute block -top-6 -left-1;
+    content: ".......................................................................................................................................................................................................................................................................................................................................................................................";
+    color: var(--color-gray-300);
+    letter-spacing: 0.5em;
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
+.extension-card__button {
+  @apply p-4 block rounded-md;
+}
