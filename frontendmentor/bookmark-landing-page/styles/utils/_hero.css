@@ -21,6 +21,10 @@
   md:place-content-center;
 }
 
+.hero__title {
+  font-size: clamp(2rem, 1.2932rem + 3.0075vw, 3rem);
+}
+
 .hero__actions {
   @apply flex justify-center gap-2 md:justify-start text-center;
 }
