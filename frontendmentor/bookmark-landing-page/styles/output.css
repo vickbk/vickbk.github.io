@@ -217,17 +217,11 @@
   .h-screen {
     height: 100vh;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .place-items-center {
     place-items: center;
@@ -255,10 +249,6 @@
   }
   .rounded {
     border-radius: 0.25rem;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -527,7 +517,6 @@ body {
   @media (width >= 48rem) {
     display: block;
   }
-  background-color: var(--blue-600);
 }
 .image {
   padding-block: calc(var(--spacing) * 12);
@@ -592,18 +581,6 @@ body {
   display: block;
   border-radius: var(--radius-md);
   padding: calc(var(--spacing) * 4);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 300ms;
-  transition-duration: 300ms;
-  background-color: var(--blue-600);
-  color: var(--grey-50);
-  &:hover {
-    background-color: transparent;
-    outline: 2px solid var(--blue-600);
-    color: var(--blue-600);
-  }
 }
 .questions {
   @media (width >= 40rem) {
@@ -722,26 +699,11 @@ body {
   right: calc(var(--spacing) * 4);
   display: none;
 }
-.contact__submit, .action-button {
-  cursor: pointer;
-  border-radius: var(--radius-md);
+.contact__submit.contact__submit {
   padding: calc(var(--spacing) * 3);
-  color: var(--color-gray-200);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 300ms;
-  transition-duration: 300ms;
-  background-color: var(--red-400);
   &:hover, &:focus, &:active {
     background-color: var(--grey-50);
-    outline: 1px solid var(--red-400);
-    color: var(--red-400);
   }
-}
-.action-button {
-  padding-inline: calc(var(--spacing) * 6);
-  padding-block: calc(var(--spacing) * 2);
 }
 .header {
   position: relative;
@@ -753,6 +715,10 @@ body {
   @media (width >= 40rem) {
     display: flex;
   }
+}
+.header__login {
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
 }
 .header__mobile-nav {
   position: fixed;
@@ -849,25 +815,14 @@ body {
     justify-content: flex-start;
   }
 }
-.hero__chrome {
+.hero__chrome, .hero__firefox {
   border-radius: var(--radius-md);
   padding: calc(var(--spacing) * 3);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  background-color: var(--blue-600);
-  color: var(--grey-50);
-  &:hover, &:focus, &:active {
-    background-color: transparent;
-    color: var(--blue-600);
-    outline: 2px solid var(--blue-600);
-  }
+  padding-inline: calc(var(--spacing) * 6);
 }
 .hero__firefox {
-  border-radius: var(--radius-md);
   background-color: var(--color-gray-200);
-  padding: calc(var(--spacing) * 3);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   color: var(--blue-950);
@@ -927,6 +882,38 @@ body {
   }
   @media (width >= 48rem) {
     gap: calc(var(--spacing) * 8);
+  }
+}
+.button-blue, .button-red, .button-grey {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.button-blue {
+  --b-color: var(--blue-600);
+  --t-color: var(--grey-50);
+}
+.button-red {
+  --b-color: var(--red-400);
+  --t-color: var(--grey-50);
+}
+.button-grey {
+  --b-color: var(--color-gray-200);
+  --t-color: var(--blue-950);
+}
+.button-blue, .button-red, .button-grey {
+  background-color: var(--b-color);
+  color: var(--t-color);
+  &:hover, &:focus, &:active {
+    background-color: transparent;
+    color: var(--b-color);
+    outline-color: var(--b-color);
+    outline-width: 0.1em;
+    outline-style: solid;
   }
 }
 @property --tw-rotate-x {

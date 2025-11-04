@@ -2,10 +2,16 @@
   @apply relative;
 }
 .header__nav {
-  @apply hidden sm:flex gap-8 uppercase;
+  @apply hidden 
+  sm:flex gap-8 
+  uppercase;
+}
+.header__login {
+  @apply px-6 py-2;
 }
 .header__mobile-nav {
-  @apply hidden transition-discrete
+  @apply hidden 
+  transition-discrete
   fixed top-0 inset-x-0 
   h-screen
   p-8

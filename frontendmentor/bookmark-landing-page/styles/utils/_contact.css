@@ -54,18 +54,11 @@
   @apply absolute right-4 top-4 hidden;
 }
 
-.contact__submit,
-.action-button {
-  @apply text-gray-200 p-3 rounded-md cursor-pointer transition-colors duration-300;
-  background-color: var(--red-400);
+.contact__submit.contact__submit {
+  @apply p-3;
   &:hover,
   &:focus,
   &:active {
     background-color: var(--grey-50);
-    outline: 1px solid var(--red-400);
-    color: var(--red-400);
   }
-}
-.action-button {
-  @apply px-6 py-2;
 }

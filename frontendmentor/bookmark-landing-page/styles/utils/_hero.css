@@ -24,21 +24,15 @@
 .hero__actions {
   @apply flex justify-center gap-2 md:justify-start;
 }
-.hero__chrome {
-  @apply p-3 rounded-md transition;
-  background-color: var(--blue-600);
-  color: var(--grey-50);
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: transparent;
-    color: var(--blue-600);
-    outline: 2px solid var(--blue-600);
-  }
+
+.hero__chrome,
+.hero__firefox {
+  @apply p-3 px-6
+  rounded-md;
 }
 
 .hero__firefox {
-  @apply bg-gray-200 p-3 rounded-md transition;
+  @apply bg-gray-200 transition-colors;
   color: var(--blue-950);
   &:hover,
   &:focus,
