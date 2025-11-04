@@ -1,5 +1,5 @@
 .header {
-  @apply relative;
+  @apply relative py-8 sm:pt-12;
 }
 .header__nav {
   @apply hidden 

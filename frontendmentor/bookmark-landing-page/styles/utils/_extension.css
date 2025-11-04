@@ -3,7 +3,6 @@
 }
 .extension-card {
   @apply rounded-lg shadow-md grid gap-8 self-start;
-  background-color: var(--grey-50);
 }
 
 .extension-card__image {

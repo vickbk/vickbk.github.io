@@ -9,7 +9,7 @@
 }
 
 .hero__illustration {
-  @apply py-12 relative;
+  @apply py-16 relative;
   grid-area: illustration;
 }
 
@@ -19,6 +19,11 @@
   md:items-start 
   md:text-start 
   md:place-content-center;
+  font-size: clamp(1rem, 0.9117rem + 0.3759vw, 1.25rem);
+}
+
+.hero__title {
+  font-size: clamp(2rem, 1.2932rem + 3.0075vw, 3rem);
 }
 
 .hero__actions {
