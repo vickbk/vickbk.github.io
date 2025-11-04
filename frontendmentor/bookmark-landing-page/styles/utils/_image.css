@@ -12,5 +12,5 @@
 }
 
 .image__overlay--right {
-  @apply rounded-l-full rounded-r-none left-auto -right-1/4;
+  @apply rounded-l-full rounded-r-none left-1/4;
 }
