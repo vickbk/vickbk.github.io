@@ -1,13 +1,16 @@
 .image {
-  @apply py-12;
+  @apply py-12 relative;
 }
 
 .image__overlay {
-  @apply rounded-r-full w-3/4 absolute left-0 -mt-[30%] sm:-mt-[30%] -z-10;
+  @apply rounded-r-full 
+  w-full 
+  h-65/100
+  absolute -left-1/4 bottom-0 
+  -z-10;
   background-color: var(--blue-600);
-  padding-block: clamp(6rem, 2.8195rem + 13.5338vw, 15rem);
 }
 
 .image__overlay--right {
-  @apply rounded-l-full rounded-r-none left-auto right-0;
+  @apply rounded-l-full rounded-r-none left-auto -right-1/4;
 }

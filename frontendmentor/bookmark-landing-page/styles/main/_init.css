@@ -25,4 +25,5 @@ body {
   color: var(--foreground);
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
