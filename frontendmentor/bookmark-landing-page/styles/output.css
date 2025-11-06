@@ -244,8 +244,8 @@
   .gap-36 {
     gap: calc(var(--spacing) * 36);
   }
-  .gap-40 {
-    gap: calc(var(--spacing) * 40);
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .border-2 {
     border-style: var(--tw-border-style);
