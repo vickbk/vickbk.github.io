@@ -51,7 +51,8 @@ In this project, you will style the HTML website structure you created previousl
 
 ### Links
 
-- Solution URL: [Github Repository](https://github.com/vickbk/vickbk.github.io/tree/main/frontend/personnel-portofolio) Reference: [Github Page](https://vickbk.github.io/frontend/personnel-portofolio/)
+- Solution URL: [Github Repository](https://github.com/vickbk/vickbk.github.io/tree/main/frontend/personnel-portofolio)
+- Live Site URL: [Github Page](https://vickbk.github.io/frontend/personnel-portofolio/)
 
 ## My process
 
