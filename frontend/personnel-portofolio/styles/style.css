@@ -201,6 +201,10 @@ textarea {
   color: hsl(var(--accent-color));
 }
 
+.education {
+  padding-block-start: 0.5rem;
+}
+
 .education__list {
   margin-block-start: 0.5rem;
 }
