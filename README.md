@@ -10,9 +10,9 @@ Reference: https://roadmap.sh/projects/single-page-cv
 Basic HTML Website at: https://github.com/vickbk/vickbk.github.io/tree/main/frontend/simpleHTMLPage
 Reference: https://roadmap.sh/projects/basic-html-website
 
-Personnel Portofolio: [Github Repository](https://github.com/vickbk/vickbk.github.io/tree/main/frontend/personnel-portofolio)
-Live: [Github Page](https://vickbk.github.io/frontend/personnel-portofolio/)
-Project Reference: [Roadmap Project](https://roadmap.sh/projects/portfolio-website)
+[Personnel Portofolio](https://github.com/vickbk/vickbk.github.io/tree/main/frontend/personnel-portofolio)
+[Live site](https://vickbk.github.io/frontend/personnel-portofolio/)
+[Project Reference](https://roadmap.sh/projects/portfolio-website)
 
 # The project includes frontend-mentor projects
 
