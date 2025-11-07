@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+    Initial declarations
+*/
+
+:root {
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+  --accent-color: 240, 92%, 64%;
+  --background: var(--white);
+  --foreground: var(--black);
+
+  --default-spacing: 1em;
+
+  --ff-serif: "Roboto", sans-serif;
+  --ff-architect: "Architects Daughter", cursive;
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-default: var(--fw-300);
+  --fw-bold: var(--fw-700);
+  --fw-min-bold: var(--fw-600);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --foreground: var(--white);
+    --accent-color: 240, 92%, 75%;
+  }
+}
+
+/* 
+    Reset
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--fw-default);
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--ff-serif);
+  line-height: 1.5;
+}
+
+a {
+  color: hsl(var(--foreground) / var(--link-accent, 0.8));
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* 
+    Helper classes
+*/
+.underline,
+.link-underline a {
+  text-decoration: underline;
+}
+
+.bg-black {
+  background-color: hsl(var(--foreground) / var(--bg-accent, 1));
+}
+
+.bg-white {
+  background-color: hsl(var(--background) / var(--bg-accent, 1));
+}
+
+.text-black {
+  color: hsl(var(--foreground) / var(--text-accent, 1));
+}
+
+.text-white {
+  color: hsl(var(--background) / var(--text-accent, 1));
+}
+
+.mobile-highlight {
+  background-color: hsl(var(--foreground) / 0.2);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  flex-direction: var(--direction, row);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap {
+  gap: var(--gap, var(--default-spacing));
+}
+
+.p {
+  padding: var(--p, var(--default-spacing));
+}
+
+.m {
+  margin: var(--m, var(--default-spacing));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ff-architect {
+  font-family: var(--ff-architect);
+}
+
+/* 
+
+    Components
+
+*/
+
+.header__nav {
+  flex-direction: column;
+}
+
+.header__menue {
+  flex-wrap: wrap;
+}
+
+.hero,
+.projects,
+.experience,
+.education {
+  border-block-end: 0.1em solid hsl(var(--foreground));
+}
+
+.hero__header {
+  font-size: clamp(1.5rem, 0.6165rem + 3.7594vw, 4rem);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__experience,
+.main__education,
+.main__projects {
+  flex-basis: 20rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.main__title {
+  padding-inline: var(--default-spacing);
+  text-align: center;
+  font-family: var(--ff-architect);
+}
+.main__projects {
+  flex-basis: 15rem;
+  text-align: center;
+}
+
+.main__experience {
+  border-inline: 0.1em solid hsl(var(--foreground));
+}
+
+.projects__list {
+  --link-accent: 1;
+  margin-top: var(--default-spacing);
+}
+
+.projects__link {
+  padding-block: 0.5em;
+  padding-inline: var(--default-spacing);
+  border-block-start: 0.1em hsl(var(--foreground)) solid;
+}
+
+.experience__item {
+  background-color: hsl(var(--foreground) / 0.2);
+  padding: var(--default-spacing);
+  display: grid;
+  gap: 0.5em;
+  border-block-start: 0.1em solid hsl(var(--foreground));
+}
+
+.experience__link {
+  color: hsl(var(--accent-color));
+}
+
+.education {
+  padding-block-start: 0.5rem;
+}
+
+.education__title {
+  padding-inline: 0;
+}
+
+.education__list {
+  margin-block-start: 0.5rem;
+}
+
+.education__list li::before {
+  content: "- ";
+}
+
+.review__item {
+  border: 0.1em solid hsl(var(--foreground));
+  padding: 1.5em;
+  border-radius: 2rem;
+}
+
+.review__reference {
+  color: hsl(var(--foreground) / 0.6);
+  margin-block-start: 1rem;
+}
+
+@media (width >= 36rem) {
+  :root {
+    --default-spacing: 2rem;
+  }
+
+  .mobile-highlight,
+  .experience__item {
+    background-color: hsl(var(--foreground) / 0);
+  }
+
+  .header__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__menue {
+    margin-inline-start: auto;
+  }
+  .hero {
+    padding-block: 10rem;
+  }
+
+  .main__title,
+  .main__projects {
+    text-align: start;
+  }
+
+  .projects__link,
+  .experience__item {
+    &:first-of-type {
+      border-block-start: none;
+    }
+  }
+
+  .review {
+    grid-template-areas: "review-header review-header";
+  }
+  .review__header {
+    grid-area: review-header;
+  }
+}
+
+@media (width >= 48rem) {
+  .review {
+    grid-template-areas: "review-header review-header review-header";
+  }
+}
