@@ -53,7 +53,7 @@
     <!-- body content -->
     <main>
       <!-- hero section -->
-      <article class="text-center p">
+      <article class="hero text-center p">
         <h1 class="ff-architect">Frontend Developer</h1>
         <p class="text-black" style="--text-accent: 0.8">
           html only with proper layout. no styling
@@ -63,33 +63,42 @@
       <!-- content section -->
       <section>
         <!-- left section -->
-        <article>
-          <h2>Projects</h2>
-          <p>HTML Only Portofolio</p>
-
-          <div>Calculator</div>
-          <div>Quiz App</div>
-          <div>Countdown Timer</div>
-          <div>Product upcoming Page</div>
+        <article class="text-center projects">
+          <h2 class="ff-architect p" style="--p: 0.5rem">Projects</h2>
+          <ul class="bg-black" style="--bg-accent: 0.2; --link-accent: 1">
+            <li class="projects__link"><a href="#">HTML Only Portofolio</a></li>
+            <li class="projects__link"><a href="#">Calculator</a></li>
+            <li class="projects__link"><a href="#">Quiz App</a></li>
+            <li class="projects__link"><a href="#">Countdown Timer</a></li>
+            <li class="projects__link">
+              <a href="#">Product upcoming Page</a>
+            </li>
+          </ul>
         </article>
 
         <!-- Middle section -->
 
-        <section>
-          <h2>Work Experience</h2>
+        <section class="experience">
+          <h2 class="text-center ff-architect p" style="--p: 0.5rem">
+            Work Experience
+          </h2>
 
-          <article>
-            <h3>roadmap.sh</h3>
+          <article class="experience__item">
+            <h3 class="ff-architect">roadmap.sh</h3>
             <p>Solved all the frontend projects</p>
-            <a href="https://roadmap.sh/u/vickbk">Visit my Profile</a>
+            <a class="experience__link" href="https://roadmap.sh/u/vickbk"
+              >Visit my Profile</a
+            >
           </article>
-          <article>
-            <h3>OpenSource Work</h3>
+          <article class="experience__item">
+            <h3 class="ff-architect">OpenSource Work</h3>
             <p>
               Worked on several projects from Frontend Mentor. I also made my
               own projects with some good number of stars.
             </p>
-            <a href="https://github.com/vickbk">Visit my GitHub Profile</a>
+            <a class="experience__link" href="https://github.com/vickbk"
+              >Visit my GitHub Profile</a
+            >
           </article>
         </section>
 

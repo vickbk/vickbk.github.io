@@ -7,6 +7,7 @@
 :root {
   --white: 0 0% 100%;
   --black: 0 0% 0%;
+  --accent-color: 240, 92%, 64%;
   --background: var(--white);
   --foreground: var(--black);
 
@@ -14,6 +15,13 @@
 
   --ff-serif: "Roboto", sans-serif;
   --ff-architect: "Architects Daughter", cursive;
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-default: var(--fw-300);
+  --fw-bold: var(--fw-700);
+  --fw-min-bold: var(--fw-600);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +52,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  font-weight: var(--fw-default);
 }
 
 body {
@@ -127,4 +136,36 @@ textarea {
 
 .ff-architect {
   font-family: var(--ff-architect);
+}
+
+/* 
+
+    Components
+
+*/
+
+.hero,
+.projects,
+.experience {
+  border-block-end: 0.1em solid hsl(var(--foreground));
+}
+
+.projects {
+  border-block-end: 0.1em solid hsl(var(--foreground));
+}
+.projects__link {
+  padding-block: 0.5em;
+  border-block-start: 0.1em hsl(var(--foreground)) solid;
+}
+
+.experience__item {
+  background-color: hsl(var(--foreground) / 0.2);
+  padding: 1rem;
+  display: grid;
+  gap: 0.5em;
+  border-block-start: 0.1em solid hsl(var(--foreground));
+}
+
+.experience__link {
+  color: hsl(var(--accent-color));
 }
