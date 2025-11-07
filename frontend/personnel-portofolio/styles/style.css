@@ -237,6 +237,7 @@ textarea {
   .experience__item {
     background-color: hsl(var(--foreground) / 0);
   }
+
   .header__nav {
     flex-direction: row;
     justify-content: space-between;
@@ -248,6 +249,12 @@ textarea {
     padding-block: 10rem;
   }
 
+  .projects__link,
+  .experience__item {
+    &:first-of-type {
+      border-block-start: none;
+    }
+  }
   .review {
     grid-template-areas: "review-header review-header";
   }
