@@ -158,7 +158,7 @@ textarea {
 
 .experience__item {
   background-color: hsl(var(--foreground) / 0.2);
-  padding: 1rem;
+  padding: var(--default-spacing);
   display: grid;
   gap: 0.5em;
   border-block-start: 0.1em solid hsl(var(--foreground));
@@ -174,4 +174,15 @@ textarea {
 
 .education__list li::before {
   content: "- ";
+}
+
+.review__item {
+  border: 0.1em solid hsl(var(--foreground));
+  padding: 1.5em;
+  border-radius: 2rem;
+}
+
+.review__reference {
+  color: hsl(var(--foreground) / 0.5);
+  margin-block-start: 1rem;
 }
