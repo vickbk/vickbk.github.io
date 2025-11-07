@@ -148,6 +148,10 @@ textarea {
   flex-direction: column;
 }
 
+.header__menue {
+  flex-wrap: wrap;
+}
+
 .hero,
 .projects,
 .experience,
@@ -157,6 +161,27 @@ textarea {
 
 .hero__header {
   font-size: clamp(1.5rem, 0.6165rem + 3.7594vw, 4rem);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__experience,
+.main__education,
+.main__projects {
+  flex-basis: 20rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.main__projects {
+  flex-basis: 15rem;
+}
+
+.main__experience {
+  border-inline: 0.1em solid hsl(var(--foreground));
 }
 
 .projects__link {
