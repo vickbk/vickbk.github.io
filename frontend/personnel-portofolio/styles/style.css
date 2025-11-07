@@ -146,13 +146,11 @@ textarea {
 
 .hero,
 .projects,
-.experience {
+.experience,
+.education {
   border-block-end: 0.1em solid hsl(var(--foreground));
 }
 
-.projects {
-  border-block-end: 0.1em solid hsl(var(--foreground));
-}
 .projects__link {
   padding-block: 0.5em;
   border-block-start: 0.1em hsl(var(--foreground)) solid;
@@ -168,4 +166,12 @@ textarea {
 
 .experience__link {
   color: hsl(var(--accent-color));
+}
+
+.education__list {
+  margin-block-start: 0.5rem;
+}
+
+.education__list li::before {
+  content: "- ";
 }
