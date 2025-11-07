@@ -27,17 +27,24 @@
       href="https://austinhill.dev/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Main header -->
     <header>
-      <nav>
-        <div></div>
+      <nav
+        class="flex gap p align-center"
+        style="--direction: column; --link-accent: 1"
+      >
+        <div class="p bg-black"></div>
         <a href="./">VickBk</a>
-        <ul>
+        <ul class="flex gap" style="--direction: row">
           <li><a href="./">Home</a></li>
-          <li><a href="#projects">projects</a></li>
+          /
+          <li><a href="#projects">Projects</a></li>
+          /
           <li><a href="#articles">Articles</a></li>
+          /
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -46,9 +53,11 @@
     <!-- body content -->
     <main>
       <!-- hero section -->
-      <article>
-        <h1>Frontend Developer</h1>
-        <p>html only with proper layout. no styling</p>
+      <article class="text-center p">
+        <h1 class="ff-architect">Frontend Developer</h1>
+        <p class="text-black" style="--text-accent: 0.8">
+          html only with proper layout. no styling
+        </p>
       </article>
 
       <!-- content section -->
