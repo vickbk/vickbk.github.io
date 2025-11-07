@@ -180,16 +180,28 @@ textarea {
   flex-grow: 1;
 }
 
+.main__title {
+  padding-inline: var(--default-spacing);
+  text-align: center;
+  font-family: var(--ff-architect);
+}
 .main__projects {
   flex-basis: 15rem;
+  text-align: center;
 }
 
 .main__experience {
   border-inline: 0.1em solid hsl(var(--foreground));
 }
 
+.projects__list {
+  --link-accent: 1;
+  margin-top: var(--default-spacing);
+}
+
 .projects__link {
   padding-block: 0.5em;
+  padding-inline: var(--default-spacing);
   border-block-start: 0.1em hsl(var(--foreground)) solid;
 }
 
@@ -207,6 +219,10 @@ textarea {
 
 .education {
   padding-block-start: 0.5rem;
+}
+
+.education__title {
+  padding-inline: 0;
 }
 
 .education__list {
@@ -249,12 +265,18 @@ textarea {
     padding-block: 10rem;
   }
 
+  .main__title,
+  .main__projects {
+    text-align: start;
+  }
+
   .projects__link,
   .experience__item {
     &:first-of-type {
       border-block-start: none;
     }
   }
+
   .review {
     grid-template-areas: "review-header review-header";
   }
