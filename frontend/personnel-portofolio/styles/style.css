@@ -144,6 +144,10 @@ textarea {
 
 */
 
+.header__nav {
+  flex-direction: column;
+}
+
 .hero,
 .projects,
 .experience,
@@ -185,4 +189,14 @@ textarea {
 .review__reference {
   color: hsl(var(--foreground) / 0.5);
   margin-block-start: 1rem;
+}
+
+@media (width >= 36rem) {
+  .header__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__menue {
+    margin-inline-start: auto;
+  }
 }
