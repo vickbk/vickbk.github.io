@@ -191,13 +191,8 @@ textarea {
   text-align: center;
 }
 
-.main__experience {
-  border-inline: 0.1em solid hsl(var(--foreground));
-}
-
 .projects__list {
   --link-accent: 1;
-  margin-top: var(--default-spacing);
 }
 
 .projects__link {
@@ -271,6 +266,13 @@ textarea {
     text-align: start;
   }
 
+  .main__experience {
+    border-inline: 0.1em solid hsl(var(--foreground));
+  }
+
+  .projects__list {
+    margin-top: var(--default-spacing);
+  }
   .projects__link,
   .experience__item {
     &:first-of-type {
