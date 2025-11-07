@@ -155,6 +155,10 @@ textarea {
   border-block-end: 0.1em solid hsl(var(--foreground));
 }
 
+.hero__header {
+  font-size: clamp(1.5rem, 0.6165rem + 3.7594vw, 4rem);
+}
+
 .projects__link {
   padding-block: 0.5em;
   border-block-start: 0.1em hsl(var(--foreground)) solid;
@@ -198,5 +202,8 @@ textarea {
   }
   .header__menue {
     margin-inline-start: auto;
+  }
+  .hero {
+    padding-block: 10rem;
   }
 }
