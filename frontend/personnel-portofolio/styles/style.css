@@ -196,6 +196,9 @@ textarea {
 }
 
 @media (width >= 36rem) {
+  :root {
+    --default-spacing: 2rem;
+  }
   .header__nav {
     flex-direction: row;
     justify-content: space-between;
@@ -205,5 +208,18 @@ textarea {
   }
   .hero {
     padding-block: 10rem;
+  }
+
+  .review {
+    grid-template-areas: "review-header review-header";
+  }
+  .review__header {
+    grid-area: review-header;
+  }
+}
+
+@media (width >= 48rem) {
+  .review {
+    grid-template-areas: "review-header review-header review-header";
   }
 }
