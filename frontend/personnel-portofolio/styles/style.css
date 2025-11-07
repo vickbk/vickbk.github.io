@@ -101,6 +101,10 @@ textarea {
   color: hsl(var(--background) / var(--text-accent, 1));
 }
 
+.mobile-highlight {
+  background-color: hsl(var(--foreground) / 0.2);
+}
+
 .grid {
   display: grid;
 }
@@ -227,6 +231,11 @@ textarea {
 @media (width >= 36rem) {
   :root {
     --default-spacing: 2rem;
+  }
+
+  .mobile-highlight,
+  .experience__item {
+    background-color: hsl(var(--foreground) / 0);
   }
   .header__nav {
     flex-direction: row;
