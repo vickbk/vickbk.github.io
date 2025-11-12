@@ -177,8 +177,8 @@ details summary {
 .logs__item {
   border-radius: 2em;
   border: 0.1em solid hsl(var(--foreground) / 0.2);
-  /* margin-block: var(--default-spacing); */
   margin-inline-start: var(--default-spacing);
+  max-inline-size: 25rem;
 }
 .log__summary::marker {
   content: "";
@@ -203,4 +203,10 @@ details summary {
 .log__title,
 .log__text {
   margin-block-start: var(--default-spacing);
+}
+
+.changelog__button {
+  border-radius: 0.5em;
+  padding-inline: 2em;
+  margin-block-end: 2em;
 }
