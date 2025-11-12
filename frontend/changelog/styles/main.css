@@ -209,4 +209,9 @@ details summary {
   border-radius: 0.5em;
   padding-inline: 2em;
   margin-block-end: 2em;
+  &:hover,
+  &:active,
+  &:focus {
+    --bg-accent: 0.8;
+  }
 }
