@@ -219,7 +219,7 @@ details summary {
 
 @media (width >= 48em) {
   .changelog {
-    border: 0.1em solid hsl(var(--foreground) / 0.2);
+    /* border: 0.1em solid hsl(var(--foreground) / 0.2); */
     --gap: 3em;
   }
   .logs__tree {
