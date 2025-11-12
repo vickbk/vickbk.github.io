@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+    Initial declarations
+*/
+
+:root {
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+  --accent-color: 240, 92%, 64%;
+  --background: var(--white);
+  --foreground: var(--black);
+
+  --default-spacing: 1em;
+
+  --ff-serif: "Roboto", sans-serif;
+  --ff-architect: "Architects Daughter", cursive;
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-default: var(--fw-300);
+  --fw-bold: var(--fw-700);
+  --fw-min-bold: var(--fw-600);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --foreground: var(--white);
+    --accent-color: 240, 92%, 75%;
+  }
+}
+
+/* 
+    Reset
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--fw-default);
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--ff-serif);
+  line-height: 1.5;
+}
+
+a {
+  color: hsl(var(--foreground) / var(--link-accent, 0.8));
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+details summary {
+  cursor: pointer;
+}
+/* 
+    Helper classes
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; /* or a large negative value like -10000px */
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* Deprecated, use clip-path instead */
+  white-space: nowrap;
+  border: 0;
+}
+
+.underline,
+.link-underline a {
+  text-decoration: underline;
+}
+
+.bg-black {
+  background-color: hsl(var(--foreground) / var(--bg-accent, 1));
+}
+
+.bg-white {
+  background-color: hsl(var(--background) / var(--bg-accent, 1));
+}
+
+.text-black {
+  color: hsl(var(--foreground) / var(--text-accent, 1));
+}
+
+.text-white {
+  color: hsl(var(--background) / var(--text-accent, 1));
+}
+
+.mobile-highlight {
+  background-color: hsl(var(--foreground) / 0.2);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  flex-direction: var(--direction, row);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.place-center {
+  place-items: center;
+}
+
+.full-h {
+  block-size: 100vh;
+}
+
+.gap {
+  gap: var(--gap, var(--default-spacing));
+}
+
+.p {
+  padding: var(--p, var(--default-spacing));
+}
+
+.m {
+  margin: var(--m, var(--default-spacing));
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 
+    Components
+*/
+
+.changelog {
+  --gap: 2em;
+}
+.changelog__title {
+  font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+  font-weight: 400;
+}
+.logs {
+  position: relative;
+  grid-template-columns: auto 1fr;
+}
+
+.logs__tree {
+  border-inline-end: hsl(var(--foreground)) 0.1em solid;
+}
+
+.logs__item {
+  border-radius: 2em;
+  border: 0.1em solid hsl(var(--foreground) / 0.2);
+  margin-inline-start: var(--default-spacing);
+  /* max-inline-size: 25rem; */
+}
+.log__summary {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0.1em dashed hsl(var(--foreground) / 0.2);
+  }
+  &::marker {
+    content: "";
+  }
+}
+
+.log {
+  position: relative;
+  &::before {
+    content: "";
+    background-color: hsl(var(--foreground));
+    position: absolute;
+    height: 1em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset-block: 50%;
+    inset-inline-start: -1.65em;
+  }
+}
+.log__time {
+  --text-accent: 0.6;
+}
+.log__title,
+.log__text {
+  margin-block-start: var(--default-spacing);
+}
+
+.changelog__button {
+  border-radius: 0.5em;
+  padding-inline: 2em;
+  margin-block-end: 2em;
+  &:hover,
+  &:active,
+  &:focus {
+    --bg-accent: 0.8;
+  }
+}
+
+@media (width >= 48em) {
+  .changelog {
+    /* border: 0.1em solid hsl(var(--foreground) / 0.2); */
+    --gap: 3em;
+  }
+  .logs__tree {
+    position: absolute;
+    block-size: 100%;
+    inset-inline: 50%;
+  }
+  .logs__item {
+    max-inline-size: 20em;
+
+    &:nth-child(even) {
+      transform: translateX(calc(50% + 0.6em));
+      /* margin-inline-start: calc(50% + 0.6em); */
+    }
+    &:nth-child(odd) {
+      transform: translateX(calc(-50% - 1.5em));
+      text-align: end;
+      &::before {
+        inset-inline-start: auto;
+        inset-inline-end: -1.65em;
+      }
+    }
+  }
+}
