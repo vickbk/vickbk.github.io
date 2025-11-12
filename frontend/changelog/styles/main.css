@@ -77,10 +77,25 @@ button,
 textarea {
   font-family: inherit;
 }
-
+details summary {
+  cursor: pointer;
+}
 /* 
     Helper classes
 */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; /* or a large negative value like -10000px */
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* Deprecated, use clip-path instead */
+  white-space: nowrap;
+  border: 0;
+}
+
 .underline,
 .link-underline a {
   text-decoration: underline;
@@ -123,6 +138,14 @@ textarea {
   align-items: center;
 }
 
+.place-center {
+  place-items: center;
+}
+
+.full-h {
+  block-size: 100vh;
+}
+
 .gap {
   gap: var(--gap, var(--default-spacing));
 }
@@ -137,4 +160,47 @@ textarea {
 
 .text-center {
   text-align: center;
+}
+
+/* 
+    Components
+*/
+
+.logs {
+  grid-template-columns: auto 1fr;
+}
+
+.logs__tree {
+  border-inline-end: hsl(var(--foreground)) 0.1em solid;
+}
+
+.logs__item {
+  border-radius: 2em;
+  border: 0.1em solid hsl(var(--foreground) / 0.2);
+  /* margin-block: var(--default-spacing); */
+  margin-inline-start: var(--default-spacing);
+}
+.log__summary::marker {
+  content: "";
+}
+
+.log {
+  position: relative;
+  &::before {
+    content: "";
+    background-color: hsl(var(--foreground));
+    position: absolute;
+    height: 1em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inset-block: 50%;
+    inset-inline-start: -1.65em;
+  }
+}
+.log__time {
+  --text-accent: 0.5;
+}
+.log__title,
+.log__text {
+  margin-block-start: var(--default-spacing);
 }
