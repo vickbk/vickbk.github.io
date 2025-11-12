@@ -179,7 +179,7 @@ details summary {
   border-radius: 2em;
   border: 0.1em solid hsl(var(--foreground) / 0.2);
   margin-inline-start: var(--default-spacing);
-  max-inline-size: 25rem;
+  /* max-inline-size: 25rem; */
 }
 .log__summary::marker {
   content: "";
@@ -218,9 +218,29 @@ details summary {
 }
 
 @media (width >= 48em) {
+  .changelog {
+    border: 0.1em solid hsl(var(--foreground) / 0.2);
+    --gap: 3em;
+  }
   .logs__tree {
     position: absolute;
     block-size: 100%;
     inset-inline: 50%;
+  }
+  .logs__item {
+    max-inline-size: 20em;
+
+    &:nth-child(even) {
+      transform: translateX(calc(50% + 0.6em));
+      /* margin-inline-start: calc(50% + 0.6em); */
+    }
+    &:nth-child(odd) {
+      transform: translateX(calc(-50% - 1.5em));
+      text-align: end;
+      &::before {
+        inset-inline-start: auto;
+        inset-inline-end: -1.65em;
+      }
+    }
   }
 }
