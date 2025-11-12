@@ -181,8 +181,15 @@ details summary {
   margin-inline-start: var(--default-spacing);
   /* max-inline-size: 25rem; */
 }
-.log__summary::marker {
-  content: "";
+.log__summary {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0.1em dashed hsl(var(--foreground) / 0.2);
+  }
+  &::marker {
+    content: "";
+  }
 }
 
 .log {
