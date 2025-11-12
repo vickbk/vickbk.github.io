@@ -167,6 +167,7 @@ details summary {
 */
 
 .logs {
+  position: relative;
   grid-template-columns: auto 1fr;
 }
 
@@ -213,5 +214,13 @@ details summary {
   &:active,
   &:focus {
     --bg-accent: 0.8;
+  }
+}
+
+@media (width >= 48em) {
+  .logs__tree {
+    position: absolute;
+    block-size: 100%;
+    inset-inline: 50%;
   }
 }
