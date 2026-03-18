@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,6 +36,21 @@
         <div class="p bg-black"></div>
         <a href="./">VickBk</a>
         <ul class="header__menue flex gap" style="--direction: row">
+          <li>
+            <label
+              ><input
+                type="checkbox"
+                switch
+                onload="
+                  this.checked = window.matchMedia(
+                    '(prefers-color-scheme: dark)',
+                  ).matches
+                "
+              /><span light>Light Theme</span
+              ><span dark>Dark Theme</span></label
+            >
+          </li>
+          <li>|</li>
           <li><a href="./">Home</a></li>
           <li>/</li>
           <li><a href="#projects">Projects</a></li>
