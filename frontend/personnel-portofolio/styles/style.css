@@ -53,6 +53,9 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  transition:
+    background-color ease-in-out 0.3s,
+    color ease-in-out 0.3s;
 }
 
 body,
