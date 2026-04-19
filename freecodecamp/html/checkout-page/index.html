@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <meta name="author" content="Vick Bake" />
+    <meta
+      name="description"
+      content="A freecodecamp project. The Checkout Page Lab"
+    />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <h2>Your Cart</h2>
+      <figure>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
+          alt="A flipped cube box game."
+        />
+        <figcaption>
+          The cube has already been flipped such that it shows how to play the
+          game
+        </figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <form action="#">
+        <label for="card-name"
+          >Card Name <span aria-hidden="true">*</span></label
+        >
+        <input type="text" name="card-name" id="card-name" required />
+        <label for="card-number"
+          >Card Number <span aria-hidden="true">*</span></label
+        ><input
+          type="text"
+          name="card-number"
+          id="card-number"
+          required
+          aria-describedby="card-number-help"
+        />
+        <p id="card-number-help">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+          atque a mollitia! Adipisci odio laudantium, dicta voluptatum totam
+          maiores maxime nesciunt. Labore quae ipsam repudiandae dolor inventore
+          tempora nemo deleniti.
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
