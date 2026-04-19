@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form for some data</h1>
+      <p id="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+        consectetur similique dolorum, amet deserunt porro voluptatem velit
+        nostrum alias aspernatur sit laboriosam ab architecto temporibus
+        eveniet. Aperiam sint mollitia voluptatibus.
+      </p>
+    </header>
+    <main>
+      <form action="#" id="survey-form">
+        <fieldset>
+          <legend>Identity</legend>
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Your Full Name"
+          />
+          <label for="email" id="email-label">Email address</label
+          ><input
+            type="email"
+            id="email"
+            required
+            placeholder="eg. your@email.com"
+          />
+          <label for="number" id="number-label">Number</label
+          ><input
+            type="number"
+            name="number"
+            required
+            min="100000000"
+            max="99999999999999"
+            minlength="9"
+            maxlength="14"
+            id="number"
+            placeholder="Eg. 09970239911"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male">Male</label
+          ><input
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+            required="required"
+            checked="checked"
+          />
+          <label for="female">Female</label
+          ><input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required="required"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="dropdown">Dropdown</label
+          ><select name="dropdown" id="dropdown">
+            <option value="1option" selected>Option 1</option>
+            <option value="2option">Option 2</option>
+            <option value="3option">Option 3</option>
+            <option value="4option">Option 4</option>
+            <option value="5option">Option 5</option>
+          </select>
+          <label
+            >Lorem<input
+              type="checkbox"
+              name="preference"
+              checked="checked"
+              value="pref1" /></label
+          ><label
+            >Lorem Ipsum<input
+              type="checkbox"
+              name="preference"
+              value="pref2" /></label
+          ><label
+            >Dolor<input
+              type="checkbox"
+              name="preference"
+              value="pref3" /></label
+          ><label
+            >Amet sip<input
+              type="checkbox"
+              name="preference"
+              value="pref4" /></label
+          ><label
+            >Placeat Eum<input type="checkbox" name="preference" value="pref5"
+          /></label>
+          <label
+            >Comments<textarea
+              name="comment"
+              placeholder="Share your toughts here"
+            ></textarea>
+            <button type="submit" id="submit">Submit</button>
+          </label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
