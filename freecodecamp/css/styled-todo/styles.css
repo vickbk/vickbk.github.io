@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: cornflowerblue;
+}
+a:visited {
+  color: blueviolet;
+}
+a:hover {
+  color: aqua;
+}
+a:focus {
+  color: aquamarine;
+  outline: dashed;
+}
+
+a:active {
+  color: orange;
+}
